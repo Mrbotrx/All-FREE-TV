@@ -3,8 +3,10 @@
 http://z5ams.akamaized.net/zeebanglahd/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-id="Star Jalsha HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/65/Star_Jalsha_logo.png" group-title="Bangla TV",Star Jalsha HD
 https://tv.cloudcdn.online/live/00:1A:79:17:C0:12/6938AD47F07BB/116.m3u8
-#EXTINF:-1 tvg-id="Sun Bangla HD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sun_Bangla_logo.png" group-title="Bangla TV",Sun Bangla HD
+#EXTINF:-1 tvg-id="Sun Bangla HD (GitHub)" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sun_Bangla_logo.png" group-title="Bangla TV",Sun Bangla HD
 https://raw.githubusercontent.com/gift4bd/ytm/main/SunBanglaHD.m3u8
+#EXTINF:-1 tvg-id="Sun Bangla HD (BDIX)" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e0/Sun_Bangla_logo.png" group-title="Bangla TV",Sun Bangla HD
+http://103.141.66.36/bangla/sunbangla/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-id="Enter10 Bangla" tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0e/Enter_10_logo.png" group-title="Bangla TV",Enter10 Bangla
 http://streamitv.multitvsolution.in/idvo/enter10bangla_360p/index.m3u8
 #EXTINF:-1 tvg-id="Sony Aath" tvg-logo="https://upload.wikimedia.org/wikipedia/en/8/87/Sony_Aath_logo.png" group-title="Bangla TV",Sony Aath
