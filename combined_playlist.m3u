@@ -16,7 +16,86 @@
 
 
 #EXTM3U
-
+#NEW
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://bd-directory.com/Tsports-BD.JPG" group-title="Sports",Tsports
+https://padmaonline.duckdns.org:8088/T-SportHD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/10/Z_Bangla_logo.jpg?20250607164238" group-title="Entertainment",Zee Bangla
+https://padmaonline.duckdns.org:8088/ZeeBanglaHD/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/ef/Star_Jalsha_logo_2023.png?20230625063343" group-title="Entertainment",Star Jalsha
+https://tvsen1.aynaott.com/gUX8BJmNc2yF/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7b/Colors_Bangla.png?20220118000106" group-title="Entertainment",Colors Bangla
+https://padmaonline.duckdns.org:8088/ColorsBanglaHD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/af/Zee_Cinema_logo.png?20230802074221" group-title="Entertainment",Zee Cinema
+https://padmaonline.duckdns.org:8088/ZeeCinemaHD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sony_MAX_Logo_%282011%29.png/1280px-Sony_MAX_Logo_%282011%29.png" group-title="Entertainment",Sony Max
+https://padmaonline.duckdns.org:8088/SonyMaxHD/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://ssl.com.bd/sites/default/files/BTV%20Logo%20Gallery.png" group-title="news" tvg-logo="https://ssl.com.bd/sites/default/files/BTV%20Logo%20Gallery.png" group-title="news",BTV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/leielj83em5kg7h/somoy_news.png" group-title="news" tvg-logo="https://dl.dropbox.com/s/leielj83em5kg7h/somoy_news.png" group-title="news",SOMOY TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://s4.gifyu.com/images/imagea02f4314e761661d.png" group-title="news" tvg-logo="https://s4.gifyu.com/images/imagea02f4314e761661d.png" group-title="news",Ekattor TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/puf12xv5flgbnz5/channel24_bd.png" group-title="news" tvg-logo="https://dl.dropbox.com/s/puf12xv5flgbnz5/channel24_bd.png" group-title="news",Channel 24
+https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/7xwwb8hetz3w8rp/independent_tv.png" group-title="news" tvg-logo="https://dl.dropbox.com/s/7xwwb8hetz3w8rp/independent_tv.png" group-title="news",INDEPENDENT TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/k7z1dsec1jfjbkn/jamuna_tv_bd.png" group-title="news" tvg-logo="https://dl.dropbox.com/s/k7z1dsec1jfjbkn/jamuna_tv_bd.png" group-title="news",JAMUNA TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/DBC_News_logo.png" group-title="news" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/DBC_News_logo.png" group-title="news",DBC News
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/dbcnews.stream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://dl.dropbox.com/s/4ldi1dp09s8o6bm/atn_news_bd.png" group-title="news" tvg-logo="https://dl.dropbox.com/s/4ldi1dp09s8o6bm/atn_news_bd.png" group-title="news",ATN NEWS
+https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fb/Aakashaath_blue.png/revision/latest?cb=20210509111354" group-title="news" tvg-logo="https://www.mediainfoline.com/wp-content/uploads/2022/08/aakash-aath_logo-768x514.jpg" group-title="Entertainment",Aakash Aath
+https://tvsen1.aynaott.com/Wm9Lv2RjZGT6/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/NTV_%28Bangladesh%29_logo.svg/400px-NTV_%28Bangladesh%29_logo.svg.png" group-title="news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/NTV_%28Bangladesh%29_logo.svg/400px-NTV_%28Bangladesh%29_logo.svg.png" group-title="news",NTV
+https://tvsen1.aynaott.com/xV4jEKf3D9zc/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d7/Duronto_TV_Logo.png" group-title="news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d7/Duronto_TV_Logo.png" group-title="news",Duronto
+https://tvsen4.aynaott.com/durontotv/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Channel-i.svg/384px-Channel-i.svg.png" group-title="news" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Channel-i.svg/384px-Channel-i.svg.png" group-title="news",Channel i
+https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/MRM3UK/FanzoneLive/refs/heads/main/logo/file_0000000051787209ac49b199a548c78f.png" group-title="news" tvg-logo="https://raw.githubusercontent.com/MRM3UK/FanzoneLive/refs/heads/main/logo/file_0000000051787209ac49b199a548c78f.png" group-title="Entertainment",Bengali Betas
+https://tplay.live/originals/bengali-beats/index.m3u8
+#EXTINF:-1 tvg-logo="https://s6.gifyu.com/images/image27cfa7002786c232.png" group-title="news" tvg-logo="https://s6.gifyu.com/images/image27cfa7002786c232.png" group-title="Entertainment",ATN Bangla
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8
+#EXTINF:-1 tvg-id="247-hindi-movies" tvg-name="24/7 Hindi Movies" tvg-logo="https://iptv-org.github.io/iptv/logos/star_gold.png" group-title="24/7 - Entertainment" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Bollywood_pataka_high_res_logo.jpg?20160319184711" group-title="24/7 - Entertainment",24/7 Hindi Movies
+https://cloudfrontnet.vercel.app/tplay/playout/209612/master.m3u8
+#EXTINF:-1 tvg-id="247-bangla-movies" tvg-name="24/7 Bangla Movies" tvg-logo="https://iptv-org.github.io/iptv/logos/zee_bangla_cinema.png" group-title="24/7 - Entertainment" tvg-logo="https://cdn.dribbble.com/userupload/40514087/file/original-87cf6c9d57c9fad2027a1726f99aeb1a.png?resize=752x564&vertical=center" group-title="24/7 - Entertainment",24/7 Bangla Movies
+https://cloudfrontnet.vercel.app/tplay/playout/209627/master.m3u8
+#EXTINF:-1 tvg-id="247-dubbed-movies" tvg-name="24/7 Dubbed Movies" tvg-logo="https://iptv-org.github.io/iptv/logos/goldmines.png" group-title="24/7 - Entertainment" tvg-logo="https://www.thehandbook.com/cdn-cgi/image/width=600,height=600,fit=cover,q=80,format=webp/https://files.thehandbook.com/uploads/2021/02/aauvwngqodwiyvmmmril7mpe8ucpcqvogc98pyikxgpfs800-c-k-c0x00ffffff-no-rj.jpg" group-title="24/7 - Entertainment",24/7 Dubbed Movies
+https://cloudfrontnet.vercel.app/tplay/playout/209593/master.m3u8
+#EXTINF:-1 tvg-id="247-bangla-waz" tvg-name="24/7 Bangla Waz" tvg-logo="https://iptv-org.github.io/iptv/logos/peace_tv_bangla.png" group-title="24/7 - Entertainment" tvg-logo="https://shorifart.com/wp-content/uploads/2022/11/Waz-Mahfil-Logo-Design-02-01-600x552.png" group-title="24/7 - Entertainment",24/7 Bangla Waz
+https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8
+#EXTINF:-1 tvg-id="247-gopal-bhar" tvg-name="24/7 Gopal Bhar" tvg-logo="https://iptv-org.github.io/iptv/logos/sony_aath.png" group-title="24/7 - Entertainment" tvg-logo="https://image.tmdb.org/t/p/original/h6lsUfpvqITz6FdjHhB16s3Bt3I.jpg" group-title="24/7 - Entertainment",24/7 Gopal Bhar
+https://cloudfrontnet.vercel.app/tplay/playout/209611/master.m3u8
+#EXTINF:-1 tvg-id="247-motu-patlu" tvg-name="24/7 Motu Patlu" tvg-logo="https://iptv-org.github.io/iptv/logos/nick_india.png" group-title="24/7 - Entertainment" tvg-logo="https://image.tmdb.org/t/p/original/cXdGXzpCpOqQNqgWQam13DL8rCy.jpg" group-title="24/7 - Entertainment",24/7 Motu Patlu
+https://cloudfrontnet.vercel.app/tplay/playout/209622/master.m3u8
+#EXTINF:-1 tvg-id="247-shinchan" tvg-name="24/7 Shinchan" tvg-logo="https://iptv-org.github.io/iptv/logos/hungama.png" group-title="24/7 - Entertainment" tvg-logo="https://image.tmdb.org/t/p/original/qXxdCGuTXCY7jijMK5NQw7Pfvxf.jpg" group-title="24/7 - Entertainment",24/7 Shinchan
+https://cloudfrontnet.vercel.app/tplay/playout/209901/master.m3u8
+#EXTINF:-1 tvg-id="247-doraemon" tvg-name="24/7 Doraemon" tvg-logo="https://iptv-org.github.io/iptv/logos/disney_channel_in.png" group-title="24/7 - Entertainment" tvg-logo="https://image.tmdb.org/t/p/original/bHMqPDsW7Lb71CVHXq4PuEvQ4NY.jpg" group-title="24/7 - Entertainment",24/7 Doraemon
+https://cloudfrontnet.vercel.app/tplay/playout/209902/master.m3u8
+#EXTINF:-1 tvg-id="247-hindi-songs" tvg-name="24/7 Hindi Songs" tvg-logo="https://iptv-org.github.io/iptv/logos/9xm.png" group-title="24/7 - Entertainment" tvg-logo="https://pnglove.com/data/img/34_gXdJ.jpg" group-title="24/7 - Entertainment",24/7 Hindi Songs
+https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8
+#EXTINF:-1 tvg-id="247-bangla-songs" tvg-name="24/7 Bangla Songs" tvg-logo="https://iptv-org.github.io/iptv/logos/sangeet_bangla.png" group-title="24/7 - Entertainment" tvg-logo="https://pnglove.com/data/img/34_gXdJ.jpg" group-title="24/7 - Entertainment",24/7 Bangla Songs
+https://cloudfrontnet.vercel.app/tplay/playout/209587/master.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/330px-BBC_News_2022_%28Alt%29.svg.png" group-title="News",BBC News
+https://tplay.live/out/news/bbc-news/index.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Goldmines_logo.png/1920px-Goldmines_logo.png?20250711062922" group-title="Entertainment",GoldMines
+https://cdn-2.pishow.tv/live/1459/master.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Sony_AATH_Logo_%282022%29.png/250px-Sony_AATH_Logo_%282022%29.png" group-title="Entertainment",Sony Aath
+https://mrzplayin.fun/roarzon/stream.php?id=86ccc06d72b98d2e40d91bebe766fe96&e=.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e4/Hum_TV_2013.png" group-title="Entertainment",Hum TV
+https://ml-pull-dvc-myco.io:2096/HUM_ENTERTAINMENT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ary_Digital_Logo.png/330px-Ary_Digital_Logo.png" group-title="Entertainment",Ary Digital
+https://ml-pull-dvc-myco.io:2096/ARY_DIGITAL/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-logo="https://www.aajentertainment.tv/_img/logo.png" group-title="Entertainment",AAJ Entertainment
+https://ml-pull-dvc-myco.io:2096/AAJ_ENTERTAINMENT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/ur/f/f4/Green_Entertainment_logo.jpg?20230702081523" group-title="Entertainment",Green Entertainment
+https://ml-pull-dvc-myco.io:2096/GREEN_ENTERTAINMENT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d4/Geo_Entertainment.png" group-title="Entertainment",GEO Entertainment
+https://ml-pull-dvc-myco.io:2096/GEO_ENTERTAINEMNT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Al_Jazeera_Media_Network_Logo.svg/500px-Al_Jazeera_Media_Network_Logo.svg.png" group-title="News",Al jazeera
+https://live-hls-web-aje-fa.thehlive.com/AJE/01.m3u8
 
 
 
