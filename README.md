@@ -10,7 +10,7 @@
 
 ```text
 https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/refs/heads/main/combined_playlist.m3u
-
+```
 
 
 💡 Tip: লিংকটি কপি করে সরাসরি তোমার IPTV প্লেয়ার (VLC, TiviMate, IPTV Smarters ইত্যাদি) এ পেস্ট করো।
