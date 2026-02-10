@@ -9,13 +9,9 @@
 # Note         : Educational & Testing Purpose Only
 # Disclaimer   : Use at your own risk
 
-
-
 #EXTM3U
 #EXTINF:-1 group-title="Sports", TEN 3 Hindi - Rs 19.00
 http://103.229.254.25:7001/play/a09q/index.m3u8
-#EXTINF:-1 group-title="HD",& PICTURE HD
-http://103.229.254.25:7001/play/a073/index.m3u8
 #EXTINF:-1 group-title="HD",&Prive HD - Rs 6.00
 http://103.229.254.25:7001/play/a03f/index.m3u8
 #EXTINF:-1 group-title="HD",&flix HD - Rs 19.00
@@ -84,24 +80,18 @@ http://103.229.254.25:7001/play/a0es/index.m3u8
 http://103.229.254.25:7001/play/a077/index.m3u8
 #EXTINF:-1 group-title="Bangla",COLORS BANGLA/ENC 70006
 http://103.229.254.25:7001/play/a076/index.m3u8
-#EXTINF:-1 group-title="Kids",Cartoon Network - Rs 5.00
-http://103.229.254.25:7001/play/a0cn/index.m3u8
 #EXTINF:-1 group-title="News",Channel 24HD
 http://103.229.254.25:7001/play/a05n/index.m3u8
 #EXTINF:-1 group-title="News",Channel I HD
 http://103.229.254.25:7001/play/a06e/index.m3u8
 #EXTINF:-1 group-title="News",Channel S
 http://103.229.254.25:7001/play/a060/index.m3u8
-#EXTINF:-1 group-title="Sports",Cnal SPorts
-http://103.229.254.25:7001/play/a0er/index.m3u8
 #EXTINF:-1 group-title="HD",Colors Bangla HD - Rs 19.00
 http://103.229.254.25:7001/play/a0ds/index.m3u8
 #EXTINF:-1 group-title="HD",Colors HD - Rs 19.00
 http://103.229.254.25:7001/play/a0a1/index.m3u8
 #EXTINF:-1 group-title="HD",Colors Infinity HD - Rs 15.00
 http://103.229.254.25:7001/play/a0du/index.m3u8
-#EXTINF:-1 group-title="Sports",DAZN SPORT
-http://103.229.254.25:7001/play/a0eq/index.m3u8
 #EXTINF:-1 group-title="News",DBC NEWS
 http://103.229.254.25:7001/play/a06h/index.m3u8
 #EXTINF:-1 group-title="Other",DHOOM
@@ -126,8 +116,6 @@ http://103.229.254.25:7001/play/a05k/index.m3u8
 http://103.229.254.25:7001/play/a09k/index.m3u8
 #EXTINF:-1 group-title="Other",ENC 6103
 http://103.229.254.25:7001/play/a06n/index.m3u8
-#EXTINF:-1 group-title="Bangla",ENC 6105 Duronto
-http://103.229.254.25:7001/play/a06p/index.m3u8
 #EXTINF:-1 group-title="Other",ENC 6106
 http://103.229.254.25:7001/play/a06q/index.m3u8
 #EXTINF:-1 group-title="Other",ENC 7014
@@ -140,12 +128,8 @@ http://103.229.254.25:7001/play/a0de/index.m3u8
 http://103.229.254.25:7001/play/a06f/index.m3u8
 #EXTINF:-1 group-title="News",Ekushey TV         
 http://103.229.254.25:7001/play/a05x/index.m3u8
-#EXTINF:-1 group-title="Other",Enc 6110
-http://103.229.254.25:7001/play/a06u/index.m3u8
 #EXTINF:-1 group-title="Other",Enc 6114
 http://103.229.254.25:7001/play/a06y/index.m3u8
-#EXTINF:-1 group-title="Other",Enc 6115
-http://103.229.254.25:7001/play/a06z/index.m3u8
 #EXTINF:-1 group-title="Bangla",Enterr10 Bangla
 https://live-bangla.akamaized.net/liveabr/playlist.m3u8
 #EXTINF:-1 group-title="Sports",Eurosport HD - Rs 6.00
@@ -174,8 +158,6 @@ http://103.229.254.25:7001/play/a07d/index.m3u8
 http://103.229.254.25:7001/play/a0dt/index.m3u8
 #EXTINF:-1 group-title="Other",Jamuna Television
 http://103.229.254.25:7001/play/a05y/index.m3u8
-#EXTINF:-1 group-title="Sports",KSA SPORT 2
-http://103.229.254.25:7001/play/a0ej/index.m3u8
 #EXTINF:-1 group-title="Other",LotusTV
 http://103.229.254.25:7001/play/a07x/index.m3u8
 #EXTINF:-1 group-title="Music",MASTIII
@@ -184,12 +166,6 @@ http://103.229.254.25:7001/play/a07q/index.m3u8
 http://103.229.254.25:7001/play/a0et/index.m3u8
 #EXTINF:-1 group-title="Other",MBC 1
 http://103.229.254.25:7001/play/a0ec/index.m3u8
-#EXTINF:-1 group-title="Other",MBC 2
-http://103.229.254.25:7001/play/a0em/index.m3u8
-#EXTINF:-1 group-title="Other",MBC 3
-http://103.229.254.25:7001/play/a0el/index.m3u8
-#EXTINF:-1 group-title="Movies",MBC MAX
-http://103.229.254.25:7001/play/a0ek/index.m3u8
 #EXTINF:-1 group-title="Music",MTV HD - Rs 2.00
 http://103.229.254.25:7001/play/a02s/index.m3u8
 #EXTINF:-1 group-title="HD",MYTV HD
@@ -212,16 +188,10 @@ http://103.229.254.25:7001/play/a06g/index.m3u8
 http://103.229.254.25:7001/play/a06r/index.m3u8
 #EXTINF:-1 group-title="News",News 24 HD
 http://103.229.254.25:7001/play/a06i/index.m3u8
-#EXTINF:-1 group-title="Kids",Nick  - Rs 7.00
-http://103.229.254.25:7001/play/a0cq/index.m3u8
 #EXTINF:-1 group-title="Kids",Nick Jr. - Rs 1.00
 http://103.229.254.25:7001/play/a0di/index.m3u8
 #EXTINF:-1 group-title="HD",PIX HD
 http://103.229.254.25:7001/play/a0ed/index.m3u8
-#EXTINF:-1 group-title="Other",PTV-Home
-http://103.229.254.25:7001/play/a082/index.m3u8
-#EXTINF:-1 group-title="Sports",PTV-SPORTS-HD
-http://103.229.254.25:7001/play/a084/index.m3u8
 #EXTINF:-1 group-title="Kids",Pogo - Rs 5.00
 http://103.229.254.25:7001/play/a0dh/index.m3u8
 #EXTINF:-1 group-title="News",RUPSHI BANGLA
@@ -240,12 +210,8 @@ http://103.229.254.25:7001/play/a0eh/index.m3u8
 http://103.229.254.25:7001/play/a05l/index.m3u8
 #EXTINF:-1 group-title="Hindi",SONY AATH
 http://103.229.254.25:7001/play/a07a/index.m3u8
-#EXTINF:-1 group-title="Hindi",SONY AATH - Rs 6.00 old
-http://103.229.254.25:7001/play/a0e3/index.m3u8
 #EXTINF:-1 group-title="HD",SONY BBC EARTH HD - Rs 19.00
 http://103.229.254.25:7001/play/a031/index.m3u8
-#EXTINF:-1 group-title="Movies",SONY MAX - Rs 19.00
-http://103.229.254.25:7001/play/a0co/index.m3u8
 #EXTINF:-1 group-title="HD",SONY PIX HD - Rs 19.00
 http://103.229.254.25:7001/play/a02u/index.m3u8
 #EXTINF:-1 group-title="Hindi",SONY SAB - Rs 19.00
@@ -254,16 +220,12 @@ http://103.229.254.25:7001/play/a09s/index.m3u8
 http://103.229.254.25:7001/play/a0db/index.m3u8
 #EXTINF:-1 group-title="Hindi",SONY SET
 http://103.229.254.25:7001/play/a074/index.m3u8
-#EXTINF:-1 group-title="Sports",SONY SPORTS TEN 5 - Rs 19.00
-http://103.229.254.25:7001/play/a0e4/index.m3u8
 #EXTINF:-1 group-title="Sports",SONY SPORTS TEN 5 HD - Rs 25.00
 http://103.229.254.25:7001/play/a0dw/index.m3u8
 #EXTINF:-1 group-title="Sports",SONY TEN 2
 http://103.229.254.25:7001/play/a06m/index.m3u8
 #EXTINF:-1 group-title="Sports",SONY TEN 5
 http://103.229.254.25:7001/play/a072/index.m3u8
-#EXTINF:-1 group-title="Kids",SONY YAY! - Rs 4.00
-http://103.229.254.25:7001/play/a0cl/index.m3u8
 #EXTINF:-1 group-title="Movies",STAR GOLD HD - Rs 19.00
 http://103.229.254.25:7001/play/a0dd/index.m3u8
 #EXTINF:-1 group-title="Hindi",STAR JALSHA
@@ -290,10 +252,6 @@ http://103.229.254.25:7001/play/a07z/index.m3u8
 http://103.229.254.25:7001/play/a07y/index.m3u8
 #EXTINF:-1 group-title="HD",Saudi TV1 HD
 http://103.229.254.25:7001/play/a07v/index.m3u8
-#EXTINF:-1 group-title="Other",Shemaroo Bollywood
-http://103.229.254.25:7001/play/a07s/index.m3u8
-#EXTINF:-1 group-title="Other",Shemaroo Comedy
-http://103.229.254.25:7001/play/a07i/index.m3u8
 #EXTINF:-1 group-title="Other",Sonic - Rs 2.00
 http://103.229.254.25:7001/play/a0dl/index.m3u8
 #EXTINF:-1 group-title="Hindi",Sony PIX
@@ -308,24 +266,16 @@ http://103.229.254.25:7001/play/a0eo/index.m3u8
 http://103.229.254.25:7001/play/a0df/index.m3u8
 #EXTINF:-1 group-title="Movies",Star Gold 2 HD - Rs 8.00
 http://103.229.254.25:7001/play/a0d0/index.m3u8
-#EXTINF:-1 group-title="Movies",Star Gold Romance - Rs 3.00
-http://103.229.254.25:7001/play/a0ck/index.m3u8
 #EXTINF:-1 group-title="Movies",Star Gold Select HD - Rs 8.00
 http://103.229.254.25:7001/play/a032/index.m3u8
 #EXTINF:-1 group-title="HD",Star Jalsha HD - Rs 19.00
 http://103.229.254.25:7001/play/a0c0/index.m3u8
-#EXTINF:-1 group-title="HD",Star Pravah HD - Rs 19.00
-http://103.229.254.25:7001/play/a0cm/index.m3u8
 #EXTINF:-1 group-title="Sports",Star Sport 2 
 http://103.229.254.25:7001/play/a06x/index.m3u8
 #EXTINF:-1 group-title="Sports",Star Sports 1 HD - Rs 19.00
 http://103.229.254.25:7001/play/a0a0/index.m3u8
 #EXTINF:-1 group-title="Sports",Star Sports 1 Hindi - Rs 19.00
 http://103.229.254.25:7001/play/a0dn/index.m3u8
-#EXTINF:-1 group-title="Sports",Star Sports 2 Hindi - Rs 19.00
-http://103.229.254.25:7001/play/a0aj/index.m3u8
-#EXTINF:-1 group-title="Sports",Star Sports 2 Hindi HD - Rs 19.00
-http://103.229.254.25:7001/play/a0cp/index.m3u8
 #EXTINF:-1 group-title="Sports",Star Sports 2 Tamil - Rs 4.00
 http://103.229.254.25:7001/play/a0dc/index.m3u8
 #EXTINF:-1 group-title="Sports",Star Sports 2 Tamil HD - Rs 19.00
@@ -334,12 +284,8 @@ http://103.229.254.25:7001/play/a0d1/index.m3u8
 http://103.229.254.25:7001/play/a0bz/index.m3u8
 #EXTINF:-1 group-title="Sports",Star Sports Select 2 HD - Rs 15.00
 http://103.229.254.25:7001/play/a0c1/index.m3u8
-#EXTINF:-1 group-title="Bangla",Sun Bangla - Free
-http://103.229.254.25:7001/play/a0cw/index.m3u8
 #EXTINF:-1 group-title="HD",Surya HD - Rs 19.00
 http://103.229.254.25:7001/play/a0dq/index.m3u8
-#EXTINF:-1 group-title="Sports",T Sports HD
-http://103.229.254.25:7001/play/a0f2/index.m3u8
 #EXTINF:-1 group-title="Sports",TEN 1
 http://103.229.254.25:7001/play/a07c/index.m3u8
 #EXTINF:-1 group-title="Sports",TEN 1
@@ -360,14 +306,8 @@ http://103.229.254.25:7001/play/a0ep/index.m3u8
 http://103.229.254.25:7001/play/a0ew/index.m3u8
 #EXTINF:-1 group-title="Other",ThePapare 2
 http://103.229.254.25:7001/play/a0ex/index.m3u8
-#EXTINF:-1 group-title="Other",Travelxp - Rs 3.00
-http://103.229.254.25:7001/play/a0bx/index.m3u8
 #EXTINF:-1 group-title="HD",Travelxp HD - Rs 9.00
 http://103.229.254.25:7001/play/a0cy/index.m3u8
-#EXTINF:-1 group-title="Sports",VARZESH
-http://103.229.254.25:7001/play/a0ey/index.m3u8
-#EXTINF:-1 group-title="Other",WILD EARTH
-http://103.229.254.25:7001/play/a0ev/index.m3u8
 #EXTINF:-1 group-title="Bangla",ZEE BANGLA
 http://103.229.254.25:7001/play/a06o/index.m3u8
 #EXTINF:-1 group-title="Movies",ZEE BANGLA CINEMA
@@ -390,9 +330,22 @@ http://103.229.254.25:7001/play/a09w/index.m3u8
 http://103.229.254.25:7001/play/a0d3/index.m3u8
 #EXTINF:-1 group-title="Hindi",Zee TV - Rs 19.00
 http://103.229.254.25:7001/play/a09t/index.m3u8
-#EXTINF:-1 group-title="HD",Zee TV HD - Rs 19.00
-http://103.229.254.25:7001/play/a0cs/index.m3u8
 #EXTINF:-1 group-title="HD",Zee Zest HD - Rs 10.00
 http://103.229.254.25:7001/play/a0dp/index.m3u8
 #EXTINF:-1 group-title="HD",asiantvHD
 http://103.229.254.25:7001/play/a063/index.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
