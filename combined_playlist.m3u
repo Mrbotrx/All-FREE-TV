@@ -1097,3 +1097,36 @@ http://146.59.253.52:8080/hindihitshd/index.m3u8
 http://163.61.227.29:8000/play/a02v/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Misc",FOX NEWS
 https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+
+
+#TEST ON LIVE KB TEAM 
+
+#EXTM3U
+#EXTINF:-1 ,  new movie
+http://172.16.50.14/DHAKA-FLIX-14/SOUTH%20INDIAN%20MOVIES/Hindi%20Dubbed/%282025%29/Sankrathiki%20Vasthunam%20%282025%29%201080p%20%5BDual%20Audio%5D/Sankranthiki%20Vasthunam%20%282025%29%20UNCUT%201080p%20WEBRip%20x265%20HEVC%20ESub%20%5BDual%20Audio%5D%5BHindi%205.1%2BTelugu%205.1%5D%20-HDHub.mkv
+#EXTINF:-1 ,24.Ground Zero hasmi 2025 movie
+http://172.16.50.14/DHAKA-FLIX-14/Hindi%20Movies/%282025%29/Ground%20Zero%20%282025%29%201080p/Ground%20Zero%20%282025%29%20Hindi%201080p%20AMZN%20WEBRip%20x264%20DD5.1%20ESub%20-%20mkvCinemas.mkv
+#EXTINF:-1 , new tamil movie
+http://172.16.50.14/DHAKA-FLIX-14/SOUTH%20INDIAN%20MOVIES/Hindi%20Dubbed/%282025%29/Sankrathiki%20Vasthunam%20%282025%29%201080p%20%5BDual%20Audio%5D/Sankranthiki%20Vasthunam%20%282025%29%20UNCUT%201080p%20WEBRip%20x265%20HEVC%20ESub%20%5BDual%20Audio%5D%5BHindi%205.1%2BTelugu%205.1%5D%20-HDHub.mkv
+#EXTINF:-1 tvg-id="AajTak.in" tvg-logo="https://i.imgur.com/RpIdCB3.png" group-title="News",Aaj Tak (404p)
+https://aajtaklive-amd.akamaized.net/hls/live/2014416/aajtak/aajtaklive/live_404p/chunks.m3u8
+#EXTINF:-1 group-title="Movies" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj06BkOW8UjaOwpAilzrYTWRGVrKo7kxpI5MzUxivMCqSxr_0qxTqsxp8E-8nbVmIzxaM3Qrbm1jsJAiPcHDqOwzseVdGUC26pK2eaMmRbqKV9UHcMWtPl_lhIIKTv5YnESoG8bF5TJQCgoDLkTy8nhHdRMSydeD8Dh46TRLO8CiVVJtT1uecO2ehEtTg/s400/@nurmd2006_20250426_212613_0000.png", Movie Bangla 
+http://alvetv.com/moviebanglatv/8080/index.m3u8
+#EXTINF:-1  tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/B4U_Kadak.png" group-title="Movies", B4U Kadak
+https://cdnb4u.wiseplayout.com/B4U_Kadak/HD720/HD720.m3u8
+#EXTINF:-1 ,23. B4U Movies
+https://cdnb4u.wiseplayout.com/B4U_Movies/master.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
