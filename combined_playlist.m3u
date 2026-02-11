@@ -13,6 +13,18 @@
 
 
 
+# Auto Scan : YES
+# Channels  : 3
+#---------------------------------------
+#EXTINF:-1 tvg-id="EkusheyTV.bd@SD",Ekushey TV (480p)
+https://ekusheyserver.com/etvlivesn.m3u8
+#EXTINF:-1 tvg-id="GaanBangla.bd@SD",Gaan Bangla
+http://vmi3039524.contaboserver.net:5050/music/index.m3u8
+#EXTINF:-1 tvg-id="DurontoTV.bd@SD",Duronto TV (720p)
+https://tvsen4.aynaott.com/durontotv/index.m3u8
+
+
+
 
 
 #EXTM3U
