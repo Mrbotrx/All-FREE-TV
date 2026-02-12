@@ -1,4 +1,77 @@
 #EXTM3U
+#EXTINF:-1,Star Jalsha
+https://tvsen1.aynaott.com/gUX8BJmNc2yF/index.m3u8
+#EXTINF:-1,BTV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1709/output/index.m3u8
+#EXTINF:-1,SOMOY TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1702/output/index.m3u8
+#EXTINF:-1,Ekattor TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1705/output/index.m3u8
+#EXTINF:-1,Channel 24
+https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8
+#EXTINF:-1,INDEPENDENT TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
+#EXTINF:-1,JAMUNA TV
+https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8
+#EXTINF:-1,ATN NEWS
+https://owrcovcrpy.gpcdn.net/bpk-tv/1706/output/index.m3u8
+#EXTINF:-1,Aakash Aath
+https://tvsen1.aynaott.com/Wm9Lv2RjZGT6/index.m3u8
+#EXTINF:-1,NTV
+https://tvsen1.aynaott.com/xV4jEKf3D9zc/index.m3u8
+#EXTINF:-1,Duronto
+https://tvsen4.aynaott.com/durontotv/index.m3u8
+#EXTINF:-1,Channel i
+https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8
+#EXTINF:-1,Bengali Betas
+https://tplay.live/originals/bengali-beats/index.m3u8
+#EXTINF:-1,ATN Bangla
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8
+#EXTINF:-1,24/7 Hindi Movies
+https://cloudfrontnet.vercel.app/tplay/playout/209612/master.m3u8
+#EXTINF:-1,24/7 Bangla Movies
+https://cloudfrontnet.vercel.app/tplay/playout/209627/master.m3u8
+#EXTINF:-1,24/7 Dubbed Movies
+https://cloudfrontnet.vercel.app/tplay/playout/209593/master.m3u8
+#EXTINF:-1,24/7 Bangla Waz
+https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8
+#EXTINF:-1,24/7 Gopal Bhar
+https://cloudfrontnet.vercel.app/tplay/playout/209611/master.m3u8
+#EXTINF:-1,24/7 Motu Patlu
+https://cloudfrontnet.vercel.app/tplay/playout/209622/master.m3u8
+#EXTINF:-1,24/7 Shinchan
+https://cloudfrontnet.vercel.app/tplay/playout/209901/master.m3u8
+#EXTINF:-1,24/7 Doraemon
+https://cloudfrontnet.vercel.app/tplay/playout/209902/master.m3u8
+#EXTINF:-1,24/7 Hindi Songs
+https://cloudfrontnet.vercel.app/tplay/playout/209592/master.m3u8
+#EXTINF:-1,24/7 Bangla Songs
+https://cloudfrontnet.vercel.app/tplay/playout/209587/master.m3u8
+#EXTINF:-1,BBC News
+https://tplay.live/out/news/bbc-news/index.m3u8
+#EXTINF:-1,GoldMines
+https://cdn-2.pishow.tv/live/1459/master.m3u8
+#EXTINF:-1,Sony Aath
+https://mrzplayin.fun/roarzon/stream.php?id=86ccc06d72b98d2e40d91bebe766fe96&e=.m3u8
+#EXTINF:-1,Hum TV
+https://ml-pull-dvc-myco.io:2096/HUM_ENTERTAINMENT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1,Ary Digital
+https://ml-pull-dvc-myco.io:2096/ARY_DIGITAL/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1,AAJ Entertainment
+https://ml-pull-dvc-myco.io:2096/AAJ_ENTERTAINMENT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1,Green Entertainment
+https://ml-pull-dvc-myco.io:2096/GREEN_ENTERTAINMENT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1,GEO Entertainment
+https://ml-pull-dvc-myco.io:2096/GEO_ENTERTAINEMNT/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1,Al jazeera
+https://live-hls-web-aje-fa.thehlive.com/AJE/01.m3u8
+
+
+
+
+
+
+#EXTM3U
 #extinf:-1 tvg-id="wcvbdt1.us@sd" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/wcvb-tv_%282021%29.svg/512px-wcvb-tv_%282021%29.svg.png" group-title="general",abc 5 boston ma (wcvb) (720p)
 https://aegis-cloudfront-1.tubi.video/c2e3094d-ad56-4c5f-9655-cd80df71fbab/playlist.m3u8
 #extinf:-1 tvg-id="wrtvdt1.us@sd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/wway_logo.png" group-title="news",abc 6 indianapolis in (wrtv) (720p)
