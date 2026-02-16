@@ -1,6 +1,5 @@
 #EXTM3U
-#EXTINF:-1,Welcome to PlayZ TV {Sponsored}
-https://playztv.pages.dev/promo/intro-2.mp4
+#EXTINF:-1,
 #EXTINF:-1,Ekushey TV
 http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 #EXTINF:-1,Deepto TV
@@ -289,3 +288,216 @@ https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/s
 http://115.187.41.216:8080/hls/digitalfashion/index.m3u8
 #EXTINF:-1,TraceSport
 https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
+
+
+
+#EXTM3U
+#EXTINF:-1,4TV News (576p)
+https://cdn-4.pishow.tv/live/1007/master.m3u8
+#EXTINF:-1,6 TV Telugu (576p)
+https://cdn-1.pishow.tv/live/232/master.m3u8
+#EXTINF:-1,9X Jhakaas (576p)
+https://cdn-3.pishow.tv/live/6/master.m3u8
+#EXTINF:-1,10 TV (576p)
+https://cdn-1.pishow.tv/live/391/master.m3u8
+#EXTINF:-1,99TV (720p)
+https://cdn-1.pishow.tv/live/1211/master.m3u8
+#EXTINF:-1,Aakaash Aath (720p)
+https://cdn-4.pishow.tv/live/969/master.m3u8
+#EXTINF:-1,ABN Andhra Jyoti (720p)
+https://cdn-1.pishow.tv/live/407/master.m3u8
+#EXTINF:-1,AKD Calcutta News (576p)
+https://cdn-2.pishow.tv/live/237/master.m3u8
+#EXTINF:-1,Anjan TV (576p)
+https://cdn-1.pishow.tv/live/993/master.m3u8
+#EXTINF:-1,Aradana TV (576p)
+https://cdn-1.pishow.tv/live/961/master.m3u8
+#EXTINF:-1,Bansal News (576p)
+https://cdn-2.pishow.tv/live/1051/master.m3u8
+#EXTINF:-1,Bhakthi TV (720p)
+https://cdn-1.pishow.tv/live/397/master.m3u8
+#EXTINF:-1,BIG TV (720p)
+https://cdn-1.pishow.tv/live/1059/master.m3u8
+#EXTINF:-1,BRK News (576p)
+https://cdn-1.pishow.tv/live/1037/master.m3u8
+#EXTINF:-1,Channel WIN (720p)
+https://cdn-4.pishow.tv/live/229/master.m3u8
+#EXTINF:-1,Chithiram (576p)
+https://cdn-6.pishow.tv/live/1243/master.m3u8
+#EXTINF:-1,CVR English (720p)
+https://cdn-2.pishow.tv/live/425/master.m3u8
+#EXTINF:-1,CVR Health (576p)
+https://cdn-6.pishow.tv/live/395/master.m3u8
+#EXTINF:-1,CVR OM Spiritual (576p)
+https://cdn-1.pishow.tv/live/957/master.m3u8
+#EXTINF:-1,DD Bharati (720p)
+https://cdn-1.pishow.tv/live/10/master.m3u8
+#EXTINF:-1,DD Bihar (720p)
+https://cdn-4.pishow.tv/live/35/master.m3u8
+#EXTINF:-1,DD Chhattisgarh (720p)
+https://cdn-1.pishow.tv/live/15/master.m3u8
+#EXTINF:-1,DD India (no logo) (576p)
+https://cdn-1.pishow.tv/live/23/master.m3u8
+#EXTINF:-1,DD Kisan (720p)
+https://cdn-6.pishow.tv/live/9/master.m3u8
+#EXTINF:-1,DD Madhya Pradesh (720p)
+https://cdn-1.pishow.tv/live/31/master.m3u8
+#EXTINF:-1,DD National (576p)
+https://cdn-1.pishow.tv/live/11/master.m3u8
+#EXTINF:-1,DD Rajasthan (720p)
+https://cdn-1.pishow.tv/live/34/master.m3u8
+#EXTINF:-1,DD Saptagiri
+https://cdn-1.pishow.tv/live/22/master.m3u8
+#EXTINF:-1,DD Sports (720p)
+https://cdn-6.pishow.tv/live/13/master.m3u8
+#EXTINF:-1,DD Urdu (720p)
+https://cdn-4.pishow.tv/live/8/master.m3u8
+#EXTINF:-1,DD Uttar Pradesh (720p)
+https://cdn-1.pishow.tv/live/36/master.m3u8
+#EXTINF:-1,DD Uttarakhand (720p)
+https://cdn-1.pishow.tv/live/17/master.m3u8
+#EXTINF:-1,DD Yadagiri (576p)
+https://cdn-1.pishow.tv/live/21/master.m3u8
+#EXTINF:-1,Dhamaal (576p)
+https://cdn-1.pishow.tv/live/1291/master.m3u8
+#EXTINF:-1,Dhamaka Movies B4U (576p)
+https://cdn-1.pishow.tv/live/235/master.m3u8
+#EXTINF:-1,Dhoom Music (720p)
+https://cdn-1.pishow.tv/live/1456/master.m3u8
+#EXTINF:-1,Fakt Marathi (720p) [Not 24/7]
+https://cdn-6.pishow.tv/live/10002/master.m3u8
+#EXTINF:-1,Goldmines (576p)
+https://cdn-2.pishow.tv/live/1459/master.m3u8
+#EXTINF:-1,Goldmines Movies (576p)
+https://cdn-2.pishow.tv/live/1461/master.m3u8
+#EXTINF:-1,Gyandarshan (720p)
+https://cdn-6.pishow.tv/live/14/master.m3u8
+#EXTINF:-1,Hi Dost! (720p)
+https://cdn-1.pishow.tv/live/224/master.m3u8
+#EXTINF:-1,Hindi Khabar (576p)
+https://cdn-2.pishow.tv/live/1041/master.m3u8
+#EXTINF:-1,Hindu Dharmam (576p)
+https://cdn-1.pishow.tv/live/959/master.m3u8
+#EXTINF:-1,HMTV (720p)
+https://cdn-1.pishow.tv/live/280/master.m3u8
+#EXTINF:-1,Hornbill TV (576p)
+https://cdn-2.pishow.tv/live/1463/master.m3u8
+#EXTINF:-1,IBC 24 (720p)
+https://cdn-3.pishow.tv/live/220/master.m3u8
+#EXTINF:-1,INews (720p)
+https://cdn-1.pishow.tv/live/411/master.m3u8
+#EXTINF:-1,Jai Maharashtra (576p)
+https://cdn-3.pishow.tv/live/1465/master.m3u8
+#EXTINF:-1,Jan TV (576p)
+https://cdn-6.pishow.tv/live/10004/master.m3u8
+#EXTINF:-1,Jeevan TV (576p)
+https://cdn-3.pishow.tv/live/1467/master.m3u8
+#EXTINF:-1,Jinvani Channel (720p)
+https://cdn-2.pishow.tv/live/989/master.m3u8
+#EXTINF:-1,Kairali News (720p)
+https://cdn-3.pishow.tv/live/1469/master.m3u8
+#EXTINF:-1,Kairali We (576p)
+https://cdn-3.pishow.tv/live/1530/master.m3u8
+#EXTINF:-1,Kappa TV (576p)
+https://cdn-3.pishow.tv/live/1123/master.m3u8
+#EXTINF:-1,Khushboo Bangla (720p)
+https://cdn-4.pishow.tv/live/1473/master.m3u8
+#EXTINF:-1,Madhimugam TV (576p)
+https://cdn-3.pishow.tv/live/1476/master.m3u8
+#EXTINF:-1,Maha Movie (576p)
+https://cdn-6.pishow.tv/live/10007/master.m3u8
+#EXTINF:-1,Malai Murasu TV (720p) [Not 24/7]
+https://cdn-3.pishow.tv/live/1606/master.m3u8
+#EXTINF:-1,Malar TV (720p) [Not 24/7]
+https://cdn-3.pishow.tv/live/473/master.m3u8
+#EXTINF:-1,Manoranjan Grand (720p)
+https://cdn-1.pishow.tv/live/1011/master.m3u8
+#EXTINF:-1,Manoranjan Movies (720p)
+https://cdn-2.pishow.tv/live/228/master.m3u8
+#EXTINF:-1,Manoranjan TV (720p)
+https://cdn-1.pishow.tv/live/1013/master.m3u8
+#EXTINF:-1,Mazhavil Manorama HD (1080p)
+https://cdn-7.pishow.tv/live/1129/master.m3u8
+#EXTINF:-1,Media One (720p)
+https://cdn-3.pishow.tv/live/1481/master.m3u8
+#EXTINF:-1,MK Six (720p) [Not 24/7]
+https://cdn-3.pishow.tv/live/1253/master.m3u8
+#EXTINF:-1,Music India (720p) [Not 24/7]
+https://cdn-2.pishow.tv/live/226/master.m3u8
+#EXTINF:-1,Nagaland TV (576p)
+https://cdn-6.pishow.tv/live/10014/master.m3u8
+#EXTINF:-1,News 1st (576p)
+https://cdn-3.pishow.tv/live/268/master.m3u8
+#EXTINF:-1,News Daily 24 (576p)
+https://cdn-6.pishow.tv/live/10009/master.m3u8
+#EXTINF:-1,News J (720p) [Not 24/7]
+https://cdn-3.pishow.tv/live/1279/master.m3u8
+#EXTINF:-1,News Live (576p)
+https://cdn-6.pishow.tv/live/10011/master.m3u8
+#EXTINF:-1,NewsTime Bangla (576p)
+https://cdn-2.pishow.tv/live/1494/master.m3u8
+#EXTINF:-1,Nireekshana TV (576p)
+https://cdn-1.pishow.tv/live/965/master.m3u8
+#EXTINF:-1,Orange Bangla TV (720p)
+https://cdn-4.pishow.tv/live/1499/master.m3u8
+#EXTINF:-1,Oscar Movies Bhojpuri (720p)
+https://cdn-4.pishow.tv/live/233/master.m3u8
+#EXTINF:-1,Peppers TV (751p)
+https://cdn-2.pishow.tv/live/1383/master.m3u8
+#EXTINF:-1,Polimer TV (720p)
+https://cdn-2.pishow.tv/live/1241/master.m3u8
+#EXTINF:-1,PTC Chakde (720p)
+https://cdn-1.pishow.tv/live/449/master.m3u8
+#EXTINF:-1,PTC News (576p)
+https://cdn-4.pishow.tv/live/1502/master.m3u8
+#EXTINF:-1,Public Music (720p) [Not 24/7]
+https://cdn-3.pishow.tv/live/441/master.m3u8
+#EXTINF:-1,Public TV (720p)
+https://cdn-3.pishow.tv/live/439/master.m3u8
+#EXTINF:-1,R Plus Gold (720p)
+https://cdn-4.pishow.tv/live/1231/master.m3u8
+#EXTINF:-1,Raj Musix Telugu (720p)
+https://cdn-1.pishow.tv/live/1213/master.m3u8
+#EXTINF:-1,Rupasi Bangla (720p)
+https://cdn-4.pishow.tv/live/1039/master.m3u8
+#EXTINF:-1,Saam TV
+https://cdn-3.pishow.tv/live/437/master.m3u8
+#EXTINF:-1,Sangeet Bangla (720p)
+https://cdn-4.pishow.tv/live/1143/master.m3u8
+#EXTINF:-1,Sangeet Bhojpuri (576p)
+https://cdn-4.pishow.tv/live/1293/master.m3u8
+#EXTINF:-1,Sangeet Marathi (720p)
+https://cdn-3.pishow.tv/live/1229/master.m3u8
+#EXTINF:-1,Sankara TV (576p)
+https://cdn-3.pishow.tv/live/1135/master.m3u8
+#EXTINF:-1,Santvani Channel (576p)
+https://cdn-2.pishow.tv/live/475/master.m3u8
+#EXTINF:-1,Shemaroo TV (720p)
+https://cdn-3.pishow.tv/live/230/master.m3u8
+#EXTINF:-1,Studio One + (720p)
+https://cdn-1.pishow.tv/live/276/master.m3u8
+#EXTINF:-1,Swadesh News (720p)
+https://cdn-2.pishow.tv/live/465/master.m3u8
+#EXTINF:-1,Swaraj Express SMBC (720p) [Not 24/7]
+https://cdn-2.pishow.tv/live/477/master.m3u8
+#EXTINF:-1,T News (720p)
+https://cdn-1.pishow.tv/live/385/master.m3u8
+#EXTINF:-1,Tehzeeb TV (720p)
+https://cdn-4.pishow.tv/live/239/master.m3u8
+#EXTINF:-1,Thanthi TV (576p)
+https://cdn-3.pishow.tv/live/1612/master.m3u8
+#EXTINF:-1,Total TV Haryana (576p)
+https://cdn-2.pishow.tv/live/1522/master.m3u8
+#EXTINF:-1,TV5 Kannada (576p)
+https://cdn-3.pishow.tv/live/1526/master.m3u8
+#EXTINF:-1,V6 News
+https://cdn-1.pishow.tv/live/389/master.m3u8
+#EXTINF:-1,Vanitha TV (576p)
+https://cdn-1.pishow.tv/live/393/master.m3u8
+#EXTINF:-1,Velicham TV (576p)
+https://cdn-3.pishow.tv/live/461/master.m3u8
+#EXTINF:-1,Vendhar TV (576p)
+https://cdn-3.pishow.tv/live/1271/master.m3u8
+#EXTINF:-1,Win TV (576p)
+https://cdn-4.pishow.tv/live/1531/master.m3u8
+
