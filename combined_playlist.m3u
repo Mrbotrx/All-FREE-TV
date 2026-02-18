@@ -1,5 +1,7 @@
 #EXTM3U
-#EXTM3U
+
+#EXTINF:-1 tvg-id="BTVNEWS" tvg-name="BTV NEWS" tvg-logo="https://www.btvlive.gov.bd/_next/image?url=https%3A%2F%2Fd38ll44lbmt52p.cloudfront.net%2Fcms%2Fchannel_poster%2F1735648543857_Poster.jpg&w=3840&q=75" group-title="Bangladesh TV",BTV NEWS
+https://www.btvlive.gov.bd/live/37f2df30-3edf-42f3-a2ee-6185002c841c/BD/d96eb7f4-83c2-4472-9597-3568390a8ebf/index.m3u8
 
 #EXTINF:-1 tvg-id="ANTARJAL" tvg-name="ANTARJAL MOVIE (KB)" tvg-logo="https://blockbusterbd.com//uploads/movies/posters/antarjal-1414584431695023371.jpg" group-title="Bangla Movie",ANTARJAL MOVIE (KB)
 http://103.225.94.27/Infobase/hdd-2/Bangla/Antarjal%20(2023)%201080p%20WEBDL.mp4
