@@ -1,4 +1,10 @@
 #EXTM3U
+#EXTM3U
+
+#EXTINF:-1 tvg-id="ANTARJAL" tvg-name="ANTARJAL MOVIE (KB)" tvg-logo="https://blockbusterbd.com//uploads/movies/posters/antarjal-1414584431695023371.jpg" group-title="Bangla Movie",ANTARJAL MOVIE (KB)
+http://103.225.94.27/Infobase/hdd-2/Bangla/Antarjal%20(2023)%201080p%20WEBDL.mp4
+
+
 #EXTINF:-1 group-title="Mix",Ekushey TV
 http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
 #EXTINF:-1 group-title="Mix",Deepto TV
