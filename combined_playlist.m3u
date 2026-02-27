@@ -1,1 +1,37 @@
+#EXTM3U
+# Live BDXI TV - ALL TIME NEW
+# Welcome to Live BDXI TV — your go-to place for watching Bangladeshi TV channels live, anytime!
+
+# 🔗 Main Playlist
+# Use this playlist in VLC or any IPTV player:
+# http://mrbotrx.github.io/index.m3u
+# Tip: Copy the URL above and paste into your player.
+
+# 🌐 Partner TV
+# Partner server:
+# https://kbtvpro.totalh.net/
+# Tip: Copy the server name and paste where needed.
+
+# 📂 Partner GitHub Playlist
+# Partner Playlist URL:
+# https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/refs/heads/main/combined_playlist.m3u
+# Tip: Copy this URL for use in VLC, IPTV Smarters, or other players.
+
+# ⚡ How to Use
+# 1. Open VLC or your preferred IPTV player
+# 2. Go to Media → Open Network Stream
+# 3. Paste any of the URLs above
+# 4. Enjoy Live BDXI TV and Partner Channels!
+
+# 🔗 URLs (One-Line Copy)
+# Main Playlist: http://mrbotrx.github.io/index.m3u
+# Partner TV: kbtvpro.totalh.net
+# Partner GitHub Playlist: https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/refs/heads/main/combined_playlist.m3u
+# Tip: Copy any URL above in one line and paste into VLC or IPTV player.
+
+# Hosted on GitHub Pages
+
+#EXTM3U
+
+#EXTINF:-1,Live BDXI TV - Main Playlist
 https://mrbotrx.github.io/index.m3u
