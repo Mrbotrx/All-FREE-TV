@@ -1,37 +1,49 @@
-name: Kbiptv auto-updete
+name: Sync to All-FREE-TV
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    - cron: '0 */2 * * *' # প্রতি ২ ঘণ্টা পর পর চলবে
+  workflow_dispatch: # ম্যানুয়ালি রান করার বাটন
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # এখানে পারমিশন কড়াকড়িভাবে দেওয়া হয়েছে
-    permissions:
-      contents: write
-    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout Source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
       - name: Setup Python
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install requests
+          pip install requests pytz
 
       - name: Run Bot
         env:
-          KBPROTV: ${{ secrets.KBPROTV }}
-        run: python3 bot.py
+          SOURCES: ${{ secrets.SOURCES }}
+        run: python bot.py
 
-      - name: Commit and Push
+      - name: Push to Target Repo
+        env:
+          MY_TOKEN: ${{ secrets.MY_PAT_TOKEN }}
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add combined_playlist.m3u
-          # যদি কোনো পরিবর্তন না থাকে তবে এরর দেবে না
-          git commit -m "Auto Update: $(date +'%d-%m-%Y %H:%M')" || exit 0
-          git push origin main
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+          # টার্গেট রিপোজিটরি (All-FREE-TV) ক্লোন করা
+          git clone https://${MY_TOKEN}@github.com/Mrbotrx/All-FREE-TV.git target_repo
+          
+          # তৈরি হওয়া ফাইলটি টার্গেট ফোল্ডারে কপি করা
+          if [ -f combined_playlist.m3u ]; then
+            cp combined_playlist.m3u target_repo/
+            cd target_repo
+            
+            # পরিবর্তন থাকলে পুশ করা
+            git add combined_playlist.m3u
+            git commit -m "Auto Sync: $(date +'%Y-%m-%d %H:%M')" || exit 0
+            git push origin main --force
+          else
+            echo "Error: Playlist file not found!"
+            exit 1
+          fi
