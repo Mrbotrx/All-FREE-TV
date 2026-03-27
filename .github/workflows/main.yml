@@ -1,0 +1,37 @@
+name: Kbiptv auto-updete
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # এখানে পারমিশন কড়াকড়িভাবে দেওয়া হয়েছে
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install requests
+
+      - name: Run Bot
+        env:
+          KBPROTV: ${{ secrets.KBPROTV }}
+        run: python3 bot.py
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add combined_playlist.m3u
+          # যদি কোনো পরিবর্তন না থাকে তবে এরর দেবে না
+          git commit -m "Auto Update: $(date +'%d-%m-%Y %H:%M')" || exit 0
+          git push origin main
