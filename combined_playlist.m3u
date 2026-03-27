@@ -2,11 +2,10 @@
 #=======================================================
 # 🔥 IPTV PLAYLIST 🔥
 # Developer   : Mrbot × KB CYBER TEAM
-# Updated     : 28-03-2026 | 12:35 AM (BD Time)
-# Version     : 7.0 (Strict Promo & MP4 Filter)
+# Updated     : 28-03-2026 | 12:37 AM (BD Time)
+# Version     : 9.0 (No Promo & No MP4)
 #=======================================================
-# ⚠️ Filtered: Removed all 'Promo' channels and 'MP4' links.
-# Only active M3U/M3U8 streams included.
+# ⚠️ Filtered: Promo and MP4 blocks are removed.
 #=======================================================
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPkLNzYmE3iWoT0RIUPh5dPx392smbo8bbbTfkUy2nWw&s=10"group-title="IPL 2026" group-title="",IPL 2026
