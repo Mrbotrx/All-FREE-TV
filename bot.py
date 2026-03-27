@@ -1,33 +1,47 @@
 import os
 import requests
+from datetime import datetime
+import pytz
 
-def main():
-    # Secret থেকে লিংকগুলো নেওয়া
-    sources_env = os.getenv("KBPROTV", "")
-    sources = [s.strip() for s in sources_env.split(",") if s.strip()]
-
-    if not sources:
-        print("No sources found! Check your KBPROTV secret.")
+def fetch_links():
+    # এখন সরাসরি 'KBTVPRO' থেকে ডাটা নেওয়া হচ্ছে
+    sources_raw = os.getenv("KBTVPRO", "")
+    if not sources_raw:
+        print("Error: No links found in KBTVPRO secret!")
         return
 
-    combined_content = "#EXTM3U\n"
-    for url in sources:
+    # লিঙ্ক লিস্ট তৈরি
+    SOURCES_LIST = [url.strip() for url in sources_raw.split(",") if url.strip()]
+    
+    # বিডি টাইম জোন
+    tz = pytz.timezone('Asia/Dhaka')
+    current_time = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
+
+    # M3U হেডার
+    header = f"#EXTM3U\n# Updated: {current_time} (BD Time)\n# Developer: Mrbot × KB CYBER TEAM\n\n"
+    combined_content = header
+    found_count = 0
+
+    for url in SOURCES_LIST:
         try:
-            print(f"Fetching: {url}")
-            resp = requests.get(url, timeout=15)
-            if resp.status_code == 200:
-                # প্রথম লাইন (#EXTM3U) বাদ দিয়ে বাকিটা নেওয়া
-                lines = resp.text.splitlines()
-                if lines and lines[0].startswith("#EXTM3U"):
-                    combined_content += "\n".join(lines[1:]) + "\n"
-                else:
-                    combined_content += resp.text + "\n"
-        except Exception as e:
-            print(f"Error: {e}")
+            response = requests.get(url, timeout=20)
+            if response.status_code == 200:
+                lines = response.text.splitlines()
+                for i in range(len(lines)):
+                    line = lines[i].strip()
+                    if line.startswith("#EXTINF"):
+                        if i + 1 < len(lines):
+                            next_line = lines[i+1].strip()
+                            # .mp4 ফিল্টার
+                            if next_line.startswith("http") and ".mp4" not in next_line.lower():
+                                combined_content += f"{line}\n{next_line}\n"
+                                found_count += 1
+        except:
+            continue
 
     with open("combined_playlist.m3u", "w", encoding="utf-8") as f:
         f.write(combined_content)
-    print("Playlist updated successfully!")
+    print(f"Success! {found_count} channels processed from KBTVPRO.")
 
 if __name__ == "__main__":
-    main()
+    fetch_links()
