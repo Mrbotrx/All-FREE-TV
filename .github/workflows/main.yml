@@ -1,9 +1,9 @@
-name: Sync to All-FREE-TV
+name: Sync KBTVPRO to All-FREE-TV
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # প্রতি ২ ঘণ্টা পর পর চলবে
-  workflow_dispatch: # ম্যানুয়ালি রান করার বাটন
+    - cron: '0 */2 * * *' 
+  workflow_dispatch: 
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -21,7 +21,7 @@ jobs:
 
       - name: Run Bot
         env:
-          SOURCES: ${{ secrets.SOURCES }}
+          KBTVPRO: ${{ secrets.KBTVPRO }}
         run: python bot.py
 
       - name: Push to Target Repo
@@ -34,6 +34,17 @@ jobs:
           # টার্গেট রিপোজিটরি (All-FREE-TV) ক্লোন করা
           git clone https://${MY_TOKEN}@github.com/Mrbotrx/All-FREE-TV.git target_repo
           
+          if [ -f combined_playlist.m3u ]; then
+            cp combined_playlist.m3u target_repo/
+            cd target_repo
+            
+            git add combined_playlist.m3u
+            git commit -m "Auto Sync KBTVPRO: $(date +'%Y-%m-%d %H:%M')" || exit 0
+            git push origin main --force
+          else
+            echo "Error: Playlist file not found!"
+            exit 1
+          fi
           # তৈরি হওয়া ফাইলটি টার্গেট ফোল্ডারে কপি করা
           if [ -f combined_playlist.m3u ]; then
             cp combined_playlist.m3u target_repo/
