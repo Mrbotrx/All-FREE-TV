@@ -1,6 +1,14 @@
 #EXTM3U
-# Updated: 28-03-2026 | 12:19 AM (BD Time)
-# Developer: Mrbot × KB CYBER TEAM
+#=======================================================
+# 🔥 IPTV PLAYLIST 🔥
+# Developer   : Mrbot × KB CYBER TEAM
+# Region      : Global / BD
+# Updated     : 28-03-2026 | 12:22 AM (BD Time)
+# Version     : 4.0 (SHA-Pinned Sync)
+#=======================================================
+# ⚠️ Disclaimer: All links are collected from public sources.
+# We do not store or host any media files.
+#=======================================================
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/falconcasthoster/images/refs/heads/main/FalconCast.png" group-title="Promo",FalconCast
 https://raw.githubusercontent.com/falconcasthoster/promo/refs/heads/main/nolink/master.m3u8
@@ -92,8 +100,6 @@ https://cdn.ottlive.co.in/kolkatatv/index.m3u8
 https://amg01448-samsungin-tv9bangla-samsungin-9lgnh.amagi.tv/playlist/amg01448-samsungin-tv9bangla-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Indian Bangla News",NK
 https://amg01218-republictvfast-amg01218c1-samsung-in-1918.playouts.now.amagi.tv/playlist/amg01218-republictvfast-rbangla-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-logo=""group,Sony Pal
-http://45.127.56.3:6699/live/Corpus-POL1/SRV4/2/SONY-PAL/live.mpd
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Star%20Plus.png"group-title="Hindi" group-title="",Star Plus
 http://103.229.254.25:7001/play/a09z/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Zee%20TV.png"group-title="Hindi" group-title="",Zee TV HD
