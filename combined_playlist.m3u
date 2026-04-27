@@ -2,7 +2,7 @@
 #=======================================================
 # 🔥 IPTV PLAYLIST 🔥
 # Developer   : Mrbot × KB CYBER TEAM
-# Updated     : 27-04-2026 | 05:29 PM (BD Time)
+# Updated     : 27-04-2026 | 07:13 PM (BD Time)
 # Version     : 9.0 (No Promo & No MP4)
 #=======================================================
 # ⚠️ KBTV PRO: https://kbtvpro.totalh.net/
@@ -75,6 +75,8 @@ https://d2dsoyvkr33m05.cloudfront.net/index_1.m3u8
 https://amg01448-samsungin-news18bangla-samsungin-ad-qy.amagi.tv/playlist/amg01448-samsungin-news18bangla-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Indian Bangla News",R Plus News
 https://thelegitpro.in/pntv/rplusnews24x7/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://jio.dinesh29.com.np/smart/ardinesh/logos/calcutta-news.png" group-title="Indian Bangla News",Calcutta News
+https://akdnetwork.co.in/live/cnnew/index.m3u8
 #EXTINF:-1 tvg-logo="https://jio.dinesh29.com.np/smart/ardinesh/logos/kolkata-tv.png" group-title="Indian Bangla News",Kolkata TV
 https://cdn.ottlive.co.in/kolkatatv/index.m3u8
 #EXTINF:-1 tvg-logo="https://jio.dinesh29.com.np/smart/ardinesh/logos/tv9-bangla.png" group-title="Indian Bangla News",TV9 Bangla
