@@ -21,7 +21,7 @@ https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/main/combined_playlist.m3u
 2. Media → Open Network Stream এ ক্লিক করো
 3. লিংক পেস্ট করো:
    ```text
-   https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/refs/heads/main/combined_playlist.m3u
+   https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/main/combined_playlist.m3u
    ```
 4. Play চাপো 📺
 
