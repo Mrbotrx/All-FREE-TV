@@ -9,7 +9,7 @@
 ## 🔗 Playlist Link (One-Click Copy)
 
 ```text
-https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/refs/heads/main/combined_playlist.m3u
+https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/main/combined_playlist.m3u
 ```
 
 
