@@ -1,60 +1,42 @@
-name: Sync KBTVPRO to All-FREE-TV
+name: Auto Sync KBTVPRO
 
 on:
+  push:
+  workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *' 
-  workflow_dispatch: 
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    - cron: "0 */6 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Source
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Setup Python
-        run: |
-          pip install requests pytz
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-      - name: Run Bot
+      - name: Install dependencies
+        run: pip install requests pytz
+
+      - name: Run script
         env:
           KBTVPRO: ${{ secrets.KBTVPRO }}
-        run: python bot.py
+        run: python your_script.py
 
-      - name: Push to Target Repo
-        env:
-          MY_TOKEN: ${{ secrets.MY_PAT_TOKEN }}
+      - name: Commit changes
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          
-          # টার্গেট রিপোজিটরি (All-FREE-TV) ক্লোন করা
-          git clone https://${MY_TOKEN}@github.com/Mrbotrx/All-FREE-TV.git target_repo
-          
-          if [ -f combined_playlist.m3u ]; then
-            cp combined_playlist.m3u target_repo/
-            cd target_repo
-            
-            git add combined_playlist.m3u
-            git commit -m "Auto Sync KBTVPRO: $(date +'%Y-%m-%d %H:%M')" || exit 0
-            git push origin main --force
-          else
-            echo "Error: Playlist file not found!"
-            exit 1
-          fi
-          # তৈরি হওয়া ফাইলটি টার্গেট ফোল্ডারে কপি করা
-          if [ -f combined_playlist.m3u ]; then
-            cp combined_playlist.m3u target_repo/
-            cd target_repo
-            
-            # পরিবর্তন থাকলে পুশ করা
-            git add combined_playlist.m3u
-            git commit -m "Auto Sync: $(date +'%Y-%m-%d %H:%M')" || exit 0
-            git push origin main --force
-          else
-            echo "Error: Playlist file not found!"
-            exit 1
-          fi
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add combined_playlist.m3u
+
+          git commit -m "Auto Sync KBTVPRO: $(date '+%Y-%m-%d %H:%M')" || exit 0
+
+      - name: Push changes (NO PAT)
+        run: git push origin mainmain
