@@ -3,6 +3,23 @@ import requests
 from datetime import datetime
 import pytz
 
+
+def build_header():
+    tz = pytz.timezone("Asia/Dhaka")
+    now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
+
+    return f"""#EXTM3U
+# =====================================
+#  AUTO IPTV PLAYLIST
+#  Website: https://kbtvpro.totalh.net/
+#  Updated: {now} (Bangladesh Time)
+#  Source: KBTVPRO Auto Bot
+#  Developer: Mrbot × KB CYBER TEAM
+# =====================================
+
+"""
+
+
 def fetch_links():
     sources_raw = os.getenv("KBTVPRO")
 
@@ -12,11 +29,7 @@ def fetch_links():
 
     SOURCES_LIST = [url.strip() for url in sources_raw.split(",") if url.strip()]
 
-    tz = pytz.timezone("Asia/Dhaka")
-    current_time = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-
-    header = f"#EXTM3U\n# Updated: {current_time} (BD Time)\n\n"
-    combined_content = header
+    combined_content = build_header()
     found_count = 0
 
     for url in SOURCES_LIST:
@@ -48,6 +61,7 @@ def fetch_links():
         f.write(combined_content)
 
     print(f"Success! {found_count} channels saved.")
+
 
 if __name__ == "__main__":
     fetch_links()
