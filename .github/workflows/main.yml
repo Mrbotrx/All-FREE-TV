@@ -27,7 +27,7 @@ jobs:
       - name: Run script
         env:
           KBTVPRO: ${{ secrets.KBTVPRO }}
-        run: python your_script.py
+        run: python bot.py
 
       - name: Commit changes
         run: |
