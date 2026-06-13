@@ -3,7 +3,7 @@ name: Auto Sync KBTVPRO
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "*/30 * * * *"   # প্রতি ৩০ মিনিট পর পর
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Run bot
         env:
-          KBTVPRO: ${{ secrets.KBTVPRO }}
+          KBTVPRO: ${{ secrets.KBTVPRO }}   # এই লাইনটা থাকবে
         run: python bot.py
 
       - name: Commit changes
