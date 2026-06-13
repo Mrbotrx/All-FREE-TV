@@ -3,10 +3,7 @@ import requests
 from datetime import datetime
 import pytz
 import time
-
-# ========== STRICT FILTERS - ONLY BD + INDIA + FASTEST CHANNELS (ALL FAST) ==========
-# Only BD and India channels. No international, no ABD, no global. 
-# Only fastest + most-viewed active channels allowed (high traffic & stable)
+import subprocess
 
 EXCLUDED_KEYWORDS = {
     "promo", ".mp4",
@@ -16,7 +13,6 @@ EXCLUDED_KEYWORDS = {
     "religious", "waaz", "namaz"
 }
 
-# ONLY BD + INDIA ALLOWED (fastest + most-viewed channels)
 ALLOWED_BD_IND_KEYWORDS = {
     "tv", "sports", "news", "entertainment", "film", "cinema", "drama", "jibon",
     "atv", "gtv", "ntv", "bharat tv", "ebs", "bharat", "jibon", "star plus",
@@ -24,18 +20,14 @@ ALLOWED_BD_IND_KEYWORDS = {
 }
 
 
-# ---------- HEADER (UNCHANGED) ----------
 def build_header():
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-
     return f"""#EXTM3U
 # =====================================
-#  AUTO IPTV PLAYLIST (ONLY BD + INDIA - ALL FASTEST CHANNELS)
-#  Website: https://kbtvpro.totalh.net/
+#  AUTO IPTV PLAYLIST (ONLY BD + INDIA - ALL FASTEST)
 #  Updated: {now} (Bangladesh Time)
 #  Source: KBTVPRO Auto Bot
-#  Developer: Mrbot × KB CYBER TEAM
 # =====================================
 
 """
@@ -50,35 +42,27 @@ def is_allowed_channel(name, url):
     text = name.lower() + " " + url.lower()
     if should_skip(text):
         return False
-
-    # STRICT FILTER: ONLY BD + INDIA (all fastest channels)
-    if any(x in text for x in ALLOWED_BD_IND_KEYWORDS):
-        return True
-
-    return False
+    return any(x in text for x in ALLOWED_BD_IND_KEYWORDS)
 
 
 def get_category(name):
     name = name.lower()
-
     if any(x in name for x in ["sport", "cricket", "football"]):
         return "Sports"
     if any(x in name for x in ["news", "bbc", "cnn"]):
         return "News"
     if any(x in name for x in ["movie", "film", "cinema"]):
         return "Movies"
-
     return "Others"
 
 
-# ---------- SPEED TEST (fastest filter - all fast channels) ----------
 def check_speed(url):
     try:
         start = time.time()
         r = requests.get(url, timeout=5, stream=True, headers={"User-Agent": "Mozilla/5.0"})
         if r.status_code != 200:
             return None
-        r.raw.read(1024)  # actual download test
+        r.raw.read(1024)
         end = time.time()
         return round(end - start, 3)
     except:
@@ -86,10 +70,11 @@ def check_speed(url):
 
 
 def fetch_links():
+    # 🔥 লুকানো সিক্রেট থেকে নেওয়া হয়েছে
     sources_raw = os.getenv("KBTVPRO")
     if not sources_raw:
-        print("KBTVPRO missing")
-        return
+        print("❌ KBTVPRO secret লুকানো আছে। GitHub Actions-এ set করো")
+        return None
 
     sources = [s.strip() for s in sources_raw.split(",") if s.strip()]
 
@@ -132,7 +117,7 @@ def fetch_links():
                         continue
 
                     speed = check_speed(line)
-                    if speed is None:   # dead channel
+                    if speed is None:
                         extinf = None
                         name = None
                         continue
@@ -152,7 +137,6 @@ def fetch_links():
         except Exception as e:
             print("Error:", e)
 
-    # Sort by speed - ONLY FASTEST channels first
     channels.sort(key=lambda x: x["speed"])
 
     output = build_header()
@@ -164,11 +148,21 @@ def fetch_links():
                 output += ch["extinf"] + "\n"
                 output += ch["url"] + "\n"
 
-    with open("playlist.m3u", "w", encoding="utf-8") as f:
+    with open("combined_playlist.m3u", "w", encoding="utf-8") as f:
         f.write(output)
 
-    print(f"Done! {len(channels)} fastest BD + India channels saved (all fast filtered)")
+    return "combined_playlist.m3u"
 
 
 if __name__ == "__main__":
-    fetch_links()
+    filename = fetch_links()
+    if filename:
+        try:
+            subprocess.run(["git", "add", filename], check=True)
+            subprocess.run(["git", "commit", "-m", f"Auto Sync: {datetime.now().strftime('%Y-%m-%d %H:%M')}"], check=True)
+            subprocess.run(["git", "push"], check=True)
+            print("✅ GitHub-এ আপডেট হয়েছে!")
+        except Exception as e:
+            print(f"⚠️ No new changes or error: {e}")
+    else:
+        print("❌ কোনো চ্যানেল সেভ হয়নি")
