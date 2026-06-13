@@ -60,3 +60,9 @@ https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/main/combined_playlist.m3u
 
 
 ✨ Enjoy Streaming! 📺
+
+
+
+
+
+[![Auto Sync KBTVPRO](https://github.com/Mrbotrx/All-FREE-TV/actions/workflows/sync.yml/badge.svg?branch=main&event=schedule)](https://github.com/Mrbotrx/All-FREE-TV/actions/workflows/sync.yml)
