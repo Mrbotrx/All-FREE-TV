@@ -10,58 +10,35 @@ import pytz
 SECRET_NAMES = ["KBTVPRO1", "KBTVPRO2", "KBTVPRO3"]
 
 OUTPUT_DIR = "KBPROTV"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 COMBINED_FILE = "combined_playlist.m3u"
+
 BDXI_FILE = os.path.join(OUTPUT_DIR, "bdxikb.m3u")
 IND_FILE = os.path.join(OUTPUT_DIR, "Ind_bd.m3u8")
 BD_FILE = os.path.join(OUTPUT_DIR, "Bd_KBPRO.m3u8")
 SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-
 # =========================
-# BLOCK FILTER (ANTI PROMO)
+# BLOCK FILTER
 # =========================
 BLOCK_KEYWORDS = {
-    "promo",
-    "promote",
-    "promotion",
-    ".mp4",
-    "advert",
-    "ads",
-    "trailer",
-    "sample",
-    "click here",
-    "subscribe",
-    "telegram",
-    "whatsapp",
-    "join now"
+    "promo", "promote", "advert", "ads",
+    ".mp4", "trailer", "sample",
+    "click", "subscribe", "telegram"
 }
-
 
 def is_clean(name, url):
     text = (name + " " + url).lower()
-
-    for bad in BLOCK_KEYWORDS:
-        if bad in text:
-            return False
-
-    return True
-
+    return not any(b in text for b in BLOCK_KEYWORDS)
 
 # =========================
 # HEADER
 # =========================
-def build_header():
+def header():
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-
-    return f"""#EXTM3U
-# AUTO KBPROTV CLEAN BOT
-# Updated: {now}
-
-"""
-
+    return f"#EXTM3U\n# KBTVPRO AUTO BOT\n# Updated: {now}\n\n"
 
 # =========================
 # LOAD SOURCES
@@ -80,54 +57,36 @@ def get_sources():
 
     return urls
 
-
 # =========================
-# RETRY FETCH
+# FETCH WITH RETRY
 # =========================
-def fetch(url, retries=3):
+def fetch(url, retries=2):
     headers = {"User-Agent": "Mozilla/5.0"}
 
     for i in range(retries):
         try:
-            print(f"[FETCH TRY {i+1}] {url}")
-
-            r = requests.get(url, timeout=10, headers=headers)
-
+            r = requests.get(url, timeout=6, headers=headers)
             if r.status_code == 200 and r.text:
                 return r.text
-
         except:
             pass
-
         time.sleep(1)
 
     return None
 
-
 # =========================
-# SPEED FILTER (FAST ONLY)
+# SPEED CHECK (FAST ONLY)
 # =========================
-def is_fast(url):
+def fast_ok(url):
     try:
         start = time.time()
-
-        r = requests.get(
-            url,
-            timeout=5,
-            stream=True,
-            headers={"User-Agent": "Mozilla/5.0"}
-        )
-
+        r = requests.get(url, timeout=4, stream=True)
         if r.status_code != 200:
             return False
-
-        r.raw.read(512)
-
-        return (time.time() - start) < 1.5
-
+        r.raw.read(256)
+        return (time.time() - start) < 1.3
     except:
         return False
-
 
 # =========================
 # PARSE M3U
@@ -138,7 +97,6 @@ def parse(urls):
 
     for u in urls:
         text = fetch(u)
-
         if not text:
             continue
 
@@ -146,9 +104,6 @@ def parse(urls):
 
         for line in text.splitlines():
             line = line.strip()
-
-            if not line:
-                continue
 
             if line.startswith("#EXTINF"):
                 extinf = line
@@ -158,18 +113,17 @@ def parse(urls):
 
                 name = extinf.split(",")[-1].strip()
 
-                # 🚫 CLEAN FILTER
+                # FILTER
                 if not is_clean(name, line):
                     extinf = None
                     continue
 
-                # ⚡ SPEED FILTER
-                if not is_fast(line):
+                # SPEED FILTER
+                if not fast_ok(line):
                     extinf = None
                     continue
 
-                key = (name.lower(), line)
-
+                key = (name, line)
                 if key in seen:
                     extinf = None
                     continue
@@ -177,45 +131,38 @@ def parse(urls):
                 seen.add(key)
 
                 channels.append({
-                    "name": name,
                     "extinf": extinf,
-                    "url": line
+                    "url": line,
+                    "name": name
                 })
 
                 extinf = None
 
     return channels
 
-
 # =========================
 # CATEGORY
 # =========================
-def category(name):
+def cat(name):
     n = name.lower()
 
-    if "sport" in n or "cricket" in n:
+    if "sport" in n:
         return "SPORTS"
-
     if "zee" in n or "sony" in n or "star jalsha" in n:
         return "BDXI"
-
-    if "atn" in n or "ntv" in n or "rtv" in n or "bangla" in n:
+    if "atn" in n or "ntv" in n or "bangla" in n:
         return "BD"
-
     return "IND"
-
 
 # =========================
 # SAVE FILE
 # =========================
 def save(path, items):
     with open(path, "w", encoding="utf-8") as f:
-        f.write(build_header())
-
+        f.write(header())
         for c in items:
             f.write(c["extinf"] + "\n")
             f.write(c["url"] + "\n")
-
 
 # =========================
 # MAIN
@@ -232,7 +179,7 @@ def main():
     bdxi, ind, bd, sports = [], [], [], []
 
     for c in data:
-        t = category(c["name"])
+        t = cat(c["name"])
 
         if t == "BDXI":
             bdxi.append(c)
@@ -249,15 +196,12 @@ def main():
     save(BD_FILE, bd)
     save(SPORTS_FILE, sports)
 
-    print("\n========== FINAL CLEAN REPORT ==========")
-    print("BDXI   :", len(bdxi))
-    print("IND    :", len(ind))
-    print("BD     :", len(bd))
-    print("SPORTS :", len(sports))
-    print("--------------------------------------")
-    print("TOTAL  :", len(data))
-    print("======================================\n")
-
+    print("\n===== FINAL REPORT =====")
+    print("TOTAL:", len(data))
+    print("BDXI:", len(bdxi))
+    print("IND:", len(ind))
+    print("BD:", len(bd))
+    print("SPORTS:", len(sports))
 
 if __name__ == "__main__":
     main()
