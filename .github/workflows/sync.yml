@@ -1,41 +1,43 @@
 name: Auto Sync KBTVPRO
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "*/30 * * * *"   # প্রতি ৩০ মিনিট পর পর
+workflow_dispatch:
+schedule:
+- cron: "*/30 * * * *"
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+build:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: true
+steps:
+  - name: Checkout Repo
+    uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+  - name: Setup Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install requests pytz
+  - name: Install Dependencies
+    run: |
+      pip install requests pytz
 
-      - name: Run bot
-        env:
-          KBTVPRO: ${{ secrets.KBTVPRO }}   # এই লাইনটা থাকবে
-        run: python bot.py
+  - name: Run Bot
+    env:
+      KBTVPRO1: ${{ secrets.KBTVPRO1 }}
+      KBTVPRO2: ${{ secrets.KBTVPRO2 }}
+      KBTVPRO3: ${{ secrets.KBTVPRO3 }}
+    run: python bot.py
 
-      - name: Commit changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+  - name: Commit Changes
+    run: |
+      git config --global user.name "github-actions[bot]"
+      git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add combined_playlist.m3u
+      git add KBPROTV/
 
-          git commit -m "Auto Sync: $(date '+%Y-%m-%d %H:%M')" || echo "No changes"
+      git commit -m "Auto Sync: $(date '+%Y-%m-%d %H:%M')" || echo "No changes"
 
-      - name: Push changes
-        run: git push origin main
+  - name: Push Changes
+    run: |
+      git push origin main
