@@ -21,28 +21,69 @@ BD_FILE = os.path.join(OUTPUT_DIR, "Bd_KBPRO.m3u8")
 SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 
 # =========================
-# FILTER
+# BLOCK FILTER (STRICT)
 # =========================
 BLOCK = {
-    "promo", "promote", "advert", "ads",
-    ".mp4", "trailer", "sample",
-    "click", "subscribe", "telegram"
+    "promo", "promote", "advert", "ads", "advertisement",
+    "sample", "trailer", "preview",
+    "telegram", "click", "subscribe", "join",
+    ".mp4", "mp4", ".mkv", ".avi", ".mov"
 }
 
-def clean(name, url):
-    text = (name + " " + url).lower()
-    return not any(b in text for b in BLOCK)
+# =========================
+# HD + LIVE KEYWORDS
+# =========================
+HD = {"hd", "1080", "720", "fhd", "uhd", "4k"}
+LIVE = {"live", "sports", "news", "entertainment"}
 
 # =========================
-# HEADER
+# AI SCORE SYSTEM
 # =========================
-def header():
+def ai_score(name, url, resp_time):
+    text = (name + " " + url).lower()
+    score = 0
+
+    if any(b in text for b in BLOCK):
+        return 0
+
+    if any(h in text for h in HD):
+        score += 40
+
+    if any(l in text for l in LIVE):
+        score += 20
+
+    if "m3u8" in url.lower():
+        score += 20
+
+    if resp_time < 1.0:
+        score += 20
+    elif resp_time < 2.0:
+        score += 10
+
+    return score
+
+# =========================
+# HEADER WITH AUTO COUNT
+# =========================
+def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-    return f"#EXTM3U\n# KBTVPRO ULTRA BOT\n# Updated: {now}\n\n"
+
+    return f"""#EXTM3U
+# KBTVPRO AI HD SCORE BOT
+# Updated: {now}
+# =====================================
+# TOTAL CHANNELS : {total}
+# BDXI CHANNELS   : {bdxi}
+# IND CHANNELS    : {ind}
+# BD CHANNELS     : {bd}
+# SPORTS CHANNELS : {sports}
+# =====================================
+
+"""
 
 # =========================
-# SOURCES
+# GET SOURCES
 # =========================
 def get_sources():
     urls = []
@@ -53,7 +94,7 @@ def get_sources():
     return urls
 
 # =========================
-# ASYNC FETCH + DEAD FILTER
+# FETCH (ASYNC + FAST)
 # =========================
 async def fetch(session, url):
     try:
@@ -64,20 +105,17 @@ async def fetch(session, url):
                 return None
 
             text = await r.text()
+            resp_time = time.time() - start
 
-            # DEAD STREAM FILTER (FAST CHECK)
-            if (time.time() - start) > 2.8:
-                return None
-
-            return text
+            return text, resp_time
 
     except:
         return None
 
 # =========================
-# PARSE M3U
+# PARSE + SCORE FILTER
 # =========================
-def parse(text):
+def parse(text, resp_time):
     channels = []
     extinf = None
 
@@ -91,7 +129,9 @@ def parse(text):
         if extinf and line.startswith("http"):
             name = extinf.split(",")[-1].strip()
 
-            if clean(name, line):
+            score = ai_score(name, line, resp_time)
+
+            if score >= 60:
                 channels.append({
                     "extinf": extinf,
                     "url": line,
@@ -103,12 +143,12 @@ def parse(text):
     return channels
 
 # =========================
-# WORKER (ASYNC PARALLEL)
+# WORKER
 # =========================
 async def worker(urls):
-    connector = aiohttp.TCPConnector(limit=40)
-    async with aiohttp.ClientSession(connector=connector) as session:
+    connector = aiohttp.TCPConnector(limit=50)
 
+    async with aiohttp.ClientSession(connector=connector) as session:
         tasks = [fetch(session, u) for u in urls]
         results = await asyncio.gather(*tasks)
 
@@ -116,7 +156,8 @@ async def worker(urls):
 
     for r in results:
         if r:
-            all_channels.extend(parse(r))
+            text, rt = r
+            all_channels.extend(parse(text, rt))
 
     return all_channels
 
@@ -137,42 +178,29 @@ def cat(name):
 # =========================
 # SAVE FILE
 # =========================
-def save(path, items):
+def save(path, items, h):
     with open(path, "w", encoding="utf-8") as f:
-        f.write(header())
+        f.write(h)
         for c in items:
             f.write(c["extinf"] + "\n")
             f.write(c["url"] + "\n")
 
 # =========================
-# READ FILE
+# COMBINED FILE
 # =========================
-def read_file(path):
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return f.read()
-    except:
-        return ""
+def build_combined(total, bdxi, ind, bd, sports):
+    files = [BDXI_FILE, IND_FILE, BD_FILE, SPORTS_FILE]
 
-# =========================
-# BUILD COMBINED (MERGE ALL FILES)
-# =========================
-def build_combined():
-    files = [
-        BDXI_FILE,
-        IND_FILE,
-        BD_FILE,
-        SPORTS_FILE
-    ]
-
-    content = header()
+    content = header(total, bdxi, ind, bd, sports)
 
     for f in files:
-        data = read_file(f)
-        data = data.replace("#EXTM3U", "").strip()
-
-        content += f"\n# ===== {os.path.basename(f)} =====\n"
-        content += data + "\n"
+        try:
+            with open(f, "r", encoding="utf-8") as file:
+                data = file.read().replace("#EXTM3U", "").strip()
+                content += f"\n# ===== {os.path.basename(f)} =====\n"
+                content += data + "\n"
+        except:
+            pass
 
     with open(COMBINED_FILE, "w", encoding="utf-8") as f:
         f.write(content)
@@ -199,7 +227,7 @@ async def main():
             seen.add(key)
             unique.append(c)
 
-    # SPLIT CATEGORY
+    # CATEGORY SPLIT
     bdxi, ind, bd, sports = [], [], [], []
 
     for c in unique:
@@ -214,28 +242,27 @@ async def main():
         else:
             ind.append(c)
 
+    # HEADERS
+    h = header(len(unique), len(bdxi), len(ind), len(bd), len(sports))
+
     # SAVE FILES
-    save(BDXI_FILE, bdxi)
-    save(IND_FILE, ind)
-    save(BD_FILE, bd)
-    save(SPORTS_FILE, sports)
+    save(BDXI_FILE, bdxi, h)
+    save(IND_FILE, ind, h)
+    save(BD_FILE, bd, h)
+    save(SPORTS_FILE, sports, h)
 
-    # BUILD MASTER FILE (IMPORTANT)
-    build_combined()
+    # BUILD MASTER
+    build_combined(len(unique), len(bdxi), len(ind), len(bd), len(sports))
 
-    # =========================
     # REPORT
-    # =========================
-    print("\n===== FINAL REPORT =====")
+    print("\n===== FINAL AI HD REPORT =====")
     print("TOTAL   :", len(unique))
     print("BDXI    :", len(bdxi))
     print("IND     :", len(ind))
     print("BD      :", len(bd))
     print("SPORTS  :", len(sports))
-    print("========================\n")
+    print("==============================\n")
 
-# =========================
 # RUN
-# =========================
 if __name__ == "__main__":
     asyncio.run(main())
