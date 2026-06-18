@@ -10,14 +10,43 @@ import pytz
 SECRET_NAMES = ["KBTVPRO1", "KBTVPRO2", "KBTVPRO3"]
 
 OUTPUT_DIR = "KBPROTV"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 COMBINED_FILE = "combined_playlist.m3u"
-
 BDXI_FILE = os.path.join(OUTPUT_DIR, "bdxikb.m3u")
 IND_FILE = os.path.join(OUTPUT_DIR, "Ind_bd.m3u8")
 BD_FILE = os.path.join(OUTPUT_DIR, "Bd_KBPRO.m3u8")
 SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# =========================
+# BLOCK FILTER (ANTI PROMO)
+# =========================
+BLOCK_KEYWORDS = {
+    "promo",
+    "promote",
+    "promotion",
+    ".mp4",
+    "advert",
+    "ads",
+    "trailer",
+    "sample",
+    "click here",
+    "subscribe",
+    "telegram",
+    "whatsapp",
+    "join now"
+}
+
+
+def is_clean(name, url):
+    text = (name + " " + url).lower()
+
+    for bad in BLOCK_KEYWORDS:
+        if bad in text:
+            return False
+
+    return True
 
 
 # =========================
@@ -26,7 +55,12 @@ SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 def build_header():
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-    return f"#EXTM3U\n# AUTO KBPROTV\n# Updated: {now}\n\n"
+
+    return f"""#EXTM3U
+# AUTO KBPROTV CLEAN BOT
+# Updated: {now}
+
+"""
 
 
 # =========================
@@ -48,7 +82,7 @@ def get_sources():
 
 
 # =========================
-# SAFE FETCH (RETRY)
+# RETRY FETCH
 # =========================
 def fetch(url, retries=3):
     headers = {"User-Agent": "Mozilla/5.0"}
@@ -96,7 +130,7 @@ def is_fast(url):
 
 
 # =========================
-# PARSER
+# PARSE M3U
 # =========================
 def parse(urls):
     channels = []
@@ -124,7 +158,12 @@ def parse(urls):
 
                 name = extinf.split(",")[-1].strip()
 
-                # SPEED FILTER
+                # 🚫 CLEAN FILTER
+                if not is_clean(name, line):
+                    extinf = None
+                    continue
+
+                # ⚡ SPEED FILTER
                 if not is_fast(line):
                     extinf = None
                     continue
@@ -204,22 +243,20 @@ def main():
         else:
             ind.append(c)
 
-    # SAVE FILES
     save(COMBINED_FILE, data)
     save(BDXI_FILE, bdxi)
     save(IND_FILE, ind)
     save(BD_FILE, bd)
     save(SPORTS_FILE, sports)
 
-    # REPORT
-    print("\n========== REPORT ==========")
+    print("\n========== FINAL CLEAN REPORT ==========")
     print("BDXI   :", len(bdxi))
     print("IND    :", len(ind))
     print("BD     :", len(bd))
     print("SPORTS :", len(sports))
-    print("---------------------------")
+    print("--------------------------------------")
     print("TOTAL  :", len(data))
-    print("===========================\n")
+    print("======================================\n")
 
 
 if __name__ == "__main__":
