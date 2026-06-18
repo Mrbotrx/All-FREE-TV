@@ -3,6 +3,7 @@ import asyncio
 import aiohttp
 from datetime import datetime
 import pytz
+import time
 
 # =========================
 # CONFIG
@@ -20,12 +21,12 @@ BD_FILE = os.path.join(OUTPUT_DIR, "Bd_KBPRO.m3u8")
 SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 
 # =========================
-# FILTER
+# FILTER (PROMO / JUNK)
 # =========================
 BLOCK = {
     "promo", "advert", "ads", "promotion",
     ".mp4", "trailer", "sample",
-    "click", "subscribe"
+    "click", "subscribe", "telegram"
 }
 
 def clean(name, url):
@@ -38,7 +39,7 @@ def clean(name, url):
 def header():
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-    return f"#EXTM3U\n# KBTVPRO ASYNC BOT\n# Updated: {now}\n\n"
+    return f"#EXTM3U\n# KBTVPRO ULTRA FAST AI BOT\n# Updated: {now}\n\n"
 
 # =========================
 # SOURCES
@@ -52,7 +53,7 @@ def get_sources():
     return urls
 
 # =========================
-# ASYNC FETCH
+# FETCH M3U (ASYNC)
 # =========================
 async def fetch(session, url):
     try:
@@ -63,7 +64,25 @@ async def fetch(session, url):
         return None
 
 # =========================
-# PARSE SINGLE M3U
+# DEAD STREAM CHECK (AI STYLE)
+# =========================
+async def check_stream(session, url):
+    try:
+        start = time.time()
+        async with session.get(url, timeout=6) as r:
+            if r.status != 200:
+                return False
+
+            await r.content.read(256)
+            speed = time.time() - start
+
+            # AI RULE: slow = dead
+            return speed < 1.5
+    except:
+        return False
+
+# =========================
+# PARSE M3U
 # =========================
 def parse_m3u(text):
     channels = []
@@ -81,8 +100,8 @@ def parse_m3u(text):
 
             if clean(name, line):
                 channels.append({
-                    "name": name,
                     "extinf": extinf,
+                    "name": name,
                     "url": line
                 })
 
@@ -91,20 +110,42 @@ def parse_m3u(text):
     return channels
 
 # =========================
-# ASYNC WORKER
+# ASYNC WORKER (ULTRA FAST)
 # =========================
 async def worker(urls):
-    async with aiohttp.ClientSession() as session:
+    connector = aiohttp.TCPConnector(limit=50)
+
+    async with aiohttp.ClientSession(connector=connector) as session:
+
+        # STEP 1: fetch all m3u in parallel
         tasks = [fetch(session, u) for u in urls]
         results = await asyncio.gather(*tasks)
 
-    all_channels = []
+        raw_channels = []
 
-    for res in results:
-        if res:
-            all_channels.extend(parse_m3u(res))
+        for r in results:
+            if r:
+                raw_channels.extend(parse_m3u(r))
 
-    return all_channels
+        # STEP 2: dead stream filter (parallel check)
+        valid = []
+        seen = set()
+
+        check_tasks = []
+
+        for c in raw_channels:
+            key = (c["name"], c["url"])
+            if key not in seen:
+                seen.add(key)
+                check_tasks.append((c, check_stream(session, c["url"])))
+
+        results = await asyncio.gather(*[t[1] for t in check_tasks])
+
+        for i, ok in enumerate(results):
+            if ok:
+                valid.append(check_tasks[i][0])
+
+        return valid
 
 # =========================
 # CATEGORY
@@ -142,18 +183,9 @@ async def main():
 
     data = await worker(urls)
 
-    seen = set()
-    unique = []
-
-    for c in data:
-        key = (c["name"], c["url"])
-        if key not in seen:
-            seen.add(key)
-            unique.append(c)
-
     bdxi, ind, bd, sports = [], [], [], []
 
-    for c in unique:
+    for c in data:
         t = cat(c["name"])
 
         if t == "BDXI":
@@ -165,21 +197,19 @@ async def main():
         else:
             ind.append(c)
 
-    save(COMBINED_FILE, unique)
+    save(COMBINED_FILE, data)
     save(BDXI_FILE, bdxi)
     save(IND_FILE, ind)
     save(BD_FILE, bd)
     save(SPORTS_FILE, sports)
 
-    print("\n===== ASYNC DONE =====")
-    print("TOTAL:", len(unique))
+    print("\n===== ULTRA AI REPORT =====")
+    print("TOTAL:", len(data))
     print("BDXI:", len(bdxi))
     print("IND:", len(ind))
     print("BD:", len(bd))
     print("SPORTS:", len(sports))
+    print("===========================")
 
-# =========================
-# RUN
-# =========================
 if __name__ == "__main__":
     asyncio.run(main())
