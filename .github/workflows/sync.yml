@@ -22,8 +22,10 @@ jobs:
         with:
           python-version: "3.11"
 
+      # ✅ FIX ONLY HERE
       - name: Install Dependencies
-        run: pip install requests pytz
+        run: |
+          pip install requests pytz aiohttp
 
       - name: Run Bot
         env:
