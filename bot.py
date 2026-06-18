@@ -1,9 +1,9 @@
 import os
 import asyncio
 import aiohttp
+import time
 from datetime import datetime
 import pytz
-import time
 
 # =========================
 # CONFIG
@@ -21,7 +21,7 @@ BD_FILE = os.path.join(OUTPUT_DIR, "Bd_KBPRO.m3u8")
 SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 
 # =========================
-# FILTER (PROMO / JUNK)
+# FILTER (PROMO REMOVE)
 # =========================
 BLOCK = {
     "promo", "advert", "ads", "promotion",
@@ -39,7 +39,7 @@ def clean(name, url):
 def header():
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-    return f"#EXTM3U\n# KBTVPRO ULTRA FAST AI BOT\n# Updated: {now}\n\n"
+    return f"#EXTM3U\n# KBTVPRO AI ULTRA BOT\n# Updated: {now}\n\n"
 
 # =========================
 # SOURCES
@@ -53,38 +53,31 @@ def get_sources():
     return urls
 
 # =========================
-# FETCH M3U (ASYNC)
+# ASYNC FETCH (FAST)
 # =========================
 async def fetch(session, url):
     try:
-        async with session.get(url, timeout=10) as r:
-            if r.status == 200:
-                return await r.text()
+        start = time.time()
+
+        async with session.get(url, timeout=8) as r:
+            if r.status != 200:
+                return None
+
+            text = await r.text()
+
+            # AI DEAD STREAM CHECK (FAST RULE)
+            if (time.time() - start) > 2.5:
+                return None
+
+            return text
+
     except:
         return None
 
 # =========================
-# DEAD STREAM CHECK (AI STYLE)
-# =========================
-async def check_stream(session, url):
-    try:
-        start = time.time()
-        async with session.get(url, timeout=6) as r:
-            if r.status != 200:
-                return False
-
-            await r.content.read(256)
-            speed = time.time() - start
-
-            # AI RULE: slow = dead
-            return speed < 1.5
-    except:
-        return False
-
-# =========================
 # PARSE M3U
 # =========================
-def parse_m3u(text):
+def parse(text):
     channels = []
     extinf = None
 
@@ -101,8 +94,8 @@ def parse_m3u(text):
             if clean(name, line):
                 channels.append({
                     "extinf": extinf,
-                    "name": name,
-                    "url": line
+                    "url": line,
+                    "name": name
                 })
 
             extinf = None
@@ -110,42 +103,22 @@ def parse_m3u(text):
     return channels
 
 # =========================
-# ASYNC WORKER (ULTRA FAST)
+# WORKER (ULTRA FAST PARALLEL)
 # =========================
 async def worker(urls):
-    connector = aiohttp.TCPConnector(limit=50)
-
+    connector = aiohttp.TCPConnector(limit=30)
     async with aiohttp.ClientSession(connector=connector) as session:
 
-        # STEP 1: fetch all m3u in parallel
         tasks = [fetch(session, u) for u in urls]
         results = await asyncio.gather(*tasks)
 
-        raw_channels = []
+    all_channels = []
 
-        for r in results:
-            if r:
-                raw_channels.extend(parse_m3u(r))
+    for r in results:
+        if r:
+            all_channels.extend(parse(r))
 
-        # STEP 2: dead stream filter (parallel check)
-        valid = []
-        seen = set()
-
-        check_tasks = []
-
-        for c in raw_channels:
-            key = (c["name"], c["url"])
-            if key not in seen:
-                seen.add(key)
-                check_tasks.append((c, check_stream(session, c["url"])))
-
-        results = await asyncio.gather(*[t[1] for t in check_tasks])
-
-        for i, ok in enumerate(results):
-            if ok:
-                valid.append(check_tasks[i][0])
-
-        return valid
+    return all_channels
 
 # =========================
 # CATEGORY
@@ -183,9 +156,19 @@ async def main():
 
     data = await worker(urls)
 
-    bdxi, ind, bd, sports = [], [], [], []
+    # REMOVE DUPLICATES
+    seen = set()
+    unique = []
 
     for c in data:
+        key = (c["name"], c["url"])
+        if key not in seen:
+            seen.add(key)
+            unique.append(c)
+
+    bdxi, ind, bd, sports = [], [], [], []
+
+    for c in unique:
         t = cat(c["name"])
 
         if t == "BDXI":
@@ -197,19 +180,22 @@ async def main():
         else:
             ind.append(c)
 
-    save(COMBINED_FILE, data)
+    save(COMBINED_FILE, unique)
     save(BDXI_FILE, bdxi)
     save(IND_FILE, ind)
     save(BD_FILE, bd)
     save(SPORTS_FILE, sports)
 
-    print("\n===== ULTRA AI REPORT =====")
-    print("TOTAL:", len(data))
-    print("BDXI:", len(bdxi))
-    print("IND:", len(ind))
-    print("BD:", len(bd))
-    print("SPORTS:", len(sports))
-    print("===========================")
+    # =========================
+    # REPORT
+    # =========================
+    print("\n===== AI ULTRA REPORT =====")
+    print("TOTAL   :", len(unique))
+    print("BDXI    :", len(bdxi))
+    print("IND     :", len(ind))
+    print("BD      :", len(bd))
+    print("SPORTS  :", len(sports))
+    print("===========================\n")
 
 if __name__ == "__main__":
     asyncio.run(main())
