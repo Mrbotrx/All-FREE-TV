@@ -1,6 +1,6 @@
 import os
-import time
-import requests
+import asyncio
+import aiohttp
 from datetime import datetime
 import pytz
 
@@ -20,17 +20,17 @@ BD_FILE = os.path.join(OUTPUT_DIR, "Bd_KBPRO.m3u8")
 SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 
 # =========================
-# BLOCK FILTER
+# FILTER
 # =========================
-BLOCK_KEYWORDS = {
-    "promo", "promote", "advert", "ads",
+BLOCK = {
+    "promo", "advert", "ads", "promotion",
     ".mp4", "trailer", "sample",
-    "click", "subscribe", "telegram"
+    "click", "subscribe"
 }
 
-def is_clean(name, url):
+def clean(name, url):
     text = (name + " " + url).lower()
-    return not any(b in text for b in BLOCK_KEYWORDS)
+    return not any(b in text for b in BLOCK)
 
 # =========================
 # HEADER
@@ -38,107 +38,73 @@ def is_clean(name, url):
 def header():
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-    return f"#EXTM3U\n# KBTVPRO AUTO BOT\n# Updated: {now}\n\n"
+    return f"#EXTM3U\n# KBTVPRO ASYNC BOT\n# Updated: {now}\n\n"
 
 # =========================
-# LOAD SOURCES
+# SOURCES
 # =========================
 def get_sources():
     urls = []
-
     for s in SECRET_NAMES:
         raw = os.getenv(s)
-
-        if not raw:
-            print(f"[WARN] Missing secret: {s}")
-            continue
-
-        urls.extend([x.strip() for x in raw.split(",") if x.strip()])
-
+        if raw:
+            urls += [x.strip() for x in raw.split(",") if x.strip()]
     return urls
 
 # =========================
-# FETCH WITH RETRY
+# ASYNC FETCH
 # =========================
-def fetch(url, retries=2):
-    headers = {"User-Agent": "Mozilla/5.0"}
-
-    for i in range(retries):
-        try:
-            r = requests.get(url, timeout=6, headers=headers)
-            if r.status_code == 200 and r.text:
-                return r.text
-        except:
-            pass
-        time.sleep(1)
-
-    return None
-
-# =========================
-# SPEED CHECK (FAST ONLY)
-# =========================
-def fast_ok(url):
+async def fetch(session, url):
     try:
-        start = time.time()
-        r = requests.get(url, timeout=4, stream=True)
-        if r.status_code != 200:
-            return False
-        r.raw.read(256)
-        return (time.time() - start) < 1.3
+        async with session.get(url, timeout=10) as r:
+            if r.status == 200:
+                return await r.text()
     except:
-        return False
+        return None
 
 # =========================
-# PARSE M3U
+# PARSE SINGLE M3U
 # =========================
-def parse(urls):
+def parse_m3u(text):
     channels = []
-    seen = set()
+    extinf = None
 
-    for u in urls:
-        text = fetch(u)
-        if not text:
+    for line in text.splitlines():
+        line = line.strip()
+
+        if line.startswith("#EXTINF"):
+            extinf = line
             continue
 
-        extinf = None
+        if extinf and line.startswith("http"):
+            name = extinf.split(",")[-1].strip()
 
-        for line in text.splitlines():
-            line = line.strip()
-
-            if line.startswith("#EXTINF"):
-                extinf = line
-                continue
-
-            if extinf and line.startswith(("http://", "https://", "rtmp://")):
-
-                name = extinf.split(",")[-1].strip()
-
-                # FILTER
-                if not is_clean(name, line):
-                    extinf = None
-                    continue
-
-                # SPEED FILTER
-                if not fast_ok(line):
-                    extinf = None
-                    continue
-
-                key = (name, line)
-                if key in seen:
-                    extinf = None
-                    continue
-
-                seen.add(key)
-
+            if clean(name, line):
                 channels.append({
+                    "name": name,
                     "extinf": extinf,
-                    "url": line,
-                    "name": name
+                    "url": line
                 })
 
-                extinf = None
+            extinf = None
 
     return channels
+
+# =========================
+# ASYNC WORKER
+# =========================
+async def worker(urls):
+    async with aiohttp.ClientSession() as session:
+        tasks = [fetch(session, u) for u in urls]
+        results = await asyncio.gather(*tasks)
+
+    all_channels = []
+
+    for res in results:
+        if res:
+            all_channels.extend(parse_m3u(res))
+
+    return all_channels
 
 # =========================
 # CATEGORY
@@ -148,14 +114,14 @@ def cat(name):
 
     if "sport" in n:
         return "SPORTS"
-    if "zee" in n or "sony" in n or "star jalsha" in n:
+    if "zee" in n or "sony" in n:
         return "BDXI"
     if "atn" in n or "ntv" in n or "bangla" in n:
         return "BD"
     return "IND"
 
 # =========================
-# SAVE FILE
+# SAVE
 # =========================
 def save(path, items):
     with open(path, "w", encoding="utf-8") as f:
@@ -167,18 +133,27 @@ def save(path, items):
 # =========================
 # MAIN
 # =========================
-def main():
+async def main():
     urls = get_sources()
 
     if not urls:
         print("NO SOURCES FOUND")
         return
 
-    data = parse(urls)
+    data = await worker(urls)
+
+    seen = set()
+    unique = []
+
+    for c in data:
+        key = (c["name"], c["url"])
+        if key not in seen:
+            seen.add(key)
+            unique.append(c)
 
     bdxi, ind, bd, sports = [], [], [], []
 
-    for c in data:
+    for c in unique:
         t = cat(c["name"])
 
         if t == "BDXI":
@@ -190,18 +165,21 @@ def main():
         else:
             ind.append(c)
 
-    save(COMBINED_FILE, data)
+    save(COMBINED_FILE, unique)
     save(BDXI_FILE, bdxi)
     save(IND_FILE, ind)
     save(BD_FILE, bd)
     save(SPORTS_FILE, sports)
 
-    print("\n===== FINAL REPORT =====")
-    print("TOTAL:", len(data))
+    print("\n===== ASYNC DONE =====")
+    print("TOTAL:", len(unique))
     print("BDXI:", len(bdxi))
     print("IND:", len(ind))
     print("BD:", len(bd))
     print("SPORTS:", len(sports))
 
+# =========================
+# RUN
+# =========================
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
