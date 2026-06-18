@@ -26,108 +26,91 @@ SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 def build_header():
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
-
-    return f"""#EXTM3U
-# AUTO KBPROTV BOT
-# Updated: {now}
-
-"""
+    return f"#EXTM3U\n# AUTO KBPROTV\n# Updated: {now}\n\n"
 
 
 # =========================
 # LOAD SOURCES
 # =========================
 def get_sources():
-    sources = []
+    urls = []
 
-    for secret in SECRET_NAMES:
-        raw = os.getenv(secret)
+    for s in SECRET_NAMES:
+        raw = os.getenv(s)
 
         if not raw:
-            print(f"[!] Missing secret: {secret}")
+            print(f"[WARN] Missing secret: {s}")
             continue
 
-        sources.extend([x.strip() for x in raw.split(",") if x.strip()])
+        urls.extend([x.strip() for x in raw.split(",") if x.strip()])
 
-    return sources
+    return urls
 
 
 # =========================
-# RETRY FETCH (M3U TEXT)
+# SAFE FETCH (RETRY)
 # =========================
-def fetch_with_retry(url, retries=3, timeout=10):
+def fetch(url, retries=3):
     headers = {"User-Agent": "Mozilla/5.0"}
 
-    for i in range(1, retries + 1):
+    for i in range(retries):
         try:
-            print(f"[FETCH TRY {i}] {url}")
+            print(f"[FETCH TRY {i+1}] {url}")
 
-            r = requests.get(url, timeout=timeout, headers=headers)
+            r = requests.get(url, timeout=10, headers=headers)
 
             if r.status_code == 200 and r.text:
                 return r.text
 
-        except Exception as e:
-            print(f"[ERROR TRY {i}] {e}")
+        except:
+            pass
 
         time.sleep(1)
 
-    print(f"[SKIP] Failed: {url}")
     return None
 
 
 # =========================
-# SPEED CHECK (FAST ONLY)
+# SPEED FILTER (FAST ONLY)
 # =========================
 def is_fast(url):
-    headers = {"User-Agent": "Mozilla/5.0"}
+    try:
+        start = time.time()
 
-    for i in range(1, 3):
-        try:
-            start = time.time()
+        r = requests.get(
+            url,
+            timeout=5,
+            stream=True,
+            headers={"User-Agent": "Mozilla/5.0"}
+        )
 
-            r = requests.get(
-                url,
-                timeout=6,
-                stream=True,
-                headers=headers
-            )
+        if r.status_code != 200:
+            return False
 
-            if r.status_code != 200:
-                continue
+        r.raw.read(512)
 
-            r.raw.read(1024)
+        return (time.time() - start) < 1.5
 
-            speed = time.time() - start
-
-            if speed < 1.5:
-                return True
-
-        except:
-            pass
-
-        time.sleep(0.5)
-
-    return False
+    except:
+        return False
 
 
 # =========================
-# PARSE M3U
+# PARSER
 # =========================
-def parse_sources(urls):
+def parse(urls):
     channels = []
     seen = set()
 
-    for url in urls:
-        text = fetch_with_retry(url)
+    for u in urls:
+        text = fetch(u)
 
         if not text:
             continue
 
-        lines = text.splitlines()
         extinf = None
 
-        for line in lines:
+        for line in text.splitlines():
             line = line.strip()
 
             if not line:
@@ -141,7 +124,7 @@ def parse_sources(urls):
 
                 name = extinf.split(",")[-1].strip()
 
-                # speed filter
+                # SPEED FILTER
                 if not is_fast(line):
                     extinf = None
                     continue
@@ -166,22 +149,18 @@ def parse_sources(urls):
 
 
 # =========================
-# CATEGORY SYSTEM
+# CATEGORY
 # =========================
-def get_category(name):
+def category(name):
     n = name.lower()
 
-    sports = ["sport", "cricket", "football", "ten sports", "star sports"]
-    bdxi = ["zee", "star jalsha", "colors", "sony aath"]
-    bd = ["atn", "ntv", "rtv", "channel i", "bangla", "somoy", "ekattor"]
-
-    if any(x in n for x in sports):
+    if "sport" in n or "cricket" in n:
         return "SPORTS"
 
-    if any(x in n for x in bdxi):
+    if "zee" in n or "sony" in n or "star jalsha" in n:
         return "BDXI"
 
-    if any(x in n for x in bd):
+    if "atn" in n or "ntv" in n or "rtv" in n or "bangla" in n:
         return "BD"
 
     return "IND"
@@ -190,15 +169,13 @@ def get_category(name):
 # =========================
 # SAVE FILE
 # =========================
-def save_file(path, items):
-    content = build_header()
-
-    for ch in items:
-        content += ch["extinf"] + "\n"
-        content += ch["url"] + "\n"
-
+def save(path, items):
     with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
+        f.write(build_header())
+
+        for c in items:
+            f.write(c["extinf"] + "\n")
+            f.write(c["url"] + "\n")
 
 
 # =========================
@@ -208,48 +185,41 @@ def main():
     urls = get_sources()
 
     if not urls:
-        print("No sources found!")
+        print("NO SOURCES FOUND")
         return
 
-    channels = parse_sources(urls)
+    data = parse(urls)
 
     bdxi, ind, bd, sports = [], [], [], []
 
-    for ch in channels:
-        cat = get_category(ch["name"])
+    for c in data:
+        t = category(c["name"])
 
-        if cat == "BDXI":
-            bdxi.append(ch)
-        elif cat == "BD":
-            bd.append(ch)
-        elif cat == "SPORTS":
-            sports.append(ch)
+        if t == "BDXI":
+            bdxi.append(c)
+        elif t == "BD":
+            bd.append(c)
+        elif t == "SPORTS":
+            sports.append(c)
         else:
-            ind.append(ch)
+            ind.append(c)
 
     # SAVE FILES
-    save_file(COMBINED_FILE, channels)
-    save_file(BDXI_FILE, bdxi)
-    save_file(IND_FILE, ind)
-    save_file(BD_FILE, bd)
-    save_file(SPORTS_FILE, sports)
+    save(COMBINED_FILE, data)
+    save(BDXI_FILE, bdxi)
+    save(IND_FILE, ind)
+    save(BD_FILE, bd)
+    save(SPORTS_FILE, sports)
 
     # REPORT
-    print("\n========== FINAL REPORT ==========")
+    print("\n========== REPORT ==========")
     print("BDXI   :", len(bdxi))
     print("IND    :", len(ind))
     print("BD     :", len(bd))
     print("SPORTS :", len(sports))
-    print("---------------------------------")
-    print("TOTAL  :", len(channels))
-    print("=================================\n")
-
-    print("FILES CREATED:")
-    print(COMBINED_FILE)
-    print(BDXI_FILE)
-    print(IND_FILE)
-    print(BD_FILE)
-    print(SPORTS_FILE)
+    print("---------------------------")
+    print("TOTAL  :", len(data))
+    print("===========================\n")
 
 
 if __name__ == "__main__":
