@@ -63,16 +63,18 @@ def ai_score(name, url, resp_time):
     return score
 
 # =========================
-# HEADER
+# HEADER (Updated v3)
 # =========================
 def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
 
     return f"""#EXTM3U
-# KBTVPRO AI HD SCORE BOT v2
-# Updated: {now}
 # ================================================
+#          KBTVPRO AI HD SCORE BOT v3
+#          Updated: {now}
+# ================================================
+
 # TOTAL CHANNELS : {total}
 # BDXI+IND       : {bdxi + ind}
 # BD             : {bd}
@@ -94,12 +96,12 @@ def get_sources():
     return urls
 
 # =========================
-# FETCH
+# FETCH (FAST)
 # =========================
 async def fetch(session, url):
     try:
         start = time.time()
-        async with session.get(url, timeout=10) as r:
+        async with session.get(url, timeout=3) as r:
             if r.status != 200:
                 return None
             text = await r.text()
@@ -133,7 +135,7 @@ def parse(text, resp_time):
     return channels
 
 # =========================
-# WORKER
+# WORKER (fast + polite delay)
 # =========================
 async def worker(urls):
     connector = aiohttp.TCPConnector(limit=50)
@@ -149,7 +151,7 @@ async def worker(urls):
     return all_channels
 
 # =========================
-# CATEGORY (শুধু BD, IND, Bangla, Hindi, Sports)
+# CATEGORY
 # =========================
 def cat(name):
     n = name.lower()
@@ -215,7 +217,7 @@ async def main():
             seen.add(key)
             unique.append(c)
 
-    # CATEGORY SPLIT (শুধু চেয়েছিলে সেইগুলোই)
+    # CATEGORY SPLIT
     bdxi, ind, bd, sports = [], [], [], []
     for c in unique:
         t = cat(c["name"])
@@ -226,7 +228,7 @@ async def main():
         elif t == "IND":
             ind.append(c)
         elif t == "HINDI":
-            ind.append(c)  # Hindi = IND এর সাথে বাটন হিসেবে
+            ind.append(c)
         elif t == "SPORTS":
             sports.append(c)
 
@@ -242,7 +244,7 @@ async def main():
     # BUILD COMBINED
     build_combined(len(unique), len(bdxi), len(ind), len(bd), len(sports))
 
-    # REPORT
+    # REPORT - সব গুলো আলাদা দেখাবে
     print("\n===== FINAL AI HD REPORT =====")
     print("TOTAL   :", len(unique))
     print("BDXI+IND:", len(bdxi) + len(ind))
