@@ -16,8 +16,8 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 COMBINED_FILE = "combined_playlist.m3u"
 
 BDXI_FILE = os.path.join(OUTPUT_DIR, "bdxikb.m3u")
-IND_FILE = os.path.join(OUTPUT_DIR, "Ind_bd.m3u8")
 BD_FILE = os.path.join(OUTPUT_DIR, "Bd_KBPRO.m3u8")
+IND_FILE = os.path.join(OUTPUT_DIR, "Ind_bd.m3u8")
 SPORTS_FILE = os.path.join(OUTPUT_DIR, "Sports_promax.m3u8")
 
 # =========================
@@ -63,22 +63,22 @@ def ai_score(name, url, resp_time):
     return score
 
 # =========================
-# HEADER WITH AUTO COUNT
+# HEADER
 # =========================
 def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
     now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
 
     return f"""#EXTM3U
-# KBTVPRO AI HD SCORE BOT
+# KBTVPRO AI HD SCORE BOT v2
 # Updated: {now}
-# =====================================
+# ================================================
 # TOTAL CHANNELS : {total}
-# BDXI CHANNELS   : {bdxi}
-# IND CHANNELS    : {ind}
-# BD CHANNELS     : {bd}
-# SPORTS CHANNELS : {sports}
-# =====================================
+# BDXI+IND       : {bdxi + ind}
+# BD             : {bd}
+# IND            : {ind}
+# SPORTS         : {sports}
+# ================================================
 
 """
 
@@ -94,21 +94,17 @@ def get_sources():
     return urls
 
 # =========================
-# FETCH (ASYNC + FAST)
+# FETCH
 # =========================
 async def fetch(session, url):
     try:
         start = time.time()
-
         async with session.get(url, timeout=10) as r:
             if r.status != 200:
                 return None
-
             text = await r.text()
             resp_time = time.time() - start
-
             return text, resp_time
-
     except:
         return None
 
@@ -118,28 +114,22 @@ async def fetch(session, url):
 def parse(text, resp_time):
     channels = []
     extinf = None
-
     for line in text.splitlines():
         line = line.strip()
-
         if line.startswith("#EXTINF"):
             extinf = line
             continue
-
         if extinf and line.startswith("http"):
             name = extinf.split(",")[-1].strip()
-
             score = ai_score(name, line, resp_time)
-
-            if score >= 60:
+            if score >= 70:
+                new_name = name + " kb"
                 channels.append({
                     "extinf": extinf,
                     "url": line,
-                    "name": name
+                    "name": new_name
                 })
-
             extinf = None
-
     return channels
 
 # =========================
@@ -147,32 +137,30 @@ def parse(text, resp_time):
 # =========================
 async def worker(urls):
     connector = aiohttp.TCPConnector(limit=50)
-
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = [fetch(session, u) for u in urls]
         results = await asyncio.gather(*tasks)
 
     all_channels = []
-
     for r in results:
         if r:
             text, rt = r
             all_channels.extend(parse(text, rt))
-
     return all_channels
 
 # =========================
-# CATEGORY
+# CATEGORY (শুধু BD, IND, Bangla, Hindi, Sports)
 # =========================
 def cat(name):
     n = name.lower()
-
     if "sport" in n:
         return "SPORTS"
     if "zee" in n or "sony" in n:
         return "BDXI"
     if "atn" in n or "ntv" in n or "bangla" in n:
         return "BD"
+    if "hindi" in n or "bollywood" in n:
+        return "HINDI"
     return "IND"
 
 # =========================
@@ -196,7 +184,9 @@ def build_combined(total, bdxi, ind, bd, sports):
     for f in files:
         try:
             with open(f, "r", encoding="utf-8") as file:
-                data = file.read().replace("#EXTM3U", "").strip()
+                data = file.read().strip()
+                if data.startswith("#EXTM3U"):
+                    data = data.split("#EXTM3U", 1)[1].strip()
                 content += f"\n# ===== {os.path.basename(f)} =====\n"
                 content += data + "\n"
         except:
@@ -210,7 +200,6 @@ def build_combined(total, bdxi, ind, bd, sports):
 # =========================
 async def main():
     urls = get_sources()
-
     if not urls:
         print("NO SOURCES FOUND")
         return
@@ -220,46 +209,45 @@ async def main():
     # REMOVE DUPLICATES
     seen = set()
     unique = []
-
     for c in data:
         key = (c["name"], c["url"])
         if key not in seen:
             seen.add(key)
             unique.append(c)
 
-    # CATEGORY SPLIT
+    # CATEGORY SPLIT (শুধু চেয়েছিলে সেইগুলোই)
     bdxi, ind, bd, sports = [], [], [], []
-
     for c in unique:
         t = cat(c["name"])
-
         if t == "BDXI":
             bdxi.append(c)
         elif t == "BD":
             bd.append(c)
+        elif t == "IND":
+            ind.append(c)
+        elif t == "HINDI":
+            ind.append(c)  # Hindi = IND এর সাথে বাটন হিসেবে
         elif t == "SPORTS":
             sports.append(c)
-        else:
-            ind.append(c)
 
     # HEADERS
     h = header(len(unique), len(bdxi), len(ind), len(bd), len(sports))
 
-    # SAVE FILES
+    # SAVE 4 ফাইল
     save(BDXI_FILE, bdxi, h)
     save(IND_FILE, ind, h)
     save(BD_FILE, bd, h)
     save(SPORTS_FILE, sports, h)
 
-    # BUILD MASTER
+    # BUILD COMBINED
     build_combined(len(unique), len(bdxi), len(ind), len(bd), len(sports))
 
     # REPORT
     print("\n===== FINAL AI HD REPORT =====")
     print("TOTAL   :", len(unique))
-    print("BDXI    :", len(bdxi))
-    print("IND     :", len(ind))
+    print("BDXI+IND:", len(bdxi) + len(ind))
     print("BD      :", len(bd))
+    print("IND     :", len(ind))
     print("SPORTS  :", len(sports))
     print("==============================\n")
 
