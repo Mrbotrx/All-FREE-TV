@@ -63,7 +63,7 @@ def ai_score(name, url, resp_time):
     return score
 
 # =========================
-# HEADER (v5 - BEST & HUMAN-LIKE)
+# HEADER (v5 - BEST)
 # =========================
 def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
