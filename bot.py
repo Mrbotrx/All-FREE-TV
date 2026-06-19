@@ -63,7 +63,7 @@ def ai_score(name, url, resp_time):
     return score
 
 # =========================
-# HEADER (Best v4)
+# HEADER (v4 - BEST)
 # =========================
 def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
@@ -96,7 +96,7 @@ def get_sources():
     return urls
 
 # =========================
-# FETCH (Fast + timeout)
+# FETCH (Fast)
 # =========================
 async def fetch(session, url):
     try:
@@ -125,7 +125,6 @@ def parse(text, resp_time):
             name = extinf.split(",")[-1].strip()
             score = ai_score(name, line, resp_time)
             if score >= 70:
-                # নামের শেষে KB যোগ করা হয়েছে
                 new_name = name + " KB"
                 channels.append({
                     "extinf": extinf,
@@ -152,7 +151,7 @@ async def worker(urls):
     return all_channels
 
 # =========================
-# CATEGORY
+# CATEGORY (খুব স্ট্রিক্ট এখন)
 # =========================
 def cat(name):
     n = name.lower()
@@ -164,7 +163,7 @@ def cat(name):
         return "BD"
     if "hindi" in n or "bollywood" in n:
         return "HINDI"
-    return "IND"
+    return None  # অন্য সব চ্যানেল IND-এ যাবে না
 
 # =========================
 # SAVE FILE
@@ -218,7 +217,7 @@ async def main():
             seen.add(key)
             unique.append(c)
 
-    # CATEGORY SPLIT
+    # CATEGORY SPLIT (খুব স্ট্রিক্ট এখন)
     bdxi, ind, bd, sports = [], [], [], []
     for c in unique:
         t = cat(c["name"])
