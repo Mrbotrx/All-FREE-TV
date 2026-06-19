@@ -63,7 +63,7 @@ def ai_score(name, url, resp_time):
     return score
 
 # =========================
-# HEADER (Updated v3)
+# HEADER (BEST v4)
 # =========================
 def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
@@ -71,7 +71,7 @@ def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
 
     return f"""#EXTM3U
 # ================================================
-#          KBTVPRO AI HD SCORE BOT v3
+#          KBTVPRO AI HD SCORE BOT v4
 #          Updated: {now}
 # ================================================
 
@@ -217,7 +217,7 @@ async def main():
             seen.add(key)
             unique.append(c)
 
-    # CATEGORY SPLIT
+    # CATEGORY SPLIT (stable 350 + 10 best)
     bdxi, ind, bd, sports = [], [], [], []
     for c in unique:
         t = cat(c["name"])
@@ -244,7 +244,7 @@ async def main():
     # BUILD COMBINED
     build_combined(len(unique), len(bdxi), len(ind), len(bd), len(sports))
 
-    # REPORT - সব গুলো আলাদা দেখাবে
+    # REPORT
     print("\n===== FINAL AI HD REPORT =====")
     print("TOTAL   :", len(unique))
     print("BDXI+IND:", len(bdxi) + len(ind))
