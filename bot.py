@@ -79,8 +79,8 @@ def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📺 TOTAL CHANNELS : {total}
 🇧🇩 BDXI CHANNELS : {bdxi}
-🇧🇩 BD CHANNELS   : {bd}
-🇮🇳 IND CHANNELS  : {ind}
+🇧৩ BD CHANNELS   : {bd}
+🇮৩ IND CHANNELS  : {ind}
 🏆 SPORTS         : {sports}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
