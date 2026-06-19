@@ -163,7 +163,7 @@ def cat(name):
         return "BD"
     if "hindi" in n or "bollywood" in n:
         return "HINDI"
-    return None  # অন্য সব চ্যানেল IND-এ যাবে না
+    return None  # অন্য সব চ্যানেল কোনো ফাইলে যাবে না
 
 # =========================
 # SAVE FILE
