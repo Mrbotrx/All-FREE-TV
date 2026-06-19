@@ -63,25 +63,35 @@ def ai_score(name, url, resp_time):
     return score
 
 # =========================
-# HEADER (v4 - BEST)
+# HEADER (v5 - BEST & HUMAN-LIKE)
 # =========================
 def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
-    now = datetime.now(tz).strftime("%d-%m-%Y | %I:%M %p")
+    now = datetime.now(tz)
+    date = now.strftime("%d-%m-%Y")
+    time = now.strftime("%I:%M %p")
 
-    return f"""#EXTM3U
-# ================================================
-#          KBTVPRO AI HD SCORE BOT v4
-#          Updated: {now}
-# ================================================
+    return f"""╔══════════════════════════════════════╗
+║         🔥 KB PRO IPTV V67 🔥        ║
+╚══════════════════════════════════════╝
 
-# TOTAL CHANNELS : {total}
-# BDXI+IND       : {bdxi + ind}
-# BD             : {bd}
-# IND            : {ind}
-# SPORTS         : {sports}
-# ================================================
+📊 PLAYLIST STATISTICS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📺 TOTAL CHANNELS : {total}
+🇧🇩 BDXI CHANNELS : {bdxi}
+🇧🇩 BD CHANNELS   : {bd}
+🇮🇳 IND CHANNELS  : {ind}
+🏆 SPORTS         : {sports}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+📅 UPDATE DATE    : {date}
+🕒 UPDATE TIME    : {time}
+🌍 TIMEZONE       : Asia/Dhaka
+⚡ STATUS         : ONLINE
+🔄 AUTO UPDATED   : SUCCESS
+
+💎 Premium IPTV Playlist
+🚀 Fast • Stable • Auto Updated
 """
 
 # =========================
@@ -151,7 +161,7 @@ async def worker(urls):
     return all_channels
 
 # =========================
-# CATEGORY (খুব স্ট্রিক্ট এখন)
+# CATEGORY (খুব স্ট্রিক্ট)
 # =========================
 def cat(name):
     n = name.lower()
@@ -217,7 +227,7 @@ async def main():
             seen.add(key)
             unique.append(c)
 
-    # CATEGORY SPLIT (খুব স্ট্রিক্ট এখন)
+    # CATEGORY SPLIT
     bdxi, ind, bd, sports = [], [], [], []
     for c in unique:
         t = cat(c["name"])
