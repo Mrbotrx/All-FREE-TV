@@ -63,7 +63,7 @@ def ai_score(name, url, resp_time):
     return score
 
 # =========================
-# HEADER (BEST v4)
+# HEADER (Best v4)
 # =========================
 def header(total=0, bdxi=0, ind=0, bd=0, sports=0):
     tz = pytz.timezone("Asia/Dhaka")
@@ -96,12 +96,12 @@ def get_sources():
     return urls
 
 # =========================
-# FETCH (FAST)
+# FETCH (Fast + timeout)
 # =========================
 async def fetch(session, url):
     try:
         start = time.time()
-        async with session.get(url, timeout=3) as r:
+        async with session.get(url, timeout=2.5) as r:
             if r.status != 200:
                 return None
             text = await r.text()
@@ -125,7 +125,8 @@ def parse(text, resp_time):
             name = extinf.split(",")[-1].strip()
             score = ai_score(name, line, resp_time)
             if score >= 70:
-                new_name = name + " kb"
+                # নামের শেষে KB যোগ করা হয়েছে
+                new_name = name + " KB"
                 channels.append({
                     "extinf": extinf,
                     "url": line,
@@ -135,7 +136,7 @@ def parse(text, resp_time):
     return channels
 
 # =========================
-# WORKER (fast + polite delay)
+# WORKER (Fast)
 # =========================
 async def worker(urls):
     connector = aiohttp.TCPConnector(limit=50)
@@ -217,7 +218,7 @@ async def main():
             seen.add(key)
             unique.append(c)
 
-    # CATEGORY SPLIT (stable 350 + 10 best)
+    # CATEGORY SPLIT
     bdxi, ind, bd, sports = [], [], [], []
     for c in unique:
         t = cat(c["name"])
