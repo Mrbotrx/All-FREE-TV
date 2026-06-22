@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8508
+📺 TOTAL CHANNELS : 8505
 🇧🇩 BDXI CHANNELS : 104
 🇧৩ BD CHANNELS   : 50
 🇮৩ IND CHANNELS  : 17
-🏆 SPORTS         : 338
+🏆 SPORTS         : 337
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 22-06-2026
-🕒 UPDATE TIME    : 10:18 PM
+📅 UPDATE DATE    : 23-06-2026
+🕒 UPDATE TIME    : 01:57 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -35,8 +35,6 @@ http://103.154.3.101:5001/live/960.m3u8
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
 #EXTINF:-1 tvg-id="ShemarooBollywood.us@HD" tvg-logo="https://i.imgur.com/TFxLj80.png" group-title="Undefined",Shemaroo Bollywood (1080p)
 http://103.213.31.109:90/ShemarooBollywoodHD/playlist.m3u8
-#EXTINF:-1 tvg-name="Hindi Hits HD" group-title="BD",Hindi Hits HD
-http://146.59.253.52:8080/hindihitshd/index.m3u8
 #EXTINF:-1 tvg-id="160" tvg-chno="13" tvg-name="hindi-khabar" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hindi-khabar.png" group-title="Yupptv", Hindi Khabar
 https://d1msejlow1t3l4.cloudfront.net/fta/hindikhabar/playlist.m3u8?hdnts=st%3D1782117728~exp%3D1782139328~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_135.232.177.246_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_135.232.177.246_yuppfast_2_channel_160_-1~hmac%3D65b1b22ea93a5d6dfe2cfae952d428bbadce204e2ddf199368e06cca889c16ee
 #EXTINF:-1 tvg-id="310" tvg-chno="" tvg-name="naxatra-news-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/naxatra-news-hindi.png" group-title="Yupptv", Naxatra News Hindi
@@ -49,6 +47,8 @@ https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playli
 https://2-fss-2.themediacdn.com/pl_144/amlst:206512-3287954/playlist.m3u8?hdnts=st%3D1782117810~exp%3D1782139410~acl%3D%21%2A%2Fpl_144%2Famlst%3A206512-3287954%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_135.232.177.246_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_135.232.177.246_yuppfast_2_channel_280_-1~hmac%3D40a2d643ac27f0774590b2bd8ce028bf3b6cb84c70684e9438e8eb26479840b5
 #EXTINF:-1 tvg-id="Bollywood.HD.in" tvg-name="" tvg-logo="https://www.pasjatv.pl/files/tv/photo/min/160639773975_bollywood-hd-inne.png" group-title="hilaytv",Bollywood HD
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
+#EXTINF:-1 tvg-id="Hindi.Hits.HD.in" tvg-name="" tvg-logo="https://i.postimg.cc/Y99S24tD/hindihitshd.jpg" group-title="hilaytv",Hindi Hits HD
+http://146.59.253.52:8080/hindihitshd/index.m3u8
 #EXTINF:-1 tvg-id="MBCBollywood.ae" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-arab-emirates/mbc-bollywood-ae.png" group-title="hilaytv",MBC Bollywood
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
 #EXTINF:-1 tvg-id="MBCBollywood.ae@SD" tvg-logo="https://i.imgur.com/TTAGFHG.png" group-title="hilaytv",MBC Bollywood (1080p)
