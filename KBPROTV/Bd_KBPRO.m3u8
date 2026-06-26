@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8655
+📺 TOTAL CHANNELS : 8705
 🇧🇩 BDXI CHANNELS : 105
-🇧৩ BD CHANNELS   : 50
+🇧৩ BD CHANNELS   : 52
 🇮৩ IND CHANNELS  : 17
-🏆 SPORTS         : 335
+🏆 SPORTS         : 333
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 26-06-2026
-🕒 UPDATE TIME    : 05:02 AM
+🕒 UPDATE TIME    : 07:52 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -85,6 +85,10 @@ https://strhlslb01.streamakaci.tv/str_ntv_ntv/str_ntv_ntv_multi/playlist.m3u8
 https://bl.rutube.ru/livestream/c37cd74192c6bc3d6cd6077c0c4fd686/index.m3u8?e=2077050299&s=HSWg81JrQ3OqmwuWkEIDAQ&scheme=https
 #EXTINF:-1 tvg-id="NTVICKakanj.ba@SD" tvg-logo="https://i.imgur.com/EtaHm2P.png" group-title="General",NTV IC Kakanj (720p)
 https://lon.rtsp.me/dEqnY-myGj84bKrieCIPfA/1743271667/hls/3dH3YAD6.m3u8
+#EXTINF:-1 tvg-id="NTVMir.ru@SD" tvg-logo="https://i.imgur.com/pUcV46F.png" group-title="Culture",NTV Mir (576p)
+https://adpnetworkhd-cmd.github.io/iptv/NTVMir.m3u8
+#EXTINF:-1 tvg-id="NTVSeries.ru@SD" tvg-logo="https://i.imgur.com/QdVa8tl.png" group-title="Series",NTV Series (1080p)
+https://adpnetworkhd-cmd.github.io/iptv/NTVSerial.m3u8
 #EXTINF:-1 tvg-id="NTVTelugu.in@SD" tvg-logo="https://i.imgur.com/WqTIoWS.png" group-title="News",NTV Telugu (1080p)
 https://mumbai-edge.smartplaytv.in/NTVTelugu/index.m3u8
 #EXTINF:-1 tvg-id="NTVHit.ru@SD" tvg-logo="https://i.imgur.com/FfKBvz5.png" group-title="Series",NTV-Hit (1080p)
