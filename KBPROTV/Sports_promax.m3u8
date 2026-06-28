@@ -8,11 +8,11 @@
 🇧🇩 BDXI CHANNELS : 107
 🇧৩ BD CHANNELS   : 53
 🇮৩ IND CHANNELS  : 17
-🏆 SPORTS         : 331
+🏆 SPORTS         : 332
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 29-06-2026
-🕒 UPDATE TIME    : 03:45 AM
+🕒 UPDATE TIME    : 05:01 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -429,6 +429,8 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",[BD] Eurosport HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/da4282cd107cc3d40efadae488b187e5" group-title="BD",Fox Sports 2
+https://tvsen7.aynaott.com/foxsports2/index.m3u8?e=1782681869&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=e29d70720db2f8ebb002faac87762ae0
 #EXTINF:-1 tvg-name="Sky Sports" group-title="BD",Sky Sports
 https://atc.hopto.org/sly-sprts-cricket-hd-sport/playlist.m3u8
 #EXTINF:-1 tvg-name="T Sports HD" group-title="BD",T Sports HD
