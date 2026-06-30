@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8789
+📺 TOTAL CHANNELS : 8794
 🇧🇩 BDXI CHANNELS : 107
 🇧৩ BD CHANNELS   : 52
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 331
+🏆 SPORTS         : 333
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 30-06-2026
-🕒 UPDATE TIME    : 07:49 AM
+🕒 UPDATE TIME    : 12:12 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -447,6 +447,10 @@ https://bein-esp-klowdtv.amagi.tv/playlist.m3u8
 https://sportsgrid-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="TraceSportStars.fr@HD",Trace Sports Stars (1080p)
 https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8
+#EXTINF:-1 group-title="klowdtv",-1 tvg-id="FTFSports.us@SD",FTF Sports (720p)
+https://a-cdn.klowdtv.com/live2/ftf_720p/playlist.m3u8
+#EXTINF:-1 group-title="klowdtv",-1 tvg-id="SwerveSports.us@SD",Swerve Sports (720p)
+https://a-cdn.klowdtv.com/live3/swervewomenssports_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="tntultimate.mv" tvg-name="TNT Sports Ultimate UHD" tvg-logo="https://8upload.com/image/67e7832b31b5e/tntsportsultimatehilay.png" group-title="hilaytv",TNT Sports Ultimate UHD
 https://hilay.tv/l/tntultimateuhd
 #EXTINF:-1 tvg-id="SkyF1UHD.mv" tvg-name="Sky Sports F1 UHD" tvg-logo="https://8upload.com/image/67dfa0815df58/skysportsf1uhd.png" group-title="hilaytv",Sky Sports F1 UHD
