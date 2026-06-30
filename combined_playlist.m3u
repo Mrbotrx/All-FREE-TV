@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8798
-🇧🇩 BDXI CHANNELS : 107
+📺 TOTAL CHANNELS : 8370
+🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 52
-🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 333
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 216
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 01-07-2026
-🕒 UPDATE TIME    : 01:24 AM
+🕒 UPDATE TIME    : 03:19 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -27,15 +27,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8798
-🇧🇩 BDXI CHANNELS : 107
+📺 TOTAL CHANNELS : 8370
+🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 52
-🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 333
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 216
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 01-07-2026
-🕒 UPDATE TIME    : 01:24 AM
+🕒 UPDATE TIME    : 03:19 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -218,44 +218,6 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/master/611d79b11
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8?hdnts=st%3D1782817078~exp%3D1782838678~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeepunjabharyanahima%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F65eed269-2f3a-4dd0-ac89-d18959af28e3%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_15_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_15_-1~hmac%3D38e390c6cf8a135602b9b7ede7b20fe6327b6229e0fe6e7e053a3a0f90209129
 #EXTINF:-1 tvg-id="27" tvg-chno="801" tvg-name="zee-salaam" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/uudnpd.png" group-title="Yupptv", Zee Salaam
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/426c6db7-595e-4aa8-859c-7e86ed2811d0/main.m3u8?hdnts=st%3D1782817078~exp%3D1782838678~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeesalaam%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F426c6db7-595e-4aa8-859c-7e86ed2811d0%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_27_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_27_-1~hmac%3D40cf20cf8085c62550595b6791c0c4a9d8272611d29c889dc2708a608f89c61e
-#EXTINF:-1 tvg-id="SONY.PIX.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-pix-hd-in.png" group-title="hilaytv",Sony PIX HD
-https://dish.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8
-#EXTINF:-1 tvg-id="ZEE.CAFE.HD.in" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/66/Zeecafenewlogo.png"group-title="hilaytv",ZEE CAFE' HD
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=3226
-#EXTINF:-1 tvg-id="SET.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-entertainment-television-hd-in.png" group-title="hilaytv",SONY HD
-http://217.20.112.199/sethd/index.m3u8
-#EXTINF:-1 tvg-id="SAB.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-sab-hd-in.png" group-title="hilaytv",Sony SAB HD
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=3085
-#EXTINF:-1 tvg-id="Zee.TV.HD.uk" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/zee-tv-hd-in.png" group-title="hilaytv",ZEE TV HD UK
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=3091
-#EXTINF:-1 tvg-id="SONY.BBC.EARTH.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-bbc-earth-hd-in.png" group-title="hilaytv",Sony BBC Earth HD
-https://live-manifest.production-public.tubi.io/live/88810cb1-e91e-4f19-870b-513ffc9a39cb/playlist.m3u8
-#EXTINF:-1 tvg-id="Sony.Cine.us" tvg-name="" tvg-logo="https://www.cinesony.com/sites/cinesony/themes/custom/cinesony/dist/img/cinesony.png" group-title="hilaytv",SONY CINE
-https://a-cdn.klowdtv.com/live1/cine_720p/chunks.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="hilaytv",Al Jazeera (1080p)
-https://live-hls-apps-aja-fa.getaj.net/AJA/index.m3u8
-#EXTINF:-1 tvg-id="ts502" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeCafeHD_Thumbnail_ceda2afa-65e4-4d25-98c0-750f82a0a2fc.png" group-title="hilaytv", Zee Caf√© HD
-https://z5.8088yyy.workers.dev/0-9-zeecafehd.m3u8|Referer=https://m3u.8088y.site/
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Zee_Caf%C3%A9_2025.svg/330px-Zee_Caf%C3%A9_2025.svg.png" group-title="hilaytv",Zee Cafe
-https://bd.drmlive.net/toffee/cdn/live/zee_cafe_hd/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_HD.png" group-title="hilaytv",SONY TEN 1 HD
-https://la.drmlive.net/tp/sliv-ten1hd.m3u8
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png" group-title="hilaytv",SONY TEN 2 HD
-https://la.drmlive.net/tp/sliv-ten2hd.m3u8
-#EXTINF:-1 tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title="hilaytv",SONY TEN 4 HD
-https://la.drmlive.net/tp/sliv-ten4hd.m3u8
-#EXTINF:-1 tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen5_HD_Logo_CLR.png" group-title="hilaytv",SONY TEN 5 HD
-https://la.drmlive.net/tp/sliv-ten5hd.m3u8
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png" group-title="hilaytv",SONY PIX HD
-https://la.drmlive.net/tp/sliv-pix.m3u8
-#EXTINF: -1 tvg-id="608" group-title="hilaytv" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeTamilHD_Thumbnail_15a9238e-a62c-4641-b564-f5946122eb1a.png", Zee Tamil HD
-https://la.drmlive.net/tp/zee-zeetamil.m3u8
-#EXTINF:-1 tvg-id="ts1183" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeThirai_Thumbnail_96ccd831-12bb-47e6-b57f-5e0a71ccf81b.png" group-title="hilaytv",Zee Thirai HD
-https://z5.8088yyy.workers.dev/0-9-224.m3u8|Referer=https://m3u.8088y.site/
-#EXTINF:-1 tvg-id="AlJazeeraEnglish.id" tvg-name="Al Jazeera English" tvg-logo="https://file.garden/aN9J-XbDsxz3RbSu/news/aljazeeraeng.jpg?raw=true" group-title="hilaytv",ALJAZEERA ENGLISH
-https://atemecdnbalancer-voe.sysln.id/live/eds/AlJazeeraIntHD/mpd/AlJazeeraIntHD.mpd
-#EXTINF:-1 tvg-id="SONY MOVIES.mx" tvg-logo="https://i.ibb.co.com/Z2hPxjQ/sonymvs.png" group-title="hilaytv", SONY MOVIES
-https://live-atv-cdn.izzigo.tv/4/out/u/dash/SONY-MOVIES-HD/default.mpd
 
 # ===== Ind_bd.m3u8 =====
 ╔══════════════════════════════════════╗
@@ -264,15 +226,15 @@ https://live-atv-cdn.izzigo.tv/4/out/u/dash/SONY-MOVIES-HD/default.mpd
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8798
-🇧🇩 BDXI CHANNELS : 107
+📺 TOTAL CHANNELS : 8370
+🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 52
-🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 333
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 216
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 01-07-2026
-🕒 UPDATE TIME    : 01:24 AM
+🕒 UPDATE TIME    : 03:19 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -305,12 +267,6 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22
 https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st%3D1782817113~exp%3D1782838713~acl%3D%21%2A%2F181224%2Fsmil%3Abogglebollywood.smil%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_199_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_199_-1~hmac%3Dd2e44ba8bb20a44a7cb03e0ca60a30b916b6cd4ab4673a5d79395f25060436cd
 #EXTINF:-1 tvg-id="280" tvg-chno="109" tvg-name="hosanna-tv-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hosanna-tv-hindi.png" group-title="Yupptv", Hosanna TV Hindi
 https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D1782817123~exp%3D1782838723~acl%3D%21%2A%2Flive%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_280_-1~hmac%3D017ed4dc1c2fae256899721ed4bac3e85cbf55fcd88ce1d481ce9ac5ba3ad5af
-#EXTINF:-1 tvg-id="Bollywood.HD.in" tvg-name="" tvg-logo="https://www.pasjatv.pl/files/tv/photo/min/160639773975_bollywood-hd-inne.png" group-title="hilaytv",Bollywood HD
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
-#EXTINF:-1 tvg-id="MBCBollywood.ae" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-arab-emirates/mbc-bollywood-ae.png" group-title="hilaytv",MBC Bollywood
-https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
-#EXTINF:-1 tvg-id="MBCBollywood.ae@SD" tvg-logo="https://i.imgur.com/TTAGFHG.png" group-title="hilaytv",MBC Bollywood (1080p)
-https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8
 
 # ===== Bd_KBPRO.m3u8 =====
 ╔══════════════════════════════════════╗
@@ -319,15 +275,15 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a2
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8798
-🇧🇩 BDXI CHANNELS : 107
+📺 TOTAL CHANNELS : 8370
+🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 52
-🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 333
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 216
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 01-07-2026
-🕒 UPDATE TIME    : 01:24 AM
+🕒 UPDATE TIME    : 03:19 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -431,7 +387,7 @@ https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="WiseHumanTv.ir@HD" tvg-logo="https://i.imgur.com/BT7EtfB.png" group-title="Religious",WiseHumanTv (1080p)
 https://avr.host247.net/live/WiseHumanTv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://s3.aynaott.com/storage/e33b23f7dc3d39008d672952c33069d4" group-title="BD",Peace TV Bangla HD
-https://tvsen7.aynaott.com/xM9hpJpqLqs83ZrvkeBG/index.m3u8?e=1782844569&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=0c3eead5a789cbbfcbbc3a6945991acc
+https://tvsen7.aynaott.com/xM9hpJpqLqs83ZrvkeBG/index.m3u8?e=1782853051&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=d5c36745b3c38c7de32918673702f039
 #EXTINF:-1 tvg-id="24" tvg-chno="678" tvg-name="republic-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/awqywf.png" group-title="Yupptv", Republic Bangla
 https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-896571/out/v1/9a5954cd7b7648b78160649038cfd0e4/main.m3u8?hdnts=st%3D1782817058~exp%3D1782838658~acl%3D%21%2A%2Fvglive-sk-896571%2Fout%2Fv1%2F9a5954cd7b7648b78160649038cfd0e4%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_24_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_24_-1~hmac%3D2c1e6b0f28fdf79de1437f6264bf0472def9098930bec091d4f1bd6f15d41d08
 #EXTINF:-1 tvg-id="35" tvg-chno="680" tvg-name="tv9-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/mnuwms.png" group-title="Yupptv", TV9 Bangla
@@ -446,15 +402,15 @@ https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D17828170
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8798
-🇧🇩 BDXI CHANNELS : 107
+📺 TOTAL CHANNELS : 8370
+🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 52
-🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 333
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 216
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 01-07-2026
-🕒 UPDATE TIME    : 01:24 AM
+🕒 UPDATE TIME    : 03:19 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -893,237 +849,3 @@ https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8
 https://a-cdn.klowdtv.com/live2/ftf_720p/playlist.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="SwerveSports.us@SD",Swerve Sports (720p)
 https://a-cdn.klowdtv.com/live3/swervewomenssports_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="tntultimate.mv" tvg-name="TNT Sports Ultimate UHD" tvg-logo="https://8upload.com/image/67e7832b31b5e/tntsportsultimatehilay.png" group-title="hilaytv",TNT Sports Ultimate UHD
-https://hilay.tv/l/tntultimateuhd
-#EXTINF:-1 tvg-id="SkyF1UHD.mv" tvg-name="Sky Sports F1 UHD" tvg-logo="https://8upload.com/image/67dfa0815df58/skysportsf1uhd.png" group-title="hilaytv",Sky Sports F1 UHD
-https://hilay.tv/l/skyf1uhd
-#EXTINF:-1 tvg-id="tensports.mv" tvg-name="Ten Sports HD" tvg-logo="https://8upload.com/image/67fd84b9129df/tensportshilay.png" group-title="hilaytv",Ten Sports HD
-https://hilay.tv/l/tensportspk
-#EXTINF:-1 tvg-id="SkySportsMEUHD.mv" tvg-name="Sky Sports Main Event UHD" tvg-logo="https://8upload.com/image/67e4a0f017140/sky_sports_main_event_UHD.png" group-title="hilaytv",Sky Sports Main Event UHD
-https://hilay.tv/l/skysportsmaineventuhd
-#EXTINF:-1 tvg-id="SkySportsME.mv" tvg-name="Sky Sports Main Event HD" tvg-logo="https://8upload.com/image/67e4a0f00bfad/sky_sports_main_event_HD.png" group-title="hilaytv",Sky Sports Main Event HD
-https://hilay.tv/l/skysportsmaineventud
-#EXTINF:-1 tvg-id="SkySportsPLNZ.mv" tvg-name="Sky Sports Premier League UHD" tvg-logo="https://8upload.com/image/67e4a0f02ecaf/sky_sports_premier_League_UHD_.png" group-title="hilaytv",Sky Sports Premier League UHD
-https://a1xs.vip/700008
-#EXTINF:-1 tvg-id="SkySports1.mv" tvg-name="Sky Sports 1 FHD" tvg-logo="https://8upload.com/image/67dcf3f71dbaa/sky-sport-1-nz.png" group-title="hilaytv",Sky Sports 1 FHD
-https://hilay.tv/l/skysportsnz1
-#EXTINF:-1 tvg-id="SkySports2.mv" tvg-name="Sky Sports 2 FHD" tvg-logo="https://8upload.com/image/67dcf3f712c8a/sky-sport-2-nz.png" group-title="hilaytv",Sky Sports 2 FHD
-https://hilay.tv/l/skysportsnz2
-#EXTINF:-1 tvg-id="SkySports3.mv" tvg-name="Sky Sports 3 FHD" tvg-logo="https://8upload.com/image/67dcf3f707147/sky-sport-3-nz.png" group-title="hilaytv",Sky Sports 3 FHD
-https://hilay.tv/l/skysportsnz3
-#EXTINF:-1 tvg-id="SkySports4.mv" tvg-name="Sky Sports 4 FHD" tvg-logo="https://8upload.com/image/67dcf3f6edfdd/sky-sport-4-nz.png" group-title="hilaytv",Sky Sports 4 FHD
-https://hilay.tv/l/skysportsnz4
-#EXTINF:-1 tvg-id="SkySports5.mv" tvg-name="Sky Sports 5 FHD" tvg-logo="https://8upload.com/image/67dcf3f6de1e0/sky-sport-5-nz.png" group-title="hilaytv",Sky Sports 5 FHD
-https://hilay.tv/l/skysportsnz5
-#EXTINF:-1 tvg-id="SkySports6.mv" tvg-name="Sky Sports 6 FHD" tvg-logo="https://8upload.com/image/67dcf3f6ced05/sky-sport-6-nz.png" group-title="hilaytv",Sky Sports 6 FHD
-https://hilay.tv/l/skysportsnz6
-#EXTINF:-1 tvg-id="SkySports7.mv" tvg-name="Sky Sports 7 FHD" tvg-logo="https://8upload.com/image/67dcf3f6c3320/sky-sport-7-nz.png" group-title="hilaytv",Sky Sports 7 FHD
-https://hilay.tv/l/skysportsnz7
-#EXTINF:-1 tvg-id="SkySports8.mv" tvg-name="Sky Sports 8 FHD" tvg-logo="https://8upload.com/image/67dcf3f6b6e90/sky-sport-8-nz.png" group-title="hilaytv",Sky Sports 8 FHD
-https://hilay.tv/l/skysportsnz8
-#EXTINF:-1 tvg-id="SkySports9.mv" tvg-name="Sky Sports 9 FHD" tvg-logo="https://8upload.com/image/67dcf3f6a8c72/sky-sport-9-nz.png" group-title="hilaytv",Sky Sports 9 FHD
-https://hilay.tv/l/skysportsnz9
-#EXTINF:-1 tvg-id="starspselect1.mv" tvg-name="Star Sports Select 1 HD" tvg-logo="https://8upload.com/image/67dcf94fab602/StartSpselect1hd-e1740229230649.png" group-title="hilaytv",Star Sports Select 1 HD
-https://hilay.tv/l/starsportsselect1
-#EXTINF:-1 tvg-id="starspselect2.mv" tvg-name="Star Sports Select 2 HD" tvg-logo="https://8upload.com/image/67dcfe71e3473/strselect2__2_.png" group-title="hilaytv",Star Sports Select 2 HD
-https://hilay.tv/l/starsportsselect2
-#EXTINF:-1 tvg-id="starsp1.mv" tvg-name="Star Sports 1 HD" tvg-logo="https://8upload.com/image/67dcf94f95d31/starsports1-e1740270475648.png" group-title="hilaytv",Star Sports 1 HD
-https://hilay.tv/l/starsports1
-#EXTINF:-1 tvg-id="starsp2.mv" tvg-name="Star Sports 2 HD" tvg-logo="https://8upload.com/image/67dcf94fa230e/starsports2-e1740270058598.png" group-title="hilaytv",Star Sports 2 HD
-https://hilay.tv/l/starsports2
-#EXTINF:-1 tvg-id="starsports3.mv" tvg-name="Star Sports 3 HD" tvg-logo="https://8upload.com/image/67d9be5ed9c6b/starsp3.jpg" group-title="hilaytv",Star Sports 3 HD
-https://hilay.tv/l/starsports3
-#EXTINF:-1 tvg-id="Sonyten1.mv" tvg-name="SONY SPORTS TEN 1 HD" tvg-logo="https://8upload.com/image/67dce5dfb5d49/sony1.pg.jpg" group-title="hilaytv",SONY SPORTS TEN 1 HD
-https://hilay.tv/l/sonyten1
-#EXTINF:-1 tvg-id="Sonyten2.mv" tvg-name="SONY SPORTS TEN 2 HD" tvg-logo="https://8upload.com/image/67dce5dfb0003/sony2.jpg" group-title="hilaytv",SONY SPORTS TEN 2 HD
-https://hilay.tv/l/sonyten2
-#EXTINF:-1 tvg-id="Sonyten3.mv" tvg-name="SONY SPORTS TEN 3 HD" tvg-logo="https://8upload.com/image/67dce67ddbfda/sony3.jpg" group-title="hilaytv",SONY SPORTS TEN 3 HD
-https://hilay.tv/l/sonyten3
-#EXTINF:-1 tvg-id="Sonyten4.mv" tvg-name="SONY SPORTS TEN 4 HD" tvg-logo="https://8upload.com/image/67dce5dfa9481/sony4.jpg" group-title="hilaytv",SONY SPORTS TEN 4 HD
-https://hilay.tv/l/sonyten4
-#EXTINF:-1 tvg-id="Sonyten5.mv" tvg-name="SONY SPORTS TEN 5 HD" tvg-logo="https://8upload.com/image/67dce5df9e34d/sony5.jpg" group-title="hilaytv",SONY SPORTS TEN 5 HD
-https://hilay.tv/l/sonyten5
-#EXTINF:-1 tvg-id="A.Sports.pk" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0c/A_Sports_Logo.png" group-title="hilaytv",A Sports HD PK
-https://tvsen7.aynaott.com/asports-bkp/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-id="Ptv.sports.pk" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/e4/PTV_Sports.png" group-title="hilaytv",PTV Sports HD PK
-https://ptvsports-cgc.pages.dev/720p.m3u8
-#EXTINF:-1 tvg-id="Sky.Sports.Ultra.HD.1.uk" tvg-name="" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-kingdom/hd/sky-sports-uhd-uk.png" group-title="hilaytv",Sky Sports UHD
-https://a1xs.vip/2000015
-#EXTINF:-1 tvg-id="STAR.SPORTS.SELECT.1.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-sports-select-1-in.png" group-title="hilaytv",Star Sports Select 1 HD
-https://tvsen6.aynaott.com/spsel1/index.m3u8
-#EXTINF:-1 tvg-id="STAR.SPORTS.SELECT.2.HD.in" tvg-name="" tvg-name=""tvg-id=""tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-sports-select-2-in.png"group-title="hilaytv",Star Sports Select 2 HD
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=783
-#EXTINF:-1 tvg-id="Astro.Sports.UHD.my" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/malaysia/astro-sports-uhd-my.png" group-title="hilaytv",Astro Sports UHD
-https://a1xs.vip/9000013
-#EXTINF:-1 tvg-id="SONY.SPORTS.TEN.1.HD.in" tvg-name="" tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png" group-title="hilaytv",Sony Sports Ten 1 HD
-http://xui.neongreenlight.com/hileytv/hileytv/425.ts
-#EXTINF:-1 tvg-id="SONY.SPORTS.TEN.2.HD.in" tvg-name="" tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png" group-title="hilaytv",Sony Sports Ten 2 HD
-http://xui.neongreenlight.com/hileytv/hileytv/451.ts
-#EXTINF:-1 tvg-id="SONY.SPORTS.TEN.3.HD.in" tvg-name="" tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png" group-title="hilaytv",Sony Sports Ten 3 HD
-http://xui.neongreenlight.com/hileytv/hileytv/444.ts
-#EXTINF:-1 tvg-id="SONY.SPORTS.TEN.4.TAMIL.in" tvg-name="" tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title="hilaytv",Sony Sports Ten 4 HD
-http://xui.neongreenlight.com/hileytv/hileytv/446.ts
-#EXTINF:-1 tvg-id="SONY.SPORTS.TEN.5.HD.in" tvg-name="" tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen5_HD_Logo_CLR.png" group-title="hilaytv",Sony Sports Ten 5 HD
-http://xui.neongreenlight.com/hileytv/hileytv/448.ts
-#EXTINF:-1 tvg-id="STAR.SPORTS.1.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-sports-1-in.png" group-title="hilaytv",Star Sports 1 HD
-http://ptu.ridsys.in/riptv/live/stream20/index.m3u8
-#EXTINF:-1 tvg-id="STAR.SPORTS.2.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-sports-2-in.png" group-title="hilaytv",Star Sports 2 HD
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=781
-#EXTINF:-1 tvg-id="STAR.SPORTS.3.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-sports-3-in.png" group-title="hilaytv",Star Sports 3 HD
-https://uxplaylists-portalizer.stevosure123.workers.dev/?c=eyJtb2RlIjoic3RhbGtlciIsInN0YWxrZXJfdXJsIjoiaHR0cDovL3R2LnB1c2g0ay50di9zdGFsa2VyX3BvcnRhbC8iLCJtYWMiOiIwMDoxQTo3OTowNDo0MjpDOSIsInNuIjoiQkJBQUZERTg3NDg1MCIsImRldmljZV9pZDEiOiJEMDlBNDM1Mzk2QUFGRTRBNkQ0NjMyQUQzNDQwOTNEM0M3OTYyNzA0NEI4NUNFNDkyNDFFNjlGRjEwRTE5RkJGIiwiZGV2aWNlX2lkMiI6IkQwOUE0MzUzOTZBQUZFNEE2RDQ2MzJBRDM0NDA5M0QzQzc5NjI3MDQ0Qjg1Q0U0OTI0MUU2OUZGMTBFMTlGQkYiLCJzaWciOiIifQ%3D%3D&id=23931
-#EXTINF:-1 tvg-id="Fox.Sports.Premium.us" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Fox_sports_premium_mx.png/960px-Fox_sports_premium_mx.png" group-title="hilaytv",Fox Sport Premium MX
-https://live1-ott.izzigo.tv/1/out/u/dash/FOX-SPORTS-PREMIUM-HD/default.mpd
-#EXTINF:-1 tvg-id="SkySpMainEv.uk" tvg-name="" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-main-event-uk.png" group-title="hilaytv",Sky Sports Main Event
-http://cord-cutter.net:8080/95549031/69361122/137720
-#EXTINF:-1 tvg-id="A.Sports.pk" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0c/A_Sports_Logo.png" group-title="hilaytv",A Sports HD PK
-https://tvsen7.aynaott.com/asports-bkp/index.m3u8
-#EXTINF:-1 tvg-id="Raisporthd.it" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/italy/hd/rai-sport-hd-it.png" group-title="hilaytv",Rai Sport HD
-https://cachehsi1a.netplus.ch/live/eds/raisport1/browser-dash/raisport1.mpd
-#EXTINF:-1 tvg-id="DubaiSports1.ae" tvg-name="" tvg-logo="https://i.imgur.com/Poxw8lG.png" group-title="hilaytv",Dubai Sports 1 (1080p)
-https://dmidspta.cdn.mgmlcdn.com/dubaisports/smil:dubaisports.stream.smil/master.m3u8
-#EXTINF:-1 tvg-id="DubaiSports2.ae" tvg-name="" tvg-logo="https://i.imgur.com/PMJ7Zmo.png" group-title="hilaytv",Dubai Sports 2 (720p)
-https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/chunklist_b1600000.m3u8
-#EXTINF:-1 tvg-id="DubaiSports3.ae" tvg-name="" tvg-logo="https://i.imgur.com/U0A8Gex.png" group-title="hilaytv",Dubai Sports 3 (1080p)
-https://dmitwlvvll.cdn.mgmlcdn.com/dubaisportshd5/smil:dubaisportshd5.smil/master.m3u8
-#EXTINF:-1 tvg-id="Astro.Sports.UHD.my" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/malaysia/astro-sports-uhd-my.png" group-title="hilaytv",Astro Sports UHD
-http://s1.an94tv.cfd/astro/astrosportuhd/AKTV.m3u8
-#EXTINF:-1 group-title="hilaytv",-1 tvg-id="CanalPlusSport2.cz",Canal+ Sport 2 (1080i)
-http://78.130.250.2:8023/play/a02w/index.m3u8
-#EXTINF:-1 group-title="hilaytv",-1 tvg-id="CTSport.cz",ƒåT Sport (720p)
-http://88.212.15.19/live/test_ctsport_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="SkySpMainEvHD.uk" tvg-name="UK: Sky Sports Main Event UHD" tvg-logo="https://i.ibb.co/gwCk7Bc/sky-m-event-uhd.png" group-title="hilaytv",UK: Sky Sports Main Event UHD
-https://a1xs.vip/2000015
-#EXTINF:-1 tvg-id="SkySp.F1.uk" tvg-name="UK: Sky Sports F1 UHD" tvg-logo="https://i.imgur.com/aetKPNi.png" group-title="hilaytv",UK: Sky Sports F1 UHD
-https://a1xs.vip/2000016
-#EXTINF:-1 tvg-id="TNT.Sports.Ultimate.uk" tvg-name="UK: TNT Sports Ultimate UHD" tvg-logo="https://i.ibb.co/QqGdJnM/TNTSprts-U.png" group-title="hilaytv",UK: TNT Sports Ultimate UHD
-https://a1xs.vip/2000031
-#EXTINF:-1 tvg-id="Astro.Sports.UHD.my" tvg-name="MY: Astro Sports UHD" tvg-logo="https://i.ibb.co/3hW45Pb/Astro-Sports-UHD.png group-title="hilaytv",MY: Astro Sports UHD
-https://a1xs.vip/9000001
-#EXTINF:-1 tvg-id="Now.Sports.4K.1.hk" tvg-name="HK: Now Sports 1 4k" tvg-logo="https://i.imgur.com/mj9zJUc.png" group-title="hilaytv",HK: Now Sports 1 4k
-https://a1xs.vip/9000011
-#EXTINF:-1 tvg-id="Eleven.Sports.1.4K.pl" tvg-name="Eleven Sports 1 4K" tvg-logo="https://i.imgur.com/k6MErsv.png" group-title="hilaytv",Eleven Sports 1 4K
-https://a1xs.vip/14001
-#EXTINF:-1 tvg-id="Now.Sports.Premier.League.1.hk" tvg-name="Now Sports PL 1 FHD" tvg-logo="https://pixvid.org/images/2025/01/21/NowS1.png" group-title="hilaytv",Now Sports PL 1 FHD
-https://a1xs.vip/1100001
-#EXTINF:-1 tvg-id="Now.Sports.Premier.League.2.hk" tvg-name="Now Sports PL 2 FHD" tvg-logo="https://pixvid.org/images/2025/01/28/NowPL2.png" group-title="hilaytv",Now Sports PL 2 FHD
-https://a1xs.vip/1100002
-#EXTINF:-1 tvg-id="SkySpMainEvHD.uk" tvg-name="Sky Sports Main Event UHD" tvg-logo="https://i.ibb.co/gwCk7Bc/sky-m-event-uhd.png" group-title="hilaytv",Sky Sports Main Event UHD
-https://a1xs.vip/2000015
-#EXTINF:-1 tvg-id="SkySp.F1.uk" tvg-name="Sky Sports F1 UHD" tvg-logo="https://i.imgur.com/aetKPNi.png" group-title="hilaytv",Sky Sports F1 UHD
-https://a1xs.vip/2000016
-#EXTINF:-1 tvg-id="TNT.Sports.Ultimate.uk" tvg-name="TNT Sports Ultimate UHD" tvg-logo="https://i.ibb.co/QqGdJnM/TNTSprts-U.png" group-title="hilaytv",TNT Sports Ultimate UHD
-https://a1xs.vip/2000031
-#EXTINF:-1 tvg-id="SkySpMainEvHD.uk" tvg-name="Sky Sports Main Event FHD" tvg-logo="https://i.ibb.co/CwMZcpP/sky-main-event.png" group-title="hilaytv",Sky Sports Main Event FHD
-https://a1xs.vip/2000001
-#EXTINF:-1 tvg-id="SkySp.PL.HD.uk" tvg-name="Sky Sports Premier League FHD" tvg-logo="https://i.ibb.co/rcSRMh9/sky-sports-pl.png" group-title="hilaytv",Sky Sports Premier League FHD
-https://a1xs.vip/2000002
-#EXTINF:-1 tvg-id="SkySp.Fball.HD.uk" tvg-name="Sky Sports Football FHD" tvg-logo="https://i.ibb.co/WcCrBqx/sky-football.png" group-title="hilaytv",Sky Sports Football FHD
-https://a1xs.vip/2000003
-#EXTINF:-1 tvg-id="SkySp.News.HD.uk" tvg-name="Sky Sports F1 FHD" tvg-logo="https://i.ibb.co/7WMDvDP/sky-news.png" group-title="hilaytv",Sky Sports News FHD
-https://a1xs.vip/2000004
-#EXTINF:-1 tvg-id="SkySp.F1.HD.uk" tvg-name="Sky Sports F1 FHD" tvg-logo="https://i.ibb.co/h26bK2Q/sky-f1.png" group-title="hilaytv",Sky Sports F1 FHD
-https://a1xs.vip/2000005
-#EXTINF:-1 tvg-id="SkySpCricket.HD.uk" tvg-name="Sky Sports Cricket FHD" tvg-logo="https://i.ibb.co/JyPnwvB/sky-cricket.png" group-title="hilaytv",Sky Sports Cricket FHD
-https://a1xs.vip/2000006
-#EXTINF:-1 tvg-id="SkySp.Mix.HD.uk" tvg-name="Sky Sports Mix FHD" tvg-logo="https://i.ibb.co/7kYj5gc/sky-mix.png" group-title="hilaytv",Sky Sports Mix FHD
-https://a1xs.vip/2000008
-#EXTINF:-1 tvg-id="SkySp.Golf.HD.uk" tvg-name="Sky Sports Golf FHD" tvg-logo="https://i.ibb.co/QvhY4tX/sky-golf.png" group-title="hilaytv",Sky Sports Golf FHD
-https://a1xs.vip/2000009
-#EXTINF:-1 tvg-id="SkySp.Racing.HD.uk" tvg-name="Sky Sports Racing FHD" tvg-logo="https://i.ibb.co/Hnp1hBz/sky-racing.png" group-title="hilaytv",Sky Sports Racing FHD
-https://a1xs.vip/2000010
-#EXTINF:-1 tvg-id="SkySp.ActionHD.uk" tvg-name="Sky Sports Action FHD" tvg-logo="https://i.ibb.co/VqtQrDq/sky-action.png" group-title="hilaytv",Sky Sports Action FHD
-https://a1xs.vip/2000011
-#EXTINF:-1 tvg-id="SkySp+HD.uk" tvg-name="Sky Sports+ FHD" tvg-logo="https://i.ibb.co/ccNV9ppd/Sky-Sportsplus.png" group-title="hilaytv",Sky Sports+ FHD
-https://a1xs.vip/2000012
-#EXTINF:-1 tvg-id="SkySp.Tennis.HD.uk" tvg-name="Sky Sports Tennis FHD" tvg-logo="https://i.imgur.com/ZNUDU1r.png" group-title="hilaytv",Sky Sports Tennis FHD
-https://a1xs.vip/2000013
-#EXTINF:-1 tvg-id="TNT.Sports.1.HD.uk" tvg-name="TNT Sports 1 FHD" tvg-logo="https://i.imgur.com/1EYnddH.png" group-title="hilaytv",TNT Sports 1 FHD
-https://a1xs.vip/2000021
-#EXTINF:-1 tvg-id="TNT.Sports.2.HD.uk" tvg-name="TNT Sports 2 FHD" tvg-logo="https://i.imgur.com/YtGYRIB.png" group-title="hilaytv",TNT Sports 2 FHD
-https://a1xs.vip/2000022
-#EXTINF:-1 tvg-id="TNT.Sports.3.HD.uk" tvg-name="TNT Sports 3 FHD" tvg-logo="https://i.imgur.com/z1d9M65.png" group-title="hilaytv",TNT Sports 3 FHD
-https://a1xs.vip/2000023
-#EXTINF:-1 tvg-id="TNT.Sports.4.HD.uk" tvg-name="TNT Sports 4 FHD" tvg-logo="https://i.imgur.com/K92UuvG.png" group-title="hilaytv",TNT Sports 4 FHD
-https://a1xs.vip/2000024
-#EXTINF:-1 tvg-id="SNY:.SportsNet.New.York.(Comcast).us" tvg-name="SportsNet NY FHD" tvg-logo="https://pixvid.org/images/2025/02/05/Sportsnet_NY.png" group-title="hilaytv",SportsNet NY FHD
-https://a1xs.vip/40000045
-#EXTINF:-1 tvg-id="Spectrum.SportsNet.us" tvg-name="Spectrum Sportsnet" tvg-logo="https://i.postimg.cc/ZRChbGNc/spectrum-sportsnet.png" group-title="hilaytv",Spectrum Sportsnet FHD
-https://a1xs.vip/4000006
-#EXTINF:-1 tvg-id="plex.tv.CBS.Sports.HQ.plex" tvg-name="CBS Sports HQ" tvg-logo="https://pixvid.org/images/2025/01/31/CBS_Sports_HQ.png" group-title="hilaytv",CBS Sports HQ FHD
-https://a1xs.vip/4000007
-#EXTINF:-1 tvg-id="Sportsnet.(Ontario).ca" tvg-name="https://i.imgur.com/o6Ct6Ce.png" group-title="hilaytv",Sportsnet Ontario FHD
-https://a1xs.vip/6000011
-#EXTINF:-1 tvg-id="Sportsnet.One.ca" tvg-name="Sportsnet One FHD" tvg-logo="https://i.imgur.com/SxBnZN0.png" group-title="hilaytv",Sportsnet One FHD
-https://a1xs.vip/6000012
-#EXTINF:-1 tvg-id="Sportsnet.World.ca" tvg-name="Sportsnet World FHD" tvg-logo="https://i.imgur.com/EJy8K7F.png" group-title="hilaytv",Sportsnet World FHD
-https://a1xs.vip/6000013
-#EXTINF:-1 tvg-id="Sportsnet.360.ca" tvg-name="Sportsnet 360 FHD" tvg-logo="https://i.imgur.com/8YNVKqC.png" group-title="hilaytv",Sportsnet 360 FHD
-https://a1xs.vip/6000014
-#EXTINF:-1 tvg-id="FoxCricket.au" tvg-name="Fox Sports 501 FHD" tvg-logo="https://i.imgur.com/59gCbVd.png" group-title="hilaytv",Fox Sports 501 FHD
-https://a1xs.vip/700001
-#EXTINF:-1 tvg-id="FoxLeague.au" tvg-name="Fox Sports 502 FHD" tvg-logo="https://i.imgur.com/idKGREY.png" group-title="hilaytv",Fox Sports 502 FHD
-https://a1xs.vip/700002
-#EXTINF:-1 tvg-id="FoxSports503.au" tvg-name="Fox Sports 503 FHD" tvg-logo="https://i.imgur.com/5PUsSnn.png" group-title="hilaytv",Fox Sports 503 FHD
-https://a1xs.vip/700003
-#EXTINF:-1 tvg-id="FoxFooty.au" tvg-name="Fox Sports 504 FHD" tvg-logo="https://i.imgur.com/aEoU7gf.png" group-title="hilaytv",Fox Sports 504 FHD
-https://a1xs.vip/700004
-#EXTINF:-1 tvg-id="FoxSports505.au" tvg-name="Fox Sports 505 FHD" tvg-logo="https://i.imgur.com/angJkah.png" group-title="hilaytv",Fox Sports 505 FHD
-https://a1xs.vip/700005
-#EXTINF:-1 tvg-id="FoxSports506.au" tvg-name="Fox Sports 506 FHD" tvg-logo="https://i.imgur.com/eA1hiR0.png" group-title="hilaytv",Fox Sports 506 FHD
-https://a1xs.vip/700006
-#EXTINF:-1 tvg-id="FoxSportsMore.au" tvg-name="Fox Sports 507 FHD" tvg-logo="https://i.imgur.com/kGm7Ts1.png" group-title="hilaytv",Fox Sports 507 FHD
-https://a1xs.vip/700007
-#EXTINF:-1 tvg-id="Premier.Sports.1.HD.ie" tvg-name="Premier Sports 1 FHD" tvg-logo="https://i.imgur.com/2PGUHlW.png" group-title="hilaytv",IRE: Premier Sports 1 FHD
-https://a1xs.vip/8000021
-#EXTINF:-1 tvg-id="Premier.Sports.2.HD.ie" tvg-name="Premier Sports 2 FHD" tvg-logo="https://i.imgur.com/mLYkn9p.png" group-title="hilaytv",IRE: Premier Sports 2 FHD
-https://a1xs.vip/8000022
-#EXTINF:-1 tvg-id="one-sports-hd" tvg-logo="https://i.imgur.com/imI97L2.png" group-title="hilaytv",One Sports HD Cignal
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesports_hd/default/index.mpd
-#EXTINF:-1 tvg-id="one-sports-plus" tvg-logo="https://i.imgur.com/RnDeKOj.png" group-title="hilaytv",One Sports Plus
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesportsplus_hd1/default/index.mpd
-#EXTINF:-1 tvg-id="premier-sports" tvg-logo="https://i.imgur.com/GTfUEnU.png" group-title="hilaytv",Premier Sports
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_ps_hd1/default/index.mpd
-#EXTINF:-1 tvg-id="premier-sports-2" tvg-logo="https://i.imgur.com/OWVR172.png" group-title="hilaytv",Premier Sports 2
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/premiersports2hd/default/index.mpd
-#EXTINF:-1 tvg-id="ts78" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-8301-j7hc0820-v1/imageContent-8301-j7hc0820-m1.png" group-title="hilaytv",Star Sports 1 HD
-https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8
-#EXTINF:-1 tvg-id="ts812" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-52842-k980h8vc-v1/imageContent-52842-k980h8vc-m2.png" group-title="hilaytv",Eurosport HD
-https://mini.allinonereborn.online/jiotv-in/app/ts_live_875.m3u8
-#EXTINF:-1  tvg-id="ts1067" tvg-chno="56" tvg-name="Star Sports 1 Tamil HD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/SS1TAMHD_Thumbnail-v1/SS1TAMHD_Thumbnail.png" group-title="hilaytv", Star Sports 1 Tamil HD
-https://jtvp.8088yyy.workers.dev/bpk-tv/Star_Sports_1_Tamil_HD_BTS/output/index.mpd|Referer=https://m3u.8088y.site/
-#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/236_144.png" group-title="hilaytv" tvg-id="beINSports" tvg-name="beINSports", beIN Sports HD
-https://linearjitp-playback.astro.com.my/dash-wv/linear/408/default_ott.mpd
-#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/466_144.png" group-title="hilaytv" tvg-id="beINSports2" tvg-name="beINSports2", beIN Sports 2 HD
-https://linearjitp-playback.astro.com.my/dash-wv/linear/5066/default_ott.mpd
-#EXTINF:-1 tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/313_144.png" group-title="hilaytv" tvg-id="beINSports3" tvg-name="beINSports3", beIN Sports 3 HD
-https://linearjitp-playback.astro.com.my/dash-wv/linear/2705/default_ott.mpd
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkjmoUatVnbQsL-NNHSj2L9zjbbMg92x5pNA&s" group-title="hilaytv",Fast Sports HD
-https://live2.shoq.com.pk/live/eds/Fast_Sports_HD/DASH/Fast_Sports_HD.mpd
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70632.jpeg" tvg-name="SUPER SPORT 1 HD" group-title="hilaytv",SUPER SPORT 1 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473973.m3u8
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70633.jpeg" tvg-name="SUPER SPORT 2 HD" group-title="hilaytv",SUPER SPORT 2 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473974.m3u8
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70634.jpeg" tvg-name="SUPER SPORT 3 HD" group-title="hilaytv",SUPER SPORT 3 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473975.m3u8
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70635.jpeg" tvg-name="SUPER SPORT 4 HD" group-title="hilaytv",SUPER SPORT 4 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473976.m3u8
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70636.jpeg" tvg-name="SUPER SPORT 5 HD" group-title="hilaytv",SUPER SPORT 5 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473977.m3u8
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70637.jpeg" tvg-name="SUPER SPORT 6 HD" group-title="hilaytv",SUPER SPORT 6 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473978.m3u8
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70638.jpeg" tvg-name="SUPER SPORT KOSOVA 1 HD" group-title="hilaytv",SUPER SPORT KOSOVA 1 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473979.m3u8
-#EXTINF:-1 tvg-id="Default" tvg-logo="http://tv.fusion4k.cc/stalker_portal/misc/logos/320/70639.jpeg" tvg-name="SUPER SPORT KOSOVA 2 HD" group-title="hilaytv",SUPER SPORT KOSOVA 2 HD
-https://crimson-sea-7857.aayushmansinghrajpurohit95.workers.dev/473980.m3u8
-#EXTINF:-1 tvg-id="Eurosport" tvg-name="Eurosport" tvg-logo="https://file.garden/aN9J-XbDsxz3RbSu/sports/eurosports.jpg?raw=true" group-title="hilaytv",EUROSPORT
-https://atemecdnbalancer-voe.sysln.id/live/eds/EUROSPORTHD/mpd/EUROSPORTHD.mpd
-#EXTINF:-1 tvg-id="tvri.sport.id" tvg-name="tvri sport" tvg-logo="https://file.garden/aN9J-XbDsxz3RbSu/sports/tvrisport.jpg?raw=true" group-title="hilaytv",TVRI SPORT
-https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://file.garden/aN9J-XbDsxz3RbSu/sports/wedotvsports.jpg?raw=true" group-title="hilaytv",WE DO SPORT
-https://op-group1-swiftservehd-1.dens.tv/h/h71/wedo_sport.m3u8?app_type=web&userid=lite&chname=wedoSports
-#EXTINF:-1 tvg-id="Sportstv.tr" tvg-name="Sportstv" tvg-logo="https://file.garden/aN9J-XbDsxz3RbSu/sports/sportstvtr.jpg?raw=true" group-title="hilaytv",SPORTS TV TURKEY
-http://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8
-#EXTINF:-1 tvg-id="Dubai Sports 2.ae" tvg-name="Dubai Sports 2.ae" tvg-logo="https://warningfm.github.io/v3/img/rACeM3m.png?v=1.1.1.1" group-title="hilaytv", DubaiSports 2
-https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/master.m3u8
-#EXTINF:-1 tvg-id="Dubai Sports 3.ar" tvg-name="Dubai Sports 3.ar" tvg-logo="https://i.imgur.com/FzcQgKU.png?v=1.1.1.1" group-title="hilaytv", DubaiSports 3
-https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/master.m3u8

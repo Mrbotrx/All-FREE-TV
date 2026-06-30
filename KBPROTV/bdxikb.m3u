@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8798
-🇧🇩 BDXI CHANNELS : 107
+📺 TOTAL CHANNELS : 8370
+🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 52
-🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 333
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 216
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 01-07-2026
-🕒 UPDATE TIME    : 01:24 AM
+🕒 UPDATE TIME    : 03:19 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -195,41 +195,3 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/master/611d79b11
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8?hdnts=st%3D1782817078~exp%3D1782838678~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeepunjabharyanahima%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F65eed269-2f3a-4dd0-ac89-d18959af28e3%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_15_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_15_-1~hmac%3D38e390c6cf8a135602b9b7ede7b20fe6327b6229e0fe6e7e053a3a0f90209129
 #EXTINF:-1 tvg-id="27" tvg-chno="801" tvg-name="zee-salaam" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/uudnpd.png" group-title="Yupptv", Zee Salaam
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/426c6db7-595e-4aa8-859c-7e86ed2811d0/main.m3u8?hdnts=st%3D1782817078~exp%3D1782838678~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeesalaam%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F426c6db7-595e-4aa8-859c-7e86ed2811d0%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_27_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.173.181.21_yuppfast_2_channel_27_-1~hmac%3D40cf20cf8085c62550595b6791c0c4a9d8272611d29c889dc2708a608f89c61e
-#EXTINF:-1 tvg-id="SONY.PIX.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-pix-hd-in.png" group-title="hilaytv",Sony PIX HD
-https://dish.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8
-#EXTINF:-1 tvg-id="ZEE.CAFE.HD.in" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/66/Zeecafenewlogo.png"group-title="hilaytv",ZEE CAFE' HD
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=3226
-#EXTINF:-1 tvg-id="SET.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-entertainment-television-hd-in.png" group-title="hilaytv",SONY HD
-http://217.20.112.199/sethd/index.m3u8
-#EXTINF:-1 tvg-id="SAB.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-sab-hd-in.png" group-title="hilaytv",Sony SAB HD
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=3085
-#EXTINF:-1 tvg-id="Zee.TV.HD.uk" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/zee-tv-hd-in.png" group-title="hilaytv",ZEE TV HD UK
-https://portal-to-m3u-07.iptv07india.workers.dev/play.m3u8?id=3091
-#EXTINF:-1 tvg-id="SONY.BBC.EARTH.HD.in" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sony-bbc-earth-hd-in.png" group-title="hilaytv",Sony BBC Earth HD
-https://live-manifest.production-public.tubi.io/live/88810cb1-e91e-4f19-870b-513ffc9a39cb/playlist.m3u8
-#EXTINF:-1 tvg-id="Sony.Cine.us" tvg-name="" tvg-logo="https://www.cinesony.com/sites/cinesony/themes/custom/cinesony/dist/img/cinesony.png" group-title="hilaytv",SONY CINE
-https://a-cdn.klowdtv.com/live1/cine_720p/chunks.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="hilaytv",Al Jazeera (1080p)
-https://live-hls-apps-aja-fa.getaj.net/AJA/index.m3u8
-#EXTINF:-1 tvg-id="ts502" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeCafeHD_Thumbnail_ceda2afa-65e4-4d25-98c0-750f82a0a2fc.png" group-title="hilaytv", Zee Caf√© HD
-https://z5.8088yyy.workers.dev/0-9-zeecafehd.m3u8|Referer=https://m3u.8088y.site/
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Zee_Caf%C3%A9_2025.svg/330px-Zee_Caf%C3%A9_2025.svg.png" group-title="hilaytv",Zee Cafe
-https://bd.drmlive.net/toffee/cdn/live/zee_cafe_hd/playlist.m3u8
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_HD.png" group-title="hilaytv",SONY TEN 1 HD
-https://la.drmlive.net/tp/sliv-ten1hd.m3u8
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png" group-title="hilaytv",SONY TEN 2 HD
-https://la.drmlive.net/tp/sliv-ten2hd.m3u8
-#EXTINF:-1 tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" group-title="hilaytv",SONY TEN 4 HD
-https://la.drmlive.net/tp/sliv-ten4hd.m3u8
-#EXTINF:-1 tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen5_HD_Logo_CLR.png" group-title="hilaytv",SONY TEN 5 HD
-https://la.drmlive.net/tp/sliv-ten5hd.m3u8
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png" group-title="hilaytv",SONY PIX HD
-https://la.drmlive.net/tp/sliv-pix.m3u8
-#EXTINF: -1 tvg-id="608" group-title="hilaytv" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeTamilHD_Thumbnail_15a9238e-a62c-4641-b564-f5946122eb1a.png", Zee Tamil HD
-https://la.drmlive.net/tp/zee-zeetamil.m3u8
-#EXTINF:-1 tvg-id="ts1183" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/ZeeThirai_Thumbnail_96ccd831-12bb-47e6-b57f-5e0a71ccf81b.png" group-title="hilaytv",Zee Thirai HD
-https://z5.8088yyy.workers.dev/0-9-224.m3u8|Referer=https://m3u.8088y.site/
-#EXTINF:-1 tvg-id="AlJazeeraEnglish.id" tvg-name="Al Jazeera English" tvg-logo="https://file.garden/aN9J-XbDsxz3RbSu/news/aljazeeraeng.jpg?raw=true" group-title="hilaytv",ALJAZEERA ENGLISH
-https://atemecdnbalancer-voe.sysln.id/live/eds/AlJazeeraIntHD/mpd/AlJazeeraIntHD.mpd
-#EXTINF:-1 tvg-id="SONY MOVIES.mx" tvg-logo="https://i.ibb.co.com/Z2hPxjQ/sonymvs.png" group-title="hilaytv", SONY MOVIES
-https://live-atv-cdn.izzigo.tv/4/out/u/dash/SONY-MOVIES-HD/default.mpd
