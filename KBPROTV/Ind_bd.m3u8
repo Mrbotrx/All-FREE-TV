@@ -4,7 +4,7 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8794
+📺 TOTAL CHANNELS : 8796
 🇧🇩 BDXI CHANNELS : 107
 🇧৩ BD CHANNELS   : 52
 🇮৩ IND CHANNELS  : 16
@@ -12,7 +12,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 30-06-2026
-🕒 UPDATE TIME    : 12:12 PM
+🕒 UPDATE TIME    : 04:19 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -36,15 +36,15 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a2
 #EXTINF:-1 tvg-name="Hindi Hits HD" group-title="BD",Hindi Hits HD
 http://146.59.253.52:8080/hindihitshd/index.m3u8
 #EXTINF:-1 tvg-id="160" tvg-chno="13" tvg-name="hindi-khabar" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hindi-khabar.png" group-title="Yupptv", Hindi Khabar
-https://d1msejlow1t3l4.cloudfront.net/fta/hindikhabar/playlist.m3u8?hdnts=st%3D1782772793~exp%3D1782794393~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_160_-1~hmac%3Db51b83770ad9c0bd9d1506546c5d7aa312a69ba0a5d30026bb31d1e4550e4e0f
+https://d1msejlow1t3l4.cloudfront.net/fta/hindikhabar/playlist.m3u8?hdnts=st%3D1782776487~exp%3D1782798087~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_160_-1~hmac%3D969ad4f45ac492e7f72ebcb9922f85a56d7385efa46d48dcd256d2088b701c7c
 #EXTINF:-1 tvg-id="310" tvg-chno="" tvg-name="naxatra-news-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/naxatra-news-hindi.png" group-title="Yupptv", Naxatra News Hindi
-https://d2gvyg6lvauoko.cloudfront.net/230226/naxatranewshindi/playlist.m3u8?hdnts=st%3D1782772818~exp%3D1782794418~acl%3D%21%2A%2F230226%2Fnaxatranewshindi%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_310_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_310_-1~hmac%3D9fe24494cd7cce67f95f956993d6c6512ed857cf9d2c27b8fad8e2077ebce843
+https://d2gvyg6lvauoko.cloudfront.net/230226/naxatranewshindi/playlist.m3u8?hdnts=st%3D1782776511~exp%3D1782798111~acl%3D%21%2A%2F230226%2Fnaxatranewshindi%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_310_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_310_-1~hmac%3D8f3f9e2bbd9479e0f6a0e3915816bd7792352681359149bb419f9fefc643e6b8
 #EXTINF:-1 tvg-id="47" tvg-chno="83" tvg-name="bollywood-4u" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sinxiy.png" group-title="Yupptv", Bollywood 4U
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st%3D1782772885~exp%3D1782794485~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F22d13e33-8705-40e8-9809-4e80aa795f15%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_47_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_47_-1~hmac%3D9adf44703047efa1f3c6296350d2ed3520b392fba951af16491a070a55cd4f9c
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st%3D1782776577~exp%3D1782798177~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F22d13e33-8705-40e8-9809-4e80aa795f15%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_47_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_47_-1~hmac%3Ddc667376de064bf13195922c2b39e3e3056cc3b5f4594b759845941cc7bc6f3c
 #EXTINF:-1 tvg-id="199" tvg-chno="711" tvg-name="boogle-bollywood" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/boogle-bollywood.png" group-title="Yupptv", Boogle Bollywood
-https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st%3D1782772908~exp%3D1782794508~acl%3D%21%2A%2F181224%2Fsmil%3Abogglebollywood.smil%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_199_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_199_-1~hmac%3D60f5db9cc2f5988d753f7f9524b97b3a38bbb6457de58b2fcbdb9f19ba391119
+https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st%3D1782776608~exp%3D1782798208~acl%3D%21%2A%2F181224%2Fsmil%3Abogglebollywood.smil%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_199_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_199_-1~hmac%3Dd9009d0e00e5b4e90cce2b66adac9b9017f3b8fccd52d5dcabe2c469dc82fda3
 #EXTINF:-1 tvg-id="280" tvg-chno="109" tvg-name="hosanna-tv-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hosanna-tv-hindi.png" group-title="Yupptv", Hosanna TV Hindi
-https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D1782772927~exp%3D1782794527~acl%3D%21%2A%2Flive%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.61.49_yuppfast_2_channel_280_-1~hmac%3D05389b878c6645e60bf21a4a4c9f565a2ed9d4819041db8f5b705323ff3405f1
+https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D1782776628~exp%3D1782798228~acl%3D%21%2A%2Flive%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.49.13.178_yuppfast_2_channel_280_-1~hmac%3D895738513299eb4c939e6f8324a424f9e5ed6cb654dafbb354e8a6d0cf20082a
 #EXTINF:-1 tvg-id="Bollywood.HD.in" tvg-name="" tvg-logo="https://www.pasjatv.pl/files/tv/photo/min/160639773975_bollywood-hd-inne.png" group-title="hilaytv",Bollywood HD
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
 #EXTINF:-1 tvg-id="MBCBollywood.ae" tvg-name="" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-arab-emirates/mbc-bollywood-ae.png" group-title="hilaytv",MBC Bollywood
