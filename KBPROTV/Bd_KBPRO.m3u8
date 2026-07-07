@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8377
+📺 TOTAL CHANNELS : 8423
 🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 50
 🇮৩ IND CHANNELS  : 13
-🏆 SPORTS         : 218
+🏆 SPORTS         : 222
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 07-07-2026
-🕒 UPDATE TIME    : 05:45 AM
+🕒 UPDATE TIME    : 09:20 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -89,8 +89,8 @@ https://mumbai-edge.smartplaytv.in/NTVTelugu/index.m3u8
 https://cdn-dvr.ntv.ru/th_hit/index.m3u8
 #EXTINF:-1 tvg-id="ONTV.mn@SD" tvg-logo="https://i.imgur.com/EzODUBO.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="General",ONTV (1080p)
 https://cdn4.skygo.mn/live/disk1/ONTV/DASH-FTA/ONTV.mpd
-#EXTINF:-1 tvg-id="OnTV4U.us@SD" tvg-logo="https://i.imgur.com/yaCK1Mh.png" group-title="Shop",ONTV4U (1080p)
-https://cdn13.crtvnoc.com/ONTV4U-on-DistroTV/index.m3u8
+#EXTINF:-1 tvg-id="OnTV4U.us@SD" tvg-logo="https://i.imgur.com/yaCK1Mh.png" group-title="Shop",OnTV4U (1080p) [Geo-blocked]
+https://stirr.b-cdn.net/stirr/playlist.m3u8
 #EXTINF:-1 tvg-id="OrangeBanglaTV.in@SD" tvg-logo="https://i.imgur.com/wjSaHj5.png" group-title="Music",Orange Bangla TV (720p)
 https://cdn-4.pishow.tv/live/1499/master.m3u8
 #EXTINF:-1 tvg-id="PeaceTVBangla.ae@SD" tvg-logo="https://i.imgur.com/1ztVXUi.png" group-title="Religious",Peace TV Bangla (1080p)
