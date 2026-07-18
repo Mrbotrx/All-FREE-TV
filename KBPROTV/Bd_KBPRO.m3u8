@@ -4,7 +4,7 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8758
+📺 TOTAL CHANNELS : 8756
 🇧🇩 BDXI CHANNELS : 91
 🇧৩ BD CHANNELS   : 54
 🇮৩ IND CHANNELS  : 14
@@ -12,7 +12,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 19-07-2026
-🕒 UPDATE TIME    : 04:49 AM
+🕒 UPDATE TIME    : 05:53 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -122,8 +122,8 @@ https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="WiseHumanTv.ir@HD" tvg-logo="https://i.imgur.com/BT7EtfB.png" group-title="Religious",WiseHumanTv (1080p)
 https://avr.host247.net/live/WiseHumanTv/playlist.m3u8
 #EXTINF:-1 tvg-id="24" tvg-chno="678" tvg-name="republic-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/awqywf.png" group-title="Yupptv", Republic Bangla
-https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-896571/out/v1/9a5954cd7b7648b78160649038cfd0e4/main.m3u8?hdnts=st%3D1784407839~exp%3D1784429439~acl%3D%21%2A%2Fvglive-sk-896571%2Fout%2Fv1%2F9a5954cd7b7648b78160649038cfd0e4%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.226.124.16_yuppfast_2_channel_24_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.226.124.16_yuppfast_2_channel_24_-1~hmac%3D2b204e48c8c5a8a53b7e1fee3760f6b8b79d3bc12ab10c60fea1427fe600abc8
+https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-896571/out/v1/9a5954cd7b7648b78160649038cfd0e4/main.m3u8?hdnts=st%3D1784411544~exp%3D1784433144~acl%3D%21%2A%2Fvglive-sk-896571%2Fout%2Fv1%2F9a5954cd7b7648b78160649038cfd0e4%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.155.252.117_yuppfast_2_channel_24_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.155.252.117_yuppfast_2_channel_24_-1~hmac%3D83014baca47310ce74a19fcb20bd2d97ceb9f8e5e9b7799bb46fdd516ff77264
 #EXTINF:-1 tvg-id="35" tvg-chno="680" tvg-name="tv9-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/mnuwms.png" group-title="Yupptv", TV9 Bangla
-https://tv9live.yuppcdn.net/vglive-sk-349214/v1/019dfcc139501567ee93770f7da98/019dfcc65a271ea55784752988543/main.m3u8?hdnts=st%3D1784407843~exp%3D1784429443~acl%3D%21%2A%2Fvglive-sk-349214%2Fv1%2F019dfcc139501567ee93770f7da98%2F019dfcc65a271ea55784752988543%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.226.124.16_yuppfast_2_channel_35_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.226.124.16_yuppfast_2_channel_35_-1~hmac%3D3c4c0b948be18175e639fea896d14b77e8af3eb3c8c7790cff969a3005d8fea6
+https://tv9live.yuppcdn.net/vglive-sk-349214/v1/019dfcc139501567ee93770f7da98/019dfcc65a271ea55784752988543/main.m3u8?hdnts=st%3D1784411547~exp%3D1784433147~acl%3D%21%2A%2Fvglive-sk-349214%2Fv1%2F019dfcc139501567ee93770f7da98%2F019dfcc65a271ea55784752988543%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.155.252.117_yuppfast_2_channel_35_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.155.252.117_yuppfast_2_channel_35_-1~hmac%3De7e22afabf5cbe28d62daf34537432d634f6a7953295e5fe91e852e0ec7f0fac
 #EXTINF:-1 tvg-id="100" tvg-chno="402" tvg-name="ntv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/ntv.png" group-title="Yupptv", NTV
-https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D1784407845~exp%3D1784429445~acl%3D%21%2A%2F110322%2Fntv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.226.124.16_yuppfast_2_channel_100_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.226.124.16_yuppfast_2_channel_100_-1~hmac%3Dfb334c20dc1b0b9aa7ea2ec986a1f3214d703cf6615f5c11c0eab044e52c9785
+https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D1784411549~exp%3D1784433149~acl%3D%21%2A%2F110322%2Fntv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.155.252.117_yuppfast_2_channel_100_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.155.252.117_yuppfast_2_channel_100_-1~hmac%3Dbe20277d91a894dcab37baba209423d3caf509a5a498f9ac317bcb48eee1fd36
