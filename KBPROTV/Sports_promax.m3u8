@@ -8,11 +8,11 @@
 🇧🇩 BDXI CHANNELS : 91
 🇧৩ BD CHANNELS   : 54
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 246
+🏆 SPORTS         : 245
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 20-07-2026
-🕒 UPDATE TIME    : 02:46 AM
+🕒 UPDATE TIME    : 03:51 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -399,14 +399,12 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
 http://206.212.244.63/63/index.m3u8
 #EXTINF:-1 tvg-name="Bein Sports Direct HD" group-title="BD",Bein Sports Direct HD
 http://145.239.5.177/557a/index.m3u8
-#EXTINF:-1 tvg-name="unt-s Sports HD" group-title="BD",unt-s Sports HD
-http://103.165.93.31:8095/unt-s/video.m3u8
-#EXTINF:-1 tvg-name="QAZ Sports HD" group-title="BD",QAZ Sports HD
-http://stream.mcquack.net/72/index.m3u8
 #EXTINF:-1 tvg-name="PTV Sports HD" group-title="BD",PTV Sports HD
 http://103.165.93.31:8095/Fifa-1/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="T Sports HD" group-title="BD",T Sports HD
-http://103.165.93.31:8095/tsports/video.m3u8
+#EXTINF:-1 tvg-name="QAZ Sports HD" group-title="BD",QAZ Sports HD
+http://stream.mcquack.net/72/index.m3u8
+#EXTINF:-1 tvg-name="unt-s Sports HD" group-title="BD",unt-s Sports HD
+http://103.165.93.31:8095/unt-s/video.m3u8
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver HD" group-title="TVPass",Altitude Sports Denver HD
 https://tvpass.org/live/altitude-sports-denver/hd
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA HD" group-title="TVPass",CBS Sports Network USA HD
