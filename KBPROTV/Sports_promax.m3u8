@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8782
+📺 TOTAL CHANNELS : 8777
 🇧🇩 BDXI CHANNELS : 91
 🇧৩ BD CHANNELS   : 54
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 245
+🏆 SPORTS         : 242
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 20-07-2026
-🕒 UPDATE TIME    : 03:51 AM
+🕒 UPDATE TIME    : 04:51 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -395,16 +395,10 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_2_hd/playlist.m3u8
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",[BD] Eurosport HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
-#EXTINF:-1 tvg-name="Fox Sports HD" group-title="BD",Fox Sports HD
-http://206.212.244.63/63/index.m3u8
-#EXTINF:-1 tvg-name="Bein Sports Direct HD" group-title="BD",Bein Sports Direct HD
-http://145.239.5.177/557a/index.m3u8
 #EXTINF:-1 tvg-name="PTV Sports HD" group-title="BD",PTV Sports HD
 http://103.165.93.31:8095/Fifa-1/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-name="QAZ Sports HD" group-title="BD",QAZ Sports HD
-http://stream.mcquack.net/72/index.m3u8
-#EXTINF:-1 tvg-name="unt-s Sports HD" group-title="BD",unt-s Sports HD
-http://103.165.93.31:8095/unt-s/video.m3u8
+#EXTINF:-1 tvg-name="Fox Sports HD" group-title="BD",Fox Sports HD
+http://206.212.244.63/63/index.m3u8
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver HD" group-title="TVPass",Altitude Sports Denver HD
 https://tvpass.org/live/altitude-sports-denver/hd
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA HD" group-title="TVPass",CBS Sports Network USA HD
