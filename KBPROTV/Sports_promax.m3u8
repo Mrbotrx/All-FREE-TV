@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8972
+📺 TOTAL CHANNELS : 8969
 🇧🇩 BDXI CHANNELS : 92
 🇧৩ BD CHANNELS   : 54
 🇮৩ IND CHANNELS  : 15
-🏆 SPORTS         : 270
+🏆 SPORTS         : 269
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 25-07-2026
-🕒 UPDATE TIME    : 06:03 PM
+🕒 UPDATE TIME    : 08:18 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -412,21 +412,19 @@ http://145.239.5.177/349/index.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuSport.ru@SD" tvg-logo="https://i.imgur.com/BKaEtqL.png" group-title="Sports",Астрахань.Ru Sport (720p)
 https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
-https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1784971319~exp%3D1784992919~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_135.232.232.35_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_135.232.232.35_yuppfast_2_channel_284_-1~hmac%3D795c8854a186438dd0a889a36b3d7f78c09fd09d0610ed637015764efa54d9b9
+https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1784976973~exp%3D1784998573~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.190.140.143_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.190.140.143_yuppfast_2_channel_284_-1~hmac%3D5bd46c6240c95b51ef4d825b29cac1e4945c2ee97f774abd1b9a5573e872302f
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1784971321~exp%3D1784992921~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_135.232.232.35_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_135.232.232.35_yuppfast_2_channel_76_-1~hmac%3Dcc240f5a3e776d18779b72665b6c486285366a73c8f367ebb5c78d269d5490a6
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1784976974~exp%3D1784998574~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.190.140.143_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.190.140.143_yuppfast_2_channel_76_-1~hmac%3D00b55c23b001ca0629025019899758958e86b9b9525db4a62ab8fb3d34f9ba70
 #EXTINF:-1 tvg-id="292" tvg-chno="266" tvg-name="adventure-sports-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/adventure-sports-tv.png" group-title="Yupptv", Adventure Sports TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dbac0562-cc83-4443-a546-44c04912102a/manifest.m3u8?hdnts=st%3D1784971326~exp%3D1784992926~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fdbac0562-cc83-4443-a546-44c04912102a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_135.232.232.35_yuppfast_2_channel_292_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_135.232.232.35_yuppfast_2_channel_292_-1~hmac%3D8d7bc758d7bcf14ecddea3ba057fdef6a6c31b110c361c915ba5aa25de9602a2
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/20-by-xfireflix.png" group-title="CricHD",PTV Sports
-https://cdn8.zohanayaan.com:1686/hls/ptvpk.m3u8?md5=uGjoyygbCdv6T_4g6e4kJw&expires=1784980216
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dbac0562-cc83-4443-a546-44c04912102a/manifest.m3u8?hdnts=st%3D1784976978~exp%3D1784998578~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fdbac0562-cc83-4443-a546-44c04912102a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.190.140.143_yuppfast_2_channel_292_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.190.140.143_yuppfast_2_channel_292_-1~hmac%3D87637ba25b5db7f12520c790bd2cf39210f257aa2720f12225c22a52e8034295
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="CricHD",A Sports HD
-https://cdn7.zohanayaan.com:1686/hls/asportshd.m3u8?md5=t31El6KzMtwGT2PGhey_gg&expires=1784980217
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/56-by-xfireflix.png" group-title="CricHD",Sky Sport Nz 8
-https://cdn6.zohanayaan.com:1686/hls/sky8nz.m3u8?md5=hdr_0lcNTzHAlkbMT5Fhng&expires=1784980218
+https://cdn2.zohanayaan.com:1686/hls/asportshd.m3u8?md5=jdejcD4epkuAUUbU_OprlQ&expires=1784987421
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1745007829332.png" group-title="CricHD",Sky Sports Action
+https://cdn5.zohanayaan.com:1686/hls/skysact.m3u8?md5=_Z0iQPyUXPw1NksO3AAhdg&expires=1784987423
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="CricHD",Premier Sports 2
-https://cdn9.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=omaUZS8G6P6Yvr1R32sqgA&expires=1784980218
+https://cdn1.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=nGaXvgzJbIjLVFkz_e4NnA&expires=1784987423
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="CricHD",Sony Sports3
-https://cdn8.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=jjaQtrKui9ZUsS0i-lor0A&expires=1784980219
+https://cdn6.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=COlFOp6LV3c4moU_suhgcg&expires=1784987424
 #EXTINF:-1  tvg-id="24.7.Dummy.us" tvg-logo="https://img.platform.wurl.dev/channel/1358/lg/2b0c5b/LG-Logo-PNG-100x100_v1.png" group-title="LGTV",460 Fubo Sports
 https://ad993ce7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEdfRnVib1Nwb3J0c05ldHdvcmtfSExT/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",[BD] Sony Ten Sports 1 HD
@@ -438,21 +436,21 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",[BD] Eurosport HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="BD",A Sports HD
-https://cdn9.zohanayaan.com:1686/hls/asportshd.m3u8?md5=ddSwBxoMGVpOYMD95z5zfw&expires=1784973017
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/43-by-xfireflix.png" group-title="BD",Sky Sports Premier League
-https://cdn9.zohanayaan.com:1686/hls/skysprem.m3u8?md5=2vLHhdMjW_ZXoZM7bTUk_w&expires=1784973020
+https://cdn9.zohanayaan.com:1686/hls/asportshd.m3u8?md5=346-6edHxGAGEPDkioD5xw&expires=1784978421
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/44-by-xfireflix.png" group-title="BD",Sky Sports Football
+https://cdn2.zohanayaan.com:1686/hls/skysfott.m3u8?md5=XUzGpiOBGm2BIXddRXHDTg&expires=1784978422
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="BD",Premier Sports 2
-https://cdn2.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=zNvvXpz7Tvc7RMZjGXTJzg&expires=1784973021
+https://cdn7.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=UjBsbMNnGUaoRWJ4mOPR9w&expires=1784978423
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="BD",Sony Sports3
-https://cdn7.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=eXpVjH5xs9JbxIOW3cWpjw&expires=1784973022
+https://cdn4.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=88f47T7HDJjqo8KUvaQtxg&expires=1784978423
 #EXTINF:-1 tvg-name="Pk Sports  HD" group-title="BD",Pk Sports  HD
 https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8
 #EXTINF:-1 tvg-name="QAZ Sports HD" group-title="BD",QAZ Sports HD
 http://stream.mcquack.net/72/index.m3u8
-#EXTINF:-1 tvg-name="Mundial Sports HD" group-title="BD",Mundial Sports HD
-https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Bein Sports Direct HD" group-title="BD",Bein Sports Direct HD
 http://145.239.5.177/557a/index.m3u8
+#EXTINF:-1 tvg-name="Mundial Sports HD" group-title="BD",Mundial Sports HD
+https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Star Sports 1 HD" group-title="BD",Star Sports 1 HD
 http://41.205.93.154/STARSPORTS1/index.m3u8
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver HD" group-title="TVPass",Altitude Sports Denver HD
