@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8856
-🇧🇩 BDXI CHANNELS : 89
+📺 TOTAL CHANNELS : 8858
+🇧🇩 BDXI CHANNELS : 92
 🇧৩ BD CHANNELS   : 55
 🇮৩ IND CHANNELS  : 14
 🏆 SPORTS         : 269
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 02-08-2026
-🕒 UPDATE TIME    : 08:15 PM
+🕒 UPDATE TIME    : 09:44 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -406,21 +406,23 @@ http://145.239.5.177/349/index.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuSport.ru@SD" tvg-logo="https://i.imgur.com/BKaEtqL.png" group-title="Sports",Астрахань.Ru Sport (720p)
 https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
-https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1785668804~exp%3D1785690404~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_172.212.171.145_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_172.212.171.145_yuppfast_2_channel_284_-1~hmac%3D80995fadfe681b9092d194790f35cb2a972d9a8c27724f892839bf08369beaad
+https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1785674577~exp%3D1785696177~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.230.250.243_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.230.250.243_yuppfast_2_channel_284_-1~hmac%3D04677db3ddcf6056938f6899fc3cf9b18f78e6b0ef8b1d4603b0a3b9b1bf7412
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1785668805~exp%3D1785690405~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_172.212.171.145_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_172.212.171.145_yuppfast_2_channel_76_-1~hmac%3Df7c3e838d119a3889364f1b3f471e2a8ff00d845da3040b4b9c19bd09d0614bb
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1785674579~exp%3D1785696179~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.230.250.243_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.230.250.243_yuppfast_2_channel_76_-1~hmac%3D54067c0b1866c5ec18093bc40662ed8eb80e24febbb8dc2e15ac90b1fcd193fb
 #EXTINF:-1 tvg-id="292" tvg-chno="266" tvg-name="adventure-sports-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/adventure-sports-tv.png" group-title="Yupptv", Adventure Sports TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dbac0562-cc83-4443-a546-44c04912102a/manifest.m3u8?hdnts=st%3D1785668808~exp%3D1785690408~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fdbac0562-cc83-4443-a546-44c04912102a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_172.212.171.145_yuppfast_2_channel_292_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_172.212.171.145_yuppfast_2_channel_292_-1~hmac%3D2249261e1f41f7583878a340c896e5dadb98e28f4cf241510ed97237bd6a09bd
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dbac0562-cc83-4443-a546-44c04912102a/manifest.m3u8?hdnts=st%3D1785674583~exp%3D1785696183~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fdbac0562-cc83-4443-a546-44c04912102a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.230.250.243_yuppfast_2_channel_292_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.230.250.243_yuppfast_2_channel_292_-1~hmac%3D4ec8c128ac8af02db4f834055c1f5f5a05d1c2ed017faa789e9704eaca75ab92
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/10-by-xfireflix.png" group-title="CricHD",Ten Sports
+https://cdn2.zohanayaan.com:1686/hls/tenspk.m3u8?md5=4KzTPcAzvSoWksntdmZYsw&expires=1785684016
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="CricHD",A Sports HD
-https://cdn3.zohanayaan.com:1686/hls/asportshd.m3u8?md5=9sQjGIGJ0Sz42VywvTV3ZQ&expires=1785679789
+https://cdn8.zohanayaan.com:1686/hls/asportshd.m3u8?md5=7kIMeEbLL-OykxtQKeoiPQ&expires=1785684016
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="CricHD",Premier Sports 2
-https://cdn7.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=qwAwxkxc840JVJ48QLoulw&expires=1785679792
+https://cdn6.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=ZVA-XXVcvTFvZFP-CMxcXA&expires=1785684020
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="CricHD",Sony Sports3
-https://cdn2.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=4xWPDeFm8CNdtEm8xd1uJQ&expires=1785679793
+https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=wX6pkMkCpQeXoyAXSpjXSg&expires=1785684021
 #EXTINF:-1  tvg-id="24.7.Dummy.us" tvg-logo="https://img.platform.wurl.dev/channel/1358/lg/2b0c5b/LG-Logo-PNG-100x100_v1.png" group-title="LGTV",460 Fubo Sports
 https://ad993ce7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEdfRnVib1Nwb3J0c05ldHdvcmtfSExT/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000021473/1785447790990491_dc26_Mohammedan_SC_vs_Samaleswari_Sporting_landscape.jpg" group-title="BD", Mohammedan SC vs Samaleswari Sporting  - 2 Aug 2026 [ENG] - IndianOil Durand Cup 2026
-https://sonydaimenew.akamaized.net/hls/live/20000291/Football0208/ENG/std_lrh-800300010.m3u8?hdnea=exp=1785710418~acl=/*~id=38568692632629898764744514045339~hmac=b39d7f4696ff476cd5e421463d00d4d20e21467d77845896554272c53fa6228f
+https://sonydaimenew.akamaized.net/hls/live/20000291/Football0208/ENG/std_lrh-800300010.m3u8?hdnea=exp=1785715909~acl=/*~id=03242994894794516509202875390333~hmac=7c46d7d43c9b6c4f228a66c31a795cb87f9478b02fe0fefc11c8ec9c89748025
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",[BD] Sony Ten Sports 1 HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/sy5m-JQBv9knK3AHYTTk/posters/5e40bf0e-633f-4d37-a3b2-3d606f0ac19a.png",[BD] Sony Ten Sports 2 HD
@@ -430,13 +432,11 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",[BD] Eurosport HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="BD",A Sports HD
-https://cdn1.zohanayaan.com:1686/hls/asportshd.m3u8?md5=UY_rcIpHhjAGyHKjewMRrA&expires=1785673219
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/56-by-xfireflix.png" group-title="BD",Sky Sport Nz 3
-https://cdn1.zohanayaan.com:1686/hls/sky3nz.m3u8?md5=4Kod5GtjIVhDlFxvEtwj4g&expires=1785673220
+https://cdn3.zohanayaan.com:1686/hls/asportshd.m3u8?md5=h-pTRIF9X3ICvywKBpoCUQ&expires=1785676822
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="BD",Premier Sports 2
-https://cdn7.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=pLg63kMGdoj0JpqE6xz0oQ&expires=1785673222
+https://cdn6.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=7oMEfWAJ0kIrGXEsIT0pWw&expires=1785676825
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="BD",Sony Sports3
-https://cdn2.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=JrI2baDM7ab578vUq4yZBA&expires=1785673223
+https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=KdtA2q-3NzDpng2LC3tEsg&expires=1785676826
 #EXTINF:-1 group-title="BD",-1 tvg-id="t_sports_hd" tvg-name="T Sports HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",T Sports HD
 http://sm-monirul.top/@monirul_Islam_SM/proxy.php?id=t_sports_hd&format=.m3u8
 #EXTINF:-1 tvg-name="Pk Sports  HD" group-title="BD",Pk Sports  HD
