@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8889
+📺 TOTAL CHANNELS : 8856
 🇧🇩 BDXI CHANNELS : 90
-🇧৩ BD CHANNELS   : 56
+🇧৩ BD CHANNELS   : 55
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 266
+🏆 SPORTS         : 267
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 02-08-2026
-🕒 UPDATE TIME    : 05:41 AM
+🕒 UPDATE TIME    : 07:15 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -81,8 +81,6 @@ http://43.252.18.195:5080/LiveApp/streams/ntvhd.m3u8
 https://cdn4.skygo.mn/live/disk1/NTVHD/DASH-FTA/NTVHD.mpd
 #EXTINF:-1 tvg-id="NTV.na@SD" tvg-logo="https://i.imgur.com/c7jUmGS.jpg" group-title="General",NTV (720p)
 https://s-pl-01.mediatool.tv/playout/ntv-abr/index.m3u8
-#EXTINF:-1 tvg-id="NTV.tr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png" group-title="General",NTV (720p) [Not 24/7]
-https://dogus-live.daioncdn.net/ntv/ntv.m3u8
 #EXTINF:-1 tvg-id="NTV.ci@SD" tvg-logo="https://i.imgur.com/qqLXdHz.png" group-title="General",NTV Afrique (1080p) [Not 24/7]
 https://strhlslb01.streamakaci.tv/str_ntv_ntv/str_ntv_ntv_multi/playlist.m3u8
 #EXTINF:-1 tvg-id="NTV.ru@HD" tvg-logo="https://i.imgur.com/9r1BKzK.png" group-title="General",NTV HD (1080p)
