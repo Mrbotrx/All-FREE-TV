@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8869
+📺 TOTAL CHANNELS : 8870
 🇧🇩 BDXI CHANNELS : 93
 🇧৩ BD CHANNELS   : 55
 🇮৩ IND CHANNELS  : 13
-🏆 SPORTS         : 270
+🏆 SPORTS         : 268
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 06-08-2026
-🕒 UPDATE TIME    : 01:05 AM
+🕒 UPDATE TIME    : 02:46 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -199,9 +199,9 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sonybbc_earth_hd/playlist.m3u8
 https://s2.itcnbd.live/server-2/stream/sonyentertainmnt_hd.m3u8
 #EXTINF:-1 tvg-name="Zee TV HD" group-title="BD",Zee TV HD
 https://s2.itcnbd.live/server-2/stream/zee_tv_hd.m3u8
-#EXTINF:-1 tvg-name="Zee Cinema HD" group-title="BD",Zee Cinema HD
-https://s2.itcnbd.live/server-2/stream/zee_cinema_hd.m3u8
 #EXTINF:-1 tvg-name="Sony Sab HD" group-title="BD",Sony Sab HD
 https://s2.itcnbd.live/server-2/stream/sonysab_hd.m3u8
+#EXTINF:-1 tvg-name="Zee Cinema HD" group-title="BD",Zee Cinema HD
+https://s2.itcnbd.live/server-2/stream/zee_cinema_hd.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="CineSony.us@SD",Cine Sony (720p)
 https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
