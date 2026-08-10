@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8837
+📺 TOTAL CHANNELS : 8839
 🇧🇩 BDXI CHANNELS : 89
 🇧৩ BD CHANNELS   : 55
 🇮৩ IND CHANNELS  : 13
-🏆 SPORTS         : 264
+🏆 SPORTS         : 265
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 10-08-2026
-🕒 UPDATE TIME    : 10:32 PM
+🕒 UPDATE TIME    : 11:36 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -401,12 +401,14 @@ https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg012
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1786370760~exp%3D1786392360~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_57.151.143.176_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_57.151.143.176_yuppfast_2_channel_76_-1~hmac%3D765ffef47dfc6de9d37957a00829ea10ddc454d76ceba6934a77f67a936d4bbd
 #EXTINF:-1 tvg-id="292" tvg-chno="266" tvg-name="adventure-sports-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/adventure-sports-tv.png" group-title="Yupptv", Adventure Sports TV
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dbac0562-cc83-4443-a546-44c04912102a/manifest.m3u8?hdnts=st%3D1786370767~exp%3D1786392367~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fdbac0562-cc83-4443-a546-44c04912102a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_57.151.143.176_yuppfast_2_channel_292_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_57.151.143.176_yuppfast_2_channel_292_-1~hmac%3D6c0230a9f6575f1bd38d4cd9ef76cf53b87f9cefc97745efd76664a239c54354
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1-by-xfireflix.png" group-title="CricHD",Star Sports 1 Hindi
+https://cdn5.zohanayaan.com:1686/hls/starhindi.m3u8?md5=BHD7waIuNwD-BnCdrbRusA&expires=1786382424
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="CricHD",A Sports HD
-https://cdn4.zohanayaan.com:1686/hls/asportshd.m3u8?md5=RMR3r_TEOglHVzKY6JSEmQ&expires=1786378824
+https://cdn7.zohanayaan.com:1686/hls/asportshd.m3u8?md5=SzU-9JGt3bXMk07iMK0hDw&expires=1786382428
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="CricHD",Premier Sports 2
-https://cdn6.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=kg8fkbTXZqRMwo9OF3okBg&expires=1786378827
+https://cdn6.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=Gi-YMePFRoa4nFlZcqtLxg&expires=1786382438
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="CricHD",Sony Sports3
-https://cdn5.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=d-VHwyfURM86k_88t_WA1A&expires=1786378828
+https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=XdM9f8AJ4jRnl_cUjcsCMQ&expires=1786382440
 #EXTINF:-1  tvg-id="24.7.Dummy.us" tvg-logo="https://img.platform.wurl.dev/channel/1358/lg/2b0c5b/LG-Logo-PNG-100x100_v1.png" group-title="LGTV",460 Fubo Sports
 https://ad993ce7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEdfRnVib1Nwb3J0c05ldHdvcmtfSExT/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",[BD] Sony Ten Sports 1 HD
