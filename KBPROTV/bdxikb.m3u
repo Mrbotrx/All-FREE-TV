@@ -4,7 +4,7 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8415
+📺 TOTAL CHANNELS : 8416
 🇧🇩 BDXI CHANNELS : 86
 🇧৩ BD CHANNELS   : 47
 🇮৩ IND CHANNELS  : 13
@@ -12,7 +12,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 13-08-2026
-🕒 UPDATE TIME    : 11:22 AM
+🕒 UPDATE TIME    : 01:02 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -147,8 +147,6 @@ https://trs1.aynaott.com/zeetvhd/index.m3u8
 https://duw35ict5q7th.cloudfront.net/index_3.m3u8
 #EXTINF:-1 tvg-id="ZeeZest.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_ZEST/images/LOGO_HD/LOGO_HD_image.png" group-title="Lifestyle",Zee Zest HD (1080p)
 http://103.72.101.252:8080/live/2757.m3u8
-#EXTINF:-1 group-title="klowdtv",-1 tvg-id="CineSony.us@SD",Cine Sony (720p)
-https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="13" tvg-chno="8" tvg-name="zee-news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/rhihqo.png" group-title="Yupptv", Zee News
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8?hdnts=st%3D1786578101~exp%3D1786599701~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeenews%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F8744f9fb-d696-4204-9795-5215ad930c39%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.62.255.23_yuppfast_2_channel_13_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.62.255.23_yuppfast_2_channel_13_-1~hmac%3D2d7f24dc846a729dda83e73349df48135311cdd10d87d38e10b432675129eefc
 #EXTINF:-1 tvg-id="25" tvg-chno="12" tvg-name="zee-hindustan" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sdgosh.png" group-title="Yupptv", Zee Hindustan
@@ -191,3 +189,5 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_tv_hd/playlist.m3u8
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sonybbc_earth_hd/playlist.m3u8
 #EXTINF:-1 tvg-name="Sony TV HD" group-title="BD",Sony TV HD
 https://s2.itcnbd.live/server-2/stream/sonyentertainmnt_hd.m3u8
+#EXTINF:-1 group-title="klowdtv",-1 tvg-id="CineSony.us@SD",Cine Sony (720p)
+https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
