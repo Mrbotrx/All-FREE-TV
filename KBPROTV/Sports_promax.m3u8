@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8405
+📺 TOTAL CHANNELS : 8406
 🇧🇩 BDXI CHANNELS : 85
 🇧৩ BD CHANNELS   : 47
 🇮৩ IND CHANNELS  : 13
-🏆 SPORTS         : 251
+🏆 SPORTS         : 253
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 18-08-2026
-🕒 UPDATE TIME    : 10:02 PM
+🕒 UPDATE TIME    : 11:03 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -479,14 +479,16 @@ https://ott.udptv.xyz/stream/udptvus/beinsports/master.m3u8?u=cocked&p=dd0abb527
 https://ott.udptv.xyz/stream/skyuk/skysportsf1uhd/master.m3u8?u=cocked&p=dd0abb52723d22acc0f97fe0336480feaa88a37ecda55a138a8d5e0ee14b0664
 #EXTINF:-1  tvg-name="Sky Sports Main Event UHD UK" tvg-id="SkySpMainEvHD.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/hd/sky-sports-main-event-uhd-uk.png" group-title="UDPTV",Sky Sports Main Event UHD UK
 https://ott.udptv.xyz/stream/skyuk/skysportsmaineventuhd/master.m3u8?u=cocked&p=dd0abb52723d22acc0f97fe0336480feaa88a37ecda55a138a8d5e0ee14b0664
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1-by-xfireflix.png" group-title="CricHD",Star Sports 1 Hindi
+https://cdn5.zohanayaan.com:1686/hls/starhindi.m3u8?md5=uNXZ3Hd4oAjM8TvcD9_Gww&expires=1787073749
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="CricHD",A Sports HD
-https://cdn4.zohanayaan.com:1686/hls/asportshd.m3u8?md5=Hm3qsakMKmKOW1crCJuapQ&expires=1787070018
+https://cdn3.zohanayaan.com:1686/hls/asportshd.m3u8?md5=b1QNxddcmWD2a_g3kULv_A&expires=1787073756
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/44-by-xfireflix.png" group-title="CricHD",Sky Sports Football
+https://cdn1.zohanayaan.com:1686/hls/skysfott.m3u8?md5=G4pHphYFO5NChd9-Jj6xog&expires=1787073773
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="CricHD",Premier Sports 2
-https://cdn4.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=5XuOSt6lowrc54Bma0zCQw&expires=1787070022
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/13-by-xfireflix.png" group-title="CricHD",Sky Sports Mix
-https://cdn9.zohanayaan.com:1686/hls/skysmixx.m3u8?md5=hdglGNIUh5wiztXsTweBsA&expires=1787070023
+https://cdn5.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=YEoxGY0B9qZ2NdfaEauyPw&expires=1787073777
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="CricHD",Sony Sports3
-https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=MaOHN5JNIZ_KFiRULqR4Ew&expires=1787070024
+https://cdn1.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=5hw2x53wFpvJ98u733VYbg&expires=1787073783
 #EXTINF:-1 group-title="BD" tvg-logo="https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",T Sports (1080p) (1) (2) (2)
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",[BD] Sony Ten Sports 1 HD
@@ -498,11 +500,13 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",[BD] Eurosport HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="BD",A Sports HD
-https://cdn10.zohanayaan.com:1686/hls/asportshd.m3u8?md5=VNIYJynNqqz_qABKvb3uKw&expires=1787067472
+https://cdn4.zohanayaan.com:1686/hls/asportshd.m3u8?md5=Hm3qsakMKmKOW1crCJuapQ&expires=1787070018
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="BD",Premier Sports 2
-https://cdn3.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=Y9RWMb_lu-TpijAkei9MaQ&expires=1787067476
+https://cdn4.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=5XuOSt6lowrc54Bma0zCQw&expires=1787070022
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/13-by-xfireflix.png" group-title="BD",Sky Sports Mix
+https://cdn9.zohanayaan.com:1686/hls/skysmixx.m3u8?md5=hdglGNIUh5wiztXsTweBsA&expires=1787070023
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="BD",Sony Sports3
-https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=VCPN7DWo4UI0AkRMj8CTRw&expires=1787067477
+https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=MaOHN5JNIZ_KFiRULqR4Ew&expires=1787070024
 #EXTINF:-1 tvg-name="A Sports HD" group-title="BD",A Sports HD
 https://playztv-apps.pages.dev/asports/index.m3u8
 #EXTINF:-1 tvg-name="Pk Sports  HD" group-title="BD",Pk Sports  HD
