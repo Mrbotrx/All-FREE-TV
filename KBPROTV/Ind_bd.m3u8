@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8374
+📺 TOTAL CHANNELS : 8376
 🇧🇩 BDXI CHANNELS : 85
 🇧৩ BD CHANNELS   : 47
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 250
+🏆 SPORTS         : 252
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 19-08-2026
-🕒 UPDATE TIME    : 03:15 PM
+🕒 UPDATE TIME    : 04:03 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -43,7 +43,7 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22
 https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st%3D1787119352~exp%3D1787140952~acl%3D%21%2A%2F181224%2Fsmil%3Abogglebollywood.smil%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_172.182.242.241_yuppfast_2_channel_199_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_172.182.242.241_yuppfast_2_channel_199_-1~hmac%3D431561b783f03372e25acecdbe4b23d4c95cd9ab519e6e0ab2f7516b17b8e160
 #EXTINF:-1 tvg-id="280" tvg-chno="109" tvg-name="hosanna-tv-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hosanna-tv-hindi.png" group-title="Yupptv", Hosanna TV Hindi
 https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D1787119373~exp%3D1787140973~acl%3D%21%2A%2Flive%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_172.182.242.241_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_172.182.242.241_yuppfast_2_channel_280_-1~hmac%3Db4cda30a686874e165650a94b0f072a5485bf990328d134e7134b5f27bff64e5
-#EXTINF:-1 tvg-logo="https://img.media.jio.com/tvpimages/37/77/05f60773a033594593a350ad4d4ed5bf_1787118663139_l_medium.jpg" group-title="BD", Day 5 - 1st Test - 19 Aug 2026 [Hindi] - India Tour of Sri Lanka 2026
-https://sonydaimenew.akamaized.net/hls/live/20000300/cricodi1908/HIN/master.m3u8?hdnea=exp=1787161989~acl=/*~id=93930010785055048268686267723706~hmac=b60b12919b676d794aeccfdc152434ad682f78332b4cd61874490192df767a23
+#EXTINF:-1 tvg-logo="https://img.media.jio.com/tvpimages/37/77/05f60773a033594593a350ad4d4ed5bf_1787124633452_l_medium.jpg" group-title="BD", Day 5 - 1st Test - 19 Aug 2026 [Hindi] - India Tour of Sri Lanka 2026
+https://sonydaimenew.akamaized.net/hls/live/20000300/cricodi1908/HIN/master.m3u8?hdnea=exp=1787168698~acl=/*~id=80917419686720389717921107234375~hmac=7e696cdf9382307c5490fb06c15adc2f569493439e3f4257cd98597cfe1a852d
 #EXTINF:-1 tvg-name="Hindi Hits HD" group-title="BD",Hindi Hits HD
 http://146.59.253.52:8080/hindihitshd/index.m3u8
