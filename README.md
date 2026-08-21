@@ -66,3 +66,105 @@ https://raw.githubusercontent.com/Mrbotrx/All-FREE-TV/main/combined_playlist.m3u
 
 
 [![Auto Sync KBTVPRO](https://github.com/Mrbotrx/All-FREE-TV/actions/workflows/sync.yml/badge.svg?branch=main&event=schedule)](https://github.com/Mrbotrx/All-FREE-TV/actions/workflows/sync.yml)
+
+
+
+# 💗 KB CYBER TV
+
+Modern Pink Theme IPTV / M3U Player powered by JavaScript.
+
+KB CYBER TV is an embeddable web player that can load M3U playlists and play supported HLS/M3U8 live streams.
+
+---
+
+## ✨ Features
+
+- 💗 Modern Pink Theme
+- 📺 M3U Playlist Support
+- 📡 HLS / M3U8 Playback
+- 🔎 Channel Search
+- 📂 Category Filter
+- ▶️ Play / Pause
+- 🔊 Volume Control
+- ⚙️ Quality Selection
+- ⛶ Fullscreen
+- ▣ Picture-in-Picture
+- 🔴 LIVE Indicator
+- 🔄 Retry on Stream Error
+- 📱 Mobile Responsive
+- 🖼️ Custom Logo Support
+- 🌐 Easy Website Embed
+- 🚀 CDN Support
+
+---
+
+# 🚀 Quick Start
+
+Add KB CYBER TV to any HTML website using a single `<script>` tag.
+
+```html
+<script
+  src="https://cdn.jsdelivr.net/gh/Mrbotrx/All-FREE-TV@main/player.js"
+  data-title="KB CYBER TV">
+</script>
+
+Use Your Own Playlist
+You can use your own M3U playlist without changing player.js.
+
+
+<script
+  src="https://cdn.jsdelivr.net/gh/Mrbotrx/All-FREE-TV@main/player.js"
+  data-title="KB CYBER TV"
+  data-playlist="https://example.com/my-playlist.m3u">
+</script>
+
+
+Example
+HTML
+<script
+  src="https://cdn.jsdelivr.net/gh/Mrbotrx/All-FREE-TV@main/player.js"
+  data-title="My IPTV"
+  data-playlist="https://example.com/playlist.m3u">
+</script>
+
+Custom Logo
+The default KB CYBER TV logo is:
+https://raw.githubusercontent.com/Mrbotrx/bdxi_tv/refs/heads/main/kbctlogo.png
+You can use your own logo with data-logo.
+HTML
+<script
+  src="https://cdn.jsdelivr.net/gh/Mrbotrx/All-FREE-TV@main/player.js"
+  data-title="KB CYBER TV"
+  data-logo="https://example.com/logo.png">
+</script>
+
+
+Custom Player Title
+Change the player title using data-title.
+HTML
+<script
+  src="https://cdn.jsdelivr.net/gh/Mrbotrx/All-FREE-TV@main/player.js"
+  data-title="MY TV">
+</script>
+Examples:
+KB CYBER TV
+MY TV
+BANGLA TV
+LIVE TV
+
+
+
+🔗 Complete Embed Code
+Use all available options together:
+HTML
+<script
+  src="https://cdn.jsdelivr.net/gh/Mrbotrx/All-FREE-TV@main/player.js"
+  data-title="KB CYBER TV"
+  data-playlist="https://example.com/playlist.m3u"
+  data-logo="https://example.com/logo.png">
+</script>
+
+
+
+
+
