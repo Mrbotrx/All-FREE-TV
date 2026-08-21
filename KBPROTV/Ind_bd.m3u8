@@ -7,12 +7,12 @@
 📺 TOTAL CHANNELS : 8411
 🇧🇩 BDXI CHANNELS : 85
 🇧৩ BD CHANNELS   : 47
-🇮৩ IND CHANNELS  : 13
-🏆 SPORTS         : 249
+🇮৩ IND CHANNELS  : 12
+🏆 SPORTS         : 248
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 21-08-2026
-🕒 UPDATE TIME    : 11:07 PM
+📅 UPDATE DATE    : 22-08-2026
+🕒 UPDATE TIME    : 12:02 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -43,5 +43,3 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22
 https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st%3D1787321882~exp%3D1787343482~acl%3D%21%2A%2F181224%2Fsmil%3Abogglebollywood.smil%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.230.212.99_yuppfast_2_channel_199_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.230.212.99_yuppfast_2_channel_199_-1~hmac%3D57dad3f59f373db860f72aa8aba3b52611b14ab7d05a9f3045459955d6ccc059
 #EXTINF:-1 tvg-id="280" tvg-chno="109" tvg-name="hosanna-tv-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hosanna-tv-hindi.png" group-title="Yupptv", Hosanna TV Hindi
 https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D1787321891~exp%3D1787343491~acl%3D%21%2A%2Flive%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.230.212.99_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.230.212.99_yuppfast_2_channel_280_-1~hmac%3Df81ae39fb200e6588a752877e9a0ec16d0bcc96b6de42c60049a1720f837610c
-#EXTINF:-1 tvg-name="Hindi Hits HD" group-title="BD",Hindi Hits HD
-http://146.59.253.52:8080/hindihitshd/index.m3u8
