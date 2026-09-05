@@ -5,14 +5,14 @@
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📺 TOTAL CHANNELS : 8460
-🇧🇩 BDXI CHANNELS : 90
+🇧🇩 BDXI CHANNELS : 88
 🇧৩ BD CHANNELS   : 49
 🇮৩ IND CHANNELS  : 13
-🏆 SPORTS         : 238
+🏆 SPORTS         : 240
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 05-09-2026
-🕒 UPDATE TIME    : 07:25 AM
+🕒 UPDATE TIME    : 12:18 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -193,9 +193,5 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sonybbc_earth_hd/playlist.m3u8
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 #EXTINF:-1 tvg-name="Sony TV HD" group-title="BD",Sony TV HD
 http://premimum.online:80/live/jen12345/jen54321/98854.ts
-#EXTINF:-1 tvg-name="Zee TV HD" group-title="BD",Zee TV HD
-https://stream.ottplus.bd/live/zee_tv_hd_abr/live/zee_tv_hd_720/chunks.m3u8
 #EXTINF:-1 tvg-name="Sony Yay" group-title="BD",Sony Yay
 https://stream.ottplus.bd/live/sony_yay_abr/live/sony_yay_720/chunks.m3u8
-#EXTINF:-1 tvg-name="Sony Pix HD" group-title="BD",Sony Pix HD
-https://stream.ottplus.bd/live/pix_hd_abr/live/sony_pix_hd_720/chunks.m3u8
