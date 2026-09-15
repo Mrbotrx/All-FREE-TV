@@ -11,8 +11,8 @@
 🏆 SPORTS         : 196
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 15-09-2026
-🕒 UPDATE TIME    : 09:42 PM
+📅 UPDATE DATE    : 16-09-2026
+🕒 UPDATE TIME    : 01:14 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -264,11 +264,13 @@ http://145.239.5.177/349/index.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuSport.ru@SD" tvg-logo="https://i.imgur.com/BKaEtqL.png" group-title="Sports",Астрахань.Ru Sport (720p)
 https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="CricHD",A Sports HD
-https://cdn1.zohanayaan.com:1686/hls/asportshd.m3u8?md5=V_9OEL7pIxaXD5tDXFSyBg&expires=1789476629
+https://cdn10.zohanayaan.com:1686/hls/asportshd.m3u8?md5=aB4GfmkoBdFlTulF-KelBA&expires=1789491921
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/56-by-xfireflix.png" group-title="CricHD",Sky Sport Nz 7
+https://cdn4.zohanayaan.com:1686/hls/sky7nz.m3u8?md5=Vz-nqhDtfD4gfiDiAO3TXQ&expires=1789491926
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="CricHD",Premier Sports 2
-https://cdn4.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=7Cgwy9lHoTP4ZSyOHw8t_g&expires=1789476633
+https://cdn10.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=53LgPc5nkDpz6SFnxOW5dQ&expires=1789491931
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="CricHD",Sony Sports3
-https://cdn10.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=Qd2EbTAY_FjXuRXTUHlTLg&expires=1789476635
+https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=K4PsZCK-nag3KIDScJ8RrQ&expires=1789491932
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
 https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1789444293~exp%3D1789465893~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.40.213.247_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.40.213.247_yuppfast_2_channel_284_-1~hmac%3D3e5b804f201e3ee0e574a208aa96969aacc2cdfe40ad50cbbd979862f5764b01
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
@@ -306,13 +308,11 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",[BD] Eurosport HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="BD",A Sports HD
-https://cdn1.zohanayaan.com:1686/hls/asportshd.m3u8?md5=sMGlqG0pqlA4iJ9bwLp4kg&expires=1789459521
+https://cdn5.zohanayaan.com:1686/hls/asportshd.m3u8?md5=8eucWS-vRbPRoPhL5bor5Q&expires=1789478433
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="BD",Premier Sports 2
-https://cdn8.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=ok-B0DjVws0pubuywu2UKQ&expires=1789459524
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1745009085794.png" group-title="BD",Sky Sports Tennis
-https://cdn4.zohanayaan.com:1686/hls/skystennis.m3u8?md5=vqoAdf2OrNXUIWc4kAKeew&expires=1789459525
+https://cdn7.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=EVOU3TDr8x4EYTL1FthZpw&expires=1789478441
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="BD",Sony Sports3
-https://cdn8.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=lct9kkz6AnYnJiMdw_akbg&expires=1789459525
+https://cdn7.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=B_SzE3EkhSOsCPKZcTHY0w&expires=1789478443
 #EXTINF:-1 tvg-name="Bein Sports Extra 2" group-title="BD",Bein Sports Extra 2
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
 #EXTINF:-1 tvg-name="Star Sports 1 Hindi HD" group-title="BD",Star Sports 1 Hindi HD
