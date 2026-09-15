@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7401
+📺 TOTAL CHANNELS : 7403
 🇧🇩 BDXI CHANNELS : 84
 🇧৩ BD CHANNELS   : 49
-🇮৩ IND CHANNELS  : 12
-🏆 SPORTS         : 196
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 198
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 15-09-2026
-🕒 UPDATE TIME    : 06:57 AM
+🕒 UPDATE TIME    : 12:00 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -27,15 +27,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7401
+📺 TOTAL CHANNELS : 7403
 🇧🇩 BDXI CHANNELS : 84
 🇧৩ BD CHANNELS   : 49
-🇮৩ IND CHANNELS  : 12
-🏆 SPORTS         : 196
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 198
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 15-09-2026
-🕒 UPDATE TIME    : 06:57 AM
+🕒 UPDATE TIME    : 12:00 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -218,15 +218,15 @@ http://premimum.online:80/live/jen12345/jen54321/98854.ts
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7401
+📺 TOTAL CHANNELS : 7403
 🇧🇩 BDXI CHANNELS : 84
 🇧৩ BD CHANNELS   : 49
-🇮৩ IND CHANNELS  : 12
-🏆 SPORTS         : 196
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 198
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 15-09-2026
-🕒 UPDATE TIME    : 06:57 AM
+🕒 UPDATE TIME    : 12:00 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -257,6 +257,8 @@ https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D17894049
 https://streams2.sofast.tv/umaxx/v1/0196d96223231ea506ec2e7986613e/0196d96312d71ebd416a37ff7b3317/playlist.m3u8
 #EXTINF:-1 group-title="SOFAST",-1 tvg-id="",Bollywood Masala (1080p)
 https://streams2.sofast.tv/vglive-sk-373192/index.m3u8
+#EXTINF:-1 tvg-name="Hindi Hits HD" group-title="BD",Hindi Hits HD
+http://146.59.253.52:8080/hindihitshd/index.m3u8
 
 # ===== Bd_KBPRO.m3u8 =====
 ╔══════════════════════════════════════╗
@@ -265,15 +267,15 @@ https://streams2.sofast.tv/vglive-sk-373192/index.m3u8
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7401
+📺 TOTAL CHANNELS : 7403
 🇧🇩 BDXI CHANNELS : 84
 🇧৩ BD CHANNELS   : 49
-🇮৩ IND CHANNELS  : 12
-🏆 SPORTS         : 196
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 198
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 15-09-2026
-🕒 UPDATE TIME    : 06:57 AM
+🕒 UPDATE TIME    : 12:00 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -386,15 +388,15 @@ https://tvsen5.aynaott.com/qRHda6ax/index.m3u8?e=1784102632&u=ee5437a7-c16b-4700
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7401
+📺 TOTAL CHANNELS : 7403
 🇧🇩 BDXI CHANNELS : 84
 🇧৩ BD CHANNELS   : 49
-🇮৩ IND CHANNELS  : 12
-🏆 SPORTS         : 196
+🇮৩ IND CHANNELS  : 13
+🏆 SPORTS         : 198
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 15-09-2026
-🕒 UPDATE TIME    : 06:57 AM
+🕒 UPDATE TIME    : 12:00 PM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -645,14 +647,14 @@ https://mainstreammedia-worldoffreesportsintl-rakuten.amagi.tv/playlist.m3u8
 http://145.239.5.177/349/index.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuSport.ru@SD" tvg-logo="https://i.imgur.com/BKaEtqL.png" group-title="Sports",Астрахань.Ru Sport (720p)
 https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1-by-xfireflix.png" group-title="CricHD",Star Sports 1 Hindi
+https://cdn5.zohanayaan.com:1686/hls/starhindi.m3u8?md5=t4kXBWERk1B7rcof-Ab1CA&expires=1789437920
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="CricHD",A Sports HD
-https://cdn3.zohanayaan.com:1686/hls/asportshd.m3u8?md5=Skp3l_zeH2TPkbUsDeAESw&expires=1789429829
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="CricHD",Premier Sports 1
-https://cdn2.zohanayaan.com:1686/hls/premieruk.m3u8?md5=h-A1bbZmw2gRSVnVhD27Xw&expires=1789429832
+https://cdn8.zohanayaan.com:1686/hls/asportshd.m3u8?md5=E1YBKJTuxaFlNK2BoenMMg&expires=1789437924
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="CricHD",Premier Sports 2
-https://cdn4.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=t_rro5eg1ov1-BGB2G9BVw&expires=1789429832
+https://cdn8.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=AW-Dfoloe-h34ciXnIjXDw&expires=1789437937
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="CricHD",Sony Sports3
-https://cdn3.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=CvO5-L457qOyWRh6jrHbug&expires=1789429834
+https://cdn9.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=_c36Et6n4viTx6aodjipvg&expires=1789437944
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
 https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1789405023~exp%3D1789426623~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.236.159.144_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.236.159.144_yuppfast_2_channel_284_-1~hmac%3D877c5575193d5531561539057b060e86816f653ad658a88bb60717d2e70af6b8
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
@@ -689,16 +691,20 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",[BD] Eurosport HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/10-by-xfireflix.png" group-title="BD",Ten Sports
+https://cdn10.zohanayaan.com:1686/hls/tenspk.m3u8?md5=zK2OZa5fAHd8ILRiGUI60Q&expires=1789432527
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/12-by-xfireflix.png" group-title="BD",A Sports HD
-https://cdn4.zohanayaan.com:1686/hls/asportshd.m3u8?md5=r4UOc7oQXeoCmUNJeoTh0g&expires=1789421729
-#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/9-by-xfireflix.png" group-title="BD",Sky Sports Cricket
-https://cdn9.zohanayaan.com:1686/hls/skyscric.m3u8?md5=KXlShDzXZofQiI1tfPSPMg&expires=1789421730
+https://cdn5.zohanayaan.com:1686/hls/asportshd.m3u8?md5=hSydYguRIEaD1XulgbNQSQ&expires=1789432527
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/31-by-xfireflix.png" group-title="BD",Premier Sports 2
-https://cdn7.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=o1KJOPLKM9jKk4yr-1ikOg&expires=1789421739
+https://cdn3.zohanayaan.com:1686/hls/hdchnl2.m3u8?md5=XmXGBVA80-x74wB6tjawGw&expires=1789432532
+#EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/13-by-xfireflix.png" group-title="BD",Sky Sports Mix
+https://cdn7.zohanayaan.com:1686/hls/skysmixx.m3u8?md5=xokDhHDvGLT_aNN1ZVe6QA&expires=1789432533
 #EXTINF:-1 tvg-logo="https://abusaeeidx.github.io/Tv-Channel-Logo/CricHD/runded/1000173192-modified.png" group-title="BD",Sony Sports3
-https://cdn10.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=6-ar01ltDZH98SWIjF62Qg&expires=1789421745
+https://cdn2.zohanayaan.com:1686/hls/ten1hd.m3u8?md5=Iqh70OKAYIxsX2jIJiUbmQ&expires=1789432534
 #EXTINF:-1 tvg-name="Bein Sports Extra 2" group-title="BD",Bein Sports Extra 2
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
+#EXTINF:-1 tvg-name="Star Sports 2 HD" group-title="BD",Star Sports 2 HD
+http://tvsen5.aynascope.net/cXPB2LKkErN9/index.m3u8
 #EXTINF:-1 tvg-name="Sony Sports 5 HD" group-title="BD",Sony Sports 5 HD
 https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8
 #EXTINF:-1 tvg-name="Sony Sports 2 HD" group-title="BD",Sony Sports 2 HD
