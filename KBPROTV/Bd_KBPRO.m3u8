@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7577
-🇧🇩 BDXI CHANNELS : 81
-🇧৩ BD CHANNELS   : 51
-🇮৩ IND CHANNELS  : 17
-🏆 SPORTS         : 214
+📺 TOTAL CHANNELS : 7598
+🇧🇩 BDXI CHANNELS : 86
+🇧৩ BD CHANNELS   : 53
+🇮৩ IND CHANNELS  : 18
+🏆 SPORTS         : 212
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 01-10-2026
-🕒 UPDATE TIME    : 04:38 AM
+🕒 UPDATE TIME    : 07:34 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -39,7 +39,11 @@ https://d2p4mrcwl6ly4.cloudfront.net/out/v1/8d50f69fdbbf411a8d302743e4263716/CGN
 http://103.165.93.31:8095/colorsBangla/index.m3u8
 #EXTINF:-1 tvg-id="EmanTv.iq@HD" tvg-logo="https://i.imgur.com/QmgaPSi.png" group-title="Family",EmanTv (1080p)
 https://avr.host247.net/live/emantv/playlist.m3u8
-#EXTINF:-1 tvg-id="FashionTV.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",FashionTV (1080p)
+#EXTINF:-1 tvg-id="Enterr10Bangla.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ENTERR10_BANGLA/images/LOGO_HD/image.png" group-title="Entertainment",Enterr 10 Bangla (720p)
+https://amg01448-samsungin-enterr10bangla-samsungin-ad-gg.amagi.tv/playlist/amg01448-samsungin-enterr10bangla-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-id="FashionTV.in@SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Fashion%20TV.png" group-title="Lifestyle",FashionTV (India) (1080p)
+http://51.75.127.199:3141/ftvhd/index.m3u8
+#EXTINF:-1 tvg-id="FashionTV.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",FashionTV (Russia) (1080p)
 http://fashionlive.mediacdn.ru/cdn/fashiontv/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVEurope.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" group-title="Lifestyle",FashionTV Europe (1080p)
 https://68f1accef2154d2195cae87dec183843.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_FashionTV/playlist.m3u8
@@ -116,8 +120,8 @@ https://tvsen5.aynaott.com/qRHda6ax/index.m3u8?e=1784102632&u=ee5437a7-c16b-4700
 #EXTINF:-1 tvg-name="NTV (720p)" group-title="BD",NTV (720p)
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
 #EXTINF:-1 tvg-id="24" tvg-chno="678" tvg-name="republic-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/awqywf.png" group-title="Yupptv", Republic Bangla
-https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/playlist.m3u8?hdnts=st%3D1790758797~exp%3D1790780397~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F73776a5e-e64c-44a4-9199-9e7e21e940fc%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_13.83.235.145_yuppfast_2_channel_24_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_13.83.235.145_yuppfast_2_channel_24_-1~hmac%3D756d6abc9e489261e602db6183500900a3dcdf3984533690d325513f54262e98
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/playlist.m3u8?hdnts=st%3D1790783479~exp%3D1790805079~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F73776a5e-e64c-44a4-9199-9e7e21e940fc%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.154.135.150_yuppfast_2_channel_24_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.154.135.150_yuppfast_2_channel_24_-1~hmac%3D996230affe6b19a96e8919d0e14d974015967dfd13662e4e53f4d804c66d7933
 #EXTINF:-1 tvg-id="35" tvg-chno="680" tvg-name="tv9-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/mnuwms.png" group-title="Yupptv", TV9 Bangla
-https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9bangla/main.m3u8?hdnts=st%3D1790758800~exp%3D1790780400~acl%3D%21%2A%2Fv1%2Fmaster%2Ftv9yupptv%2Ftv9bangla%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_13.83.235.145_yuppfast_2_channel_35_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_13.83.235.145_yuppfast_2_channel_35_-1~hmac%3Dc21e3e29cd13e27c6e0eea4298c6d280968cc1f83fe8f94756207d56097b4652
+https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9bangla/main.m3u8?hdnts=st%3D1790783481~exp%3D1790805081~acl%3D%21%2A%2Fv1%2Fmaster%2Ftv9yupptv%2Ftv9bangla%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.154.135.150_yuppfast_2_channel_35_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.154.135.150_yuppfast_2_channel_35_-1~hmac%3De2d2a13729e924e99772bc834f42f434fad4071c709d2fc3a03f9cc082bb2c73
 #EXTINF:-1 tvg-id="100" tvg-chno="402" tvg-name="ntv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/ntv.png" group-title="Yupptv", NTV
-https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D1790758801~exp%3D1790780401~acl%3D%21%2A%2F110322%2Fntv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_13.83.235.145_yuppfast_2_channel_100_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_13.83.235.145_yuppfast_2_channel_100_-1~hmac%3D6984100d4f274a36f10e5019107a5ed3bf71f86700cf69050dd9f7f3bf484f47
+https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D1790783483~exp%3D1790805083~acl%3D%21%2A%2F110322%2Fntv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.154.135.150_yuppfast_2_channel_100_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.154.135.150_yuppfast_2_channel_100_-1~hmac%3Dee76e215caf7737cd88d1a902e9afca17b2c4eaf93248887e0ce0e0684da8bf3
