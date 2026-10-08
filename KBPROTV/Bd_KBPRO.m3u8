@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7612
+📺 TOTAL CHANNELS : 7626
 🇧🇩 BDXI CHANNELS : 87
-🇧৩ BD CHANNELS   : 53
+🇧৩ BD CHANNELS   : 52
 🇮৩ IND CHANNELS  : 18
-🏆 SPORTS         : 217
+🏆 SPORTS         : 215
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 08-10-2026
-🕒 UPDATE TIME    : 02:24 AM
+🕒 UPDATE TIME    : 06:24 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -93,8 +93,6 @@ https://dzkyvlfyge.erbvr.com/PeaceTvBangla/index.m3u8
 http://122.248.43.242:1935/PONTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="RaatdinBangla.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/raatdinbangla.png" group-title="News",Raatdin Bangla (720p)
 https://server.playontv.in/raatdinbangla/index.m3u8
-#EXTINF:-1 tvg-id="RepublicBangla.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RSYMDOT_BANGLA/images/LOGO_HD/image.png" group-title="News",Republic Bangla (1080p)
-https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-456368/main.m3u8
 #EXTINF:-1 tvg-id="RTV.bd@SD" tvg-logo="https://i.imgur.com/yu8ugqt.png" group-title="General",RTV (Bangladesh) (720p)
 http://tvsen5.aynascope.net/RtvHD/index.m3u8
 #EXTINF:-1 tvg-id="RupashiBanglaTV.bd@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Rupashi_Bangla.png" group-title="Entertainment",Rupashi Bangla TV (720p)
