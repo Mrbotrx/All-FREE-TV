@@ -4,27 +4,23 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7661
-🇧🇩 BDXI CHANNELS : 87
-🇧৩ BD CHANNELS   : 52
-🇮৩ IND CHANNELS  : 18
-🏆 SPORTS         : 213
+📺 TOTAL CHANNELS : 7644
+🇧🇩 BDXI CHANNELS : 83
+🇧৩ BD CHANNELS   : 51
+🇮৩ IND CHANNELS  : 16
+🏆 SPORTS         : 218
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 11-10-2026
-🕒 UPDATE TIME    : 04:57 AM
+🕒 UPDATE TIME    : 07:44 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
 
 💎 Premium IPTV Playlist
 🚀 Fast • Stable • Auto Updated
-#EXTINF:-1 tvg-id="BBCNewsHindi.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BBC_Hindi.png" group-title="News",BBC News Hindi (1080p)
-http://51.75.127.199:3141/bbcnewshindi/index.m3u8
-#EXTINF:-1 tvg-id="Bollywood.ru@SD" tvg-logo="https://i.imgur.com/YLQRnXt.png" group-title="Movies",Bollywood (576p)
-http://str2.iptvhd.ru:8080/bollywood/index.m3u8
-#EXTINF:-1 tvg-id="Bollywood.ru@HD" tvg-logo="https://i.imgur.com/YLQRnXt.png" group-title="Movies",Bollywood HD (1080p)
-http://str2.iptvhd.ru:8080/Bollywood_HD/index.m3u8
+#EXTINF:-1 tvg-id="Bollywood.ru@HD" tvg-logo="https://i.imgur.com/YLQRnXt.png" group-title="Movies",Bollywood HD (576p)
+http://176.118.197.101/Bollywood_HD/index.m3u8
 #EXTINF:-1 tvg-id="BollywoodHD.ro@Russia" tvg-logo="https://i.imgur.com/scDKOLS.png" group-title="Movies",Bollywood HD Russia (576p)
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-id="BoogleBollywood.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Boogle_Bollywood.png" group-title="Music",Boogle Bollywood (720p)
