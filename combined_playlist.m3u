@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7642
-🇧🇩 BDXI CHANNELS : 83
+📺 TOTAL CHANNELS : 7628
+🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 218
+🏆 SPORTS         : 207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 12-10-2026
-🕒 UPDATE TIME    : 05:10 AM
+🕒 UPDATE TIME    : 08:39 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -27,15 +27,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7642
-🇧🇩 BDXI CHANNELS : 83
+📺 TOTAL CHANNELS : 7628
+🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 218
+🏆 SPORTS         : 207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 12-10-2026
-🕒 UPDATE TIME    : 05:10 AM
+🕒 UPDATE TIME    : 08:39 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -64,8 +64,6 @@ https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
 https://5e2b3e3114872.streamlock.net:1443/lozlive/smil:lozlive/playlist.m3u8
 #EXTINF:-1 tvg-id="OmroepZeeland.nl@SD" tvg-logo="https://i.imgur.com/3c3QUSn.png" group-title="General",Omroep Zeeland (1080p)
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
-#EXTINF:-1 tvg-id="SonyAath.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_8/images/LOGO_HD/image.png" group-title="Entertainment",Sony Aath (1080p)
-https://cloudplay-sonyliv.pages.dev/aath.m3u8
 #EXTINF:-1 tvg-id="SonyBBCEarth.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/s143800_ld_h15_aa.png?lock=720x540" group-title="Documentary",Sony BBC Earth HD (1080p)
 http://103.185.24.134:3001/SONY-BBC/index.m3u8
 #EXTINF:-1 tvg-id="SonyChannel.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sony_Channel_Logo.png/960px-Sony_Channel_Logo.png" group-title="Undefined",Sony Channel (Argentina) (1080p)
@@ -78,8 +76,6 @@ http://15.204.246.24:8080/SonyHD/index.m3u8
 http://38.96.178.205/SONYHD/index.m3u8
 #EXTINF:-1 tvg-id="SonyKALHindi.us@SD" tvg-logo="https://i.imgur.com/9Qq8DKh.png" group-title="Undefined",Sony KAL Hindi (1080p)
 https://wurlsonypicturestv.global.transmit.live/hls/68deeb1c0238cda82df543dd/v1/spt_sonykal_1/lg_us/latest/main/hls/playlist.m3u8
-#EXTINF:-1 tvg-id="SonyMarathi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s157970_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Marathi (1080p)
-https://cloudplay-sonyliv.pages.dev/marathi.m3u8
 #EXTINF:-1 tvg-id="SonyMax.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Max HD (1080p)
 http://103.185.24.134:3001/SonyMAX/index.m3u8
 #EXTINF:-1 tvg-id="SonyMovies.br@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png" group-title="Movies",Sony Movies (720p)
@@ -94,14 +90,10 @@ https://49d735318d6b4c30a24a7997ea594e1b.mediatailor.us-west-2.amazonaws.com/v1/
 https://5098a8b860504a3690fd2e7c0a18d68f.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-817-FR-SONYONEHITSACTION-LG_FR/playlist.m3u8
 #EXTINF:-1 tvg-id="SonyOneHitsComedie.fr@HD" tvg-logo="https://i.imgur.com/8sHuxxS.png" group-title="Movies",Sony One Hits Comedie (1080p)
 https://7aa9671895264ec9a384dfed1b992171.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-818-FR-SONYONEHITSCOMDIE-LG_FR/playlist.m3u8
-#EXTINF:-1 tvg-id="SonyPal.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s157973_ld_h15_aa.png?lock=720x540" group-title="Entertainment",Sony Pal (1080p)
-https://cloudplay-sonyliv.pages.dev/pal.m3u8
 #EXTINF:-1 tvg-id="SonyPix.in@HD" tvg-logo="https://i.postimg.cc/Z5G8j67L/PIX-HD-WHITE.png" group-title="Movies",Sony Pix HD (1080p)
-https://cloudplay-sonyliv.pages.dev/pixhd.m3u8
-#EXTINF:-1 tvg-id="SonyWah.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Wah (1080p)
-https://cloudplay-sonyliv.pages.dev/wah.m3u8
-#EXTINF:-1 tvg-id="SonyYay.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540" group-title="Animation;Kids",Sony Yay! (1080p)
-https://cloudplay-sonyliv.pages.dev/yay.m3u8
+http://103.151.60.162:2122/play/a01d/index.m3u8?hls
+#EXTINF:-1 tvg-id="SonyWah.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540" group-title="Movies",Sony Wah (1080p) [Geo-blocked]
+https://sl.vodep39240327.workers.dev/channel/SONY+WAH.m3u8
 #EXTINF:-1 tvg-id="TehzeebTV.in@SD" tvg-logo="https://i.imgur.com/PCVOdup.png" group-title="Undefined",Tehzeeb TV (720p)
 https://cdn.pishow.tv/ott/live/239/master.m3u8
 #EXTINF:-1 tvg-id="Zee24Kalak.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG00230P1R.png?lock=720x540" group-title="News",Zee 24 Kalak (720p)
@@ -185,29 +177,29 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 #EXTINF:-1 tvg-name="Sony TV HD" group-title="BD",Sony TV HD
 http://premimum.online:80/live/jen12345/jen54321/98854.ts
 #EXTINF:-1 tvg-id="13" tvg-chno="8" tvg-name="zee-news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/rhihqo.png" group-title="Yupptv", Zee News
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8?hdnts=st%3D1791725387~exp%3D1791746987~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeenews%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F8744f9fb-d696-4204-9795-5215ad930c39%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_13_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_13_-1~hmac%3D8374c49ab0eb384e0c8e39e6080f110db5d42dc227b56d22c20d7bca5c1e8c8c
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8?hdnts=st%3D1791743215~exp%3D1791764815~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeenews%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F8744f9fb-d696-4204-9795-5215ad930c39%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_13_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_13_-1~hmac%3Da420a8b8c3cfde747457b2cfdab6751c383625452eda95bbb6433697147a82e4
 #EXTINF:-1 tvg-id="25" tvg-chno="12" tvg-name="zee-hindustan" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sdgosh.png" group-title="Yupptv", Zee Hindustan
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeehindustan/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/96bbab12-582e-4540-af70-510ab6824581/main.m3u8?hdnts=st%3D1791725389~exp%3D1791746989~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeehindustan%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F96bbab12-582e-4540-af70-510ab6824581%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_25_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_25_-1~hmac%3Db2e7ac29e674218c73309e17335b614dba4efa2a1aa57d0713b88e3399658633
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeehindustan/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/96bbab12-582e-4540-af70-510ab6824581/main.m3u8?hdnts=st%3D1791743217~exp%3D1791764817~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeehindustan%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F96bbab12-582e-4540-af70-510ab6824581%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_25_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_25_-1~hmac%3Da1a695b50da6756e07888ec4a7e3cdd1ab0618e55c160b8bf2b1a31a1464f4df
 #EXTINF:-1 tvg-id="30" tvg-chno="16" tvg-name="zee-bihar-jharkhand" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/zjjkih.png" group-title="Yupptv", Zee Bihar Jharkhand
-https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-198870/main.m3u8?hdnts=st%3D1791725392~exp%3D1791746992~acl%3D%21%2A%2Fvglive-sk-198870%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_30_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_30_-1~hmac%3D182b0f1a3b81256ad77f4bcbf2216addcbf9d1903f96ee247e0cb021e11ff5d4
+https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-198870/main.m3u8?hdnts=st%3D1791743219~exp%3D1791764819~acl%3D%21%2A%2Fvglive-sk-198870%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_30_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_30_-1~hmac%3Db82c4880940125329b97b6c251dc4d0622c4f5de8eda49a8f94743e65df770cd
 #EXTINF:-1 tvg-id="31" tvg-chno="17" tvg-name="zee-delhi-ncr-haryana" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/yiuolu.png" group-title="Yupptv", Zee Delhi NCR Haryana
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeedelhincr/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/cc483a15-1b39-4642-872d-5d08d362ed01/main.m3u8?hdnts=st%3D1791725393~exp%3D1791746993~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeedelhincr%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fcc483a15-1b39-4642-872d-5d08d362ed01%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_31_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_31_-1~hmac%3D4dc5e40bd56a991230be5ac4ae596106cd2cec8b35949ffc4b6a92be4380c457
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeedelhincr/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/cc483a15-1b39-4642-872d-5d08d362ed01/main.m3u8?hdnts=st%3D1791743221~exp%3D1791764821~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeedelhincr%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fcc483a15-1b39-4642-872d-5d08d362ed01%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_31_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_31_-1~hmac%3D71a9cd9560db5a9a3c84e4256f2abcfe783645eb762aa2f7c5012737901326a8
 #EXTINF:-1 tvg-id="28" tvg-chno="19" tvg-name="zee-madhya-pradesh-chhattisgarh" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/nniyqn.png" group-title="Yupptv", Zee Madhya Pradesh Chhattisgarh
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeemadhyachhattisgarh/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2ab17056-6187-4f0e-a34d-f436ac479d6c/main.m3u8?hdnts=st%3D1791725394~exp%3D1791746994~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeemadhyachhattisgarh%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F2ab17056-6187-4f0e-a34d-f436ac479d6c%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_28_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_28_-1~hmac%3D592bf10430cf376a3942f0efc9726e9408596836176b0153d9c831aea4894ad1
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeemadhyachhattisgarh/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2ab17056-6187-4f0e-a34d-f436ac479d6c/main.m3u8?hdnts=st%3D1791743223~exp%3D1791764823~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeemadhyachhattisgarh%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F2ab17056-6187-4f0e-a34d-f436ac479d6c%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_28_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_28_-1~hmac%3D83eb3fae81f7059a9c0b41889fb0222c2da791c020d88648720f3a677c0dbcc1
 #EXTINF:-1 tvg-id="29" tvg-chno="21" tvg-name="zee-up-uk" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/ipyfdr.png" group-title="Yupptv", Zee UP UK
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeeupuk/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/a8c57b70-538f-49ae-af12-2fc2acaa4ff1/main.m3u8?hdnts=st%3D1791725396~exp%3D1791746996~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeeupuk%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fa8c57b70-538f-49ae-af12-2fc2acaa4ff1%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_29_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_29_-1~hmac%3D5afacb0d234106a8d09d07fc87ce642a0da71f1f88e0e7f696ed753f7153a703
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeeupuk/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/a8c57b70-538f-49ae-af12-2fc2acaa4ff1/main.m3u8?hdnts=st%3D1791743224~exp%3D1791764824~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeeupuk%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fa8c57b70-538f-49ae-af12-2fc2acaa4ff1%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_29_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_29_-1~hmac%3D3277ed23e3b0d24e7458a3b3df914bb228849f75ae55e558511f23828f151053
 #EXTINF:-1 tvg-id="26" tvg-chno="22" tvg-name="zee-rajasthan-news" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/kvtdmj.png" group-title="Yupptv", Zee Rajasthan News
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeerajashthannews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8e864b9a-1681-41a0-99a6-387490bc5b24/main.m3u8?hdnts=st%3D1791725396~exp%3D1791746996~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeerajashthannews%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F8e864b9a-1681-41a0-99a6-387490bc5b24%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_26_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_26_-1~hmac%3D4a46d6f052f593de5e3e942ed2740d246cbd658a3e87c2d18b783e2810948c92
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeerajashthannews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8e864b9a-1681-41a0-99a6-387490bc5b24/main.m3u8?hdnts=st%3D1791743224~exp%3D1791764824~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeerajashthannews%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F8e864b9a-1681-41a0-99a6-387490bc5b24%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_26_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_26_-1~hmac%3D4e8ec61f55c3329b3a7d3a627e88923637517f1d05a4ca187f9b7bffee28d278
 #EXTINF:-1 tvg-id="5" tvg-chno="51" tvg-name="zee-business" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/gmdzdx.png" group-title="Yupptv", Zee Business
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee_business/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/af1b3fa3-f56d-4741-9c63-78409a798988/main.m3u8?hdnts=st%3D1791725407~exp%3D1791747007~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zee_business%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Faf1b3fa3-f56d-4741-9c63-78409a798988%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_5_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_5_-1~hmac%3Dfa5b5025255e37064b2cf6d8cd86ff371f2b90875198d8cac1b47d680cf106c8
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee_business/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/af1b3fa3-f56d-4741-9c63-78409a798988/main.m3u8?hdnts=st%3D1791743233~exp%3D1791764833~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zee_business%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Faf1b3fa3-f56d-4741-9c63-78409a798988%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_5_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_5_-1~hmac%3Da00a3a898398665db6f53319cf3af86061157a4587c0fe786385c4e6ae3470d3
 #EXTINF:-1 tvg-id="33" tvg-chno="410" tvg-name="zee-news-telugu" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/aquwob.png" group-title="Yupptv", Zee News Telugu
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeetelugunews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/17fe98f0-d496-4c26-beeb-96b466d01162/main.m3u8?hdnts=st%3D1791725428~exp%3D1791747028~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeetelugunews%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F17fe98f0-d496-4c26-beeb-96b466d01162%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_33_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_33_-1~hmac%3Da440ee7a5b397a0978163b2f0a6556af7bd6ab33d08814eca8ed43468a30fdb4
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeetelugunews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/17fe98f0-d496-4c26-beeb-96b466d01162/main.m3u8?hdnts=st%3D1791743253~exp%3D1791764853~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeetelugunews%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F17fe98f0-d496-4c26-beeb-96b466d01162%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_33_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_33_-1~hmac%3Db78b95794f8bb6c441a0804cc13d421d3dbe901c4565976adcff2580006c7b86
 #EXTINF:-1 tvg-id="32" tvg-chno="753" tvg-name="zee-24-kalak" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/vbezgf.png" group-title="Yupptv", Zee 24 Kalak
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/497f7199-758d-495d-9d2f-a5489231c428/main.m3u8?hdnts=st%3D1791725437~exp%3D1791747037~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zee24kalak%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F497f7199-758d-495d-9d2f-a5489231c428%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_32_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_32_-1~hmac%3D5007ae30ac303522d1b507cc1e3037081451785b285896fb059f6a27d2fb6a39
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/497f7199-758d-495d-9d2f-a5489231c428/main.m3u8?hdnts=st%3D1791743260~exp%3D1791764860~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zee24kalak%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F497f7199-758d-495d-9d2f-a5489231c428%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_32_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_32_-1~hmac%3D71a722e3b7deb92d5f555eebe4c84a9f1793e2355a4077b8404602a8d2e74d9c
 #EXTINF:-1 tvg-id="15" tvg-chno="705" tvg-name="zee-punjab-haryana-himachal" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/rkpgdq.png" group-title="Yupptv", Zee Punjab Haryana Himachal
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8?hdnts=st%3D1791725441~exp%3D1791747041~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeepunjabharyanahima%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F65eed269-2f3a-4dd0-ac89-d18959af28e3%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_15_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_15_-1~hmac%3Db90f855fa20ad6f315cdde5a99df4f4541fc8a4bd357942c67b0a80a30f15b33
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeepunjabharyanahima/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/65eed269-2f3a-4dd0-ac89-d18959af28e3/main.m3u8?hdnts=st%3D1791743262~exp%3D1791764862~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeepunjabharyanahima%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F65eed269-2f3a-4dd0-ac89-d18959af28e3%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_15_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_15_-1~hmac%3Dc6ab680c26e4c39acdfa8b10cbd3e495934481dd22083d0206508f9a88bae758
 #EXTINF:-1 tvg-id="27" tvg-chno="801" tvg-name="zee-salaam" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/uudnpd.png" group-title="Yupptv", Zee Salaam
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/426c6db7-595e-4aa8-859c-7e86ed2811d0/main.m3u8?hdnts=st%3D1791725441~exp%3D1791747041~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeesalaam%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F426c6db7-595e-4aa8-859c-7e86ed2811d0%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_27_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_27_-1~hmac%3D6fa7ef56031d3d5841feedf3e685005815a2ed5b9c6b731400b6929cf696bac5
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/426c6db7-595e-4aa8-859c-7e86ed2811d0/main.m3u8?hdnts=st%3D1791743262~exp%3D1791764862~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-zeesalaam%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F426c6db7-595e-4aa8-859c-7e86ed2811d0%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_27_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_27_-1~hmac%3D326db7c9aa740d778d78e8c53c697c43a5857a9255ac83d78c879de2fac12bd2
 
 # ===== Ind_bd.m3u8 =====
 ╔══════════════════════════════════════╗
@@ -216,15 +208,15 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/master/611d79b11b
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7642
-🇧🇩 BDXI CHANNELS : 83
+📺 TOTAL CHANNELS : 7628
+🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 218
+🏆 SPORTS         : 207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 12-10-2026
-🕒 UPDATE TIME    : 05:10 AM
+🕒 UPDATE TIME    : 08:39 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -254,15 +246,15 @@ https://streams2.sofast.tv/umaxx/v1/0196d96223231ea506ec2e7986613e/0196d96312d71
 #EXTINF:-1 group-title="SOFAST",-1 tvg-id="",Bollywood Masala (1080p)
 https://streams2.sofast.tv/vglive-sk-373192/index.m3u8
 #EXTINF:-1 tvg-id="160" tvg-chno="13" tvg-name="hindi-khabar" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hindi-khabar.png" group-title="Yupptv", Hindi Khabar
-https://d1msejlow1t3l4.cloudfront.net/fta/hindikhabar/playlist.m3u8?hdnts=st%3D1791725390~exp%3D1791746990~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_160_-1~hmac%3Da898b1a2b65459ff2fd427f82ed228548402dcc564bf673cc3f612ca21109602
+https://d1msejlow1t3l4.cloudfront.net/fta/hindikhabar/playlist.m3u8?hdnts=st%3D1791743218~exp%3D1791764818~acl%3D%21%2A%2Ffta%2Fhindikhabar%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_160_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_160_-1~hmac%3D763f5398d0c652bf6e926dd3976f12fa1fcfd89efba607b6ffdb750f9faf3d62
 #EXTINF:-1 tvg-id="310" tvg-chno="" tvg-name="naxatra-news-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/naxatra-news-hindi.png" group-title="Yupptv", Naxatra News Hindi
-https://d2gvyg6lvauoko.cloudfront.net/230226/naxatranewshindi/playlist.m3u8?hdnts=st%3D1791725414~exp%3D1791747014~acl%3D%21%2A%2F230226%2Fnaxatranewshindi%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_310_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_310_-1~hmac%3D9473f9a30c94244d5efd4b16150e3d8427f3be50b4401dc7f31c0c3b92dbde07
+https://d2gvyg6lvauoko.cloudfront.net/230226/naxatranewshindi/playlist.m3u8?hdnts=st%3D1791743241~exp%3D1791764841~acl%3D%21%2A%2F230226%2Fnaxatranewshindi%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_310_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_310_-1~hmac%3Dda4085e16118dc6047944cd9d7deea581ddc647ec86bd27d3ec31eacab5a6ace
 #EXTINF:-1 tvg-id="47" tvg-chno="83" tvg-name="bollywood-4u" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sinxiy.png" group-title="Yupptv", Bollywood 4U
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st%3D1791725469~exp%3D1791747069~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F22d13e33-8705-40e8-9809-4e80aa795f15%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_47_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_47_-1~hmac%3D540af3cbfd08b113c4f5f0f23c12dd7b2b8dd5e2c49ed3dba0ec980cfb93e6c6
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/22d13e33-8705-40e8-9809-4e80aa795f15/manifest.m3u8?hdnts=st%3D1791743284~exp%3D1791764884~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F22d13e33-8705-40e8-9809-4e80aa795f15%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_47_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_47_-1~hmac%3D8a6ad0a8b10185b2822a661a2741a5bb554e71fadaf7eecdff9155cbf0683cd6
 #EXTINF:-1 tvg-id="199" tvg-chno="711" tvg-name="boogle-bollywood" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/boogle-bollywood.png" group-title="Yupptv", Boogle Bollywood
-https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st%3D1791725489~exp%3D1791747089~acl%3D%21%2A%2F181224%2Fsmil%3Abogglebollywood.smil%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_199_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_199_-1~hmac%3D467b6b37891550f0e773c16749def796957f5259b2047cd1c89fac5bf0e21a08
+https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st%3D1791743300~exp%3D1791764900~acl%3D%21%2A%2F181224%2Fsmil%3Abogglebollywood.smil%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_199_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_199_-1~hmac%3Dc23d3004bf871c8f0123ee66b5bb1c790c61f18e2f41b1a0e4b9a2de7dc1b6b9
 #EXTINF:-1 tvg-id="280" tvg-chno="109" tvg-name="hosanna-tv-hindi" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/hosanna-tv-hindi.png" group-title="Yupptv", Hosanna TV Hindi
-https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D1791725504~exp%3D1791747104~acl%3D%21%2A%2Flive%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_280_-1~hmac%3D38e66867be3cafbe5f839152ac035def0d26bd8853b3c3525d72992d6fb2b2cd
+https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D1791743311~exp%3D1791764911~acl%3D%21%2A%2Flive%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_280_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_280_-1~hmac%3D5cb7255754490e7d943f43e696a34f2b86495b6b672cd3647d46e87818ebe88a
 
 # ===== Bd_KBPRO.m3u8 =====
 ╔══════════════════════════════════════╗
@@ -271,15 +263,15 @@ https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D17917255
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7642
-🇧🇩 BDXI CHANNELS : 83
+📺 TOTAL CHANNELS : 7628
+🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 218
+🏆 SPORTS         : 207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 12-10-2026
-🕒 UPDATE TIME    : 05:10 AM
+🕒 UPDATE TIME    : 08:39 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -383,11 +375,11 @@ https://tvsen5.aynaott.com/qRHda6ax/index.m3u8?e=1784102632&u=ee5437a7-c16b-4700
 #EXTINF:-1 tvg-name="NTV (720p)" group-title="BD",NTV (720p)
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
 #EXTINF:-1 tvg-id="24" tvg-chno="678" tvg-name="republic-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/awqywf.png" group-title="Yupptv", Republic Bangla
-https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/playlist.m3u8?hdnts=st%3D1791725418~exp%3D1791747018~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F73776a5e-e64c-44a4-9199-9e7e21e940fc%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_24_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_24_-1~hmac%3D99a8066274e36b8f08a6e19ac04e4c1ff40c61c8e26453325b330fd632ce7e02
+https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/73776a5e-e64c-44a4-9199-9e7e21e940fc/playlist.m3u8?hdnts=st%3D1791743244~exp%3D1791764844~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2F73776a5e-e64c-44a4-9199-9e7e21e940fc%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_24_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_24_-1~hmac%3D5d6e0b516499723a41d77b3af44ffe623aa5ec71b01e4ee754258c2c4a6a4720
 #EXTINF:-1 tvg-id="35" tvg-chno="680" tvg-name="tv9-bangla" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/mnuwms.png" group-title="Yupptv", TV9 Bangla
-https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9bangla/main.m3u8?hdnts=st%3D1791725421~exp%3D1791747021~acl%3D%21%2A%2Fv1%2Fmaster%2Ftv9yupptv%2Ftv9bangla%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_35_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_35_-1~hmac%3Db2df6f6d2f852b371fc76bd86ba2551fa67a00dcc751ae7d9d6a99943ecde063
+https://ssai.vgcdn.net/v1/master/tv9yupptv/tv9bangla/main.m3u8?hdnts=st%3D1791743247~exp%3D1791764847~acl%3D%21%2A%2Fv1%2Fmaster%2Ftv9yupptv%2Ftv9bangla%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_35_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_35_-1~hmac%3D9b58bde17b71f7816fb550e2efc0d87cb7631d29c91c8b6bbd09f2fa3aa61ae0
 #EXTINF:-1 tvg-id="100" tvg-chno="402" tvg-name="ntv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/ntv.png" group-title="Yupptv", NTV
-https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D1791725423~exp%3D1791747023~acl%3D%21%2A%2F110322%2Fntv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_100_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_100_-1~hmac%3D847edc525e055489e4a98923c38611d33d444422a19bdb84a3e0a5fa7b580881
+https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D1791743249~exp%3D1791764849~acl%3D%21%2A%2F110322%2Fntv%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_100_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_100_-1~hmac%3D2f10267f24ec68dfdf9033093953735e8a14513a1414298a60dea48ea96a381d
 
 # ===== Sports_promax.m3u8 =====
 ╔══════════════════════════════════════╗
@@ -396,25 +388,21 @@ https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D17917254
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7642
-🇧🇩 BDXI CHANNELS : 83
+📺 TOTAL CHANNELS : 7628
+🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 218
+🏆 SPORTS         : 207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 12-10-2026
-🕒 UPDATE TIME    : 05:10 AM
+🕒 UPDATE TIME    : 08:39 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
 
 💎 Premium IPTV Playlist
 🚀 Fast • Stable • Auto Updated
-#EXTINF:-1 tvg-id="5Sport4K.il@SD" tvg-logo="https://i.imgur.com/Msfhpqd.png" group-title="Sports",5Sport 4K (2160p)
-http://str2.iptvhd.ru:8080/5SPORT_4K/index.m3u8
-#EXTINF:-1 tvg-id="5Sport.il@SD" tvg-logo="https://i.imgur.com/dRVsB89.png" group-title="Sports",5Sport (1080p)
-http://str2.iptvhd.ru:8080/5sport/index.m3u8
 #EXTINF:-1 tvg-id="ACISportTV.it@SD" tvg-logo="https://i.imgur.com/U8cHMOt.png" group-title="Sports",ACI Sport TV SD (1080p)
 https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
 #EXTINF:-1 tvg-id="Africa24Sport.fr@SD" tvg-logo="https://i0.wp.com/africa24tv.com/wp-content/uploads/2023/12/LOGO-AFRICASPORT-4-HD-sans-fond.png?fit=512%2C107&ssl=1" group-title="News;Sports",Africa 24 Sport (1080p)
@@ -603,28 +591,10 @@ http://stream.mcquack.net/390/index.m3u8
 http://livealone302.iqilu.com/iqilu/typd.m3u8
 #EXTINF:-1 tvg-id="SharjahSports.ae@SD" tvg-logo="https://i.imgur.com/CsEElsJ.png" group-title="Sports",Sharjah Sports (1080p) [Geo-blocked]
 https://svs.itworkscdn.net/smc4sportslive/smc4tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen1.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 1 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten1.m3u8
 #EXTINF:-1 tvg-id="SonySportsTen1.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 1 HD (1080p)
 http://103.185.24.134:3001/SonyTenSports1/index.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen2.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_2/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 2 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten2.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen2.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_2/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 2 HD (1080p)
-https://cloudplay-sonyliv.pages.dev/ten2hd.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen3Hindi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Sports",Sony Sports Ten 3 Hindi (1080p)
-https://cloudplay-sonyliv.pages.dev/ten3.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen3Hindi.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Sports",Sony Sports Ten 3 Hindi HD (1080p)
-https://cloudplay-sonyliv.pages.dev/ten3hd.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen4.in@Tamil" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025T4PV.png?lock=720x540" group-title="Sports",Sony Sports Ten 4 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten4.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen4.in@Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s149166_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Sports Ten 4 Telugu (1080p)
-https://cloudplay-sonyliv.pages.dev/ten4hd.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen5.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_5/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 5 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten5.m3u8
 #EXTINF:-1 tvg-id="Sport1Baltic.ua@SD" tvg-logo="https://i.imgur.com/aBY7QK4.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Sport 1 Baltic (1080p)
 http://stream.mcquack.net/461/index.m3u8
-#EXTINF:-1 tvg-id="Sport2.il@SD" tvg-logo="https://i.imgur.com/Headxmx.png" group-title="Sports",Sport 2 (Israel) (1080p)
-http://str2.iptvhd.ru:8080/Sport_2/index.m3u8
 #EXTINF:-1 tvg-id="Sport2.ua@SD" tvg-logo="https://i.imgur.com/vk0j1mY.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Sport 2 (Ukraine) (1080p)
 http://stream.mcquack.net/392/index.m3u8
 #EXTINF:-1 tvg-id="Sport3.il@SD" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Sports",Sport 3 (Israel) (1080p)
@@ -827,7 +797,7 @@ https://a-cdn.klowdtv.com/live2/ssl_720p/playlist.m3u8
 https://sportsgrid-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="TraceSportStars.fr@HD",Trace Sports Stars (1080p)
 https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="BD" tvg-logo="https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",T Sports (1080p) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2)
+#EXTINF:-1 group-title="BD" tvg-logo="https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",T Sports (1080p) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2)
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",[BD] Sony Ten Sports 1 HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8
@@ -844,6 +814,6 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0
 #EXTINF:-1 group-title="US_LOCAL",-1 tvg-id="MidpenMediaCenterChannel28.us@SD",Midpen Media Center Youth Education and Sports Channel 28 (720p)
 https://5c2974786200d.streamlock.net/live-chan28/ngrp:ch28_all/playlist.m3u8
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
-https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1791725535~exp%3D1791747135~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_284_-1~hmac%3Db4620bcc866baf26d40e2262302563a63bc1ee1a0fd9c2e8026290b177c6bd2f
+https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1791743332~exp%3D1791764932~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_284_-1~hmac%3Ddea0ba1280aca38cd239b5acd65725feb269b602df9f126e186765c94bc949f9
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1791725537~exp%3D1791747137~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_76_-1~hmac%3Dcf5c07cfa291120596d883af0b5b266969e602226e2ea6bc3b6ddf7cdfcc106d
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1791743334~exp%3D1791764934~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_76_-1~hmac%3D0a811b31b474e8152db119878e72daed88bc7025b29b07f809f5cc88669cab8e

@@ -4,25 +4,21 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7642
-🇧🇩 BDXI CHANNELS : 83
+📺 TOTAL CHANNELS : 7628
+🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 218
+🏆 SPORTS         : 207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 12-10-2026
-🕒 UPDATE TIME    : 05:10 AM
+🕒 UPDATE TIME    : 08:39 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
 
 💎 Premium IPTV Playlist
 🚀 Fast • Stable • Auto Updated
-#EXTINF:-1 tvg-id="5Sport4K.il@SD" tvg-logo="https://i.imgur.com/Msfhpqd.png" group-title="Sports",5Sport 4K (2160p)
-http://str2.iptvhd.ru:8080/5SPORT_4K/index.m3u8
-#EXTINF:-1 tvg-id="5Sport.il@SD" tvg-logo="https://i.imgur.com/dRVsB89.png" group-title="Sports",5Sport (1080p)
-http://str2.iptvhd.ru:8080/5sport/index.m3u8
 #EXTINF:-1 tvg-id="ACISportTV.it@SD" tvg-logo="https://i.imgur.com/U8cHMOt.png" group-title="Sports",ACI Sport TV SD (1080p)
 https://webstream.multistream.it/memfs/e2cb3629-c1a2-495b-b43a-9eb386f04ed8.m3u8
 #EXTINF:-1 tvg-id="Africa24Sport.fr@SD" tvg-logo="https://i0.wp.com/africa24tv.com/wp-content/uploads/2023/12/LOGO-AFRICASPORT-4-HD-sans-fond.png?fit=512%2C107&ssl=1" group-title="News;Sports",Africa 24 Sport (1080p)
@@ -211,28 +207,10 @@ http://stream.mcquack.net/390/index.m3u8
 http://livealone302.iqilu.com/iqilu/typd.m3u8
 #EXTINF:-1 tvg-id="SharjahSports.ae@SD" tvg-logo="https://i.imgur.com/CsEElsJ.png" group-title="Sports",Sharjah Sports (1080p) [Geo-blocked]
 https://svs.itworkscdn.net/smc4sportslive/smc4tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen1.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 1 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten1.m3u8
 #EXTINF:-1 tvg-id="SonySportsTen1.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 1 HD (1080p)
 http://103.185.24.134:3001/SonyTenSports1/index.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen2.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_2/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 2 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten2.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen2.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_2/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 2 HD (1080p)
-https://cloudplay-sonyliv.pages.dev/ten2hd.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen3Hindi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Sports",Sony Sports Ten 3 Hindi (1080p)
-https://cloudplay-sonyliv.pages.dev/ten3.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen3Hindi.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540" group-title="Sports",Sony Sports Ten 3 Hindi HD (1080p)
-https://cloudplay-sonyliv.pages.dev/ten3hd.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen4.in@Tamil" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG0025T4PV.png?lock=720x540" group-title="Sports",Sony Sports Ten 4 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten4.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen4.in@Telugu" tvg-logo="https://dtil.tmsimg.com/assets/s149166_ld_h15_aa.png?lock=720x540" group-title="Sports",Sony Sports Ten 4 Telugu (1080p)
-https://cloudplay-sonyliv.pages.dev/ten4hd.m3u8
-#EXTINF:-1 tvg-id="SonySportsTen5.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_5/images/LOGO_HD/image.png" group-title="Sports",Sony Sports Ten 5 (1080p)
-https://cloudplay-sonyliv.pages.dev/ten5.m3u8
 #EXTINF:-1 tvg-id="Sport1Baltic.ua@SD" tvg-logo="https://i.imgur.com/aBY7QK4.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Sport 1 Baltic (1080p)
 http://stream.mcquack.net/461/index.m3u8
-#EXTINF:-1 tvg-id="Sport2.il@SD" tvg-logo="https://i.imgur.com/Headxmx.png" group-title="Sports",Sport 2 (Israel) (1080p)
-http://str2.iptvhd.ru:8080/Sport_2/index.m3u8
 #EXTINF:-1 tvg-id="Sport2.ua@SD" tvg-logo="https://i.imgur.com/vk0j1mY.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Sports",Sport 2 (Ukraine) (1080p)
 http://stream.mcquack.net/392/index.m3u8
 #EXTINF:-1 tvg-id="Sport3.il@SD" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Sports",Sport 3 (Israel) (1080p)
@@ -435,7 +413,7 @@ https://a-cdn.klowdtv.com/live2/ssl_720p/playlist.m3u8
 https://sportsgrid-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="TraceSportStars.fr@HD",Trace Sports Stars (1080p)
 https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="BD" tvg-logo="https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",T Sports (1080p) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2)
+#EXTINF:-1 group-title="BD" tvg-logo="https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",T Sports (1080p) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2)
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",[BD] Sony Ten Sports 1 HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8
@@ -452,6 +430,6 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0
 #EXTINF:-1 group-title="US_LOCAL",-1 tvg-id="MidpenMediaCenterChannel28.us@SD",Midpen Media Center Youth Education and Sports Channel 28 (720p)
 https://5c2974786200d.streamlock.net/live-chan28/ngrp:ch28_all/playlist.m3u8
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
-https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1791725535~exp%3D1791747135~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_284_-1~hmac%3Db4620bcc866baf26d40e2262302563a63bc1ee1a0fd9c2e8026290b177c6bd2f
+https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1791743332~exp%3D1791764932~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_284_-1~hmac%3Ddea0ba1280aca38cd239b5acd65725feb269b602df9f126e186765c94bc949f9
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1791725537~exp%3D1791747137~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_20.169.59.128_yuppfast_2_channel_76_-1~hmac%3Dcf5c07cfa291120596d883af0b5b266969e602226e2ea6bc3b6ddf7cdfcc106d
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1791743334~exp%3D1791764934~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.243_yuppfast_2_channel_76_-1~hmac%3D0a811b31b474e8152db119878e72daed88bc7025b29b07f809f5cc88669cab8e
