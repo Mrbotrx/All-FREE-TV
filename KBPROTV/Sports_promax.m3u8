@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7710
+📺 TOTAL CHANNELS : 7716
 🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
-🏆 SPORTS         : 217
+🏆 SPORTS         : 222
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 17-10-2026
-🕒 UPDATE TIME    : 04:11 AM
+🕒 UPDATE TIME    : 06:46 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -41,6 +41,22 @@ https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
 https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u8
 #EXTINF:-1 tvg-id="BandSports.br@SD" tvg-logo="https://i.imgur.com/EuPvzJe.png" group-title="Sports",Band Sports (1080p)
 https://cdn-5.nxplay.com.br/BAND_SPORTS/index.m3u8
+#EXTINF:-1 tvg-id="beINSports1.qa@MENA" tvg-logo="https://i.imgur.com/Vtk2cGI.png" group-title="Sports",beIN Sports 1 (1080p)
+http://primetv.cc.cd/beinfhd1/tracks-v1a1/mono.tbin.m3u8
+#EXTINF:-1 tvg-id="beINSports2.qa@MENA" tvg-logo="https://i.imgur.com/vUJZSvs.png" group-title="Sports",beIN Sports 2 (1080p)
+http://primetv.cc.cd/beinfhd2/index.m3u8
+#EXTINF:-1 tvg-id="beINSports3.qa@MENA" tvg-logo="https://i.imgur.com/UYSMao3.png" group-title="Sports",beIN Sports 3 (1080p)
+http://primetv.cc.cd/beinfhd3/index.m3u8
+#EXTINF:-1 tvg-id="beINSports4.qa@MENA" tvg-logo="https://i.imgur.com/vwAgJNi.png" group-title="Sports",beIN Sports 4 (1080p)
+http://primetv.cc.cd/beinfhd4/tracks-v1a1/mono.tbin.m3u8
+#EXTINF:-1 tvg-id="beINSports5.qa@MENA" tvg-logo="https://i.imgur.com/2Rha5aY.png" group-title="Sports",beIN Sports 5 (1080p)
+http://primetv.cc.cd/beinfhd5/tracks-v1a1/mono.tbin.m3u8
+#EXTINF:-1 tvg-id="beINSports6.qa@MENA" tvg-logo="https://i.imgur.com/0wBdLYb.png" group-title="Sports",beIN Sports 6 (1080p)
+http://primetv.cc.cd/beinfhd6/index.m3u8
+#EXTINF:-1 tvg-id="beINSports7.qa@MENA" tvg-logo="https://i.imgur.com/iODFwZi.png" group-title="Sports",beIN Sports 7 (1080p)
+http://primetv.cc.cd/beinfhd7/index.m3u8
+#EXTINF:-1 tvg-id="beINSports8.qa@MENA" tvg-logo="https://i.imgur.com/CaFEyVn.png" group-title="Sports",beIN Sports 8 (1080p)
+http://primetv.cc.cd/beinfhd8/index.m3u8
 #EXTINF:-1 tvg-id="beINSPORTSXTRA.us@SD" tvg-logo="https://i.ibb.co/HT49GPmB/XTRA-2.png" group-title="Sports",beIN SPORTS XTRA (1080p)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="beINSPORTSXTRAenEspanol.us@SD" tvg-logo="https://i.imgur.com/V562tpO.png" group-title="Sports",beIN SPORTS XTRA en Espanol (1080p)
@@ -427,12 +443,6 @@ https://a-cdn.klowdtv.com/live2/ssl_720p/playlist.m3u8
 https://sportsgrid-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="TraceSportStars.fr@HD",Trace Sports Stars (1080p)
 https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026301/1791961433994998_ISL_SCD_vs_Mohun_Bagan_FC_live_landscape_thumb.jpg" group-title="BD", Sporting Club Delhi vs Mohun Bagan Super Giant - 16 Oct 2026 [ENG] - MG Indian Super League 2026-27
-https://sonydaimenew.akamaized.net/hls/live/2120304/Footlive1610/ENG/std_lrh-800300010.m3u8?hdnea=exp=1792207580~acl=/*~id=63053808822200671803931542801009~hmac=9032f43403acbee74cf121c6ae60e2f2dc89e58a7685f590b249d42678944f3f
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026301/1791961433994998_ISL_SCD_vs_Mohun_Bagan_FC_live_landscape_thumb.jpg" group-title="BD", Sporting Club Delhi vs Mohun Bagan Super Giant - 16 Oct 2026 [HIN] - MG Indian Super League 2026-27
-https://sonydaimenew.akamaized.net/hls/live/2120303/Footlive1610/HIN/std_lrh-800300010.m3u8?hdnea=exp=1792207580~acl=/*~id=63053808822200671803931542801009~hmac=9032f43403acbee74cf121c6ae60e2f2dc89e58a7685f590b249d42678944f3f
-#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000026301/1791961433994998_ISL_SCD_vs_Mohun_Bagan_FC_live_landscape_thumb.jpg" group-title="BD", Sporting Club Delhi vs Mohun Bagan Super Giant - 16 Oct 2026 [BEN] - MG Indian Super League 2026-27
-https://sonydaimenew.akamaized.net/hls/live/2120305/Footlive1610/BEN/std_lrh-800300010.m3u8?hdnea=exp=1792207580~acl=/*~id=63053808822200671803931542801009~hmac=9032f43403acbee74cf121c6ae60e2f2dc89e58a7685f590b249d42678944f3f
 #EXTINF:-1 group-title="BD" tvg-logo="https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",T Sports (1080p) (1) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2) (2)
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",[BD] Sony Ten Sports 1 HD
@@ -450,6 +460,6 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0
 #EXTINF:-1 group-title="US_LOCAL",-1 tvg-id="MidpenMediaCenterChannel28.us@SD",Midpen Media Center Youth Education and Sports Channel 28 (720p)
 https://5c2974786200d.streamlock.net/live-chan28/ngrp:ch28_all/playlist.m3u8
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
-https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1792167293~exp%3D1792188893~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.227.169.203_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.227.169.203_yuppfast_2_channel_284_-1~hmac%3Dec2933d96524aebb52676f2d0147ef0ed323e43894ceab6b201057ba46c20075
+https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1792179834~exp%3D1792201434~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_51.57.87.178_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_51.57.87.178_yuppfast_2_channel_284_-1~hmac%3D8430d44e05e558e1562557116c01450a3d2e0a7e9a6ff5393a33c11ea0802f86
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1792167295~exp%3D1792188895~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_4.227.169.203_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_4.227.169.203_yuppfast_2_channel_76_-1~hmac%3D09d8a19d9747dbf283a5f9091c1775e809c0fad5a669eb22499ddaff4e523d91
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1792179836~exp%3D1792201436~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_51.57.87.178_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_51.57.87.178_yuppfast_2_channel_76_-1~hmac%3D42357def8e062002e9b9c7d8fdbc722f37e26bcf3fbd4d2673a96f5e6387927b
