@@ -4,7 +4,7 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7716
+📺 TOTAL CHANNELS : 7711
 🇧🇩 BDXI CHANNELS : 78
 🇧৩ BD CHANNELS   : 51
 🇮৩ IND CHANNELS  : 16
@@ -12,7 +12,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 21-10-2026
-🕒 UPDATE TIME    : 05:37 AM
+🕒 UPDATE TIME    : 08:02 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -350,9 +350,9 @@ https://sportsgrid-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="TraceSportStars.fr@HD",Trace Sports Stars (1080p)
 https://tracesportstars-klowdtv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
-https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1792506611~exp%3D1792528211~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.240_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.240_yuppfast_2_channel_284_-1~hmac%3Db720071c59bdda46fd2662609eb8524ce8c0416ba00c7a1ac2b0cdee936dd324
+https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1792521913~exp%3D1792543513~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.161.182.121_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.161.182.121_yuppfast_2_channel_284_-1~hmac%3Da93b1986df262acdf6c4acb9c4ecf83c3d53e8618eef3b96eaf708206365d91d
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1792506613~exp%3D1792528213~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.240_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_48.217.108.240_yuppfast_2_channel_76_-1~hmac%3D9e44168fe78d68ee2a9c28b2f8a1c1ff8d4e35494c64d464a19ba35def28c32a
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1792521915~exp%3D1792543515~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_52.161.182.121_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_52.161.182.121_yuppfast_2_channel_76_-1~hmac%3D230d3c5596a57d02de8b13700a5ab44a541a05fd7e1bcefddc5a9a5f3e21bbb7
 #EXTINF:-1 tvg-id="altitude-sports-denver" tvg-name="Altitude Sports Denver HD" group-title="TVPass",Altitude Sports Denver HD
 https://tvpass.org/live/altitude-sports-denver/hd
 #EXTINF:-1 tvg-id="cbs-sports-network-usa" tvg-name="CBS Sports Network USA HD" group-title="TVPass",CBS Sports Network USA HD
