@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7663
+📺 TOTAL CHANNELS : 7678
 🇧🇩 BDXI CHANNELS : 78
-🇧৩ BD CHANNELS   : 51
-🇮৩ IND CHANNELS  : 16
+🇧৩ BD CHANNELS   : 53
+🇮৩ IND CHANNELS  : 17
 🏆 SPORTS         : 215
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 24-10-2026
-🕒 UPDATE TIME    : 05:31 AM
+🕒 UPDATE TIME    : 07:59 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -27,15 +27,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7663
+📺 TOTAL CHANNELS : 7678
 🇧🇩 BDXI CHANNELS : 78
-🇧৩ BD CHANNELS   : 51
-🇮৩ IND CHANNELS  : 16
+🇧৩ BD CHANNELS   : 53
+🇮৩ IND CHANNELS  : 17
 🏆 SPORTS         : 215
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 24-10-2026
-🕒 UPDATE TIME    : 05:31 AM
+🕒 UPDATE TIME    : 07:59 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -206,15 +206,15 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeesalaam/v1/master/611d79b11b
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7663
+📺 TOTAL CHANNELS : 7678
 🇧🇩 BDXI CHANNELS : 78
-🇧৩ BD CHANNELS   : 51
-🇮৩ IND CHANNELS  : 16
+🇧৩ BD CHANNELS   : 53
+🇮৩ IND CHANNELS  : 17
 🏆 SPORTS         : 215
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 24-10-2026
-🕒 UPDATE TIME    : 05:31 AM
+🕒 UPDATE TIME    : 07:59 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -227,6 +227,8 @@ http://176.118.197.101/Bollywood_HD/index.m3u8
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-id="BoogleBollywood.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Boogle_Bollywood.png" group-title="Music",Boogle Bollywood (720p)
 https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+#EXTINF:-1 tvg-id="HindiHits.in@SD" tvg-logo="https://i.postimg.cc/ryC1Y2K4/Capture.png" group-title="Music",Hindi Hits (720p)
+https://samitaorigin.tangotv.in/HINDIHITS/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="HindiKhabar.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HINDI_KHABAR/images/LOGO_HD/image.png" group-title="News",Hindi Khabar (1080p)
 https://stream.ottlive.co.in/hindikhabar/index.m3u8
 #EXTINF:-1 tvg-id="HosannaTV.in@Hindi" tvg-logo="https://i.imgur.com/VYorU1L.png" group-title="Religious",Hosanna TV Hindi (720p)
@@ -261,15 +263,15 @@ https://ktismaservers.in:3466/live/hosannattvhindhilive.m3u8?hdnts=st%3D17927693
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7663
+📺 TOTAL CHANNELS : 7678
 🇧🇩 BDXI CHANNELS : 78
-🇧৩ BD CHANNELS   : 51
-🇮৩ IND CHANNELS  : 16
+🇧৩ BD CHANNELS   : 53
+🇮৩ IND CHANNELS  : 17
 🏆 SPORTS         : 215
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 24-10-2026
-🕒 UPDATE TIME    : 05:31 AM
+🕒 UPDATE TIME    : 07:59 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -286,6 +288,10 @@ http://103.58.160.157:8278/720-ANTV/playlist.m3u8
 http://181.78.8.199:8000/play/a0fo/index.m3u8
 #EXTINF:-1 tvg-id="ATNBangla.bd@SD" tvg-logo="https://i.imgur.com/K1HmMRz.png" group-title="General",ATN Bangla (720p)
 http://tvsen5.aynascope.net/atnbangla/index.m3u8
+#EXTINF:-1 tvg-id="ATNSamachar.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ATN_Samachar.png" group-title="News",ATN Samachar (1080p)
+https://newsliveindia.com:4433/atn/index.m3u8
+#EXTINF:-1 tvg-id="BanglaJago.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bangla_Jago.png" group-title="News",Bangla Jago (720p)
+https://banglajagotv.livebox.co.in/banglajagohls/24x7.m3u8
 #EXTINF:-1 tvg-id="BanglaVision.bd@SD" tvg-logo="https://i.imgur.com/nCWgp38.png" group-title="General",Bangla Vision (720p)
 https://tvsen5.aynaott.com/banglavision/index.m3u8
 #EXTINF:-1 tvg-id="CGNTVChinese.tw@SD" tvg-logo="https://i.imgur.com/bPoPAbR.png" group-title="Religious",CGNTV Chinese (1080p)
@@ -386,15 +392,15 @@ https://yuppnimresmum.akamaized.net/110322/ntv/playlist.m3u8?hdnts=st%3D17927692
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7663
+📺 TOTAL CHANNELS : 7678
 🇧🇩 BDXI CHANNELS : 78
-🇧৩ BD CHANNELS   : 51
-🇮৩ IND CHANNELS  : 16
+🇧৩ BD CHANNELS   : 53
+🇮৩ IND CHANNELS  : 17
 🏆 SPORTS         : 215
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 24-10-2026
-🕒 UPDATE TIME    : 05:31 AM
+🕒 UPDATE TIME    : 07:59 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
