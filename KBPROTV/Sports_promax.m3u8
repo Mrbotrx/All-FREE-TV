@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7703
+📺 TOTAL CHANNELS : 7704
 🇧🇩 BDXI CHANNELS : 79
 🇧৩ BD CHANNELS   : 56
 🇮৩ IND CHANNELS  : 18
 🏆 SPORTS         : 207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 03-11-2026
-🕒 UPDATE TIME    : 04:05 PM
+📅 UPDATE DATE    : 04-11-2026
+🕒 UPDATE TIME    : 12:03 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -326,9 +326,9 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
 #EXTINF:-1 tvg-name="Bein Sports Extra 2" group-title="BD",Bein Sports Extra 2
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
 #EXTINF:-1 tvg-id="284" tvg-chno="" tvg-name="willow-sports" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/xzbzkm.png" group-title="Yupptv", Willow Sports
-https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1793625222~exp%3D1793646822~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_132.196.55.104_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_132.196.55.104_yuppfast_2_channel_284_-1~hmac%3D99035981caddfd7b15747f2819c9d1f624626563c60626d718bcdbdba3f88d37
+https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8?hdnts=st%3D1793658589~exp%3D1793680189~acl%3D%21%2A%2Fplaylist%2Famg01269-willowtvfast-willowplus-yupptvus%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_40.124.78.32_yuppfast_2_channel_284_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_40.124.78.32_yuppfast_2_channel_284_-1~hmac%3D56dc005c636e46bedd0ecf1f0879d2a044ee0e065546135c172e6d439c48b1f0
 #EXTINF:-1 tvg-id="76" tvg-chno="286" tvg-name="sport-fishing-tv" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/sport-fishing-tv.png" group-title="Yupptv", Sport Fishing TV
-https://sofast-yupptv.vgcdn.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1793625224~exp%3D1793646824~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_132.196.55.104_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_132.196.55.104_yuppfast_2_channel_76_-1~hmac%3D512aa86e4b26b1cfe3440d0ac5349d37bab1fe01361074d57831aeef43a5cd57
+https://sofast-yupptv.vgcdn.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8?hdnts=st%3D1793658591~exp%3D1793680191~acl%3D%21%2A%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Feea68b79-bfe2-451e-a227-d637a5b9548a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_40.124.78.32_yuppfast_2_channel_76_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_40.124.78.32_yuppfast_2_channel_76_-1~hmac%3D7790740e9caafd5482f3917e52b52a677c1edcb2184f1400e9a63746e27fcd46
 #EXTINF:-1  tvg-id="24.7.Dummy.us" tvg-logo="https://img.platform.wurl.dev/channel/1358/lg/2b0c5b/LG-Logo-PNG-100x100_v1.png" group-title="LGTV",460 Fubo Sports
 https://ad993ce7.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEdfRnVib1Nwb3J0c05ldHdvcmtfSExT/playlist.m3u8
 #EXTINF:-1 group-title="klowdtv",-1 tvg-id="",EchoSports (720p)
