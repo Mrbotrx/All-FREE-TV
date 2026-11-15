@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 7675
+📺 TOTAL CHANNELS : 7696
 🇧🇩 BDXI CHANNELS : 61
-🇧৩ BD CHANNELS   : 55
+🇧৩ BD CHANNELS   : 56
 🇮৩ IND CHANNELS  : 13
 🏆 SPORTS         : 218
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📅 UPDATE DATE    : 15-11-2026
-🕒 UPDATE TIME    : 02:56 AM
+🕒 UPDATE TIME    : 06:51 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -129,3 +129,5 @@ https://avr.host247.net/live/WiseHumanTv/playlist.m3u8
 https://tvsen7.aynaott.com/xM9hpJpqLqs83ZrvkeBG/index.m3u8?e=1784102568&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=90ea05f54cbc7e469d26591ca7a526e4
 #EXTINF:-1 tvg-id="7141c05b-97cd-4dd1-9584-423c7a5ce13d" tvg-name="Republic Bangla" tvg-logo="https://s3.aynaott.com/storage/18cb20e8e53eb27249c62d3aedf51241" group-title="BD",Republic Bangla
 https://tvsen5.aynaott.com/qRHda6ax/index.m3u8?e=1784102632&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=f74b592fbf23b79d3f770baf76fefd5d
+#EXTINF:-1 tvg-name="NTV (720p)" group-title="BD",NTV (720p)
+https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
