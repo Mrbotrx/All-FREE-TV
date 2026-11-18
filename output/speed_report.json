@@ -400,14 +400,6 @@
         "stream": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8"
     },
     {
-        "title": "T Sports HD",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 787.4,
-        "seg_kbps": 49.3,
-        "stream": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8"
-    },
-    {
         "title": "Goldmines",
         "group": "Popular Live Tvs",
         "tier": "fast",
@@ -510,6 +502,14 @@
         "ttfb_ms": 809.4,
         "seg_kbps": 42.1,
         "stream": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8"
+    },
+    {
+        "title": "T Sports HD",
+        "group": "Sports",
+        "tier": "medium",
+        "ttfb_ms": 810.7,
+        "seg_kbps": 55.8,
+        "stream": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8"
     },
     {
         "title": "SA TV",

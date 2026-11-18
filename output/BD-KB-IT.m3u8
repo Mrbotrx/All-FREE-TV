@@ -35,9 +35,9 @@ https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8
 #EXTINF:-1 tvg-id="d1de644dae5ce2d3" tvg-name="TNT Sport 1" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="8" tvg-speed="fast",TNT Sport 1
 https://tvsen5.aynaott.com/asdfadsf/index.m3u8
 
-#EXTVLCOPT:network-caching=500
-#EXTINF:-1 tvg-id="50a9d8e200036c5c" tvg-name="T Sports HD" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="9" tvg-speed="fast" tvg-quality="HD",T Sports HD
-https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8
+#EXTVLCOPT:network-caching=1500
+#EXTINF:-1 tvg-id="f8411239395c99d3" tvg-name="T Sports HD" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="9" tvg-speed="medium" tvg-quality="HD",T Sports HD
+https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8
 
 #EXTVLCOPT:network-caching=1500
 #EXTINF:-1 tvg-id="21a7974f76800aa9" tvg-name="Bahrain Sports 1" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="10" tvg-speed="medium",Bahrain Sports 1

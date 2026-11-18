@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-18T09:35:00.281461+00:00",
+    "generated_at": "2026-11-18T14:52:31.774276+00:00",
     "working": 71,
     "dead": 60,
     "channels": [
@@ -258,12 +258,12 @@
         {
             "title": "T Sports HD",
             "group": "Sports",
-            "stream": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
+            "stream": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8",
             "ok": true,
             "reason": "all_steps_ok",
-            "ttfb_ms": 787.4,
-            "seg_kbps": 49.3,
-            "tier": "fast",
+            "ttfb_ms": 810.7,
+            "seg_kbps": 55.8,
+            "tier": "medium",
             "logo_raw": "",
             "logo_valid": false
         },
@@ -1240,24 +1240,24 @@
             "logo_valid": false
         },
         {
-            "title": "HBO",
-            "group": "Movies",
-            "stream": "https://tvsen7.aynaott.com/hbo/index.m3u8",
-            "ok": false,
-            "reason": "step1_http_403",
-            "ttfb_ms": 756.8,
-            "seg_kbps": 0.0,
-            "tier": "very_slow",
-            "logo_raw": "",
-            "logo_valid": false
-        },
-        {
             "title": "Hindi Movie Classic 24",
             "group": "Movies",
             "stream": "https://vods2.aynaott.com/hindimovies/index.m3u8",
             "ok": false,
             "reason": "step3_segment_404",
             "ttfb_ms": 784.1,
+            "seg_kbps": 0.0,
+            "tier": "very_slow",
+            "logo_raw": "",
+            "logo_valid": false
+        },
+        {
+            "title": "HBO",
+            "group": "Movies",
+            "stream": "https://tvsen7.aynaott.com/hbo/index.m3u8",
+            "ok": false,
+            "reason": "step1_http_403",
+            "ttfb_ms": 756.8,
             "seg_kbps": 0.0,
             "tier": "very_slow",
             "logo_raw": "",

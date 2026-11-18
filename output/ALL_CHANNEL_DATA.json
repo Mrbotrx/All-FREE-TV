@@ -1287,16 +1287,16 @@
         "taxonomies": {
             "category": [
                 {
-                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                    "slug": "channel-channels",
-                    "title": "Channels",
-                    "nav_path": "/t/category/channel-channels"
-                },
-                {
                     "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
                     "slug": "channel-sports",
                     "title": "Sports",
                     "nav_path": "/t/category/channel-sports"
+                },
+                {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
                 }
             ]
         },
@@ -1341,11 +1341,17 @@
             "sprite_url": null
         },
         "stream": {
-            "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
+            "url": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8",
             "urls": null
         },
         "taxonomies": {
             "category": [
+                {
+                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                    "slug": "channel-sports",
+                    "title": "Sports",
+                    "nav_path": "/t/category/channel-sports"
+                },
                 {
                     "id": "019efa45-d480-7170-890d-c5eec377e6b9",
                     "slug": "channel-football",
@@ -1369,12 +1375,6 @@
                     "slug": "channel-cricket",
                     "title": "Cricket",
                     "nav_path": "/t/category/channel-cricket"
-                },
-                {
-                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
-                    "slug": "channel-sports",
-                    "title": "Sports",
-                    "nav_path": "/t/category/channel-sports"
                 }
             ]
         },
@@ -6663,72 +6663,6 @@
         "_api_group": "Popular Live Tvs"
     },
     {
-        "id": "019de785-3bb7-78ad-b1ab-052ba0529f95",
-        "type": "live-tvs",
-        "object": "stream",
-        "slug": "hbo",
-        "title": "HBO",
-        "description": "HBO brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-        "label": null,
-        "nav_path": "/live-tvs/hbo",
-        "starts_at": null,
-        "ends_at": null,
-        "access": {
-            "level": "subscription",
-            "label": "Subscribe",
-            "options": []
-        },
-        "images": {
-            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
-            "thumbnail_wide_url": null,
-            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
-            "poster_wide_url": null,
-            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
-            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
-            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
-            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo_500x296.jpg",
-            "sprite_url": null
-        },
-        "stream": {
-            "url": "https://tvsen7.aynaott.com/hbo/index.m3u8",
-            "urls": null
-        },
-        "taxonomies": {
-            "category": [
-                {
-                    "id": "019efa45-d7e9-70d0-a997-240021c09cee",
-                    "slug": "channel-movie",
-                    "title": "Movie",
-                    "nav_path": "/t/category/channel-movie"
-                },
-                {
-                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                    "slug": "channel-channels",
-                    "title": "Channels",
-                    "nav_path": "/t/category/channel-channels"
-                },
-                {
-                    "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
-                    "slug": "channel-english",
-                    "title": "English",
-                    "nav_path": "/t/category/channel-english"
-                }
-            ]
-        },
-        "access_policy": null,
-        "access_verdict": {
-            "allowed": true,
-            "reason": null
-        },
-        "template": "stream",
-        "content_rating": {
-            "name": "G",
-            "description": "No Restriction",
-            "min_age": 0
-        },
-        "_api_group": "Popular Live Tvs"
-    },
-    {
         "id": "019de785-3b6b-7874-988b-5d148182b02d",
         "type": "live-tvs",
         "object": "stream",
@@ -6778,6 +6712,72 @@
                     "slug": "channel-hindi",
                     "title": "Hindi",
                     "nav_path": "/t/category/channel-hindi"
+                }
+            ]
+        },
+        "access_policy": null,
+        "access_verdict": {
+            "allowed": true,
+            "reason": null
+        },
+        "template": "stream",
+        "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+        },
+        "_api_group": "Popular Live Tvs"
+    },
+    {
+        "id": "019de785-3bb7-78ad-b1ab-052ba0529f95",
+        "type": "live-tvs",
+        "object": "stream",
+        "slug": "hbo",
+        "title": "HBO",
+        "description": "HBO brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+        "label": null,
+        "nav_path": "/live-tvs/hbo",
+        "starts_at": null,
+        "ends_at": null,
+        "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": []
+        },
+        "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo_500x296.jpg",
+            "sprite_url": null
+        },
+        "stream": {
+            "url": "https://tvsen7.aynaott.com/hbo/index.m3u8",
+            "urls": null
+        },
+        "taxonomies": {
+            "category": [
+                {
+                    "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                    "slug": "channel-movie",
+                    "title": "Movie",
+                    "nav_path": "/t/category/channel-movie"
+                },
+                {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
+                },
+                {
+                    "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                    "slug": "channel-english",
+                    "title": "English",
+                    "nav_path": "/t/category/channel-english"
                 }
             ]
         },

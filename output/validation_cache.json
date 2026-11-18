@@ -1428,5 +1428,16 @@
     "ttfb_ms": 10800.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
+  },
+  "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8": {
+    "v": 2,
+    "ok": true,
+    "reason": "all_steps_ok",
+    "resolved": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8",
+    "kind": "media",
+    "ts": 1795013549.0281289,
+    "ttfb_ms": 810.7,
+    "seg_kbps": 55.8,
+    "tier": "medium"
   }
 }
