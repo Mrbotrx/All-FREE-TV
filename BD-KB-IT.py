@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 """
-BD-KB-IT Playlist Builder — COMPLETE (single file)
-==================================================
-Features:
-  • Full pagination (next_url / page / offset / cursor / total)
-  • Deep 4-step stream validation (only working channels)
-  • Auto logo resolve + HEAD validation
-  • Smart group by keyword
-  • Speed measurement (TTFB + segment kB/s) → fast first, slow last
-  • Per-channel network-caching hint
-  • Atomic file writes, non-zero exit if 0 channels
+BD-KB-IT Playlist Builder — COMPLETE FIXED VERSION
+===================================================
+Fixes:
+  • KeyError 'ttfb_ms'  → cache versioning + guaranteed keys
+  • Pagination over-scan → cursor disable on empty page
+  • All previous features intact
 """
 
 import os
@@ -57,6 +53,7 @@ RETRY_DELAY    = 1.5
 WORKERS        = 32
 CACHE_TTL      = 6 * 3600
 LOGO_CACHE_TTL = 24 * 3600
+CACHE_VERSION  = 2          # ⭐ bump when result schema changes
 MIN_SEGMENT_BYTES = 64
 
 SPEED_FAST_MS   = 800
@@ -223,6 +220,8 @@ def cache_get(cache, key, ttl):
     e = cache.get(key)
     if not e:
         return None
+    if e.get("v") != CACHE_VERSION:      # ⭐ old schema → ignore
+        return None
     if time.time() - e.get("ts", 0) > ttl:
         return None
     return e
@@ -234,7 +233,7 @@ def cache_get(cache, key, ttl):
 
 def http_request(url, headers, method="GET", read_bytes=0,
                  timeout=TIMEOUT):
-    """Returns (status, ct, body, final_url, elapsed_ms)."""
+    """Returns (status, content_type, body, final_url, elapsed_ms)."""
     for attempt in range(1, RETRY_COUNT + 1):
         t0 = time.perf_counter()
         try:
@@ -318,7 +317,7 @@ def get_stream_url(ch):
 
 
 # ==========================================
-# ⭐ PAGINATION — universal
+# PAGINATION — universal
 # ==========================================
 
 def _find_pagination_dict(data):
@@ -388,9 +387,10 @@ def get_next_page(data, current_url, ctx):
         if pag.get("has_more") is False:
             return None
 
-        # 2) cursor
+        # 2) cursor — ⭐ skip if already disabled
         cursor = pag.get("next_cursor") or pag.get("cursor")
-        if isinstance(cursor, str) and cursor:
+        if (isinstance(cursor, str) and cursor
+                and not ctx.get("cursor_disabled")):
             ctx["type"] = "cursor"
             p = urlparse(ctx["base_url"])
             params = [kv for kv in (p.query.split("&") if p.query else [])
@@ -477,7 +477,7 @@ def validate_logo(url, cache):
         st, ct, _, _, _ = http_request(url, IMG_HEADERS, method="GET",
                                        read_bytes=1024, timeout=8)
     ok = st in (200, 206) and ("image" in ct or not ct)
-    cache[url] = {"ok": ok, "ts": time.time()}
+    cache[url] = {"ok": ok, "ts": time.time(), "v": CACHE_VERSION}
     return ok
 
 
@@ -537,14 +537,23 @@ def caching_hint(tier):
             "very_slow": 5000}.get(tier, 2000)
 
 
+def _mk_result(url):
+    """Guaranteed-complete result dict — never missing keys."""
+    return {
+        "v": CACHE_VERSION,
+        "ok": False, "reason": "unknown",
+        "resolved": url, "kind": "unknown",
+        "ts": time.time(),
+        "ttfb_ms": 0.0, "seg_kbps": 0.0, "tier": "very_slow",
+    }
+
+
 def validate_stream(url, cache):
     cached = cache_get(cache, url, CACHE_TTL)
     if cached is not None:
         return cached
 
-    result = {"ok": False, "reason": "unknown", "resolved": url,
-              "kind": "unknown", "ts": time.time(),
-              "ttfb_ms": 0, "seg_kbps": 0, "tier": "very_slow"}
+    result = _mk_result(url)
 
     t0 = time.perf_counter()
     st, ct, body, final, _ = http_request(url, PLAY_HEADERS, method="GET",
@@ -602,6 +611,7 @@ def validate_stream(url, cache):
                                        method="GET", read_bytes=seg_bytes,
                                        timeout=TIMEOUT)
     seg_dur = time.perf_counter() - t1
+
     if st3 not in (200, 206):
         result["reason"] = f"step3_segment_{st3 or 'err'}"
         cache[url] = result
@@ -636,18 +646,25 @@ def validate_all(channels, cache):
             key, url, title = futures[fut]
             try:
                 r = fut.result()
+                if not isinstance(r, dict):
+                    r = _mk_result(url)
+                # ⭐ Guarantee keys
+                for k, default in (("ttfb_ms", 0.0), ("seg_kbps", 0.0),
+                                   ("tier", "very_slow"),
+                                   ("ok", False), ("reason", "unknown")):
+                    r.setdefault(k, default)
             except Exception as e:
-                r = {"ok": False, "reason": f"exc:{e}",
-                     "resolved": url, "kind": "unknown",
-                     "ts": time.time(), "ttfb_ms": 0,
-                     "seg_kbps": 0, "tier": "very_slow"}
+                r = _mk_result(url)
+                r["reason"] = f"exc:{e}"
+
             results[key] = r
             done += 1
-            flag = "✓" if r["ok"] else "✗"
-            spd = (f"{r['ttfb_ms']:>5.0f}ms "
-                   f"{r['seg_kbps']:>6.0f}KB/s [{r['tier']}]"
-                   if r["ok"] else r["reason"])
-            print(f"  [{done:>3}/{total}] {flag} {title[:28]:28} → {spd}")
+            if r["ok"]:
+                spd = (f"{r['ttfb_ms']:>5.0f}ms  "
+                       f"{r['seg_kbps']:>6.0f}KB/s  [{r['tier']}]")
+                print(f"  [{done:>3}/{total}] ✓ {title[:28]:28} → {spd}")
+            else:
+                print(f"  [{done:>3}/{total}] ✗ {title[:28]:28} → {r['reason']}")
     return results
 
 
@@ -856,7 +873,7 @@ def save_groups_index(enriched):
 
 
 def save_dead_list(validation):
-    dead = [{"stream": u, "reason": v["reason"]}
+    dead = [{"stream": u, "reason": v.get("reason", "unknown")}
             for u, v in validation.items() if not v.get("ok")]
     save_json(DEAD_FILE, dead)
     print(f"[OK] Dead   → {DEAD_FILE}  ({len(dead)} urls)")
@@ -891,7 +908,8 @@ def main():
     empty_streak = 0
 
     ctx = {"type": None, "page": 1, "offset": 0, "limit": None,
-           "cursor": None, "base_url": API_URL, "last_page": None}
+           "cursor": None, "base_url": API_URL, "last_page": None,
+           "cursor_disabled": False}
 
     current_url = API_URL
     page_number = 0
@@ -919,6 +937,7 @@ def main():
             stop_reason = f"error:{e}"
             break
 
+        # Content-hash duplicate guard
         try:
             ph = hashlib.sha256(
                 json.dumps(data, sort_keys=True).encode()
@@ -940,9 +959,13 @@ def main():
         save_json(OUTPUT_DIR / f"page_{page_number:03d}.json", data)
         print(f"    → {len(chans)} channels (cumulative: {cumulative})")
 
+        # ⭐ Empty-page handling — disable cursor + stop at 2
         if len(chans) == 0:
             empty_streak += 1
-            if empty_streak >= 3:
+            if ctx["type"] == "cursor":
+                ctx["cursor_disabled"] = True
+                print("    [INFO] cursor strategy disabled")
+            if empty_streak >= 2:
                 print(f"\n[STOP] {empty_streak} empty pages in a row")
                 stop_reason = "empty_streak"
                 break
