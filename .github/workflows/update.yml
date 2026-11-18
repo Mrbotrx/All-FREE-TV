@@ -9,24 +9,37 @@ on:
 permissions:
   contents: write
 
+# Prevent two runs from colliding
+concurrency:
+  group: bd-kb-it-update
+  cancel-in-progress: false
+
 jobs:
   update:
-
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Install Requirements
         run: |
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            echo "No requirements.txt — skipping"
+          fi
 
       - name: Run Script
         env:
@@ -34,16 +47,53 @@ jobs:
         run: |
           python BD-KB-IT.py
 
+      - name: Verify Output Files
+        run: |
+          echo "=== output/ contents ==="
+          ls -lah output/ || true
+          if [ ! -f output/BD-KB-IT.m3u8 ]; then
+            echo "❌ Playlist not created!"
+            exit 1
+          fi
+          echo "=== Playlist head ==="
+          head -n 15 output/BD-KB-IT.m3u8
+          echo "=== Channel count ==="
+          grep -c "^#EXTINF" output/BD-KB-IT.m3u8 || true
+
+      - name: Upload Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playlist-${{ github.run_number }}
+          path: |
+            output/BD-KB-IT.m3u8
+            output/ALL_CHANNEL_DATA.json
+            output/health_report.json
+            output/dead_channels.json
+          retention-days: 30
+
       - name: Commit Changes
         run: |
-
-          git config user.name "github-actions[bot]"
-
+          git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add output/
+          # Force-add in case output/ is in .gitignore
+          git add -f output/
 
-          git diff --cached --quiet || (
-            git commit -m "Auto update JSON and M3U8"
-            git push
-          )
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Auto update JSON and M3U8 — $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          # Retry push up to 3 times (handles remote changes mid-run)
+          for i in 1 2 3; do
+            if git push; then
+              echo "✅ Pushed on attempt $i"
+              break
+            fi
+            echo "⚠️ Push failed, retrying ($i/3)..."
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep 3
+          done
