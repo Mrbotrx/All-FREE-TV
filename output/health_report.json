@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-18T08:57:21.934544+00:00",
+    "generated_at": "2026-11-18T09:35:00.281461+00:00",
     "working": 71,
     "dead": 60,
     "channels": [
@@ -1252,24 +1252,24 @@
             "logo_valid": false
         },
         {
-            "title": "Peace TV Bangla HD",
-            "group": "Religious",
-            "stream": "https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8",
-            "ok": false,
-            "reason": "step1_http_404",
-            "ttfb_ms": 10791.1,
-            "seg_kbps": 0.0,
-            "tier": "very_slow",
-            "logo_raw": "",
-            "logo_valid": false
-        },
-        {
             "title": "Hindi Movie Classic 24",
             "group": "Movies",
             "stream": "https://vods2.aynaott.com/hindimovies/index.m3u8",
             "ok": false,
             "reason": "step3_segment_404",
             "ttfb_ms": 784.1,
+            "seg_kbps": 0.0,
+            "tier": "very_slow",
+            "logo_raw": "",
+            "logo_valid": false
+        },
+        {
+            "title": "Peace TV Bangla HD",
+            "group": "Religious",
+            "stream": "https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8",
+            "ok": false,
+            "reason": "step1_http_404",
+            "ttfb_ms": 10791.1,
             "seg_kbps": 0.0,
             "tier": "very_slow",
             "logo_raw": "",
