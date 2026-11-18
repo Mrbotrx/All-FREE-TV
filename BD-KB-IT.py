@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """
-BD-KB-IT Playlist Builder — ADVANCED
-====================================
-- Deep stream validation (only working channels)
-- Auto logo resolution + validation
-- Smart auto-grouping by keyword
-- Language / country / quality detection
-- Priority-ordered groups
+BD-KB-IT Playlist Builder — COMPLETE (single file)
+==================================================
+Features:
+  • Full pagination (next_url / page / offset / cursor / total)
+  • Deep 4-step stream validation (only working channels)
+  • Auto logo resolve + HEAD validation
+  • Smart group by keyword
+  • Speed measurement (TTFB + segment kB/s) → fast first, slow last
+  • Per-channel network-caching hint
+  • Atomic file writes, non-zero exit if 0 channels
 """
 
 import os
@@ -43,21 +46,25 @@ CACHE_FILE    = OUTPUT_DIR / "validation_cache.json"
 DEAD_FILE     = OUTPUT_DIR / "dead_channels.json"
 LOGO_CACHE    = OUTPUT_DIR / "logo_cache.json"
 GROUPS_FILE   = OUTPUT_DIR / "groups_index.json"
+SPEED_FILE    = OUTPUT_DIR / "speed_report.json"
 
-MAX_PAGES     = 10000
-API_TIMEOUT   = 30
-TIMEOUT       = 15
-RETRY_COUNT   = 2
-RETRY_DELAY   = 1.5
+MAX_PAGES      = 10000
+API_TIMEOUT    = 30
+TIMEOUT        = 15
+RETRY_COUNT    = 2
+RETRY_DELAY    = 1.5
 
-WORKERS       = 32
-CACHE_TTL     = 6 * 3600
+WORKERS        = 32
+CACHE_TTL      = 6 * 3600
 LOGO_CACHE_TTL = 24 * 3600
 MIN_SEGMENT_BYTES = 64
 
-DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
+SPEED_FAST_MS   = 800
+SPEED_MEDIUM_MS = 2000
+SPEED_SLOW_MS   = 4500
 
-# Optional EPG source (leave empty to skip)
+SORT_BY = os.environ.get("SORT_BY", "group_speed")
+DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 EPG_URL = os.environ.get("EPG_URL", "").strip()
 
 STREAM_KEYS = {"stream_url", "play_url", "m3u8_url", "playlist_url",
@@ -74,111 +81,71 @@ HEADERS = {
     "Referer": "https://web.aynaott.com/live-tvs",
     "Origin": "https://web.aynaott.com",
 }
-
 PLAY_HEADERS = {
     "User-Agent": HEADERS["User-Agent"],
     "Accept": "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
     "Referer": "https://web.aynaott.com/",
     "Origin": "https://web.aynaott.com",
 }
-
 IMG_HEADERS = {
     "User-Agent": HEADERS["User-Agent"],
     "Accept": "image/*,*/*;q=0.8",
 }
 
-IPTV_LOGO = ("https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/"
-             "refs/heads/main/IPTV_LINKS_LOGO.jpg")
+IPTV_LOGO  = ("https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/"
+              "refs/heads/main/IPTV_LINKS_LOGO.jpg")
 IPTV_VIDEO = ("https://github.com/Mrbotrx/Mrbotrx/raw/"
               "refs/heads/main/IPTV_LINKS_VIDEO.mp4")
 
 
 # ==========================================
-# ⭐ SMART GROUPING — keyword → category
+# GROUPING RULES
 # ==========================================
 
-# Order matters: earlier match wins
 GROUP_RULES = [
-    ("Sports", [
-        "sport", "cricket", "football", "soccer", "tennis", "golf",
-        "nba", "nfl", "fifa", "uefa", "f1", "formula", "euro",
-        "star sports", "sony ten", "willow", "supersport", "espn",
-        "beIN", "sky sport", "bt sport", "eurosport",
-    ]),
-    ("News", [
-        "news", "khobor", "sangbad", "24", "24x7", "cnn", "bbc",
-        "aljazeera", "al jazeera", "reuters", "abp", "aaj tak",
-        "zee news", "ndtv", "times now", "republic", "india today",
-        "somoy", "channel 24", "jamuna", "independent", "ekattor",
-        "dbc news", "rttv", "atn news", "btv", "shomoy",
-    ]),
-    ("Movies", [
-        "movie", "cinema", "films", "hbo", "star movie", "sony pix",
-        "zee cinema", "star gold", "max", "action", "thriller",
-        "cine", "picture",
-    ]),
-    ("Kids", [
-        "kids", "cartoon", "pogo", "nick", "disney", "cn ",
-        "cartoon network", "hungama", "baby", "chutti",
-    ]),
-    ("Music", [
-        "music", "song", "mtv", "vh1", "9xm", "b4u music",
-        "sangeet", "beat", "hits",
-    ]),
-    ("Religious", [
-        "islam", "quran", "deen", "peace", "madani", "islamic",
-        "hindu", "dharm", "sanskar", "aastha", "god", "bhakti",
-        "christian", "gospel", "buddha", "jain",
-    ]),
-    ("Documentary", [
-        "discovery", "national geographic", "nat geo", "history",
-        "animal planet", "docu", "wild", "nature",
-    ]),
-    ("Entertainment", [
-        "entertainment", "comedy", "drama", "serial", "star plus",
-        "zee tv", "sony", "colors", "star jalsha", "zee bangla",
-        "sun tv", "vijay", "asianet", "g tv", "star maa",
-    ]),
-    ("Lifestyle", [
-        "food", "travel", "cook", "home", "fashion", "style",
-        "tlc", "living", "fox life",
-    ]),
-    ("Business", [
-        "business", "cnbc", "bloomberg", "market", "money",
-        "economy", "finance", "stock",
-    ]),
-    ("Education", [
-        "education", "learn", "study", "school", "university",
-        "knowledge", "gyan",
-    ]),
-    ("Local", [
-        "bangla", "bangladesh", "bd ", "deshi", "desi",
-        "kolkata", "west bengal",
-    ]),
+    ("Sports", ["sport", "cricket", "football", "soccer", "tennis",
+                "golf", "nba", "nfl", "fifa", "uefa", "f1", "formula",
+                "euro", "star sports", "sony ten", "willow",
+                "supersport", "espn", "bein", "sky sport", "bt sport",
+                "eurosport"]),
+    ("News", ["news", "khobor", "sangbad", "24x7", "cnn", "bbc",
+              "aljazeera", "al jazeera", "reuters", "abp", "aaj tak",
+              "zee news", "ndtv", "times now", "republic",
+              "india today", "somoy", "jamuna", "independent",
+              "ekattor", "dbc news", "rttv", "atn news", "btv",
+              "shomoy"]),
+    ("Movies", ["movie", "cinema", "films", "hbo", "star movie",
+                "sony pix", "zee cinema", "star gold", "max",
+                "action", "thriller", "cine", "picture"]),
+    ("Kids", ["kids", "cartoon", "pogo", "nick", "disney",
+              "cartoon network", "hungama", "baby", "chutti"]),
+    ("Music", ["music", "song", "mtv", "vh1", "9xm", "b4u music",
+               "sangeet", "beat", "hits"]),
+    ("Religious", ["islam", "quran", "deen", "peace", "madani",
+                   "islamic", "hindu", "dharm", "sanskar", "aastha",
+                   "god", "bhakti", "christian", "gospel", "buddha",
+                   "jain"]),
+    ("Documentary", ["discovery", "national geographic", "nat geo",
+                     "history", "animal planet", "docu", "wild",
+                     "nature"]),
+    ("Entertainment", ["entertainment", "comedy", "drama", "serial",
+                       "star plus", "zee tv", "sony", "colors",
+                       "star jalsha", "zee bangla", "sun tv", "vijay",
+                       "asianet", "g tv", "star maa"]),
+    ("Lifestyle", ["food", "travel", "cook", "home", "fashion",
+                   "style", "tlc", "living", "fox life"]),
+    ("Business", ["business", "cnbc", "bloomberg", "market", "money",
+                  "economy", "finance", "stock"]),
+    ("Education", ["education", "learn", "study", "school",
+                   "university", "knowledge", "gyan"]),
+    ("Local", ["bangla", "bangladesh", "deshi", "desi", "kolkata",
+               "west bengal"]),
 ]
 
-# Group display order in playlist
-GROUP_ORDER = [
-    "Sports", "News", "Movies", "Kids", "Music", "Religious",
-    "Documentary", "Entertainment", "Lifestyle", "Business",
-    "Education", "Local", "Other", "Uncategorized",
-]
-
-# Per-group fallback logos (override IPTV_LOGO if you want)
-GROUP_LOGOS = {
-    "Sports": IPTV_LOGO,
-    "News": IPTV_LOGO,
-    "Movies": IPTV_LOGO,
-    "Kids": IPTV_LOGO,
-    "Music": IPTV_LOGO,
-    "Religious": IPTV_LOGO,
-    # … all fall back to IPTV_LOGO
-}
-
-
-# ==========================================
-# ⭐ LANGUAGE / COUNTRY DETECTION
-# ==========================================
+GROUP_ORDER = ["Sports", "News", "Movies", "Kids", "Music", "Religious",
+               "Documentary", "Entertainment", "Lifestyle", "Business",
+               "Education", "Local", "Other", "Uncategorized"]
+GROUP_LOGOS = {}
 
 LANG_RULES = [
     ("bn", ["bangla", "bangladesh", "bengali", "somoy", "jamuna",
@@ -193,41 +160,32 @@ LANG_RULES = [
     ("en", ["english", "bbc", "cnn", "sky news", "discovery",
             "national geographic", "hbo"]),
 ]
-
-COUNTRY_MAP = {
-    "bn": "Bangladesh", "hi": "India", "ta": "India",
-    "te": "India", "ur": "Pakistan", "ar": "Saudi Arabia",
-    "en": "United States",
-}
+COUNTRY_MAP = {"bn": "Bangladesh", "hi": "India", "ta": "India",
+               "te": "India", "ur": "Pakistan", "ar": "Saudi Arabia",
+               "en": "United States"}
 
 
-def auto_group(title: str, api_group: str = "") -> str:
-    """Determine smart group from title (fallback to api_group)."""
+def auto_group(title, api_group=""):
     t = (title or "").lower()
-
-    for group_name, keywords in GROUP_RULES:
-        for kw in keywords:
-            if kw.lower() in t:
-                return group_name
-
-    # If API group exists and looks reasonable, use it
+    for name, kws in GROUP_RULES:
+        for kw in kws:
+            if kw in t:
+                return name
     if api_group and api_group.lower() not in ("uncategorized", "other", ""):
         return api_group
-
     return "Other"
 
 
-def auto_language(title: str) -> str:
+def auto_language(title):
     t = (title or "").lower()
-    for code, keywords in LANG_RULES:
-        for kw in keywords:
-            if kw.lower() in t:
+    for code, kws in LANG_RULES:
+        for kw in kws:
+            if kw in t:
                 return code
     return ""
 
 
-def auto_quality(title: str, url: str) -> str:
-    """Detect quality tag from title or URL."""
+def auto_quality(title, url):
     t = (title or "").lower()
     u = (url or "").lower()
     for tag in ("2160p", "1440p", "1080p", "720p", "576p", "480p", "360p"):
@@ -274,214 +232,37 @@ def cache_get(cache, key, ttl):
 # HTTP
 # ==========================================
 
-def http_request(url, headers, method="GET", read_bytes=0, timeout=TIMEOUT):
+def http_request(url, headers, method="GET", read_bytes=0,
+                 timeout=TIMEOUT):
+    """Returns (status, ct, body, final_url, elapsed_ms)."""
     for attempt in range(1, RETRY_COUNT + 1):
+        t0 = time.perf_counter()
         try:
             req = urllib.request.Request(url, headers=headers, method=method)
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 ct = (resp.headers.get("Content-Type") or "").lower()
-                body = resp.read(read_bytes) if read_bytes > 0 else resp.read()
-                return resp.status, ct, body, resp.geturl()
+                if method == "HEAD":
+                    body = b""
+                elif read_bytes > 0:
+                    body = resp.read(read_bytes)
+                else:
+                    body = resp.read()
+                elapsed_ms = (time.perf_counter() - t0) * 1000
+                return resp.status, ct, body, resp.geturl(), elapsed_ms
         except urllib.error.HTTPError as e:
+            elapsed_ms = (time.perf_counter() - t0) * 1000
             if e.code == 405 and method == "HEAD":
                 method = "GET"
                 continue
             if e.code in (403, 404, 410):
-                return e.code, "", b"", url
+                return e.code, "", b"", url, elapsed_ms
             if 400 <= e.code < 500 and e.code != 429:
-                return e.code, "", b"", url
+                return e.code, "", b"", url, elapsed_ms
         except (urllib.error.URLError, TimeoutError):
             pass
         if attempt < RETRY_COUNT:
             time.sleep(RETRY_DELAY * attempt)
-    return 0, "", b"", url
-
-
-# ==========================================
-# ⭐ LOGO RESOLVER  (multi-source + validate)
-# ==========================================
-
-def normalize_logo_url(url: str) -> str:
-    if not url:
-        return ""
-    if url.startswith("//"):
-        return "https:" + url
-    if url.startswith("http://"):
-        return "https://" + url[len("http://"):]
-    return url
-
-
-def find_logo_raw(ch) -> str:
-    """Pull logo from any known key (no validation)."""
-    for k in LOGO_KEYS:
-        v = ch.get(k)
-        if isinstance(v, str) and v.strip():
-            u = normalize_logo_url(v.strip())
-            if u.startswith("http"):
-                return u
-    images = ch.get("images")
-    if isinstance(images, dict):
-        for v in images.values():
-            if isinstance(v, str) and v.strip():
-                u = normalize_logo_url(v.strip())
-                if u.startswith("http"):
-                    return u
-            if isinstance(v, dict):
-                iu = v.get("url") or v.get("original") or v.get("src")
-                if isinstance(iu, str) and iu.strip():
-                    u = normalize_logo_url(iu.strip())
-                    if u.startswith("http"):
-                        return u
-    return ""
-
-
-def validate_logo(url: str, cache: dict) -> bool:
-    """HEAD-request logo to confirm it exists and is an image."""
-    if not url:
-        return False
-    c = cache_get(cache, url, LOGO_CACHE_TTL)
-    if c is not None:
-        return c["ok"]
-
-    st, ct, _, _ = http_request(url, IMG_HEADERS,
-                                method="HEAD", read_bytes=0, timeout=8)
-    if st == 405:  # HEAD not allowed → GET tiny
-        st, ct, _, _ = http_request(url, IMG_HEADERS,
-                                    method="GET", read_bytes=1024, timeout=8)
-    ok = st in (200, 206) and ("image" in ct or not ct)
-    cache[url] = {"ok": ok, "ts": time.time()}
-    return ok
-
-
-def resolve_logo(ch, group: str, logo_cache: dict) -> str:
-    """Return a verified logo URL, or fallback."""
-    raw = find_logo_raw(ch)
-    if raw and validate_logo(raw, logo_cache):
-        return raw
-    # Group fallback
-    return GROUP_LOGOS.get(group, IPTV_LOGO)
-
-
-# ==========================================
-# VALIDATION (stream) — same as before
-# ==========================================
-
-def _has_extm3u(body: bytes) -> bool:
-    return b"#EXTM3U" in body[:2048]
-
-
-def _parse_m3u8(body: bytes, base_url: str):
-    text = body.decode("utf-8", errors="ignore")
-    if "#EXTM3U" not in text:
-        return "unknown", []
-    is_master = "#EXT-X-STREAM-INF" in text
-    is_media  = "#EXTINF" in text or "#EXT-X-TARGETDURATION" in text
-    urls = []
-    for line in text.splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        if line.startswith("#"):
-            m = re.search(r'URI="([^"]+)"', line)
-            if m:
-                urls.append(urljoin(base_url, m.group(1)))
-            continue
-        urls.append(urljoin(base_url, line))
-    if is_master:
-        return "master", urls
-    if is_media:
-        return "media", urls
-    return "unknown", urls
-
-
-def validate_stream(url, cache):
-    cached = cache_get(cache, url, CACHE_TTL)
-    if cached is not None:
-        return cached
-
-    result = {"ok": False, "reason": "unknown", "resolved": url,
-              "kind": "unknown", "ts": time.time()}
-
-    st, ct, body, final = http_request(url, PLAY_HEADERS, method="GET", read_bytes=8192)
-    if st not in (200, 206):
-        result["reason"] = f"step1_http_{st or 'err'}"
-        cache[url] = result
-        return result
-
-    looks_m3u8 = ("mpegurl" in ct or "m3u" in ct
-                  or _has_extm3u(body)
-                  or url.split("?")[0].endswith(".m3u8"))
-    if not looks_m3u8:
-        if any(t in ct for t in ("video", "mp4", "mpeg", "octet-stream")):
-            result.update(ok=True, reason="direct_video_ok",
-                          resolved=final, kind="video")
-        else:
-            result["reason"] = f"step1_bad_ct:{ct.split(';')[0]}"
-        cache[url] = result
-        return result
-
-    if not _has_extm3u(body):
-        result["reason"] = "step1_no_extm3u"
-        cache[url] = result
-        return result
-
-    kind, targets = _parse_m3u8(body, final)
-    if kind == "unknown" or not targets:
-        result["reason"] = f"step1_parse_{kind}"
-        cache[url] = result
-        return result
-
-    if kind == "master":
-        variant = targets[0]
-        st2, _, body2, final2 = http_request(variant, PLAY_HEADERS, method="GET", read_bytes=8192)
-        if st2 not in (200, 206) or not _has_extm3u(body2):
-            result["reason"] = f"step2_variant_{st2 or 'err'}"
-            cache[url] = result
-            return result
-        k2, segs = _parse_m3u8(body2, final2)
-        if k2 != "media" or not segs:
-            result["reason"] = f"step2_variant_parse_{k2}"
-            cache[url] = result
-            return result
-        targets, kind = segs, "media"
-
-    st3, _, body3, _ = http_request(targets[0], PLAY_HEADERS,
-                                    method="GET", read_bytes=MIN_SEGMENT_BYTES)
-    if st3 not in (200, 206):
-        result["reason"] = f"step3_segment_{st3 or 'err'}"
-        cache[url] = result
-        return result
-
-    if len(body3) < 16:
-        result["reason"] = "step4_empty_segment"
-        cache[url] = result
-        return result
-
-    result.update(ok=True, reason="all_steps_ok", kind=kind)
-    cache[url] = result
-    return result
-
-
-# ==========================================
-# HELPERS
-# ==========================================
-
-def stream_hash(url: str) -> str:
-    return hashlib.sha256(url.encode()).hexdigest()[:16]
-
-
-def clean_text(v):
-    if v is None:
-        return ""
-    return re.sub(r'[\r\n"]+', " ", str(v)).strip()
-
-
-def channel_identifier(ch):
-    for k in ("id", "slug", "title"):
-        v = ch.get(k)
-        if v is not None and str(v).strip() != "":
-            return f"{k}:{v}"
-    return "raw:" + json.dumps(ch, sort_keys=True, ensure_ascii=False)
+    return 0, "", b"", url, 0.0
 
 
 # ==========================================
@@ -489,31 +270,14 @@ def channel_identifier(ch):
 # ==========================================
 
 def get_api(url):
-    st, _, body, _ = http_request(url, HEADERS, method="GET", timeout=API_TIMEOUT)
+    st, _, body, _, _ = http_request(url, HEADERS, method="GET",
+                                     timeout=API_TIMEOUT)
     if st != 200 or not body:
-        raise RuntimeError(f"API failed: status={st}")
+        raise RuntimeError(f"API failed: status={st} url={url}")
     try:
         return json.loads(body.decode("utf-8", errors="replace"))
     except json.JSONDecodeError as e:
         raise ValueError(f"Invalid JSON: {e}")
-
-
-def get_next_page(data, current_url):
-    if not isinstance(data, dict):
-        return None
-    pag = data.get("blocks_pagination")
-    if not isinstance(pag, dict):
-        pag = data.get("pagination", {})
-    if not isinstance(pag, dict) or not pag.get("has_more"):
-        return None
-    nxt = pag.get("next_url")
-    if not nxt:
-        return None
-    nxt = urljoin(current_url, nxt)
-    p = urlparse(nxt)
-    if p.scheme != "https" or p.hostname != "web.aynaott.com":
-        raise ValueError(f"Rejected pagination URL: {nxt}")
-    return nxt
 
 
 def extract_channels(data):
@@ -554,8 +318,307 @@ def get_stream_url(ch):
 
 
 # ==========================================
-# VALIDATION RUNNER
+# ⭐ PAGINATION — universal
 # ==========================================
+
+def _find_pagination_dict(data):
+    if not isinstance(data, dict):
+        return None
+    for key in ("blocks_pagination", "pagination", "meta", "metadata",
+                "page_info", "paging", "info"):
+        c = data.get(key)
+        if isinstance(c, dict):
+            if key in ("meta", "metadata", "info"):
+                for inner in ("pagination", "page_info", "paging"):
+                    s = c.get(inner)
+                    if isinstance(s, dict):
+                        return s
+            return c
+    inner = data.get("data")
+    if isinstance(inner, dict):
+        return _find_pagination_dict(inner)
+    return None
+
+
+def _extract_int(pag, *keys):
+    for k in keys:
+        v = pag.get(k)
+        if isinstance(v, int):
+            return v
+        if isinstance(v, str) and v.isdigit():
+            return int(v)
+    return None
+
+
+def _build_page_url(base_url, page):
+    p = urlparse(base_url)
+    params = [kv for kv in (p.query.split("&") if p.query else [])
+              if kv and kv.split("=", 1)[0] not in ("page", "offset")]
+    params.append(f"page={page}")
+    return p._replace(query="&".join(params)).geturl()
+
+
+def _build_offset_url(base_url, offset, limit):
+    p = urlparse(base_url)
+    params = [kv for kv in (p.query.split("&") if p.query else [])
+              if kv and kv.split("=", 1)[0] not in ("offset", "limit", "page")]
+    params.append(f"offset={offset}")
+    if limit:
+        params.append(f"limit={limit}")
+    return p._replace(query="&".join(params)).geturl()
+
+
+def get_next_page(data, current_url, ctx):
+    pag = _find_pagination_dict(data)
+
+    if pag:
+        # 1) explicit next_url
+        nxt = pag.get("next_url") or pag.get("next") or pag.get("next_page_url")
+        if isinstance(nxt, str) and nxt.strip():
+            ctx["type"] = "next_url"
+            full = urljoin(current_url, nxt.strip())
+            p = urlparse(full)
+            if p.scheme not in ("http", "https"):
+                return None
+            if p.hostname and "aynaott.com" not in p.hostname:
+                print(f"[WARN] External next_url rejected: {full}")
+                return None
+            return full
+
+        if pag.get("has_more") is False:
+            return None
+
+        # 2) cursor
+        cursor = pag.get("next_cursor") or pag.get("cursor")
+        if isinstance(cursor, str) and cursor:
+            ctx["type"] = "cursor"
+            p = urlparse(ctx["base_url"])
+            params = [kv for kv in (p.query.split("&") if p.query else [])
+                      if kv and kv.split("=", 1)[0] not in ("cursor", "next_cursor")]
+            params.append(f"cursor={cursor}")
+            return p._replace(query="&".join(params)).geturl()
+
+        # 3) total + current_page / last_page
+        total = _extract_int(pag, "total", "total_count", "count")
+        last_page = _extract_int(pag, "last_page", "total_pages", "pages")
+        current_page = _extract_int(pag, "current_page", "page", "page_number")
+        per_page = _extract_int(pag, "per_page", "page_size", "limit")
+
+        if last_page and current_page:
+            ctx["type"] = "page"
+            if current_page < last_page:
+                return _build_page_url(ctx["base_url"], current_page + 1)
+            return None
+
+        if total and per_page:
+            ctx["type"] = "page"
+            pages = (total + per_page - 1) // per_page
+            if current_page and current_page < pages:
+                return _build_page_url(ctx["base_url"], current_page + 1)
+            return None
+
+        # 4) offset
+        offset = _extract_int(pag, "offset", "start")
+        limit = _extract_int(pag, "limit", "per_page", "page_size")
+        if offset is not None and limit:
+            if total and offset + limit >= total:
+                return None
+            ctx["type"] = "offset"
+            return _build_offset_url(ctx["base_url"], offset + limit, limit)
+
+    return None
+
+
+# ==========================================
+# LOGO
+# ==========================================
+
+def normalize_logo_url(url):
+    if not url:
+        return ""
+    if url.startswith("//"):
+        return "https:" + url
+    if url.startswith("http://"):
+        return "https://" + url[len("http://"):]
+    return url
+
+
+def find_logo_raw(ch):
+    for k in LOGO_KEYS:
+        v = ch.get(k)
+        if isinstance(v, str) and v.strip():
+            u = normalize_logo_url(v.strip())
+            if u.startswith("http"):
+                return u
+    images = ch.get("images")
+    if isinstance(images, dict):
+        for v in images.values():
+            if isinstance(v, str) and v.strip():
+                u = normalize_logo_url(v.strip())
+                if u.startswith("http"):
+                    return u
+            if isinstance(v, dict):
+                iu = v.get("url") or v.get("original") or v.get("src")
+                if isinstance(iu, str) and iu.strip():
+                    u = normalize_logo_url(iu.strip())
+                    if u.startswith("http"):
+                        return u
+    return ""
+
+
+def validate_logo(url, cache):
+    if not url:
+        return False
+    c = cache_get(cache, url, LOGO_CACHE_TTL)
+    if c is not None:
+        return c["ok"]
+    st, ct, _, _, _ = http_request(url, IMG_HEADERS, method="HEAD", timeout=8)
+    if st == 405:
+        st, ct, _, _, _ = http_request(url, IMG_HEADERS, method="GET",
+                                       read_bytes=1024, timeout=8)
+    ok = st in (200, 206) and ("image" in ct or not ct)
+    cache[url] = {"ok": ok, "ts": time.time()}
+    return ok
+
+
+def resolve_logo(ch, group, logo_cache):
+    raw = find_logo_raw(ch)
+    if raw and validate_logo(raw, logo_cache):
+        return raw
+    return GROUP_LOGOS.get(group, IPTV_LOGO)
+
+
+# ==========================================
+# STREAM VALIDATION + SPEED
+# ==========================================
+
+def _has_extm3u(body):
+    return b"#EXTM3U" in body[:2048]
+
+
+def _parse_m3u8(body, base_url):
+    text = body.decode("utf-8", errors="ignore")
+    if "#EXTM3U" not in text:
+        return "unknown", []
+    is_master = "#EXT-X-STREAM-INF" in text
+    is_media = "#EXTINF" in text or "#EXT-X-TARGETDURATION" in text
+    urls = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if line.startswith("#"):
+            m = re.search(r'URI="([^"]+)"', line)
+            if m:
+                urls.append(urljoin(base_url, m.group(1)))
+            continue
+        urls.append(urljoin(base_url, line))
+    if is_master:
+        return "master", urls
+    if is_media:
+        return "media", urls
+    return "unknown", urls
+
+
+def speed_tier(ttfb_ms):
+    if ttfb_ms <= 0:
+        return "very_slow"
+    if ttfb_ms < SPEED_FAST_MS:
+        return "fast"
+    if ttfb_ms < SPEED_MEDIUM_MS:
+        return "medium"
+    if ttfb_ms < SPEED_SLOW_MS:
+        return "slow"
+    return "very_slow"
+
+
+def caching_hint(tier):
+    return {"fast": 500, "medium": 1500, "slow": 3000,
+            "very_slow": 5000}.get(tier, 2000)
+
+
+def validate_stream(url, cache):
+    cached = cache_get(cache, url, CACHE_TTL)
+    if cached is not None:
+        return cached
+
+    result = {"ok": False, "reason": "unknown", "resolved": url,
+              "kind": "unknown", "ts": time.time(),
+              "ttfb_ms": 0, "seg_kbps": 0, "tier": "very_slow"}
+
+    t0 = time.perf_counter()
+    st, ct, body, final, _ = http_request(url, PLAY_HEADERS, method="GET",
+                                          read_bytes=8192)
+    ttfb_ms = (time.perf_counter() - t0) * 1000
+    result["ttfb_ms"] = round(ttfb_ms, 1)
+
+    if st not in (200, 206):
+        result["reason"] = f"step1_http_{st or 'err'}"
+        cache[url] = result
+        return result
+
+    looks_m3u8 = ("mpegurl" in ct or "m3u" in ct
+                  or _has_extm3u(body)
+                  or url.split("?")[0].endswith(".m3u8"))
+    if not looks_m3u8:
+        if any(t in ct for t in ("video", "mp4", "mpeg", "octet-stream")):
+            result.update(ok=True, reason="direct_video_ok",
+                          resolved=final, kind="video",
+                          tier=speed_tier(ttfb_ms))
+        else:
+            result["reason"] = f"step1_bad_ct:{ct.split(';')[0]}"
+        cache[url] = result
+        return result
+
+    if not _has_extm3u(body):
+        result["reason"] = "step1_no_extm3u"
+        cache[url] = result
+        return result
+
+    kind, targets = _parse_m3u8(body, final)
+    if kind == "unknown" or not targets:
+        result["reason"] = f"step1_parse_{kind}"
+        cache[url] = result
+        return result
+
+    if kind == "master":
+        variant = targets[0]
+        st2, _, body2, final2, _ = http_request(variant, PLAY_HEADERS,
+                                                method="GET", read_bytes=8192)
+        if st2 not in (200, 206) or not _has_extm3u(body2):
+            result["reason"] = f"step2_variant_{st2 or 'err'}"
+            cache[url] = result
+            return result
+        k2, segs = _parse_m3u8(body2, final2)
+        if k2 != "media" or not segs:
+            result["reason"] = f"step2_variant_parse_{k2}"
+            cache[url] = result
+            return result
+        targets, kind = segs, "media"
+
+    seg_bytes = 64 * 1024
+    t1 = time.perf_counter()
+    st3, _, body3, _, _ = http_request(targets[0], PLAY_HEADERS,
+                                       method="GET", read_bytes=seg_bytes,
+                                       timeout=TIMEOUT)
+    seg_dur = time.perf_counter() - t1
+    if st3 not in (200, 206):
+        result["reason"] = f"step3_segment_{st3 or 'err'}"
+        cache[url] = result
+        return result
+    if len(body3) < 16:
+        result["reason"] = "step4_empty_segment"
+        cache[url] = result
+        return result
+
+    if seg_dur > 0:
+        result["seg_kbps"] = round((len(body3) / 1024) / seg_dur, 1)
+
+    result["tier"] = speed_tier(ttfb_ms)
+    result.update(ok=True, reason="all_steps_ok", kind=kind)
+    cache[url] = result
+    return result
+
 
 def validate_all(channels, cache):
     targets = [(stream_hash(get_stream_url(c)), get_stream_url(c),
@@ -564,7 +627,7 @@ def validate_all(channels, cache):
     results = {}
     total = len(targets)
     done = 0
-    print(f"\n[+] Deep-validating {total} streams ({WORKERS} workers)...")
+    print(f"\n[+] Validating + measuring speed for {total} streams...")
 
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
         futures = {ex.submit(validate_stream, u, cache): (k, u, t)
@@ -575,39 +638,54 @@ def validate_all(channels, cache):
                 r = fut.result()
             except Exception as e:
                 r = {"ok": False, "reason": f"exc:{e}",
-                     "resolved": url, "kind": "unknown", "ts": time.time()}
+                     "resolved": url, "kind": "unknown",
+                     "ts": time.time(), "ttfb_ms": 0,
+                     "seg_kbps": 0, "tier": "very_slow"}
             results[key] = r
             done += 1
             flag = "✓" if r["ok"] else "✗"
-            print(f"  [{done:>3}/{total}] {flag} {title[:32]:32} → {r['reason']}")
+            spd = (f"{r['ttfb_ms']:>5.0f}ms "
+                   f"{r['seg_kbps']:>6.0f}KB/s [{r['tier']}]"
+                   if r["ok"] else r["reason"])
+            print(f"  [{done:>3}/{total}] {flag} {title[:28]:28} → {spd}")
     return results
 
 
-def validate_logos(channels, group_map, logo_cache):
-    """Parallel logo validation."""
-    unique_urls = set()
-    for ch in channels:
-        raw = find_logo_raw(ch)
-        if raw:
-            unique_urls.add(raw)
-
-    print(f"\n[+] Validating {len(unique_urls)} unique logos "
-          f"({WORKERS} workers)...")
+def validate_logos(channels, logo_cache):
+    unique = {find_logo_raw(ch) for ch in channels} - {""}
+    print(f"\n[+] Validating {len(unique)} unique logos...")
     done = 0
-    total = len(unique_urls)
-
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-        futures = {ex.submit(validate_logo, u, logo_cache): u
-                   for u in unique_urls}
-        for fut in as_completed(futures):
-            url = futures[fut]
+        futs = {ex.submit(validate_logo, u, logo_cache): u for u in unique}
+        for f in as_completed(futs):
             try:
-                fut.result()
+                f.result()
             except Exception:
                 pass
             done += 1
-            if done % 10 == 0 or done == total:
-                print(f"  [{done:>3}/{total}] logos checked")
+    print(f"  [{done}/{len(unique)}] logos done")
+
+
+# ==========================================
+# HELPERS
+# ==========================================
+
+def stream_hash(url):
+    return hashlib.sha256(url.encode()).hexdigest()[:16]
+
+
+def clean_text(v):
+    if v is None:
+        return ""
+    return re.sub(r'[\r\n"]+', " ", str(v)).strip()
+
+
+def channel_identifier(ch):
+    for k in ("id", "slug", "title"):
+        v = ch.get(k)
+        if v is not None and str(v).strip() != "":
+            return f"{k}:{v}"
+    return "raw:" + json.dumps(ch, sort_keys=True, ensure_ascii=False)
 
 
 # ==========================================
@@ -624,16 +702,27 @@ def save_json(path, data):
     tmp.replace(path)
 
 
-def _sort_key_for_group(g: str) -> int:
+def _group_rank(g):
     try:
         return GROUP_ORDER.index(g)
     except ValueError:
         return len(GROUP_ORDER)
 
 
+def _tier_rank(t):
+    return {"fast": 0, "medium": 1, "slow": 2, "very_slow": 3}.get(t, 4)
+
+
+def sort_key_for_channel(e):
+    if SORT_BY == "speed":
+        return (_tier_rank(e["tier"]), e["ttfb_ms"], e["title"].lower())
+    if SORT_BY == "group":
+        return (_group_rank(e["group"]), e["title"].lower())
+    return (_group_rank(e["group"]), _tier_rank(e["tier"]),
+            e["ttfb_ms"], e["title"].lower())
+
+
 def save_playlist(channels, validation, logo_cache):
-    """Write only working channels, sorted by group + name."""
-    # Enrich + filter
     enriched = []
     seen_streams = set()
 
@@ -655,22 +744,18 @@ def save_playlist(channels, validation, logo_cache):
         language = auto_language(title)
         quality = auto_quality(title, url)
         logo = resolve_logo(ch, group, logo_cache)
+        tier = res.get("tier", "very_slow")
 
         enriched.append({
-            "title": title,
-            "group": group,
-            "language": language,
-            "quality": quality,
-            "logo": logo,
-            "stream": url,
-            "key": key,
+            "title": title, "group": group,
+            "language": language, "quality": quality,
+            "logo": logo, "stream": url, "key": key,
+            "tier": tier, "ttfb_ms": res.get("ttfb_ms", 0),
+            "seg_kbps": res.get("seg_kbps", 0),
+            "caching": caching_hint(tier),
         })
 
-    # Sort: group priority → name
-    enriched.sort(key=lambda x: (_sort_key_for_group(x["group"]),
-                                 x["title"].lower()))
-
-    # Group counter for chno
+    enriched.sort(key=sort_key_for_channel)
     total = len(enriched)
     tmp = PLAYLIST_FILE.with_suffix(".m3u8.tmp")
 
@@ -683,8 +768,6 @@ def save_playlist(channels, validation, logo_cache):
     try:
         with open(tmp, "w", encoding="utf-8") as f:
             f.write(header_line)
-
-            # Fixed first entry
             f.write(
                 f'#EXTINF:-1 tvg-id="iptv-links" tvg-name="IPTV LINKS" '
                 f'tvg-logo="{IPTV_LOGO}" group-title="KB PRO TV",IPTV LINKS\n'
@@ -698,21 +781,23 @@ def save_playlist(channels, validation, logo_cache):
                     f'tvg-logo="{e["logo"]}"',
                     f'group-title="{e["group"]}"',
                     f'tvg-chno="{idx}"',
+                    f'tvg-speed="{e["tier"]}"',
                 ]
                 if e["language"]:
                     parts.append(f'tvg-language="{e["language"]}"')
-                    country = COUNTRY_MAP.get(e["language"], "")
-                    if country:
-                        parts.append(f'tvg-country="{country}"')
+                    c = COUNTRY_MAP.get(e["language"], "")
+                    if c:
+                        parts.append(f'tvg-country="{c}"')
                 if e["quality"]:
                     parts.append(f'tvg-quality="{e["quality"]}"')
 
+                f.write(f'#EXTVLCOPT:network-caching={e["caching"]}\n')
                 f.write(f'#EXTINF:-1 {" ".join(parts)},{e["title"]}\n')
                 f.write(e["stream"] + "\n\n")
 
         tmp.replace(PLAYLIST_FILE)
-    except Exception as e:
-        print(f"[FATAL] Playlist write failed: {e}")
+    except Exception as ex:
+        print(f"[FATAL] Playlist write failed: {ex}")
         if tmp.exists():
             tmp.unlink()
         raise
@@ -732,32 +817,40 @@ def save_health(channels, validation, logo_cache):
         if not url:
             continue
         key = stream_hash(url)
-        res = validation.get(key, {"ok": False, "reason": "not_checked"})
+        res = validation.get(key, {"ok": False, "reason": "not_checked",
+                                    "ttfb_ms": 0, "tier": "very_slow"})
         title = clean_text(ch.get("title") or "?")
         group = auto_group(title, clean_text(ch.get("_api_group") or ""))
         raw_logo = find_logo_raw(ch)
         logo_ok = validate_logo(raw_logo, logo_cache) if raw_logo else False
         report["channels"].append({
-            "title": title,
-            "group": group,
-            "stream": url,
-            "ok": res["ok"],
-            "reason": res["reason"],
-            "logo_raw": raw_logo,
-            "logo_valid": logo_ok,
+            "title": title, "group": group, "stream": url,
+            "ok": res["ok"], "reason": res["reason"],
+            "ttfb_ms": res.get("ttfb_ms", 0),
+            "seg_kbps": res.get("seg_kbps", 0),
+            "tier": res.get("tier", "very_slow"),
+            "logo_raw": raw_logo, "logo_valid": logo_ok,
         })
         report["working" if res["ok"] else "dead"] += 1
     save_json(HEALTH_FILE, report)
-    print(f"[OK] Health → {HEALTH_FILE}  "
-          f"(working={report['working']}, dead={report['dead']})")
+    print(f"[OK] Health → {HEALTH_FILE}")
+
+
+def save_speed_report(enriched):
+    data = [{"title": e["title"], "group": e["group"],
+             "tier": e["tier"], "ttfb_ms": e["ttfb_ms"],
+             "seg_kbps": e["seg_kbps"], "stream": e["stream"]}
+            for e in enriched]
+    data.sort(key=lambda x: (x["ttfb_ms"], x["title"].lower()))
+    save_json(SPEED_FILE, data)
+    print(f"[OK] Speed  → {SPEED_FILE}  ({len(data)} entries)")
 
 
 def save_groups_index(enriched):
     idx = {}
     for e in enriched:
         idx.setdefault(e["group"], []).append(e["title"])
-    # Order by GROUP_ORDER
-    ordered = {g: idx[g] for g in sorted(idx, key=_sort_key_for_group)}
+    ordered = {g: idx[g] for g in sorted(idx, key=_group_rank)}
     save_json(GROUPS_FILE, ordered)
     print(f"[OK] Groups → {GROUPS_FILE}  ({len(idx)} groups)")
 
@@ -766,7 +859,7 @@ def save_dead_list(validation):
     dead = [{"stream": u, "reason": v["reason"]}
             for u, v in validation.items() if not v.get("ok")]
     save_json(DEAD_FILE, dead)
-    print(f"[OK] Dead → {DEAD_FILE}  ({len(dead)} urls)")
+    print(f"[OK] Dead   → {DEAD_FILE}  ({len(dead)} urls)")
 
 
 # ==========================================
@@ -774,15 +867,14 @@ def save_dead_list(validation):
 # ==========================================
 
 def main():
-    print("=" * 62)
-    print("   BD-KB-IT  ·  ADVANCED  ·  AUTO LOGO + SMART GROUPS")
-    print("=" * 62)
-    print(f"  Script dir  : {SCRIPT_DIR}")
-    print(f"  Output dir  : {OUTPUT_DIR}")
-    print(f"  Workers     : {WORKERS}")
-    print(f"  EPG URL     : {EPG_URL or '(none)'}")
-    print(f"  DRY_RUN     : {DRY_RUN}")
-    print("=" * 62)
+    print("=" * 64)
+    print("   BD-KB-IT  ·  FULL SCAN + VALIDATE + SPEED SORT")
+    print("=" * 64)
+    print(f"  API          : {API_URL}")
+    print(f"  Max pages    : {MAX_PAGES}")
+    print(f"  Sort         : {SORT_BY}")
+    print(f"  Workers      : {WORKERS}")
+    print("=" * 64)
 
     for old in OUTPUT_DIR.glob("page_*.json"):
         try:
@@ -791,31 +883,101 @@ def main():
             pass
 
     stream_cache = load_json_cache(CACHE_FILE)
-    logo_cache   = load_json_cache(LOGO_CACHE)
+    logo_cache = load_json_cache(LOGO_CACHE)
 
     all_pages, all_channels = [], []
-    visited, current_url, page_number = set(), API_URL, 0
+    visited_urls = set()
+    seen_page_hashes = set()
+    empty_streak = 0
+
+    ctx = {"type": None, "page": 1, "offset": 0, "limit": None,
+           "cursor": None, "base_url": API_URL, "last_page": None}
+
+    current_url = API_URL
+    page_number = 0
+    stop_reason = "unknown"
+    cumulative = 0
 
     while current_url and page_number < MAX_PAGES:
         page_number += 1
-        if current_url in visited:
-            print("[WARN] Pagination loop.")
-            break
-        visited.add(current_url)
 
-        print(f"\n[+] Page {page_number}: {current_url}")
-        data = get_api(current_url)
+        if current_url in visited_urls:
+            print(f"\n[STOP] URL loop at page {page_number}")
+            stop_reason = "url_loop"
+            break
+        visited_urls.add(current_url)
+
+        print(f"\n[+] Page {page_number:>3}: {current_url}")
+
+        try:
+            data = get_api(current_url)
+        except Exception as e:
+            print(f"[ERROR] Page {page_number}: {e}")
+            if ctx["type"] == "page":
+                current_url = _build_page_url(ctx["base_url"], page_number + 1)
+                continue
+            stop_reason = f"error:{e}"
+            break
+
+        try:
+            ph = hashlib.sha256(
+                json.dumps(data, sort_keys=True).encode()
+            ).hexdigest()
+        except Exception:
+            ph = None
+        if ph and ph in seen_page_hashes:
+            print(f"\n[STOP] Duplicate page content at page {page_number}")
+            stop_reason = "duplicate_content"
+            break
+        if ph:
+            seen_page_hashes.add(ph)
+
         all_pages.append(data)
         chans = extract_channels(data)
         all_channels.extend(chans)
-        save_json(OUTPUT_DIR / f"page_{page_number:03d}.json", data)
-        print(f"    → {len(chans)} channels")
+        cumulative += len(chans)
 
-        nxt = get_next_page(data, current_url)
+        save_json(OUTPUT_DIR / f"page_{page_number:03d}.json", data)
+        print(f"    → {len(chans)} channels (cumulative: {cumulative})")
+
+        if len(chans) == 0:
+            empty_streak += 1
+            if empty_streak >= 3:
+                print(f"\n[STOP] {empty_streak} empty pages in a row")
+                stop_reason = "empty_streak"
+                break
+        else:
+            empty_streak = 0
+
+        nxt = get_next_page(data, current_url, ctx)
         if not nxt:
+            print("\n[+] No further pages")
+            stop_reason = "no_next_url"
             break
+        if nxt == current_url:
+            print("\n[STOP] next_url == current_url")
+            stop_reason = "self_reference"
+            break
+
         current_url = nxt
-        time.sleep(0.4)
+        time.sleep(0.35)
+
+    if page_number >= MAX_PAGES and current_url:
+        stop_reason = "max_pages_reached"
+        print(f"\n[WARN] Hit MAX_PAGES={MAX_PAGES}")
+
+    # Pagination summary
+    print("\n" + "─" * 64)
+    print("[PAGINATION SUMMARY]")
+    print(f"  Pages scanned   : {page_number}")
+    print(f"  Pages saved     : {len(all_pages)}")
+    print(f"  Total channels  : {len(all_channels)}")
+    print(f"  Pagination type : {ctx['type'] or 'none'}")
+    print(f"  Terminated by   : {stop_reason}")
+    print("─" * 64)
+
+    if len(all_pages) == 0:
+        raise SystemExit("❌ No pages fetched — aborting")
 
     # Dedup
     unique, seen = [], set()
@@ -825,59 +987,54 @@ def main():
             continue
         seen.add(ident)
         unique.append(ch)
-    print(f"\n[OK] Unique channels: {len(unique)}")
+    print(f"\n[OK] Unique channels after dedup: {len(unique)}")
 
-    # Validate streams
     validation = validate_all(unique, stream_cache)
+    validate_logos(unique, logo_cache)
 
-    # Validate logos (parallel)
-    validate_logos(unique, None, logo_cache)
-
-    # Save caches
     save_json_cache(CACHE_FILE, stream_cache)
     save_json_cache(LOGO_CACHE, logo_cache)
 
-    # Save data
     save_json(CHANNEL_FILE, unique)
     save_json(RAW_FILE, all_pages)
     save_health(unique, validation, logo_cache)
     save_dead_list(validation)
 
-    # Playlist
     total, enriched = save_playlist(unique, validation, logo_cache)
     save_groups_index(enriched)
+    save_speed_report(enriched)
 
-    # Summary
-    print("\n" + "=" * 62)
+    # Final summary
+    print("\n" + "=" * 64)
     print("                  ✅ UPDATE COMPLETED")
-    print("=" * 62)
-    print(f"  Pages          : {len(all_pages)}")
+    print("=" * 64)
+    print(f"  Pages scanned  : {page_number}")
     print(f"  Total channels : {len(unique)}")
     print(f"  ✅ Working     : {total}")
-    print(f"  ❌ Dead        : {len(unique) - total}")
 
-    # Group summary
+    tier_count = {}
+    for e in enriched:
+        tier_count[e["tier"]] = tier_count.get(e["tier"], 0) + 1
+    print("\n  ⚡ Speed distribution:")
+    for tier in ("fast", "medium", "slow", "very_slow"):
+        print(f"     {tier:10} : {tier_count.get(tier, 0)}")
+
     group_count = {}
     for e in enriched:
         group_count[e["group"]] = group_count.get(e["group"], 0) + 1
     print("\n  📁 Groups:")
-    for g in sorted(group_count, key=_sort_key_for_group):
+    for g in sorted(group_count, key=_group_rank):
         print(f"     {g:20} : {group_count[g]}")
 
-    print("\n[FILES]")
-    for f in (PLAYLIST_FILE, CHANNEL_FILE, RAW_FILE, HEALTH_FILE,
-              DEAD_FILE, GROUPS_FILE, CACHE_FILE, LOGO_CACHE):
-        if f.exists():
-            print(f"  ✓ {f}  ({f.stat().st_size:,} bytes)")
-        else:
-            print(f"  ✗ {f}")
+    if enriched:
+        fst = min(enriched, key=lambda e: e["ttfb_ms"])
+        slw = max(enriched, key=lambda e: e["ttfb_ms"])
+        print(f"\n  🚀 Fastest : {fst['title']} ({fst['ttfb_ms']:.0f}ms)")
+        print(f"  🐌 Slowest : {slw['title']} ({slw['ttfb_ms']:.0f}ms)")
 
-    if not PLAYLIST_FILE.exists():
-        raise SystemExit(f"❌ Playlist NOT created: {PLAYLIST_FILE}")
+    print(f"\n✅ Playlist → {PLAYLIST_FILE.resolve()}")
     if total == 0:
-        raise SystemExit("⚠ Playlist created but 0 working channels.")
-
-    print(f"\n✅ Main playlist ready → {PLAYLIST_FILE.resolve()}")
+        raise SystemExit("⚠ 0 working channels.")
 
 
 if __name__ == "__main__":
