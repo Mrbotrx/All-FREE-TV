@@ -1965,12 +1965,6 @@
         "taxonomies": {
             "category": [
                 {
-                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                    "slug": "channel-news",
-                    "title": "News",
-                    "nav_path": "/t/category/channel-news"
-                },
-                {
                     "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                     "slug": "channel-channels",
                     "title": "Channels",
@@ -1981,6 +1975,12 @@
                     "slug": "channel-bangla",
                     "title": "Bangla",
                     "nav_path": "/t/category/channel-bangla"
+                },
+                {
+                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                    "slug": "channel-news",
+                    "title": "News",
+                    "nav_path": "/t/category/channel-news"
                 }
             ]
         },
