@@ -2012,16 +2012,16 @@
                     "taxonomies": {
                         "category": [
                             {
-                                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
-                                "slug": "channel-bangla",
-                                "title": "Bangla",
-                                "nav_path": "/t/category/channel-bangla"
-                            },
-                            {
                                 "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                 "slug": "channel-channels",
                                 "title": "Channels",
                                 "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                                "slug": "channel-bangla",
+                                "title": "Bangla",
+                                "nav_path": "/t/category/channel-bangla"
                             }
                         ]
                     },
@@ -2307,16 +2307,16 @@
                     "taxonomies": {
                         "category": [
                             {
-                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                "slug": "channel-channels",
-                                "title": "Channels",
-                                "nav_path": "/t/category/channel-channels"
-                            },
-                            {
                                 "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
                             }
                         ]
                     },
@@ -2868,12 +2868,6 @@
                     "taxonomies": {
                         "category": [
                             {
-                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                "slug": "channel-news",
-                                "title": "News",
-                                "nav_path": "/t/category/channel-news"
-                            },
-                            {
                                 "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                 "slug": "channel-channels",
                                 "title": "Channels",
@@ -2884,6 +2878,12 @@
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                "slug": "channel-news",
+                                "title": "News",
+                                "nav_path": "/t/category/channel-news"
                             }
                         ]
                     },
@@ -2933,6 +2933,12 @@
                     "taxonomies": {
                         "category": [
                             {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
                                 "id": "019efa45-d480-7170-890d-c5eec377e6b9",
                                 "slug": "channel-football",
                                 "title": "Football",
@@ -2955,12 +2961,6 @@
                                 "slug": "channel-cricket",
                                 "title": "Cricket",
                                 "nav_path": "/t/category/channel-cricket"
-                            },
-                            {
-                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
-                                "slug": "channel-sports",
-                                "title": "Sports",
-                                "nav_path": "/t/category/channel-sports"
                             }
                         ]
                     },
@@ -3252,16 +3252,16 @@
                                 "nav_path": "/t/category/channel-channels"
                             },
                             {
-                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                "slug": "channel-news",
-                                "title": "News",
-                                "nav_path": "/t/category/channel-news"
-                            },
-                            {
                                 "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                "slug": "channel-news",
+                                "title": "News",
+                                "nav_path": "/t/category/channel-news"
                             }
                         ]
                     },
@@ -10417,14 +10417,14 @@
                     }
                 },
                 {
-                    "id": "019de785-3988-7a1c-a527-25de8003964a",
+                    "id": "019de785-3970-7fa3-a850-d2ca0e07c1e0",
                     "type": "live-tvs",
                     "object": "stream",
-                    "slug": "btv-world",
-                    "title": "BTV World",
-                    "description": "BTV World brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "slug": "channel-9",
+                    "title": "Channel 9",
+                    "description": "Channel 9 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere",
                     "label": null,
-                    "nav_path": "/live-tvs/btv-world",
+                    "nav_path": "/live-tvs/channel-9",
                     "starts_at": null,
                     "ends_at": null,
                     "access": {
@@ -10433,18 +10433,18 @@
                         "options": []
                     },
                     "images": {
-                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
                         "thumbnail_wide_url": null,
-                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
                         "poster_wide_url": null,
-                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
-                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
-                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
                         "mnemonic_url": null,
                         "sprite_url": null
                     },
                     "stream": {
-                        "url": "https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8",
+                        "url": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8",
                         "urls": null
                     },
                     "taxonomies": {
@@ -10476,14 +10476,14 @@
                     }
                 },
                 {
-                    "id": "019de785-3970-7fa3-a850-d2ca0e07c1e0",
+                    "id": "019de785-3988-7a1c-a527-25de8003964a",
                     "type": "live-tvs",
                     "object": "stream",
-                    "slug": "channel-9",
-                    "title": "Channel 9",
-                    "description": "Channel 9 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere",
+                    "slug": "btv-world",
+                    "title": "BTV World",
+                    "description": "BTV World brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
                     "label": null,
-                    "nav_path": "/live-tvs/channel-9",
+                    "nav_path": "/live-tvs/btv-world",
                     "starts_at": null,
                     "ends_at": null,
                     "access": {
@@ -10492,18 +10492,18 @@
                         "options": []
                     },
                     "images": {
-                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
                         "thumbnail_wide_url": null,
-                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
                         "poster_wide_url": null,
-                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
-                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
-                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg",
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg",
                         "mnemonic_url": null,
                         "sprite_url": null
                     },
                     "stream": {
-                        "url": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8",
+                        "url": "https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8",
                         "urls": null
                     },
                     "taxonomies": {
@@ -10777,65 +10777,6 @@
                     }
                 },
                 {
-                    "id": "019de785-3984-7c6c-b734-30d6bb22b3b8",
-                    "type": "live-tvs",
-                    "object": "stream",
-                    "slug": "ananda-tv",
-                    "title": "Ananda TV",
-                    "description": "ananda-tv brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-                    "label": null,
-                    "nav_path": "/live-tvs/ananda-tv",
-                    "starts_at": null,
-                    "ends_at": null,
-                    "access": {
-                        "level": "subscription",
-                        "label": "Subscribe",
-                        "options": []
-                    },
-                    "images": {
-                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
-                        "thumbnail_wide_url": null,
-                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
-                        "poster_wide_url": null,
-                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
-                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
-                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
-                        "mnemonic_url": null,
-                        "sprite_url": null
-                    },
-                    "stream": {
-                        "url": "https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8",
-                        "urls": null
-                    },
-                    "taxonomies": {
-                        "category": [
-                            {
-                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                "slug": "channel-channels",
-                                "title": "Channels",
-                                "nav_path": "/t/category/channel-channels"
-                            },
-                            {
-                                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
-                                "slug": "channel-bangla",
-                                "title": "Bangla",
-                                "nav_path": "/t/category/channel-bangla"
-                            }
-                        ]
-                    },
-                    "access_policy": null,
-                    "access_verdict": {
-                        "allowed": true,
-                        "reason": null
-                    },
-                    "template": "stream",
-                    "content_rating": {
-                        "name": "G",
-                        "description": "No Restriction",
-                        "min_age": 0
-                    }
-                },
-                {
                     "id": "019de785-3bb1-775b-9c32-aad40ee46faf",
                     "type": "live-tvs",
                     "object": "stream",
@@ -10879,6 +10820,65 @@
                                 "slug": "channel-english",
                                 "title": "English",
                                 "nav_path": "/t/category/channel-english"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-3984-7c6c-b734-30d6bb22b3b8",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "ananda-tv",
+                    "title": "Ananda TV",
+                    "description": "ananda-tv brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/ananda-tv",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                                "slug": "channel-bangla",
+                                "title": "Bangla",
+                                "nav_path": "/t/category/channel-bangla"
                             }
                         ]
                     },
@@ -11385,71 +11385,6 @@
                     }
                 },
                 {
-                    "id": "019de785-3b6b-7874-988b-5d148182b02d",
-                    "type": "live-tvs",
-                    "object": "stream",
-                    "slug": "hindi-movie-classic-24",
-                    "title": "Hindi Movie Classic 24",
-                    "description": "Hindi Movie Classic 24 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-                    "label": null,
-                    "nav_path": "/live-tvs/hindi-movie-classic-24",
-                    "starts_at": null,
-                    "ends_at": null,
-                    "access": {
-                        "level": "subscription",
-                        "label": "Subscribe",
-                        "options": []
-                    },
-                    "images": {
-                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-                        "thumbnail_wide_url": null,
-                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-                        "poster_wide_url": null,
-                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-                        "mnemonic_url": null,
-                        "sprite_url": null
-                    },
-                    "stream": {
-                        "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
-                        "urls": null
-                    },
-                    "taxonomies": {
-                        "category": [
-                            {
-                                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
-                                "slug": "channel-movie",
-                                "title": "Movie",
-                                "nav_path": "/t/category/channel-movie"
-                            },
-                            {
-                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                "slug": "channel-channels",
-                                "title": "Channels",
-                                "nav_path": "/t/category/channel-channels"
-                            },
-                            {
-                                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
-                                "slug": "channel-hindi",
-                                "title": "Hindi",
-                                "nav_path": "/t/category/channel-hindi"
-                            }
-                        ]
-                    },
-                    "access_policy": null,
-                    "access_verdict": {
-                        "allowed": true,
-                        "reason": null
-                    },
-                    "template": "stream",
-                    "content_rating": {
-                        "name": "G",
-                        "description": "No Restriction",
-                        "min_age": 0
-                    }
-                },
-                {
                     "id": "019de785-3bb7-78ad-b1ab-052ba0529f95",
                     "type": "live-tvs",
                     "object": "stream",
@@ -11499,6 +11434,71 @@
                                 "slug": "channel-english",
                                 "title": "English",
                                 "nav_path": "/t/category/channel-english"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-3b6b-7874-988b-5d148182b02d",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "hindi-movie-classic-24",
+                    "title": "Hindi Movie Classic 24",
+                    "description": "Hindi Movie Classic 24 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/hindi-movie-classic-24",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                                "slug": "channel-movie",
+                                "title": "Movie",
+                                "nav_path": "/t/category/channel-movie"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                                "slug": "channel-hindi",
+                                "title": "Hindi",
+                                "nav_path": "/t/category/channel-hindi"
                             }
                         ]
                     },

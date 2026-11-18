@@ -13,45 +13,43 @@
     ],
     "News": [
         "Sky News Weather",
-        "Aljazeera News",
-        "ABN",
-        "India Today",
         "Weather SPY",
-        "Fox Weather",
-        "BBC News",
+        "ABN",
         "Accu Weather",
-        "Wion",
-        "CP 24",
-        "BTV CTG",
-        "CNN",
+        "Aljazeera News",
+        "BBC News",
+        "Fox Weather",
         "Fox News",
-        "Republic TV Bharat",
+        "CP 24",
+        "FX TV",
+        "CNN",
+        "USA TV",
+        "DW News",
+        "BTV CTG",
         "CBS TV",
         "ABC News",
-        "Fox 5",
+        "News 1 India",
+        "Bharat Samachar",
+        "Jamuna TV",
         "Independent TV",
-        "DW News",
         "ATN News",
-        "Ekattor TV",
-        "News 24 BD",
-        "Sky News",
         "DBC News",
-        "USA TV",
-        "FX TV"
+        "News 24 BD",
+        "Fox 5",
+        "Wion",
+        "India Today"
     ],
     "Movies": [
-        "HBO 2"
+        "Hindi Movie Classic 24",
+        "HBO 2",
+        "Goldmines Movies"
     ],
     "Music": [
-        "MTV"
-    ],
-    "Religious": [
-        "MADANI TV"
+        "Sangeet Bangla"
     ],
     "Documentary": [
-        "Discovery HD",
         "Animal Planet HD",
-        "Nat Geo TV"
+        "Discovery HD"
     ],
     "Entertainment": [
         "Bloomberg TV",
@@ -62,35 +60,38 @@
         "Fox business"
     ],
     "Local": [
-        "Enter 10 Bangla",
         "DD Bangla",
+        "Enter 10 Bangla",
         "kolkata TV",
-        "ATN Bangla",
+        "Bangla TV",
         "Bangla Vision",
-        "Bangla TV"
+        "ATN Bangla"
     ],
     "Popular Live Tvs": [
         "Goal TV",
         "Goldmines",
-        "Test Live TV"
+        "Goldmines Bollywood",
+        "Test Live TV",
+        "Thikana"
     ],
     "Bangla": [
-        "Boishakhi TV",
-        "Ananda TV",
-        "Desh TV",
-        "Global TV",
-        "NEXUS TV",
         "SA TV",
-        "Bijoy TV",
+        "My TV",
+        "Ananda TV",
+        "NEXUS TV",
+        "Global TV",
+        "Mohona TV",
         "Asian TV",
-        "Mohona TV"
+        "Desh TV",
+        "Boishakhi TV"
     ],
     "Channels": [
+        "Channel I",
         "Ekhon TV",
-        "Channel 24",
         "Maasranga TV",
-        "RTV",
         "Deepto TV",
+        "Channel 24",
+        "RTV",
         "ETV",
         "NTV"
     ]

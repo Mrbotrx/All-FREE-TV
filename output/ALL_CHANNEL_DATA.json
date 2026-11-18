@@ -6663,72 +6663,6 @@
         "_api_group": "Popular Live Tvs"
     },
     {
-        "id": "019de785-3b6b-7874-988b-5d148182b02d",
-        "type": "live-tvs",
-        "object": "stream",
-        "slug": "hindi-movie-classic-24",
-        "title": "Hindi Movie Classic 24",
-        "description": "Hindi Movie Classic 24 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-        "label": null,
-        "nav_path": "/live-tvs/hindi-movie-classic-24",
-        "starts_at": null,
-        "ends_at": null,
-        "access": {
-            "level": "subscription",
-            "label": "Subscribe",
-            "options": []
-        },
-        "images": {
-            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-            "thumbnail_wide_url": null,
-            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-            "poster_wide_url": null,
-            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
-            "mnemonic_url": null,
-            "sprite_url": null
-        },
-        "stream": {
-            "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
-            "urls": null
-        },
-        "taxonomies": {
-            "category": [
-                {
-                    "id": "019efa45-d7e9-70d0-a997-240021c09cee",
-                    "slug": "channel-movie",
-                    "title": "Movie",
-                    "nav_path": "/t/category/channel-movie"
-                },
-                {
-                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                    "slug": "channel-channels",
-                    "title": "Channels",
-                    "nav_path": "/t/category/channel-channels"
-                },
-                {
-                    "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
-                    "slug": "channel-hindi",
-                    "title": "Hindi",
-                    "nav_path": "/t/category/channel-hindi"
-                }
-            ]
-        },
-        "access_policy": null,
-        "access_verdict": {
-            "allowed": true,
-            "reason": null
-        },
-        "template": "stream",
-        "content_rating": {
-            "name": "G",
-            "description": "No Restriction",
-            "min_age": 0
-        },
-        "_api_group": "Popular Live Tvs"
-    },
-    {
         "id": "019de785-3bb7-78ad-b1ab-052ba0529f95",
         "type": "live-tvs",
         "object": "stream",
@@ -6778,6 +6712,72 @@
                     "slug": "channel-english",
                     "title": "English",
                     "nav_path": "/t/category/channel-english"
+                }
+            ]
+        },
+        "access_policy": null,
+        "access_verdict": {
+            "allowed": true,
+            "reason": null
+        },
+        "template": "stream",
+        "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+        },
+        "_api_group": "Popular Live Tvs"
+    },
+    {
+        "id": "019de785-3b6b-7874-988b-5d148182b02d",
+        "type": "live-tvs",
+        "object": "stream",
+        "slug": "hindi-movie-classic-24",
+        "title": "Hindi Movie Classic 24",
+        "description": "Hindi Movie Classic 24 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+        "label": null,
+        "nav_path": "/live-tvs/hindi-movie-classic-24",
+        "starts_at": null,
+        "ends_at": null,
+        "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": []
+        },
+        "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+        },
+        "stream": {
+            "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
+            "urls": null
+        },
+        "taxonomies": {
+            "category": [
+                {
+                    "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                    "slug": "channel-movie",
+                    "title": "Movie",
+                    "nav_path": "/t/category/channel-movie"
+                },
+                {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
+                },
+                {
+                    "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                    "slug": "channel-hindi",
+                    "title": "Hindi",
+                    "nav_path": "/t/category/channel-hindi"
                 }
             ]
         },
