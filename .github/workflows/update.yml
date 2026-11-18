@@ -1,162 +1,156 @@
 name: BD KB IT Auto Update
 
-on:
-workflow_dispatch:
-inputs:
-force_update:
-description: "Force playlist update"
-required: false
-type: boolean
-default: true
+"on":
+  workflow_dispatch:
 
-schedule:
-- cron: "0 */2 * * *"
+  schedule:
+    - cron: "0 */2 * * *"
 
 permissions:
-contents: write
+  contents: write
 
 concurrency:
-group: bd-kb-it-update
-cancel-in-progress: false
+  group: bd-kb-it-update
+  cancel-in-progress: false
 
 jobs:
-update:
-name: Generate and Publish Playlist
-runs-on: ubuntu-latest
-timeout-minutes: 30
+  update:
+    name: Generate and Publish Playlist
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
 
-steps:
-  # 1. Checkout Repository
-  - name: Checkout
-    uses: actions/checkout@v4
-    with:
-      fetch-depth: 0
-      persist-credentials: true
+    steps:
+      # 1. Checkout
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
-  # 2. Setup Python
-  - name: Setup Python
-    uses: actions/setup-python@v5
-    with:
-      python-version: "3.12"
-      cache: "pip"
+      # 2. Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
 
-  # 3. Install Requirements
-  - name: Install Requirements
-    run: |
-      python -m pip install --upgrade pip
+      # 3. Install Requirements
+      - name: Install Requirements
+        run: |
+          python -m pip install --upgrade pip
 
-      if [ -f requirements.txt ]; then
-        pip install -r requirements.txt
-      else
-        echo "No requirements.txt found!"
-      fi
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            echo "requirements.txt not found"
+          fi
 
-  # 4. Run BD-KB-IT Script
-  - name: Run Script
-    env:
-      BD_KB_IT_API_URL: ${{ secrets.BD_KB_IT_API_URL }}
-    run: |
-      python BD-KB-IT.py
+      # 4. Run Python Script
+      - name: Run BD-KB-IT
+        env:
+          BD_KB_IT_API_URL: ${{ secrets.BD_KB_IT_API_URL }}
+        run: |
+          python BD-KB-IT.py
 
-  # 5. Verify Output Files
-  - name: Verify Output Files
-    run: |
-      echo "=== OUTPUT DIRECTORY ==="
-      ls -lah output/
+      # 5. Verify Playlist
+      - name: Verify Output Files
+        run: |
+          echo "Checking output directory..."
 
-      FILE="output/BD-KB-IT.m3u8"
+          ls -lah output/
 
-      if [ ! -s "$FILE" ]; then
-        echo "ERROR: Playlist missing or empty!"
-        exit 1
-      fi
+          FILE="output/BD-KB-IT.m3u8"
 
-      echo "=== PLAYLIST HEADER ==="
-      head -n 15 "$FILE"
+          if [ ! -s "$FILE" ]; then
+            echo "ERROR: Playlist missing or empty!"
+            exit 1
+          fi
 
-      echo "=== CHANNEL COUNT ==="
-      grep -c "^#EXTINF" "$FILE" || true
+          echo "Playlist verified!"
 
-  # 6. Auto Update GitHub Gist
-  - name: Auto Update GitHub Gist
-    env:
-      GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-      GIST_ID: ${{ secrets.GIST_ID }}
-    run: |
-      set -e
+          echo "Channel count:"
+          grep -c "^#EXTINF" "$FILE" || true
 
-      FILE="output/BD-KB-IT.m3u8"
+          echo "Playlist preview:"
+          head -n 15 "$FILE"
 
-      if [ -z "$GIST_TOKEN" ] || [ -z "$GIST_ID" ]; then
-        echo "ERROR: GIST_TOKEN or GIST_ID missing!"
-        exit 1
-      fi
+      # 6. Update GitHub Gist
+      - name: Auto Update GitHub Gist
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+        run: |
+          set -e
 
-      if [ ! -s "$FILE" ]; then
-        echo "ERROR: Playlist not found!"
-        exit 1
-      fi
+          FILE="output/BD-KB-IT.m3u8"
 
-      jq -n \
-        --rawfile content "$FILE" \
-        '{files: {"BD-KB-IT.m3u8": {content: $content}}}' \
-        > gist.json
+          if [ -z "$GIST_TOKEN" ]; then
+            echo "ERROR: GIST_TOKEN missing!"
+            exit 1
+          fi
 
-      RESPONSE=$(curl --fail-with-body -sS \
-        -X PATCH \
-        "https://api.github.com/gists/$GIST_ID" \
-        -H "Authorization: Bearer $GIST_TOKEN" \
-        -H "Accept: application/vnd.github+json" \
-        -H "X-GitHub-Api-Version: 2022-11-28" \
-        -H "Content-Type: application/json" \
-        --data-binary @gist.json)
+          if [ -z "$GIST_ID" ]; then
+            echo "ERROR: GIST_ID missing!"
+            exit 1
+          fi
 
-      echo "GIST UPDATED SUCCESSFULLY!"
+          if [ ! -s "$FILE" ]; then
+            echo "ERROR: Playlist missing!"
+            exit 1
+          fi
 
-      echo "$RESPONSE" | jq -r \
-        '.files["BD-KB-IT.m3u8"].raw_url'
+          jq -n \
+            --rawfile content "$FILE" \
+            '{
+              files: {
+                "BD-KB-IT.m3u8": {
+                  content: $content
+                }
+              }
+            }' > gist.json
 
-  # 7. Upload Artifacts
-  - name: Upload Artifacts
-    if: always()
-    uses: actions/upload-artifact@v4
-    with:
-      name: playlist-${{ github.run_number }}
-      path: |
-        output/BD-KB-IT.m3u8
-        output/ALL_CHANNEL_DATA.json
-        output/health_report.json
-        output/dead_channels.json
-      retention-days: 30
-      if-no-files-found: warn
+          curl --fail-with-body -sS \
+            -X PATCH \
+            "https://api.github.com/gists/$GIST_ID" \
+            -H "Authorization: Bearer $GIST_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            -H "Content-Type: application/json" \
+            --data-binary @gist.json \
+            -o gist_response.json
 
-  # 8. Commit Changes
-  - name: Commit Changes
-    run: |
-      git config user.name "github-actions[bot]"
-      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "GIST UPDATE SUCCESSFUL!"
 
-      git add -f output/
+          echo "Updated Raw URL:"
+          jq -r '.files["BD-KB-IT.m3u8"].raw_url' gist_response.json
 
-      if git diff --cached --quiet; then
-        echo "No changes to commit."
-        exit 0
-      fi
+      # 7. Upload Artifacts
+      - name: Upload Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playlist-${{ github.run_number }}
+          path: |
+            output/BD-KB-IT.m3u8
+            output/ALL_CHANNEL_DATA.json
+            output/health_report.json
+            output/dead_channels.json
+          retention-days: 30
+          if-no-files-found: warn
 
-      git commit -m "Auto update JSON and M3U8 — $(date -u +'%Y-%m-%d %H:%M UTC')"
+      # 8. Commit Changes
+      - name: Commit Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      for i in 1 2 3; do
-        if git push; then
-          echo "Successfully pushed on attempt $i"
-          exit 0
-        fi
+          git add -f output/
 
-        echo "Push failed, retrying ($i/3)..."
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
 
-        git pull --rebase origin "${GITHUB_REF_NAME}"
+          git commit -m "Auto update JSON and M3U8"
 
-        sleep 3
-      done
-
-      echo "ERROR: Git push failed!"
-      exit 1
+          git push
