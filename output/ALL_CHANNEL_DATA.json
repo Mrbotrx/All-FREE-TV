@@ -2211,16 +2211,16 @@
         "taxonomies": {
             "category": [
                 {
-                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
-                    "slug": "channel-bangla",
-                    "title": "Bangla",
-                    "nav_path": "/t/category/channel-bangla"
-                },
-                {
                     "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                     "slug": "channel-channels",
                     "title": "Channels",
                     "nav_path": "/t/category/channel-channels"
+                },
+                {
+                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                    "slug": "channel-bangla",
+                    "title": "Bangla",
+                    "nav_path": "/t/category/channel-bangla"
                 }
             ]
         },
@@ -3117,12 +3117,6 @@
         "taxonomies": {
             "category": [
                 {
-                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                    "slug": "channel-channels",
-                    "title": "Channels",
-                    "nav_path": "/t/category/channel-channels"
-                },
-                {
                     "id": "019efa45-d621-7293-b51b-14889c34ed80",
                     "slug": "channel-indian-bangla",
                     "title": "Indian Bangla",
@@ -3133,6 +3127,12 @@
                     "slug": "channel-music",
                     "title": "Music",
                     "nav_path": "/t/category/channel-music"
+                },
+                {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
                 }
             ]
         },
