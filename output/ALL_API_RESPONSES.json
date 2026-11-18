@@ -2485,6 +2485,12 @@
                         "taxonomies": {
                             "category": [
                                 {
+                                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                    "slug": "channel-news",
+                                    "title": "News",
+                                    "nav_path": "/t/category/channel-news"
+                                },
+                                {
                                     "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                     "slug": "channel-channels",
                                     "title": "Channels",
@@ -2495,12 +2501,6 @@
                                     "slug": "channel-bangla",
                                     "title": "Bangla",
                                     "nav_path": "/t/category/channel-bangla"
-                                },
-                                {
-                                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                    "slug": "channel-news",
-                                    "title": "News",
-                                    "nav_path": "/t/category/channel-news"
                                 }
                             ]
                         },
@@ -2674,12 +2674,6 @@
                         "taxonomies": {
                             "category": [
                                 {
-                                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                    "slug": "channel-news",
-                                    "title": "News",
-                                    "nav_path": "/t/category/channel-news"
-                                },
-                                {
                                     "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                     "slug": "channel-channels",
                                     "title": "Channels",
@@ -2690,6 +2684,12 @@
                                     "slug": "channel-bangla",
                                     "title": "Bangla",
                                     "nav_path": "/t/category/channel-bangla"
+                                },
+                                {
+                                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                    "slug": "channel-news",
+                                    "title": "News",
+                                    "nav_path": "/t/category/channel-news"
                                 }
                             ]
                         },
@@ -2739,6 +2739,12 @@
                         "taxonomies": {
                             "category": [
                                 {
+                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                    "slug": "channel-channels",
+                                    "title": "Channels",
+                                    "nav_path": "/t/category/channel-channels"
+                                },
+                                {
                                     "id": "019efa45-d861-77b3-ba90-892c90ebf870",
                                     "slug": "channel-news",
                                     "title": "News",
@@ -2749,12 +2755,6 @@
                                     "slug": "channel-bangla",
                                     "title": "Bangla",
                                     "nav_path": "/t/category/channel-bangla"
-                                },
-                                {
-                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                    "slug": "channel-channels",
-                                    "title": "Channels",
-                                    "nav_path": "/t/category/channel-channels"
                                 }
                             ]
                         },
@@ -2869,6 +2869,12 @@
                         "taxonomies": {
                             "category": [
                                 {
+                                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                    "slug": "channel-news",
+                                    "title": "News",
+                                    "nav_path": "/t/category/channel-news"
+                                },
+                                {
                                     "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                     "slug": "channel-channels",
                                     "title": "Channels",
@@ -2879,12 +2885,6 @@
                                     "slug": "channel-bangla",
                                     "title": "Bangla",
                                     "nav_path": "/t/category/channel-bangla"
-                                },
-                                {
-                                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                    "slug": "channel-news",
-                                    "title": "News",
-                                    "nav_path": "/t/category/channel-news"
                                 }
                             ]
                         },
@@ -2934,12 +2934,6 @@
                         "taxonomies": {
                             "category": [
                                 {
-                                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
-                                    "slug": "channel-sports",
-                                    "title": "Sports",
-                                    "nav_path": "/t/category/channel-sports"
-                                },
-                                {
                                     "id": "019efa45-d480-7170-890d-c5eec377e6b9",
                                     "slug": "channel-football",
                                     "title": "Football",
@@ -2962,6 +2956,12 @@
                                     "slug": "channel-cricket",
                                     "title": "Cricket",
                                     "nav_path": "/t/category/channel-cricket"
+                                },
+                                {
+                                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                    "slug": "channel-sports",
+                                    "title": "Sports",
+                                    "nav_path": "/t/category/channel-sports"
                                 }
                             ]
                         },
@@ -3188,16 +3188,16 @@
                         "taxonomies": {
                             "category": [
                                 {
-                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                    "slug": "channel-channels",
-                                    "title": "Channels",
-                                    "nav_path": "/t/category/channel-channels"
-                                },
-                                {
                                     "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
                                     "slug": "channel-bangla",
                                     "title": "Bangla",
                                     "nav_path": "/t/category/channel-bangla"
+                                },
+                                {
+                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                    "slug": "channel-channels",
+                                    "title": "Channels",
+                                    "nav_path": "/t/category/channel-channels"
                                 }
                             ]
                         },
@@ -3247,12 +3247,6 @@
                         "taxonomies": {
                             "category": [
                                 {
-                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                    "slug": "channel-channels",
-                                    "title": "Channels",
-                                    "nav_path": "/t/category/channel-channels"
-                                },
-                                {
                                     "id": "019efa45-d861-77b3-ba90-892c90ebf870",
                                     "slug": "channel-news",
                                     "title": "News",
@@ -3263,6 +3257,12 @@
                                     "slug": "channel-bangla",
                                     "title": "Bangla",
                                     "nav_path": "/t/category/channel-bangla"
+                                },
+                                {
+                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                    "slug": "channel-channels",
+                                    "title": "Channels",
+                                    "nav_path": "/t/category/channel-channels"
                                 }
                             ]
                         },
@@ -15885,6 +15885,130 @@
                         }
                     },
                     {
+                        "id": "019de785-39b9-7313-8fe1-ced68786a50b",
+                        "type": "live-tvs",
+                        "object": "stream",
+                        "slug": "willow-tv",
+                        "title": "Willow TV",
+                        "description": "Willow TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                        "label": null,
+                        "nav_path": "/live-tvs/willow-tv",
+                        "starts_at": null,
+                        "ends_at": null,
+                        "access": {
+                            "level": "subscription",
+                            "label": "Subscribe",
+                            "options": []
+                        },
+                        "images": {
+                            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                            "thumbnail_wide_url": null,
+                            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                            "poster_wide_url": null,
+                            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_500x296.jpg",
+                            "sprite_url": null
+                        },
+                        "stream": {
+                            "url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8",
+                            "urls": null
+                        },
+                        "taxonomies": {
+                            "category": [
+                                {
+                                    "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                    "slug": "channel-cricket",
+                                    "title": "Cricket",
+                                    "nav_path": "/t/category/channel-cricket"
+                                },
+                                {
+                                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                    "slug": "channel-sports",
+                                    "title": "Sports",
+                                    "nav_path": "/t/category/channel-sports"
+                                },
+                                {
+                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                    "slug": "channel-channels",
+                                    "title": "Channels",
+                                    "nav_path": "/t/category/channel-channels"
+                                }
+                            ]
+                        },
+                        "access_policy": null,
+                        "access_verdict": {
+                            "allowed": true,
+                            "reason": null
+                        },
+                        "template": "stream",
+                        "content_rating": {
+                            "name": "G",
+                            "description": "No Restriction",
+                            "min_age": 0
+                        }
+                    },
+                    {
+                        "id": "019de785-395d-7a37-8097-0780a16dc766",
+                        "type": "live-tvs",
+                        "object": "stream",
+                        "slug": "maasranga-tv",
+                        "title": "Maasranga TV",
+                        "description": "Maasranga TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                        "label": null,
+                        "nav_path": "/live-tvs/maasranga-tv",
+                        "starts_at": null,
+                        "ends_at": null,
+                        "access": {
+                            "level": "subscription",
+                            "label": "Subscribe",
+                            "options": []
+                        },
+                        "images": {
+                            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9a9da509523ff5fa2e65e262fe3d0125_playmist_maasranga_tv_400x400.jpg",
+                            "thumbnail_wide_url": null,
+                            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9a9da509523ff5fa2e65e262fe3d0125_playmist_maasranga_tv_400x400.jpg",
+                            "poster_wide_url": null,
+                            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9a9da509523ff5fa2e65e262fe3d0125_playmist_maasranga_tv_400x400.jpg",
+                            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9a9da509523ff5fa2e65e262fe3d0125_playmist_maasranga_tv_400x400.jpg",
+                            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9a9da509523ff5fa2e65e262fe3d0125_playmist_maasranga_tv_400x400.jpg",
+                            "mnemonic_url": null,
+                            "sprite_url": null
+                        },
+                        "stream": {
+                            "url": "https://tvsen6.aynaott.com/maasrangatv/index.m3u8",
+                            "urls": null
+                        },
+                        "taxonomies": {
+                            "category": [
+                                {
+                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                    "slug": "channel-channels",
+                                    "title": "Channels",
+                                    "nav_path": "/t/category/channel-channels"
+                                },
+                                {
+                                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                                    "slug": "channel-bangla",
+                                    "title": "Bangla",
+                                    "nav_path": "/t/category/channel-bangla"
+                                }
+                            ]
+                        },
+                        "access_policy": null,
+                        "access_verdict": {
+                            "allowed": true,
+                            "reason": null
+                        },
+                        "template": "stream",
+                        "content_rating": {
+                            "name": "G",
+                            "description": "No Restriction",
+                            "min_age": 0
+                        }
+                    },
+                    {
                         "id": "019efa45-dad5-7f52-8e11-651e4bb8dd81",
                         "type": "live-tvs",
                         "object": "stream",
@@ -16033,12 +16157,6 @@
                         "taxonomies": {
                             "category": [
                                 {
-                                    "id": "019efa45-d480-7170-890d-c5eec377e6b9",
-                                    "slug": "channel-football",
-                                    "title": "Football",
-                                    "nav_path": "/t/category/channel-football"
-                                },
-                                {
                                     "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
                                     "slug": "channel-sports",
                                     "title": "Sports",
@@ -16055,6 +16173,12 @@
                                     "slug": "channel-channels",
                                     "title": "Channels",
                                     "nav_path": "/t/category/channel-channels"
+                                },
+                                {
+                                    "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                    "slug": "channel-football",
+                                    "title": "Football",
+                                    "nav_path": "/t/category/channel-football"
                                 }
                             ]
                         },
@@ -16506,6 +16630,12 @@
                         "taxonomies": {
                             "category": [
                                 {
+                                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                    "slug": "channel-sports",
+                                    "title": "Sports",
+                                    "nav_path": "/t/category/channel-sports"
+                                },
+                                {
                                     "id": "019efa45-d480-7170-890d-c5eec377e6b9",
                                     "slug": "channel-football",
                                     "title": "Football",
@@ -16516,12 +16646,6 @@
                                     "slug": "channel-channels",
                                     "title": "Channels",
                                     "nav_path": "/t/category/channel-channels"
-                                },
-                                {
-                                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
-                                    "slug": "channel-sports",
-                                    "title": "Sports",
-                                    "nav_path": "/t/category/channel-sports"
                                 }
                             ]
                         },
@@ -16631,124 +16755,6 @@
                         },
                         "stream": {
                             "url": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8",
-                            "urls": null
-                        },
-                        "taxonomies": {
-                            "category": [
-                                {
-                                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
-                                    "slug": "channel-sports",
-                                    "title": "Sports",
-                                    "nav_path": "/t/category/channel-sports"
-                                },
-                                {
-                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                    "slug": "channel-channels",
-                                    "title": "Channels",
-                                    "nav_path": "/t/category/channel-channels"
-                                }
-                            ]
-                        },
-                        "access_policy": null,
-                        "access_verdict": {
-                            "allowed": true,
-                            "reason": null
-                        },
-                        "template": "stream",
-                        "content_rating": {
-                            "name": "G",
-                            "description": "No Restriction",
-                            "min_age": 0
-                        }
-                    },
-                    {
-                        "id": "019de785-39e4-74c7-9cdb-1427d9235bb6",
-                        "type": "live-tvs",
-                        "object": "stream",
-                        "slug": "tsn-3",
-                        "title": "TSN 3",
-                        "description": "TSN 3 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-                        "label": null,
-                        "nav_path": "/live-tvs/tsn-3",
-                        "starts_at": null,
-                        "ends_at": null,
-                        "access": {
-                            "level": "subscription",
-                            "label": "Subscribe",
-                            "options": []
-                        },
-                        "images": {
-                            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg",
-                            "thumbnail_wide_url": null,
-                            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg",
-                            "poster_wide_url": null,
-                            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg",
-                            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg",
-                            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg",
-                            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn_300.jpg",
-                            "sprite_url": null
-                        },
-                        "stream": {
-                            "url": "https://tvsen7.aynaott.com/tsn3/index.m3u8",
-                            "urls": null
-                        },
-                        "taxonomies": {
-                            "category": [
-                                {
-                                    "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
-                                    "slug": "channel-sports",
-                                    "title": "Sports",
-                                    "nav_path": "/t/category/channel-sports"
-                                },
-                                {
-                                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                    "slug": "channel-channels",
-                                    "title": "Channels",
-                                    "nav_path": "/t/category/channel-channels"
-                                }
-                            ]
-                        },
-                        "access_policy": null,
-                        "access_verdict": {
-                            "allowed": true,
-                            "reason": null
-                        },
-                        "template": "stream",
-                        "content_rating": {
-                            "name": "G",
-                            "description": "No Restriction",
-                            "min_age": 0
-                        }
-                    },
-                    {
-                        "id": "019de785-39e2-7b89-b765-55ec31696b75",
-                        "type": "live-tvs",
-                        "object": "stream",
-                        "slug": "tsn-2",
-                        "title": "TSN 2",
-                        "description": "TSN 2 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-                        "label": null,
-                        "nav_path": "/live-tvs/tsn-2",
-                        "starts_at": null,
-                        "ends_at": null,
-                        "access": {
-                            "level": "subscription",
-                            "label": "Subscribe",
-                            "options": []
-                        },
-                        "images": {
-                            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg",
-                            "thumbnail_wide_url": null,
-                            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg",
-                            "poster_wide_url": null,
-                            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg",
-                            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg",
-                            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg",
-                            "mnemonic_url": null,
-                            "sprite_url": null
-                        },
-                        "stream": {
-                            "url": "https://tvsen7.aynaott.com/tsn2/index.m3u8",
                             "urls": null
                         },
                         "taxonomies": {

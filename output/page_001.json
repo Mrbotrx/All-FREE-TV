@@ -2484,6 +2484,12 @@
                     "taxonomies": {
                         "category": [
                             {
+                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                "slug": "channel-news",
+                                "title": "News",
+                                "nav_path": "/t/category/channel-news"
+                            },
+                            {
                                 "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                 "slug": "channel-channels",
                                 "title": "Channels",
@@ -2494,12 +2500,6 @@
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
-                            },
-                            {
-                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                "slug": "channel-news",
-                                "title": "News",
-                                "nav_path": "/t/category/channel-news"
                             }
                         ]
                     },
@@ -2673,12 +2673,6 @@
                     "taxonomies": {
                         "category": [
                             {
-                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                "slug": "channel-news",
-                                "title": "News",
-                                "nav_path": "/t/category/channel-news"
-                            },
-                            {
                                 "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                 "slug": "channel-channels",
                                 "title": "Channels",
@@ -2689,6 +2683,12 @@
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                "slug": "channel-news",
+                                "title": "News",
+                                "nav_path": "/t/category/channel-news"
                             }
                         ]
                     },
@@ -2738,6 +2738,12 @@
                     "taxonomies": {
                         "category": [
                             {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
                                 "id": "019efa45-d861-77b3-ba90-892c90ebf870",
                                 "slug": "channel-news",
                                 "title": "News",
@@ -2748,12 +2754,6 @@
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
-                            },
-                            {
-                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                "slug": "channel-channels",
-                                "title": "Channels",
-                                "nav_path": "/t/category/channel-channels"
                             }
                         ]
                     },
@@ -2868,6 +2868,12 @@
                     "taxonomies": {
                         "category": [
                             {
+                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                                "slug": "channel-news",
+                                "title": "News",
+                                "nav_path": "/t/category/channel-news"
+                            },
+                            {
                                 "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                                 "slug": "channel-channels",
                                 "title": "Channels",
@@ -2878,12 +2884,6 @@
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
-                            },
-                            {
-                                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                                "slug": "channel-news",
-                                "title": "News",
-                                "nav_path": "/t/category/channel-news"
                             }
                         ]
                     },
@@ -2933,12 +2933,6 @@
                     "taxonomies": {
                         "category": [
                             {
-                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
-                                "slug": "channel-sports",
-                                "title": "Sports",
-                                "nav_path": "/t/category/channel-sports"
-                            },
-                            {
                                 "id": "019efa45-d480-7170-890d-c5eec377e6b9",
                                 "slug": "channel-football",
                                 "title": "Football",
@@ -2961,6 +2955,12 @@
                                 "slug": "channel-cricket",
                                 "title": "Cricket",
                                 "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
                             }
                         ]
                     },
@@ -3187,16 +3187,16 @@
                     "taxonomies": {
                         "category": [
                             {
-                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                "slug": "channel-channels",
-                                "title": "Channels",
-                                "nav_path": "/t/category/channel-channels"
-                            },
-                            {
                                 "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
                             }
                         ]
                     },
@@ -3246,12 +3246,6 @@
                     "taxonomies": {
                         "category": [
                             {
-                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                                "slug": "channel-channels",
-                                "title": "Channels",
-                                "nav_path": "/t/category/channel-channels"
-                            },
-                            {
                                 "id": "019efa45-d861-77b3-ba90-892c90ebf870",
                                 "slug": "channel-news",
                                 "title": "News",
@@ -3262,6 +3256,12 @@
                                 "slug": "channel-bangla",
                                 "title": "Bangla",
                                 "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
                             }
                         ]
                     },
