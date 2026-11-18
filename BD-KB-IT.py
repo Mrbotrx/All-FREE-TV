@@ -3,26 +3,32 @@ import re
 import json
 import time
 import urllib.request
-from urllib.parse import urljoin, urlparse
+import urllib.error
 
-# =====================================
-# CONFIGURATION
-# =====================================
+from urllib.parse import urljoin, urlparse
+from pathlib import Path
+
+
+# ==========================================
+# BD-KB-IT CONFIGURATION
+# ==========================================
 
 BASE_URL = "https://web.aynaott.com"
 
-API_URL = os.getenv(
-    "BD_KB_IT_API_URL",
-    BASE_URL + "/api/v5/pages/live-tvs/"
+DEFAULT_API_URL = (
+    "https://web.aynaott.com/api/v5/pages/live-tvs/"
 )
 
-OUTPUT_DIR = "output"
+API_URL = os.environ.get(
+    "BD_KB_IT_API_URL",
+    DEFAULT_API_URL
+)
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+OUTPUT_DIR = Path("output")
 
-JSON_FILE = OUTPUT_DIR + "/ALL_CHANNEL_DATA.json"
-RAW_FILE = OUTPUT_DIR + "/ALL_API_RESPONSES.json"
-M3U_FILE = OUTPUT_DIR + "/BD-KB-IT.m3u8"
+PLAYLIST_FILE = OUTPUT_DIR / "BD-KB-IT.m3u8"
+CHANNEL_FILE = OUTPUT_DIR / "ALL_CHANNEL_DATA.json"
+RAW_FILE = OUTPUT_DIR / "ALL_API_RESPONSES.json"
 
 MAX_PAGES = 10000
 TIMEOUT = 30
@@ -30,35 +36,32 @@ TIMEOUT = 30
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Accept": "application/json",
-    "Referer": BASE_URL + "/live-tvs"
+    "Referer": "https://web.aynaott.com/live-tvs"
 }
 
-# =====================================
-# FIRST PLAYLIST ENTRY
-# =====================================
+IPTV_LOGO = (
+    "https://raw.githubusercontent.com/"
+    "Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
+)
 
-FIRST_CHANNEL = {
-    "id": "",
-    "name": "IPTV LINKS",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "group": "IPTV",
-    "url": "https://github.com/Mrbotrx/Mrbotrx/raw/refs/heads/main/IPTV_LINKS_VIDEO.mp4"
-}
+IPTV_VIDEO = (
+    "https://github.com/Mrbotrx/Mrbotrx/raw/"
+    "refs/heads/main/IPTV_LINKS_VIDEO.mp4"
+)
 
 
-# =====================================
-# API REQUEST
-# =====================================
+# ==========================================
+# CREATE OUTPUT DIRECTORY
+# ==========================================
+
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+# ==========================================
+# SAFE API REQUEST
+# ==========================================
 
 def get_api(url):
-
-    parsed = urlparse(url)
-
-    if parsed.scheme != "https":
-        raise ValueError("HTTPS required")
-
-    if parsed.hostname != "web.aynaott.com":
-        raise ValueError("Unexpected API host")
 
     request = urllib.request.Request(
         url,
@@ -70,57 +73,60 @@ def get_api(url):
         timeout=TIMEOUT
     ) as response:
 
-        return json.loads(
-            response.read().decode(
-                "utf-8",
-                errors="replace"
-            )
+        content = response.read().decode(
+            "utf-8",
+            errors="replace"
         )
 
+        return json.loads(content)
 
-# =====================================
-# NEXT URL
-# =====================================
 
-def get_next_url(data, current_url):
+# ==========================================
+# GET PAGINATION INFORMATION
+# ==========================================
+
+def get_next_page(data, current_url):
 
     if not isinstance(data, dict):
         return None
 
-    pagination = data.get(
-        "blocks_pagination",
-        {}
-    )
+    pagination = data.get("blocks_pagination")
+
+    if not isinstance(pagination, dict):
+        pagination = data.get("pagination", {})
 
     if not isinstance(pagination, dict):
         return None
 
-    if not pagination.get("has_more", False):
+    has_more = pagination.get("has_more", False)
+
+    if not has_more:
         return None
 
     next_url = pagination.get("next_url")
 
-    if not next_url:
-        raise RuntimeError(
-            "Next URL missing while has_more is true"
-        )
+    if next_url:
+        next_url = urljoin(current_url, next_url)
 
-    next_url = urljoin(current_url, next_url)
+        parsed = urlparse(next_url)
 
-    parsed = urlparse(next_url)
+        # Pagination must remain on the official API host.
+        if (
+            parsed.scheme != "https"
+            or parsed.hostname != "web.aynaott.com"
+        ):
+            raise ValueError(
+                "Rejected unexpected pagination URL"
+            )
 
-    if (
-        parsed.scheme != "https"
-        or parsed.hostname != "web.aynaott.com"
-    ):
-        raise ValueError("Invalid next_url")
+        return next_url
 
-    return next_url
+    return None
 
 
-# =====================================
-# EXTRACT CHANNEL ITEMS
-# =====================================
+# ==========================================
+# EXTRACT CHANNELS FROM BLOCKS
+# ==========================================
 
 def extract_channels(data):
 
@@ -139,10 +145,7 @@ def extract_channels(data):
         if not isinstance(block, dict):
             continue
 
-        group = block.get(
-            "title",
-            "Uncategorized"
-        )
+        group = block.get("title", "Uncategorized")
 
         items = block.get("items", [])
 
@@ -154,183 +157,198 @@ def extract_channels(data):
             if not isinstance(item, dict):
                 continue
 
-            channels.append({
-                "id": item.get("id", ""),
-                "name": item.get("title", ""),
-                "slug": item.get("slug", ""),
-                "description": item.get(
-                    "description", ""
-                ),
-                "group": group,
-                "nav_path": item.get(
-                    "nav_path", ""
-                ),
-                "logo": extract_logo(item),
-                "url": extract_authorized_stream(item),
-                "access": item.get("access", {})
-            })
+            channel = dict(item)
+
+            channel["_group"] = group
+
+            channels.append(channel)
 
     return channels
 
 
-# =====================================
-# LOGO EXTRACTION
-# =====================================
+# ==========================================
+# GET CHANNEL LOGO
+# ==========================================
 
-def extract_logo(item):
+def get_logo(channel):
 
-    for key in [
+    possible_keys = [
         "logo",
         "logo_url",
         "image",
+        "image_url",
         "thumbnail",
+        "thumbnail_url",
         "icon"
-    ]:
+    ]
 
-        value = item.get(key)
+    for key in possible_keys:
 
-        if isinstance(value, str):
+        value = channel.get(key)
+
+        if isinstance(value, str) and value.startswith("http"):
             return value
 
-        if isinstance(value, dict):
+    images = channel.get("images")
 
-            return (
-                value.get("url")
-                or value.get("src")
-                or ""
-            )
+    if isinstance(images, dict):
+
+        for value in images.values():
+
+            if isinstance(value, str) and value.startswith("http"):
+                return value
+
+            if isinstance(value, dict):
+
+                image_url = (
+                    value.get("url")
+                    or value.get("original")
+                    or value.get("src")
+                )
+
+                if isinstance(image_url, str):
+                    if image_url.startswith("http"):
+                        return image_url
 
     return ""
 
 
-# =====================================
-# AUTHORIZED STREAM FIELD
-# =====================================
+# ==========================================
+# GET DIRECT AUTHORIZED STREAM URL
+# ==========================================
 
-def extract_authorized_stream(item):
+def get_stream_url(channel):
 
-    for key in [
+    allowed_keys = {
         "stream_url",
         "play_url",
         "m3u8_url",
         "playlist_url"
-    ]:
+    }
 
-        value = item.get(key)
+    def search(obj):
 
-        if isinstance(value, str):
+        if isinstance(obj, dict):
 
-            parsed = urlparse(value)
+            for key, value in obj.items():
 
-            if parsed.scheme in ("http", "https"):
-                return value
+                if key.lower() in allowed_keys:
 
-    return ""
+                    if isinstance(value, str):
+                        if value.startswith(("https://", "http://")):
+                            return value
+
+                if isinstance(value, (dict, list)):
+
+                    found = search(value)
+
+                    if found:
+                        return found
+
+        elif isinstance(obj, list):
+
+            for item in obj:
+
+                found = search(item)
+
+                if found:
+                    return found
+
+        return None
+
+    return search(channel)
 
 
-# =====================================
-# CLEAN TEXT
-# =====================================
+# ==========================================
+# CLEAN M3U TEXT
+# ==========================================
 
-def clean(value):
+def clean_text(value):
 
-    value = str(value or "")
+    if value is None:
+        return ""
 
-    return re.sub(
-        r'[\r\n"]+',
-        " ",
-        value
-    ).strip()
+    value = str(value)
+
+    value = re.sub(r'[\r\n"]+', " ", value)
+
+    return value.strip()
 
 
-# =====================================
-# GENERATE M3U8
-# =====================================
+# ==========================================
+# SAVE M3U8 PLAYLIST
+# ==========================================
 
-def generate_m3u(channels):
+def save_playlist(channels):
 
-    lines = [
-        "#EXTM3U"
-    ]
-
-    # FIRST ENTRY
-
-    first = FIRST_CHANNEL
-
-    lines.append("")
-
-    lines.append(
-        '#EXTINF:-1 tvg-id="" '
-        'tvg-name="IPTV LINKS" '
-        'tvg-logo="' + first["logo"] + '" '
-        'group-title="IPTV",IPTV LINKS'
-    )
-
-    lines.append(first["url"])
-
-    # API CHANNELS
-
-    count = 0
-
-    for channel in channels:
-
-        name = clean(channel["name"])
-
-        logo = clean(channel["logo"])
-
-        group = clean(channel["group"])
-
-        channel_id = clean(channel["id"])
-
-        stream = channel["url"]
-
-        if not stream:
-            continue
-
-        parsed = urlparse(stream)
-
-        if parsed.scheme not in ("http", "https"):
-            continue
-
-        if not parsed.netloc:
-            continue
-
-        lines.append("")
-
-        lines.append(
-            f'#EXTINF:-1 '
-            f'tvg-id="{channel_id}" '
-            f'tvg-name="{name}" '
-            f'tvg-logo="{logo}" '
-            f'group-title="{group}",'
-            f'{name}'
-        )
-
-        lines.append(stream)
-
-        count += 1
+    total = 0
 
     with open(
-        M3U_FILE,
+        PLAYLIST_FILE,
         "w",
         encoding="utf-8"
     ) as file:
 
+        # Automatic M3U Header
+        file.write("#EXTM3U\n\n")
+
+        # Fixed First Entry
         file.write(
-            "\n".join(lines) + "\n"
+            f'#EXTINF:-1 tvg-id="" '
+            f'tvg-name="IPTV LINKS" '
+            f'tvg-logo="{IPTV_LOGO}" '
+            f'group-title="KB PRO TV",IPTV LINKS\n'
         )
 
-    return count
+        file.write(IPTV_VIDEO + "\n\n")
+
+        # API Channels
+        for channel in channels:
+
+            title = clean_text(
+                channel.get("title", "Unknown Channel")
+            )
+
+            group = clean_text(
+                channel.get("_group", "Uncategorized")
+            )
+
+            logo = clean_text(
+                get_logo(channel)
+            )
+
+            stream_url = get_stream_url(channel)
+
+            # Never use nav_path as a playback URL.
+            if not stream_url:
+                continue
+
+            file.write(
+                f'#EXTINF:-1 '
+                f'tvg-id="" '
+                f'tvg-name="{title}" '
+                f'tvg-logo="{logo}" '
+                f'group-title="{group}",{title}\n'
+            )
+
+            file.write(stream_url + "\n\n")
+
+            total += 1
+
+    print("[OK] Playlist created:", PLAYLIST_FILE)
+    print("[OK] Playable API channels:", total)
+
+    return total
 
 
-# =====================================
+# ==========================================
 # SAVE JSON
-# =====================================
+# ==========================================
 
-def save_json(filename, data):
+def save_json(path, data):
 
     with open(
-        filename,
+        path,
         "w",
         encoding="utf-8"
     ) as file:
@@ -343,126 +361,147 @@ def save_json(filename, data):
         )
 
 
-# =====================================
+# ==========================================
 # MAIN
-# =====================================
+# ==========================================
 
 def main():
 
     print("=" * 50)
-    print("BD KB IT AUTO PLAYLIST")
+    print("          BD-KB-IT PLAYLIST BUILDER")
     print("=" * 50)
 
-    url = API_URL
-
-    visited = set()
-
     all_pages = []
-
     all_channels = []
 
-    page = 0
+    visited_urls = set()
 
-    # FETCH ALL NEXT URLS
+    current_url = API_URL
 
-    while url:
+    for page_number in range(1, MAX_PAGES + 1):
 
-        if page >= MAX_PAGES:
-            raise RuntimeError("Maximum page limit reached")
+        if not current_url:
+            break
 
-        if url in visited:
-            raise RuntimeError("Pagination loop detected")
+        if current_url in visited_urls:
 
-        visited.add(url)
+            print("[WARNING] Pagination loop detected.")
+            break
 
-        page += 1
+        visited_urls.add(current_url)
 
-        print(f"\nDownloading API Page: {page}")
+        print(f"\n[+] Downloading Page {page_number}")
 
-        data = get_api(url)
+        try:
 
-        if not isinstance(data, dict):
-            raise RuntimeError("Invalid API response")
+            data = get_api(current_url)
 
-        all_pages.append(data)
+            if not isinstance(data, dict):
+                raise ValueError("Invalid API response")
 
-        channels = extract_channels(data)
+            all_pages.append(data)
 
-        all_channels.extend(channels)
+            channels = extract_channels(data)
 
-        print("Channels found:", len(channels))
+            all_channels.extend(channels)
 
-        # NEXT API
+            # Save individual page
+            page_file = OUTPUT_DIR / (
+                f"page_{page_number:03d}.json"
+            )
 
-        url = get_next_url(data, url)
+            save_json(page_file, data)
 
-        if url:
-            print("Next URL found!")
+            print("[OK] Page saved:", page_file)
+            print("[+] Channels found:", len(channels))
+
+            # Follow next_url
+            current_url = get_next_page(
+                data,
+                current_url
+            )
+
+            if not current_url:
+
+                print("\n[+] No more pages.")
+                break
+
             time.sleep(0.5)
-        else:
-            print("All API pages completed!")
 
-    # REMOVE DUPLICATES
+        except urllib.error.HTTPError as error:
 
+            print(
+                f"[ERROR] HTTP {error.code}: {error.reason}"
+            )
+
+            raise
+
+        except Exception as error:
+
+            print("[ERROR]", str(error))
+            raise
+
+    else:
+
+        raise RuntimeError(
+            "Maximum page limit reached. "
+            "Pagination may not have finished."
+        )
+
+    # Remove duplicate channels by ID or slug.
     unique_channels = []
-
     seen = set()
 
     for channel in all_channels:
 
-        key = channel["id"] or channel["name"]
+        identifier = (
+            channel.get("id")
+            or channel.get("slug")
+            or channel.get("title")
+        )
 
-        if not key or key in seen:
+        if not identifier:
+            identifier = json.dumps(
+                channel,
+                sort_keys=True,
+                ensure_ascii=False
+            )
+
+        if identifier in seen:
             continue
 
-        seen.add(key)
-
+        seen.add(identifier)
         unique_channels.append(channel)
 
-    # SAVE RAW API
+    # Save combined channel data
+    save_json(
+        CHANNEL_FILE,
+        unique_channels
+    )
 
+    # Save all raw API responses
     save_json(
         RAW_FILE,
         all_pages
     )
 
-    # SAVE COMBINED JSON
-
-    output = {
-        "project": "BD-KB-IT",
-        "total_pages": len(all_pages),
-        "total_channels": len(unique_channels),
-        "channels": unique_channels
-    }
-
-    save_json(
-        JSON_FILE,
-        output
-    )
-
-    # GENERATE PLAYLIST
-
-    playlist_count = generate_m3u(
+    # Create M3U8 playlist
+    playable_count = save_playlist(
         unique_channels
     )
 
-    # FINAL REPORT
-
     print("\n" + "=" * 50)
+    print("             UPDATE COMPLETED")
+    print("=" * 50)
 
-    print("UPDATE COMPLETED")
-
-    print("Total Pages:", len(all_pages))
-
+    print("Total API Pages:", len(all_pages))
     print("Total Channels:", len(unique_channels))
+    print("Playable Channels:", playable_count)
 
-    print("Playable Entries:", playlist_count)
-
-    print("\nOUTPUT FILES:")
-
-    print(JSON_FILE)
+    print("\nOutput Files:")
+    print(PLAYLIST_FILE)
+    print(CHANNEL_FILE)
     print(RAW_FILE)
-    print(M3U_FILE)
 
     print("=" * 50)
 
