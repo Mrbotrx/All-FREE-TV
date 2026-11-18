@@ -1,38 +1,60 @@
 import os
+import re
 import json
 import time
 import urllib.request
-import urllib.parse
-from urllib.parse import urlparse
+import urllib.error
 
-# =====================================
-# CONFIGURATION
-# =====================================
+from urllib.parse import urljoin, urlparse
+
+# ==========================================
+# BD KB IT CONFIGURATION
+# ==========================================
+
+BASE_URL = "https://web.aynaott.com"
 
 API_URL = os.environ.get(
     "BD_KB_IT_API_URL",
-    "https://web.aynaott.com/api/v5/pages/live-tvs/"
+    BASE_URL + "/api/v5/pages/live-tvs/"
 )
 
 OUTPUT_DIR = "output"
 
-MAX_PAGES = 100
-TIMEOUT = 30
+JSON_FILE = os.path.join(
+    OUTPUT_DIR,
+    "ALL_CHANNEL_DATA.json"
+)
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+RAW_FILE = os.path.join(
+    OUTPUT_DIR,
+    "ALL_API_RESPONSES.json"
+)
+
+M3U_FILE = os.path.join(
+    OUTPUT_DIR,
+    "BD-KB-IT.m3u8"
+)
+
+TIMEOUT = 30
+DELAY = 0.5
+
+# Prevent accidental infinite pagination.
+MAX_PAGES = 10000
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Accept": "application/json",
-    "Referer": "https://web.aynaott.com/live-tvs"
+    "Referer": BASE_URL + "/live-tvs"
 }
 
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# =====================================
-# API REQUEST
-# =====================================
 
-def get_api(url):
+# ==========================================
+# VALIDATE API URL
+# ==========================================
+
+def validate_url(url):
 
     parsed = urlparse(url)
 
@@ -41,6 +63,17 @@ def get_api(url):
 
     if parsed.hostname != "web.aynaott.com":
         raise ValueError("Unexpected API hostname")
+
+    return url
+
+
+# ==========================================
+# API REQUEST
+# ==========================================
+
+def get_api(url):
+
+    url = validate_url(url)
 
     request = urllib.request.Request(
         url,
@@ -52,16 +85,19 @@ def get_api(url):
         timeout=TIMEOUT
     ) as response:
 
-        return json.loads(
-            response.read().decode("utf-8")
+        content = response.read().decode(
+            "utf-8",
+            errors="replace"
         )
 
+        return json.loads(content)
 
-# =====================================
+
+# ==========================================
 # PAGINATION
-# =====================================
+# ==========================================
 
-def get_next_page(data):
+def get_next_page(data, current_url):
 
     if not isinstance(data, dict):
         return None
@@ -83,16 +119,27 @@ def get_next_page(data):
         "next_url"
     )
 
-    if has_more and next_url:
+    if not has_more:
+        return None
 
-        return next_url
+    if not next_url:
 
-    return None
+        raise RuntimeError(
+            "has_more is true but next_url is missing"
+        )
+
+    # Support relative and absolute next_url.
+    next_url = urljoin(
+        current_url,
+        next_url
+    )
+
+    return validate_url(next_url)
 
 
-# =====================================
+# ==========================================
 # EXTRACT RECORDS
-# =====================================
+# ==========================================
 
 def extract_records(data):
 
@@ -102,13 +149,15 @@ def extract_records(data):
     if not isinstance(data, dict):
         return []
 
-    for key in [
+    possible_keys = [
         "results",
         "items",
         "data",
         "blocks",
         "channels"
-    ]:
+    ]
+
+    for key in possible_keys:
 
         value = data.get(key)
 
@@ -117,43 +166,259 @@ def extract_records(data):
 
         if isinstance(value, dict):
 
-            for subkey in [
-                "results",
-                "items",
-                "blocks",
-                "channels"
-            ]:
+            for subkey in possible_keys:
 
-                if isinstance(
-                    value.get(subkey),
-                    list
-                ):
-                    return value[subkey]
+                subvalue = value.get(subkey)
+
+                if isinstance(subvalue, list):
+                    return subvalue
 
     return []
 
 
-# =====================================
-# MAIN
-# =====================================
+# ==========================================
+# FIELD EXTRACTION
+# ==========================================
+
+def get_value(data, keys):
+
+    if not isinstance(data, dict):
+        return None
+
+    for key in keys:
+
+        value = data.get(key)
+
+        if value is not None and value != "":
+            return value
+
+    return None
+
+
+def get_nested_value(data, keys):
+
+    value = get_value(data, keys)
+
+    if isinstance(value, dict):
+
+        return get_value(
+            value,
+            ["url", "src", "name", "title"]
+        )
+
+    return value
+
+
+# ==========================================
+# NORMALIZE CHANNEL
+# ==========================================
+
+def normalize_channel(record):
+
+    if not isinstance(record, dict):
+        return None
+
+    name = get_nested_value(
+        record,
+        [
+            "name",
+            "title",
+            "channel_name",
+            "display_name"
+        ]
+    )
+
+    logo = get_nested_value(
+        record,
+        [
+            "logo",
+            "logo_url",
+            "image",
+            "thumbnail",
+            "icon"
+        ]
+    )
+
+    group = get_nested_value(
+        record,
+        [
+            "category",
+            "group",
+            "group_title",
+            "genre"
+        ]
+    )
+
+    channel_id = get_value(
+        record,
+        [
+            "id",
+            "channel_id",
+            "slug"
+        ]
+    )
+
+    stream = get_nested_value(
+        record,
+        [
+            "stream_url",
+            "play_url",
+            "url",
+            "link",
+            "m3u8",
+            "source"
+        ]
+    )
+
+    if not name:
+        return None
+
+    if isinstance(stream, str):
+
+        stream = stream.strip()
+
+    else:
+
+        stream = ""
+
+    return {
+        "id": str(channel_id or name),
+        "name": str(name),
+        "logo": str(logo or ""),
+        "group": str(group or "Uncategorized"),
+        "url": stream
+    }
+
+
+# ==========================================
+# CLEAN M3U TEXT
+# ==========================================
+
+def clean_text(value):
+
+    value = str(value or "")
+
+    value = re.sub(
+        r'[\r\n"]+',
+        " ",
+        value
+    )
+
+    return value.strip()
+
+
+# ==========================================
+# GENERATE M3U
+# ==========================================
+
+def generate_m3u(channels):
+
+    lines = ["#EXTM3U"]
+
+    count = 0
+
+    for channel in channels:
+
+        name = clean_text(channel["name"])
+
+        logo = clean_text(channel["logo"])
+
+        group = clean_text(channel["group"])
+
+        channel_id = clean_text(channel["id"])
+
+        stream = channel["url"]
+
+        # Only include explicitly available
+        # HTTP(S) stream URLs.
+
+        parsed = urlparse(stream)
+
+        if parsed.scheme not in ("http", "https"):
+            continue
+
+        if not parsed.netloc:
+            continue
+
+        info = (
+            f'#EXTINF:-1 '
+            f'tvg-id="{channel_id}" '
+            f'tvg-name="{name}" '
+            f'tvg-logo="{logo}" '
+            f'group-title="{group}",'
+            f'{name}'
+        )
+
+        lines.append(info)
+
+        lines.append(stream)
+
+        count += 1
+
+    with open(
+        M3U_FILE,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        file.write(
+            "\n".join(lines) + "\n"
+        )
+
+    return count
+
+
+# ==========================================
+# SAVE JSON
+# ==========================================
+
+def save_json(filename, data):
+
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
+        json.dump(
+            data,
+            file,
+            indent=4,
+            ensure_ascii=False
+        )
+
+
+# ==========================================
+# MAIN DOWNLOADER
+# ==========================================
 
 def main():
 
-    print("=" * 45)
-    print("BD KB IT API AUTO DOWNLOADER")
-    print("=" * 45)
-
-    all_pages = []
-    all_records = []
-
-    visited = set()
+    print("=" * 55)
+    print("          BD KB IT AUTO UPDATE")
+    print("=" * 55)
 
     url = API_URL
 
-    for page in range(1, MAX_PAGES + 1):
+    visited = set()
 
-        if not url:
-            break
+    all_pages = []
+
+    all_records = []
+
+    page = 0
+
+    # ======================================
+    # FETCH ALL PAGINATION
+    # ======================================
+
+    while url:
+
+        if page >= MAX_PAGES:
+
+            raise RuntimeError(
+                "Maximum page safety limit reached"
+            )
 
         if url in visited:
 
@@ -163,12 +428,27 @@ def main():
 
         visited.add(url)
 
-        print(f"\nDownloading Page {page}")
+        page += 1
 
-        data = get_api(url)
+        print(f"\n[PAGE {page}] Fetching API")
+
+        print(url)
+
+        try:
+
+            data = get_api(url)
+
+        except Exception as error:
+
+            raise RuntimeError(
+                f"API request failed on page {page}: {error}"
+            )
 
         if not isinstance(data, (dict, list)):
-            raise ValueError("Invalid API response")
+
+            raise RuntimeError(
+                "Invalid API response"
+            )
 
         all_pages.append(data)
 
@@ -176,78 +456,126 @@ def main():
 
         all_records.extend(records)
 
-        print("Records:", len(records))
+        print(
+            "[OK] Records:",
+            len(records)
+        )
 
-        next_url = get_next_page(data)
+        # ==================================
+        # GET NEXT URL
+        # ==================================
 
-        if not next_url:
+        next_url = get_next_page(
+            data,
+            url
+        )
 
-            print("No more pages.")
+        if next_url:
 
-            break
+            print("[+] Next URL Found")
+
+        else:
+
+            print("[+] All API Pages Completed")
 
         url = next_url
 
-        time.sleep(0.5)
+        if url:
+            time.sleep(DELAY)
 
-    else:
+    # ======================================
+    # NORMALIZE CHANNELS
+    # ======================================
 
-        raise RuntimeError(
-            "Maximum page limit reached"
+    channels = []
+
+    seen = set()
+
+    for record in all_records:
+
+        channel = normalize_channel(record)
+
+        if not channel:
+            continue
+
+        # Avoid duplicate records.
+        unique_key = (
+            channel["id"],
+            channel["name"]
         )
 
-    # =================================
-    # SAVE RAW JSON
-    # =================================
+        if unique_key in seen:
+            continue
 
-    with open(
-        os.path.join(
-            OUTPUT_DIR,
-            "ALL_API_RESPONSES.json"
-        ),
-        "w",
-        encoding="utf-8"
-    ) as file:
+        seen.add(unique_key)
 
-        json.dump(
-            all_pages,
-            file,
-            indent=4,
-            ensure_ascii=False
-        )
+        channels.append(channel)
 
-    # =================================
-    # SAVE COMBINED JSON
-    # =================================
+    # ======================================
+    # SAVE RAW API RESPONSES
+    # ======================================
 
-    with open(
-        os.path.join(
-            OUTPUT_DIR,
-            "ALL_CHANNEL_DATA.json"
-        ),
-        "w",
-        encoding="utf-8"
-    ) as file:
+    save_json(
+        RAW_FILE,
+        all_pages
+    )
 
-        json.dump(
-            all_records,
-            file,
-            indent=4,
-            ensure_ascii=False
-        )
+    # ======================================
+    # SAVE CHANNEL JSON
+    # ======================================
 
-    print("\n" + "=" * 45)
+    json_output = {
+        "project": "BD KB IT",
+        "total_pages": len(all_pages),
+        "total_records": len(all_records),
+        "total_channels": len(channels),
+        "channels": channels
+    }
 
-    print("UPDATE COMPLETED")
+    save_json(
+        JSON_FILE,
+        json_output
+    )
+
+    # ======================================
+    # GENERATE PLAYLIST
+    # ======================================
+
+    playlist_count = generate_m3u(
+        channels
+    )
+
+    # ======================================
+    # FINAL REPORT
+    # ======================================
+
+    print("\n" + "=" * 55)
+
+    print("UPDATE SUCCESSFUL")
 
     print("Total Pages:", len(all_pages))
 
     print("Total Records:", len(all_records))
 
-    print("Output:", OUTPUT_DIR)
+    print("Total Channels:", len(channels))
 
-    print("=" * 45)
+    print("Playlist Entries:", playlist_count)
 
+    print("\nOUTPUT FILES:")
+
+    print(JSON_FILE)
+
+    print(RAW_FILE)
+
+    print(M3U_FILE)
+
+    print("=" * 55)
+
+
+# ==========================================
+# START
+# ==========================================
 
 if __name__ == "__main__":
+
     main()
