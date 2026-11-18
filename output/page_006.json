@@ -1,0 +1,1413 @@
+{
+    "records": [
+        {
+            "id": "019efa5d-2fdd-76e1-9d7f-8f7fb96c5a28",
+            "title": "Radio",
+            "eyebrow": null,
+            "layout": "carousel",
+            "variant": null,
+            "items_size": "landscape",
+            "items_per_view": null,
+            "show_rank": false,
+            "show_items_metadata": true,
+            "item_click_action": "detail",
+            "nav_path": null,
+            "has_more": false,
+            "source_url": null,
+            "source_kind": null,
+            "images": null,
+            "access_policy": null,
+            "access_verdict": {
+                "allowed": true,
+                "reason": null
+            },
+            "items": [
+                {
+                    "id": "019efa45-db60-7ce1-98fe-6fd1abfcec5e",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "peoples-radio",
+                    "title": "Peoples Radio",
+                    "description": "",
+                    "label": null,
+                    "nav_path": "/live-tvs/peoples-radio",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "https://s3.aynaott.com/storage/ca13e9779e95dfb9990887efc48376a7",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "https://s3.aynaott.com/storage/ef425cbcd957b403867ab83d7c5e869d",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "https://s3.aynaott.com/storage/ca13e9779e95dfb9990887efc48376a7",
+                        "background_poster_url": "https://s3.aynaott.com/storage/ef425cbcd957b403867ab83d7c5e869d",
+                        "animated_poster_url": "https://s3.aynaott.com/storage/ef425cbcd957b403867ab83d7c5e869d",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": null,
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
+                                "slug": "channel-radio",
+                                "title": "Radio",
+                                "nav_path": "/t/category/channel-radio"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-db40-7952-a23f-f9ed0fafba51",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "relaks-radio",
+                    "title": "Relaks Radio",
+                    "description": "",
+                    "label": null,
+                    "nav_path": "/live-tvs/relaks-radio",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "https://s3.aynaott.com/storage/65fe806ed3cd5b20e44e3fefc219ecea",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "https://s3.aynaott.com/storage/aae1b38f02db6989c8f191d2f8768e2b",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "https://s3.aynaott.com/storage/65fe806ed3cd5b20e44e3fefc219ecea",
+                        "background_poster_url": "https://s3.aynaott.com/storage/aae1b38f02db6989c8f191d2f8768e2b",
+                        "animated_poster_url": "https://s3.aynaott.com/storage/aae1b38f02db6989c8f191d2f8768e2b",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": null,
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
+                                "slug": "channel-radio",
+                                "title": "Radio",
+                                "nav_path": "/t/category/channel-radio"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-db31-7fd1-a7f9-ea6a2973e8ad",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "bangla-radio",
+                    "title": "Bangla Radio",
+                    "description": "",
+                    "label": null,
+                    "nav_path": "/live-tvs/bangla-radio",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "https://s3.aynaott.com/storage/650ac208736099c5a0906204c6fa0b15",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "https://s3.aynaott.com/storage/650ac208736099c5a0906204c6fa0b15",
+                        "background_poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
+                        "animated_poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": null,
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
+                                "slug": "channel-radio",
+                                "title": "Radio",
+                                "nav_path": "/t/category/channel-radio"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-db50-7903-95dd-de2ae6a701b9",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "radio-bangladesh-co",
+                    "title": "Radio Bangladesh CO",
+                    "description": "",
+                    "label": null,
+                    "nav_path": "/live-tvs/radio-bangladesh-co",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "https://s3.aynaott.com/storage/21eb21293a67fd9a153ae225558992e3",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "https://s3.aynaott.com/storage/21eb21293a67fd9a153ae225558992e3",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "https://s3.aynaott.com/storage/21eb21293a67fd9a153ae225558992e3",
+                        "background_poster_url": "https://s3.aynaott.com/storage/21eb21293a67fd9a153ae225558992e3",
+                        "animated_poster_url": "https://s3.aynaott.com/storage/21eb21293a67fd9a153ae225558992e3",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": null,
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
+                                "slug": "channel-radio",
+                                "title": "Radio",
+                                "nav_path": "/t/category/channel-radio"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-db7f-7943-a544-cdd16190da7c",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "radio-bhumi-92-80-fm",
+                    "title": "Radio Bhumi 92.80 FM",
+                    "description": "",
+                    "label": null,
+                    "nav_path": "/live-tvs/radio-bhumi-92-80-fm",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "https://s3.aynaott.com/storage/d5f888d8aaa7d20304f02de8116e8b02",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "https://s3.aynaott.com/storage/d5f888d8aaa7d20304f02de8116e8b02",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "https://s3.aynaott.com/storage/d5f888d8aaa7d20304f02de8116e8b02",
+                        "background_poster_url": "https://s3.aynaott.com/storage/d5f888d8aaa7d20304f02de8116e8b02",
+                        "animated_poster_url": "https://s3.aynaott.com/storage/d5f888d8aaa7d20304f02de8116e8b02",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": null,
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
+                                "slug": "channel-radio",
+                                "title": "Radio",
+                                "nav_path": "/t/category/channel-radio"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-db70-70b0-9f0a-ef58f78cdfdf",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "spice-fm",
+                    "title": "Spice FM",
+                    "description": "",
+                    "label": null,
+                    "nav_path": "/live-tvs/spice-fm",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "https://s3.aynaott.com/storage/4df4f9ef1ab8a3370c82a51f9f372529",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "https://s3.aynaott.com/storage/43e734b4cd01c2fd0071baa3cf4de0ae",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "https://s3.aynaott.com/storage/4df4f9ef1ab8a3370c82a51f9f372529",
+                        "background_poster_url": "https://s3.aynaott.com/storage/43e734b4cd01c2fd0071baa3cf4de0ae",
+                        "animated_poster_url": "https://s3.aynaott.com/storage/43e734b4cd01c2fd0071baa3cf4de0ae",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": null,
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
+                                "slug": "channel-radio",
+                                "title": "Radio",
+                                "nav_path": "/t/category/channel-radio"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "019efa5d-2feb-7260-9b47-0a7fcfc209e4",
+            "title": "Football",
+            "eyebrow": null,
+            "layout": "carousel",
+            "variant": null,
+            "items_size": "landscape",
+            "items_per_view": null,
+            "show_rank": false,
+            "show_items_metadata": true,
+            "item_click_action": "detail",
+            "nav_path": null,
+            "has_more": false,
+            "source_url": null,
+            "source_kind": null,
+            "images": null,
+            "access_policy": null,
+            "access_verdict": {
+                "allowed": true,
+                "reason": null
+            },
+            "items": [
+                {
+                    "id": "01a11291-2c1a-72fb-bf2d-bf03de6e974d",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "sportv",
+                    "title": "Sportv",
+                    "description": null,
+                    "label": null,
+                    "nav_path": "/live-tvs/sportv",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-06/images_6b43965cf8ff9e05973fde793d1ba4d2_playmist_sportv_logo_png_seeklogo_424355.png",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-06/images_f4463428aa0ad868250d0e69f0a40f1a_playmist_seeklogo_424355.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-06/images_6b43965cf8ff9e05973fde793d1ba4d2_playmist_sportv_logo_png_seeklogo_424355.png",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-06/images_f4463428aa0ad868250d0e69f0a40f1a_playmist_seeklogo_424355.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-06/images_f4463428aa0ad868250d0e69f0a40f1a_playmist_seeklogo_424355.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-06/images_fb0bc145a6d4a80d21782b41fcca7f75_playmist_seeklogo_424355.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen7.aynaott.com/shagor-backup/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-d907-74c0-b05a-87e38a871d8b",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "bein-sports-1",
+                    "title": "Bein Sports 1",
+                    "description": null,
+                    "label": null,
+                    "nav_path": "/live-tvs/bein-sports-1",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-39f3-7ee4-82c5-582a3f749674",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "dd-sports",
+                    "title": "DD Sports",
+                    "description": "DD Sports brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+                    "label": null,
+                    "nav_path": "/live-tvs/dd-sports",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://cdn-6.pishow.tv/live/13/master.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-39de-7743-b801-2f7bd6007fe5",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "goal-tv",
+                    "title": "Goal TV",
+                    "description": "\nGoal TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/goal-tv",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_db46edea3e5aae6a063369b686c1192d_playmist_goal_tv_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_db46edea3e5aae6a063369b686c1192d_playmist_goal_tv_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_db46edea3e5aae6a063369b686c1192d_playmist_goal_tv_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_db46edea3e5aae6a063369b686c1192d_playmist_goal_tv_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_db46edea3e5aae6a063369b686c1192d_playmist_goal_tv_400x400.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-3a0b-7492-944c-93b197e0fc39",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "bleav-football",
+                    "title": "Bleav Football",
+                    "description": "Bleav Football brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+                    "label": null,
+                    "nav_path": "/live-tvs/bleav-football",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_500x296.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-ebae-74d0-80f3-0aaa66928bae",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "dubai-sports-1",
+                    "title": "Dubai Sports 1",
+                    "description": null,
+                    "label": null,
+                    "nav_path": "/live-tvs/dubai-sports-1",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_178fd67f7c1b0e4143333962bc7600e7_playmist_dubai_sports_2_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_178fd67f7c1b0e4143333962bc7600e7_playmist_dubai_sports_2_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_178fd67f7c1b0e4143333962bc7600e7_playmist_dubai_sports_2_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_178fd67f7c1b0e4143333962bc7600e7_playmist_dubai_sports_2_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_178fd67f7c1b0e4143333962bc7600e7_playmist_dubai_sports_2_400x400.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_178fd67f7c1b0e4143333962bc7600e7_playmist_dubai_sports_2_500x296.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-39bc-7bd5-b9e5-bab23ceba9ea",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "ptv-sports",
+                    "title": "PTV Sports",
+                    "description": "PTV Sports brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/ptv-sports",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_500x296.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-3a09-7284-a479-79a453e28305",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "espn",
+                    "title": "ESPN",
+                    "description": "Espn brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+                    "label": null,
+                    "nav_path": "/live-tvs/espn",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn_500x296.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen7.aynaott.com/espn/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-3962-77a1-8f50-c541bb5a02c7",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "t-sports-hd",
+                    "title": "T Sports HD",
+                    "description": "T Sports HD brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/t-sports-hd",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                                "slug": "channel-bangla",
+                                "title": "Bangla",
+                                "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "019efa5d-2ffb-73f1-8a0c-4c43971e04f5",
+            "title": "Cricket",
+            "eyebrow": null,
+            "layout": "carousel",
+            "variant": null,
+            "items_size": "landscape",
+            "items_per_view": null,
+            "show_rank": false,
+            "show_items_metadata": true,
+            "item_click_action": "detail",
+            "nav_path": null,
+            "has_more": false,
+            "source_url": null,
+            "source_kind": null,
+            "images": null,
+            "access_policy": null,
+            "access_verdict": {
+                "allowed": true,
+                "reason": null
+            },
+            "items": [
+                {
+                    "id": "01a1354e-5a92-70b0-b6d5-9a089d27c2c7",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "willow-sports-2",
+                    "title": "Willow Sports 2",
+                    "description": null,
+                    "label": null,
+                    "nav_path": "/live-tvs/willow-sports-2",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-13/images_b682a582e7041a8083aa53cefbe9546e_playmist_willow_sports_2.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-13/images_04883c326e4179c64452faa654679645_playmist_willow_sports_2.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-13/images_b682a582e7041a8083aa53cefbe9546e_playmist_willow_sports_2.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-13/images_04883c326e4179c64452faa654679645_playmist_willow_sports_2.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-13/images_04883c326e4179c64452faa654679645_playmist_willow_sports_2.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-13/images_8b7654a37852b1566fe0ea027ea8bc0d_playmist_willow_sports_2.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen7.aynaott.com/Sports1/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019f3c09-7073-7070-85f8-e038e229d82a",
+                                "slug": "sports",
+                                "title": "sports",
+                                "nav_path": "/t/category/sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-39f3-7ee4-82c5-582a3f749674",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "dd-sports",
+                    "title": "DD Sports",
+                    "description": "DD Sports brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+                    "label": null,
+                    "nav_path": "/live-tvs/dd-sports",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "free",
+                        "label": "",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://cdn-6.pishow.tv/live/13/master.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-39b9-7313-8fe1-ced68786a50b",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "willow-tv",
+                    "title": "Willow TV",
+                    "description": "Willow TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/willow-tv",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_500x296.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019efa45-e8e5-7353-a606-b361cf5f42ce",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "cricket-gold",
+                    "title": "Cricket Gold",
+                    "description": null,
+                    "label": null,
+                    "nav_path": "/live-tvs/cricket-gold",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_dde39b3fb713d4946a32e2c8ad5db00a_playmist_cricket_gold_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/63dcbec8a9ed027c46e448fb003a0a64.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_dde39b3fb713d4946a32e2c8ad5db00a_playmist_cricket_gold_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/63dcbec8a9ed027c46e448fb003a0a64.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/63dcbec8a9ed027c46e448fb003a0a64.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-39bc-7bd5-b9e5-bab23ceba9ea",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "ptv-sports",
+                    "title": "PTV Sports",
+                    "description": "PTV Sports brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/ptv-sports",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg",
+                        "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_500x296.jpg",
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            },
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                },
+                {
+                    "id": "019de785-3962-77a1-8f50-c541bb5a02c7",
+                    "type": "live-tvs",
+                    "object": "stream",
+                    "slug": "t-sports-hd",
+                    "title": "T Sports HD",
+                    "description": "T Sports HD brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+                    "label": null,
+                    "nav_path": "/live-tvs/t-sports-hd",
+                    "starts_at": null,
+                    "ends_at": null,
+                    "access": {
+                        "level": "subscription",
+                        "label": "Subscribe",
+                        "options": []
+                    },
+                    "images": {
+                        "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "thumbnail_wide_url": null,
+                        "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "poster_wide_url": null,
+                        "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
+                        "mnemonic_url": null,
+                        "sprite_url": null
+                    },
+                    "stream": {
+                        "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
+                        "urls": null
+                    },
+                    "taxonomies": {
+                        "category": [
+                            {
+                                "id": "019efa45-d480-7170-890d-c5eec377e6b9",
+                                "slug": "channel-football",
+                                "title": "Football",
+                                "nav_path": "/t/category/channel-football"
+                            },
+                            {
+                                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                                "slug": "channel-bangla",
+                                "title": "Bangla",
+                                "nav_path": "/t/category/channel-bangla"
+                            },
+                            {
+                                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                                "slug": "channel-channels",
+                                "title": "Channels",
+                                "nav_path": "/t/category/channel-channels"
+                            },
+                            {
+                                "id": "019efa45-d46f-7470-8b06-6cd3702f41b0",
+                                "slug": "channel-cricket",
+                                "title": "Cricket",
+                                "nav_path": "/t/category/channel-cricket"
+                            },
+                            {
+                                "id": "019efa45-d874-73b1-8fbc-6f37e23c2789",
+                                "slug": "channel-sports",
+                                "title": "Sports",
+                                "nav_path": "/t/category/channel-sports"
+                            }
+                        ]
+                    },
+                    "access_policy": null,
+                    "access_verdict": {
+                        "allowed": true,
+                        "reason": null
+                    },
+                    "template": "stream",
+                    "content_rating": {
+                        "name": "G",
+                        "description": "No Restriction",
+                        "min_age": 0
+                    }
+                }
+            ]
+        }
+    ],
+    "pagination": {
+        "per_page": 5,
+        "has_more": false,
+        "next_cursor": null,
+        "prev_cursor": "eyJwb3NpdGlvbiI6MjcsIl9wb2ludHNUb05leHRJdGVtcyI6ZmFsc2V9",
+        "next_url": null,
+        "prev_url": "https://web.aynaott.com/api/v5/pages/live-tvs/blocks?cursor=eyJwb3NpdGlvbiI6MjcsIl9wb2ludHNUb05leHRJdGVtcyI6ZmFsc2V9"
+    }
+}
