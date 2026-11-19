@@ -5,8 +5,8 @@
     "reason": "step1_http_404",
     "resolved": "https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.330173,
-    "ttfb_ms": 93.8,
+    "ts": 1795082204.4577644,
+    "ttfb_ms": 57.7,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -16,8 +16,8 @@
     "reason": "step1_http_403",
     "resolved": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3295138,
-    "ttfb_ms": 394.3,
+    "ts": 1795082204.4570587,
+    "ttfb_ms": 427.1,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -27,8 +27,8 @@
     "reason": "step1_http_404",
     "resolved": "https://cdn-6.pishow.tv/live/13/master.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.330648,
-    "ttfb_ms": 747.3,
+    "ts": 1795082204.4584942,
+    "ttfb_ms": 731.6,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -38,8 +38,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/shagor-backup/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3292954,
-    "ttfb_ms": 819.1,
+    "ts": 1795082204.4566994,
+    "ttfb_ms": 768.7,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -49,8 +49,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/espn/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.329739,
-    "ttfb_ms": 813.8,
+    "ts": 1795082204.4572763,
+    "ttfb_ms": 786.6,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -60,8 +60,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/tsn2/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3282163,
-    "ttfb_ms": 819.7,
+    "ts": 1795082204.4553294,
+    "ttfb_ms": 764.6,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -71,8 +71,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3275008,
-    "ttfb_ms": 815.5,
+    "ts": 1795082204.4543502,
+    "ttfb_ms": 788.9,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -82,8 +82,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/Sports1/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.327767,
-    "ttfb_ms": 813.2,
+    "ts": 1795082204.454649,
+    "ttfb_ms": 770.1,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -93,8 +93,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/tsn1/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3279982,
-    "ttfb_ms": 822.0,
+    "ts": 1795082204.4549787,
+    "ttfb_ms": 771.6,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -104,8 +104,8 @@
     "reason": "step3_segment_404",
     "resolved": "https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3308663,
-    "ttfb_ms": 778.1,
+    "ts": 1795082204.4587302,
+    "ttfb_ms": 806.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -115,8 +115,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/tsn3/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3284137,
-    "ttfb_ms": 818.5,
+    "ts": 1795082204.4555502,
+    "ttfb_ms": 770.3,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -126,9 +126,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3303936,
-    "ttfb_ms": 783.9,
-    "seg_kbps": 52.9,
+    "ts": 1795082204.458292,
+    "ttfb_ms": 779.6,
+    "seg_kbps": 57.1,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8": {
@@ -137,21 +137,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3263805,
-    "ttfb_ms": 786.0,
-    "seg_kbps": 50.6,
+    "ts": 1795082204.4527962,
+    "ttfb_ms": 788.7,
+    "seg_kbps": 57.3,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step3_segment_404",
     "resolved": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8",
-    "kind": "media",
-    "ts": 1795052752.4240677,
-    "ttfb_ms": 769.8,
-    "seg_kbps": 51.2,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082204.5154836,
+    "ttfb_ms": 740.1,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://tvsen6.aynaott.com/maasrangatv/index.m3u8": {
     "v": 2,
@@ -159,21 +159,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/maasrangatv/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.325355,
-    "ttfb_ms": 791.8,
-    "seg_kbps": 50.5,
-    "tier": "fast"
+    "ts": 1795082204.4516053,
+    "ttfb_ms": 812.6,
+    "seg_kbps": 57.7,
+    "tier": "medium"
   },
   "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step3_segment_404",
     "resolved": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8",
-    "kind": "media",
-    "ts": 1795052752.3266075,
-    "ttfb_ms": 780.4,
-    "seg_kbps": 52.0,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082204.4531367,
+    "ttfb_ms": 805.7,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8": {
     "v": 2,
@@ -181,9 +181,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3268378,
-    "ttfb_ms": 786.1,
-    "seg_kbps": 50.4,
+    "ts": 1795082204.453394,
+    "ttfb_ms": 781.8,
+    "seg_kbps": 57.4,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8": {
@@ -192,9 +192,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3270352,
-    "ttfb_ms": 786.7,
-    "seg_kbps": 50.8,
+    "ts": 1795082204.453788,
+    "ttfb_ms": 787.3,
+    "seg_kbps": 57.2,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8": {
@@ -203,21 +203,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3272939,
-    "ttfb_ms": 785.0,
-    "seg_kbps": 50.3,
+    "ts": 1795082204.4540458,
+    "ttfb_ms": 778.2,
+    "seg_kbps": 57.5,
     "tier": "fast"
   },
   "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8": {
     "v": 2,
-    "ok": false,
-    "reason": "step3_segment_404",
+    "ok": true,
+    "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8",
-    "kind": "unknown",
-    "ts": 1795052752.3243723,
-    "ttfb_ms": 804.4,
-    "seg_kbps": 0.0,
-    "tier": "very_slow"
+    "kind": "media",
+    "ts": 1795082204.4504023,
+    "ttfb_ms": 743.1,
+    "seg_kbps": 56.7,
+    "tier": "fast"
   },
   "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8": {
     "v": 2,
@@ -225,21 +225,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3248906,
-    "ttfb_ms": 800.7,
-    "seg_kbps": 48.7,
-    "tier": "medium"
+    "ts": 1795082204.451035,
+    "ttfb_ms": 737.8,
+    "seg_kbps": 53.9,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8": {
     "v": 2,
-    "ok": false,
-    "reason": "step3_segment_404",
+    "ok": true,
+    "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8",
-    "kind": "unknown",
-    "ts": 1795052752.3260577,
-    "ttfb_ms": 783.9,
-    "seg_kbps": 0.0,
-    "tier": "very_slow"
+    "kind": "media",
+    "ts": 1795082204.452501,
+    "ttfb_ms": 782.2,
+    "seg_kbps": 58.1,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8": {
     "v": 2,
@@ -247,9 +247,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3238678,
-    "ttfb_ms": 792.8,
-    "seg_kbps": 52.7,
+    "ts": 1795082204.449704,
+    "ttfb_ms": 786.5,
+    "seg_kbps": 55.4,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/nfl/index.m3u8": {
@@ -258,9 +258,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/nfl/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.329965,
-    "ttfb_ms": 783.1,
-    "seg_kbps": 52.8,
+    "ts": 1795082204.457516,
+    "ttfb_ms": 776.5,
+    "seg_kbps": 57.2,
     "tier": "fast"
   },
   "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8": {
@@ -280,21 +280,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3241382,
-    "ttfb_ms": 810.9,
-    "seg_kbps": 49.6,
-    "tier": "medium"
+    "ts": 1795082204.4500992,
+    "ttfb_ms": 772.1,
+    "seg_kbps": 53.7,
+    "tier": "fast"
   },
   "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step3_segment_404",
     "resolved": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8",
-    "kind": "media",
-    "ts": 1795052752.3246207,
-    "ttfb_ms": 805.7,
-    "seg_kbps": 49.7,
-    "tier": "medium"
+    "kind": "unknown",
+    "ts": 1795082204.4506733,
+    "ttfb_ms": 739.2,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8": {
     "v": 2,
@@ -302,10 +302,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3251374,
-    "ttfb_ms": 804.0,
-    "seg_kbps": 49.9,
-    "tier": "medium"
+    "ts": 1795082204.4513402,
+    "ttfb_ms": 739.4,
+    "seg_kbps": 53.4,
+    "tier": "fast"
   },
   "https://tvsen5.aynaott.com/asdfadsf/index.m3u8": {
     "v": 2,
@@ -313,10 +313,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3286526,
-    "ttfb_ms": 801.2,
-    "seg_kbps": 49.5,
-    "tier": "medium"
+    "ts": 1795082204.4558127,
+    "ttfb_ms": 758.7,
+    "seg_kbps": 55.4,
+    "tier": "fast"
   },
   "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8": {
     "v": 2,
@@ -324,10 +324,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3255918,
-    "ttfb_ms": 807.7,
-    "seg_kbps": 50.0,
-    "tier": "medium"
+    "ts": 1795082204.4519103,
+    "ttfb_ms": 765.0,
+    "seg_kbps": 53.7,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8": {
     "v": 2,
@@ -335,10 +335,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3258522,
-    "ttfb_ms": 781.9,
-    "seg_kbps": 52.2,
-    "tier": "fast"
+    "ts": 1795082204.4521887,
+    "ttfb_ms": 807.7,
+    "seg_kbps": 56.7,
+    "tier": "medium"
   },
   "https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8": {
     "v": 2,
@@ -346,10 +346,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3290732,
-    "ttfb_ms": 803.4,
-    "seg_kbps": 49.6,
-    "tier": "medium"
+    "ts": 1795082204.4564452,
+    "ttfb_ms": 736.2,
+    "seg_kbps": 55.1,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8": {
     "v": 2,
@@ -357,9 +357,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8",
     "kind": "media",
-    "ts": 1795052753.0780125,
-    "ttfb_ms": 761.7,
-    "seg_kbps": 52.6,
+    "ts": 1795082205.1901913,
+    "ttfb_ms": 710.3,
+    "seg_kbps": 53.8,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8": {
@@ -368,9 +368,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.723827,
-    "ttfb_ms": 798.1,
-    "seg_kbps": 52.3,
+    "ts": 1795082204.8841777,
+    "ttfb_ms": 709.3,
+    "seg_kbps": 56.6,
     "tier": "fast"
   },
   "https://mediaserver.abnvideos.com/streams/abnurdu.m3u8": {
@@ -379,9 +379,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://mediaserver.abnvideos.com/streams/abnurdu.m3u8",
     "kind": "media",
-    "ts": 1795052755.8059995,
-    "ttfb_ms": 127.0,
-    "seg_kbps": 310.1,
+    "ts": 1795082207.3605263,
+    "ttfb_ms": 226.4,
+    "seg_kbps": 192.0,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8": {
@@ -390,9 +390,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8",
     "kind": "media",
-    "ts": 1795052753.1479182,
-    "ttfb_ms": 754.8,
-    "seg_kbps": 52.8,
+    "ts": 1795082205.226625,
+    "ttfb_ms": 732.2,
+    "seg_kbps": 55.8,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8": {
@@ -401,8 +401,8 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8",
     "kind": "media",
-    "ts": 1795052753.143063,
-    "ttfb_ms": 738.1,
+    "ts": 1795082205.2248006,
+    "ttfb_ms": 730.2,
     "seg_kbps": 52.8,
     "tier": "fast"
   },
@@ -412,21 +412,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8",
     "kind": "media",
-    "ts": 1795052753.146977,
-    "ttfb_ms": 757.9,
-    "seg_kbps": 52.7,
+    "ts": 1795082205.2258542,
+    "ttfb_ms": 731.3,
+    "seg_kbps": 55.8,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8": {
     "v": 2,
-    "ok": false,
-    "reason": "step1_http_404",
+    "ok": true,
+    "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
-    "kind": "unknown",
-    "ts": 1795052755.087637,
-    "ttfb_ms": 883.7,
-    "seg_kbps": 0.0,
-    "tier": "very_slow"
+    "kind": "media",
+    "ts": 1795082207.07182,
+    "ttfb_ms": 758.2,
+    "seg_kbps": 57.4,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8": {
     "v": 2,
@@ -434,9 +434,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8",
     "kind": "media",
-    "ts": 1795052753.1435773,
-    "ttfb_ms": 739.8,
-    "seg_kbps": 52.8,
+    "ts": 1795082205.2253947,
+    "ttfb_ms": 732.9,
+    "seg_kbps": 52.6,
     "tier": "fast"
   },
   "https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8": {
@@ -445,21 +445,21 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.141808,
-    "ttfb_ms": 769.9,
+    "ts": 1795082207.0722456,
+    "ttfb_ms": 708.8,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
   "https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step3_segment_404",
     "resolved": "https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8",
-    "kind": "media",
-    "ts": 1795052753.148428,
-    "ttfb_ms": 753.6,
-    "seg_kbps": 52.8,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082205.243276,
+    "ttfb_ms": 735.5,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8": {
     "v": 2,
@@ -467,21 +467,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8",
     "kind": "media",
-    "ts": 1795052753.1409936,
-    "ttfb_ms": 737.4,
-    "seg_kbps": 52.8,
+    "ts": 1795082205.2199962,
+    "ttfb_ms": 675.7,
+    "seg_kbps": 52.7,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step3_segment_404",
     "resolved": "https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8",
-    "kind": "media",
-    "ts": 1795052753.150073,
-    "ttfb_ms": 753.9,
-    "seg_kbps": 52.8,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082205.243874,
+    "ttfb_ms": 737.1,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8": {
     "v": 2,
@@ -489,9 +489,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8",
     "kind": "media",
-    "ts": 1795052754.6145818,
-    "ttfb_ms": 736.1,
-    "seg_kbps": 52.9,
+    "ts": 1795082206.6355004,
+    "ttfb_ms": 730.4,
+    "seg_kbps": 57.5,
     "tier": "fast"
   },
   "https://tvsen7.aynaott.com/Sports4/index.m3u8": {
@@ -500,8 +500,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/Sports4/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.1981497,
-    "ttfb_ms": 762.0,
+    "ts": 1795082207.1187909,
+    "ttfb_ms": 692.8,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -511,10 +511,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1670856,
-    "ttfb_ms": 422.7,
-    "seg_kbps": 598.1,
-    "tier": "fast"
+    "ts": 1795082207.0803337,
+    "ttfb_ms": 1438.5,
+    "seg_kbps": 34.6,
+    "tier": "medium"
   },
   "https://tvsen1.aynaott.com/shn6jGTk/index.m3u8": {
     "v": 2,
@@ -522,9 +522,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen1.aynaott.com/shn6jGTk/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1456888,
-    "ttfb_ms": 464.0,
-    "seg_kbps": 93.8,
+    "ts": 1795082207.0746107,
+    "ttfb_ms": 449.0,
+    "seg_kbps": 91.0,
     "tier": "fast"
   },
   "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8": {
@@ -533,8 +533,8 @@
     "reason": "step1_http_403",
     "resolved": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.1928413,
-    "ttfb_ms": 1039.1,
+    "ts": 1795082207.1183188,
+    "ttfb_ms": 929.3,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -544,9 +544,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052756.6241918,
-    "ttfb_ms": 319.5,
-    "seg_kbps": 1217.1,
+    "ts": 1795082208.5178041,
+    "ttfb_ms": 180.6,
+    "seg_kbps": 1811.5,
     "tier": "fast"
   },
   "https://247wlive.foxweather.com/stream/index.m3u8": {
@@ -555,10 +555,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://247wlive.foxweather.com/stream/index.m3u8",
     "kind": "media",
-    "ts": 1795052756.1395683,
-    "ttfb_ms": 371.9,
-    "seg_kbps": 213.7,
-    "tier": "fast"
+    "ts": 1795082208.4841766,
+    "ttfb_ms": 878.4,
+    "seg_kbps": 159.6,
+    "tier": "medium"
   },
   "https://feeds.intoday.in/hltapps/api/master.m3u8": {
     "v": 2,
@@ -566,10 +566,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://feeds.intoday.in/hltapps/api/master.m3u8",
     "kind": "media",
-    "ts": 1795052755.873103,
-    "ttfb_ms": 854.7,
-    "seg_kbps": 53.2,
-    "tier": "medium"
+    "ts": 1795082207.4734693,
+    "ttfb_ms": 266.9,
+    "seg_kbps": 70.6,
+    "tier": "fast"
   },
   "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8": {
     "v": 2,
@@ -577,21 +577,21 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.877364,
-    "ttfb_ms": 746.8,
+    "ts": 1795082207.8411255,
+    "ttfb_ms": 676.7,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
   "https://tvsen6.aynaott.com/faGd3tuq/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/faGd3tuq/index.m3u8",
-    "kind": "media",
-    "ts": 1795052755.8770032,
-    "ttfb_ms": 757.6,
-    "seg_kbps": 52.7,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082207.8116047,
+    "ttfb_ms": 672.5,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://tvsen3.aynaott.com/m94BZDYb/index.m3u8": {
     "v": 2,
@@ -599,9 +599,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/m94BZDYb/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.879071,
-    "ttfb_ms": 759.8,
-    "seg_kbps": 51.5,
+    "ts": 1795082207.842121,
+    "ttfb_ms": 692.6,
+    "seg_kbps": 56.4,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8": {
@@ -610,8 +610,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.9117224,
-    "ttfb_ms": 826.8,
+    "ts": 1795082207.8426828,
+    "ttfb_ms": 674.9,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -621,9 +621,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052755.9732373,
-    "ttfb_ms": 503.7,
-    "seg_kbps": 249.0,
+    "ts": 1795082208.0476542,
+    "ttfb_ms": 291.5,
+    "seg_kbps": 183.7,
     "tier": "fast"
   },
   "https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8": {
@@ -632,8 +632,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.9714115,
-    "ttfb_ms": 756.9,
+    "ts": 1795082207.9204516,
+    "ttfb_ms": 712.1,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -643,9 +643,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052756.2319658,
-    "ttfb_ms": 410.9,
-    "seg_kbps": 503.9,
+    "ts": 1795082208.5175982,
+    "ttfb_ms": 276.9,
+    "seg_kbps": 589.5,
     "tier": "fast"
   },
   "https://tvsen7.aynaott.com/lifetime/index.m3u8": {
@@ -654,8 +654,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/lifetime/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052756.6981819,
-    "ttfb_ms": 756.2,
+    "ts": 1795082208.5195303,
+    "ttfb_ms": 686.1,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -665,8 +665,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/TRTWorldHD/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052756.7283394,
-    "ttfb_ms": 747.0,
+    "ts": 1795082208.6326404,
+    "ttfb_ms": 674.2,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -676,8 +676,8 @@
     "reason": "step1_http_404",
     "resolved": "https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.505085,
-    "ttfb_ms": 184.6,
+    "ts": 1795082209.4317195,
+    "ttfb_ms": 277.1,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -687,9 +687,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8",
     "kind": "media",
-    "ts": 1795052754.6578987,
-    "ttfb_ms": 740.4,
-    "seg_kbps": 49.6,
+    "ts": 1795082206.6509087,
+    "ttfb_ms": 713.7,
+    "seg_kbps": 57.1,
     "tier": "fast"
   },
   "https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8": {
@@ -698,8 +698,8 @@
     "reason": "step1_http_err",
     "resolved": "https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.8763142,
-    "ttfb_ms": 1628.7,
+    "ts": 1795082207.7991545,
+    "ttfb_ms": 1632.3,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -709,8 +709,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/timetv/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.3317184,
-    "ttfb_ms": 827.1,
+    "ts": 1795082209.1914897,
+    "ttfb_ms": 682.4,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -720,8 +720,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/vtvusa/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.4544551,
-    "ttfb_ms": 747.4,
+    "ts": 1795082209.2057114,
+    "ttfb_ms": 697.9,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -731,9 +731,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.0651538,
-    "ttfb_ms": 749.8,
-    "seg_kbps": 52.7,
+    "ts": 1795082206.666472,
+    "ttfb_ms": 724.1,
+    "seg_kbps": 57.0,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/bloombergtv/index.m3u8": {
@@ -742,9 +742,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/bloombergtv/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1707687,
-    "ttfb_ms": 795.6,
-    "seg_kbps": 52.9,
+    "ts": 1795082207.0808523,
+    "ttfb_ms": 774.3,
+    "seg_kbps": 57.1,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/cp24/index.m3u8": {
@@ -753,9 +753,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/cp24/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.172425,
-    "ttfb_ms": 798.0,
-    "seg_kbps": 52.8,
+    "ts": 1795082207.1101487,
+    "ttfb_ms": 719.1,
+    "seg_kbps": 57.2,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/foxnews/index.m3u8": {
@@ -764,9 +764,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/foxnews/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1748223,
-    "ttfb_ms": 795.8,
-    "seg_kbps": 52.9,
+    "ts": 1795082207.1139312,
+    "ttfb_ms": 716.3,
+    "seg_kbps": 57.7,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/cnbc/index.m3u8": {
@@ -775,21 +775,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/cnbc/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1712353,
-    "ttfb_ms": 799.7,
-    "seg_kbps": 52.7,
+    "ts": 1795082207.1072795,
+    "ttfb_ms": 747.4,
+    "seg_kbps": 57.7,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8": {
     "v": 2,
-    "ok": false,
-    "reason": "step1_http_404",
+    "ok": true,
+    "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8",
-    "kind": "unknown",
-    "ts": 1795052755.1711197,
-    "ttfb_ms": 802.1,
-    "seg_kbps": 0.0,
-    "tier": "very_slow"
+    "kind": "media",
+    "ts": 1795082207.0840917,
+    "ttfb_ms": 743.2,
+    "seg_kbps": 57.7,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/cnn/index.m3u8": {
     "v": 2,
@@ -797,10 +797,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/cnn/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1479356,
-    "ttfb_ms": 824.9,
-    "seg_kbps": 52.8,
-    "tier": "medium"
+    "ts": 1795082207.0775912,
+    "ttfb_ms": 751.2,
+    "seg_kbps": 57.5,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8": {
     "v": 2,
@@ -808,10 +808,10 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1467392,
-    "ttfb_ms": 822.1,
-    "seg_kbps": 52.9,
-    "tier": "medium"
+    "ts": 1795082207.0750036,
+    "ttfb_ms": 751.7,
+    "seg_kbps": 55.4,
+    "tier": "fast"
   },
   "https://tvsen5.aynaott.com/skynews/index.m3u8": {
     "v": 2,
@@ -819,9 +819,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/skynews/index.m3u8",
     "kind": "media",
-    "ts": 1795052755.1805522,
-    "ttfb_ms": 739.9,
-    "seg_kbps": 51.7,
+    "ts": 1795082207.1153338,
+    "ttfb_ms": 699.6,
+    "seg_kbps": 56.8,
     "tier": "fast"
   },
   "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8": {
@@ -830,9 +830,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052757.9110286,
-    "ttfb_ms": 252.4,
-    "seg_kbps": 0.9,
+    "ts": 1795082209.6131072,
+    "ttfb_ms": 424.2,
+    "seg_kbps": 0.2,
     "tier": "fast"
   },
   "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8": {
@@ -841,9 +841,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8",
     "kind": "media",
-    "ts": 1795052757.460488,
-    "ttfb_ms": 321.1,
-    "seg_kbps": 57.6,
+    "ts": 1795082209.306866,
+    "ttfb_ms": 753.9,
+    "seg_kbps": 54.8,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/TaVfw58T/index.m3u8": {
@@ -852,8 +852,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/TaVfw58T/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.9602284,
-    "ttfb_ms": 772.5,
+    "ts": 1795082207.8436477,
+    "ttfb_ms": 675.8,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -863,8 +863,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/hbo/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052758.2019086,
-    "ttfb_ms": 734.8,
+    "ts": 1795082209.8005373,
+    "ttfb_ms": 688.5,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -874,9 +874,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052757.689724,
-    "ttfb_ms": 566.5,
-    "seg_kbps": 150.5,
+    "ts": 1795082209.6077442,
+    "ttfb_ms": 722.9,
+    "seg_kbps": 119.9,
     "tier": "fast"
   },
   "https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8": {
@@ -885,21 +885,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052757.9429433,
-    "ttfb_ms": 3312.5,
-    "seg_kbps": 26.8,
-    "tier": "slow"
+    "ts": 1795082209.6434429,
+    "ttfb_ms": 1232.3,
+    "seg_kbps": 44.2,
+    "tier": "medium"
   },
   "https://tvsen6.aynaott.com/mtv/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step3_segment_404",
     "resolved": "https://tvsen6.aynaott.com/mtv/index.m3u8",
-    "kind": "media",
-    "ts": 1795052756.7327898,
-    "ttfb_ms": 732.1,
-    "seg_kbps": 52.9,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082208.6592975,
+    "ttfb_ms": 697.7,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8": {
     "v": 2,
@@ -907,21 +907,21 @@
     "reason": "step1_http_err",
     "resolved": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.7618382,
-    "ttfb_ms": 1684.6,
+    "ts": 1795082209.6107564,
+    "ttfb_ms": 1652.6,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
   "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8": {
     "v": 2,
-    "ok": false,
-    "reason": "step3_segment_404",
+    "ok": true,
+    "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8",
-    "kind": "unknown",
-    "ts": 1795052757.069053,
-    "ttfb_ms": 738.9,
-    "seg_kbps": 0.0,
-    "tier": "very_slow"
+    "kind": "media",
+    "ts": 1795082209.155604,
+    "ttfb_ms": 683.9,
+    "seg_kbps": 56.7,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/fox5/index.m3u8": {
     "v": 2,
@@ -929,9 +929,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/fox5/index.m3u8",
     "kind": "media",
-    "ts": 1795052756.7385738,
-    "ttfb_ms": 734.9,
-    "seg_kbps": 52.7,
+    "ts": 1795082208.73805,
+    "ttfb_ms": 686.3,
+    "seg_kbps": 55.1,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/foxbusiness/index.m3u8": {
@@ -940,21 +940,21 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/foxbusiness/index.m3u8",
     "kind": "media",
-    "ts": 1795052756.8351307,
-    "ttfb_ms": 738.9,
-    "seg_kbps": 52.6,
+    "ts": 1795082208.7664628,
+    "ttfb_ms": 675.1,
+    "seg_kbps": 57.6,
     "tier": "fast"
   },
   "https://tvsen3.aynaott.com/34fJSjZP/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/34fJSjZP/index.m3u8",
-    "kind": "media",
-    "ts": 1795052757.0452719,
-    "ttfb_ms": 763.0,
-    "seg_kbps": 51.7,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082209.1052566,
+    "ttfb_ms": 695.2,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://tvsen6.aynaott.com/B4UHitz/index.m3u8": {
     "v": 2,
@@ -962,8 +962,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052758.9367232,
-    "ttfb_ms": 729.3,
+    "ts": 1795082210.7130077,
+    "ttfb_ms": 672.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -973,8 +973,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/55xNrLdf/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052758.9245133,
-    "ttfb_ms": 734.4,
+    "ts": 1795082210.690799,
+    "ttfb_ms": 681.3,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -984,9 +984,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/jTqkTE8W/index.m3u8",
     "kind": "media",
-    "ts": 1795052757.1345527,
-    "ttfb_ms": 755.1,
-    "seg_kbps": 52.3,
+    "ts": 1795082209.1860292,
+    "ttfb_ms": 689.1,
+    "seg_kbps": 54.9,
     "tier": "fast"
   },
   "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8": {
@@ -995,9 +995,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052759.2246253,
-    "ttfb_ms": 276.6,
-    "seg_kbps": 113.4,
+    "ts": 1795082210.8336453,
+    "ttfb_ms": 429.5,
+    "seg_kbps": 89.0,
     "tier": "fast"
   },
   "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8": {
@@ -1006,9 +1006,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8",
     "kind": "media",
-    "ts": 1795052759.4464679,
-    "ttfb_ms": 318.7,
-    "seg_kbps": 176.1,
+    "ts": 1795082211.2797906,
+    "ttfb_ms": 319.7,
+    "seg_kbps": 177.9,
     "tier": "fast"
   },
   "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8": {
@@ -1017,9 +1017,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8",
     "kind": "media",
-    "ts": 1795052760.319007,
-    "ttfb_ms": 186.1,
-    "seg_kbps": 237.1,
+    "ts": 1795082212.0675335,
+    "ttfb_ms": 269.8,
+    "seg_kbps": 92.7,
     "tier": "fast"
   },
   "https://live.presstv.ir/hls/presstv_5_482/index.m3u8": {
@@ -1028,8 +1028,8 @@
     "reason": "step1_http_err",
     "resolved": "https://live.presstv.ir/hls/presstv_5_482/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.8750777,
-    "ttfb_ms": 3771.2,
+    "ts": 1795082207.781085,
+    "ttfb_ms": 4240.6,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1039,8 +1039,8 @@
     "reason": "step1_http_403",
     "resolved": "https://tvsen7.aynaott.com/disney/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052759.6462846,
-    "ttfb_ms": 746.9,
+    "ts": 1795082211.385013,
+    "ttfb_ms": 682.5,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1050,9 +1050,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
     "kind": "media",
-    "ts": 1795052759.6589775,
-    "ttfb_ms": 763.4,
-    "seg_kbps": 51.7,
+    "ts": 1795082211.4259338,
+    "ttfb_ms": 678.7,
+    "seg_kbps": 57.0,
     "tier": "fast"
   },
   "https://vods2.aynaott.com/hindimovies/index.m3u8": {
@@ -1061,9 +1061,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://vods2.aynaott.com/hindimovies/index.m3u8",
     "kind": "media",
-    "ts": 1795052758.5459962,
-    "ttfb_ms": 752.5,
-    "seg_kbps": 51.9,
+    "ts": 1795082209.9036167,
+    "ttfb_ms": 700.1,
+    "seg_kbps": 55.8,
     "tier": "fast"
   },
   "https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8": {
@@ -1072,9 +1072,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8",
     "kind": "media",
-    "ts": 1795052757.944916,
-    "ttfb_ms": 753.1,
-    "seg_kbps": 51.5,
+    "ts": 1795082209.6612637,
+    "ttfb_ms": 681.3,
+    "seg_kbps": 56.2,
     "tier": "fast"
   },
   "https://tvsen3.aynaott.com/VamXuQH8/index.m3u8": {
@@ -1083,8 +1083,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/VamXuQH8/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052760.393227,
-    "ttfb_ms": 757.0,
+    "ts": 1795082212.1747267,
+    "ttfb_ms": 712.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1094,9 +1094,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8",
     "kind": "media",
-    "ts": 1795052761.150216,
-    "ttfb_ms": 174.2,
-    "seg_kbps": 180.3,
+    "ts": 1795082212.9347436,
+    "ttfb_ms": 224.6,
+    "seg_kbps": 1706.9,
     "tier": "fast"
   },
   "https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8": {
@@ -1105,32 +1105,32 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8",
     "kind": "media",
-    "ts": 1795052758.6342585,
-    "ttfb_ms": 741.2,
-    "seg_kbps": 52.2,
+    "ts": 1795082210.3532147,
+    "ttfb_ms": 710.2,
+    "seg_kbps": 55.2,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/talkSPORT/index.m3u8": {
     "v": 2,
-    "ok": false,
-    "reason": "step3_segment_404",
+    "ok": true,
+    "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8",
-    "kind": "unknown",
-    "ts": 1795052758.8920155,
-    "ttfb_ms": 737.5,
-    "seg_kbps": 0.0,
-    "tier": "very_slow"
+    "kind": "media",
+    "ts": 1795082210.4890773,
+    "ttfb_ms": 701.6,
+    "seg_kbps": 57.7,
+    "tier": "fast"
   },
   "https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8": {
     "v": 2,
-    "ok": true,
-    "reason": "all_steps_ok",
+    "ok": false,
+    "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8",
-    "kind": "media",
-    "ts": 1795052761.1150062,
-    "ttfb_ms": 734.1,
-    "seg_kbps": 21.1,
-    "tier": "fast"
+    "kind": "unknown",
+    "ts": 1795082212.886742,
+    "ttfb_ms": 677.1,
+    "seg_kbps": 0.0,
+    "tier": "very_slow"
   },
   "https://vods2.aynaott.com/gseriesDrama/index.m3u8": {
     "v": 2,
@@ -1138,9 +1138,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
     "kind": "media",
-    "ts": 1795052759.5227487,
-    "ttfb_ms": 771.0,
-    "seg_kbps": 51.8,
+    "ts": 1795082211.3721197,
+    "ttfb_ms": 712.1,
+    "seg_kbps": 55.3,
     "tier": "fast"
   },
   "https://live.zoomnews.info/live/Zoom_playlist.m3u8": {
@@ -1149,8 +1149,8 @@
     "reason": "step1_http_err",
     "resolved": "https://live.zoomnews.info/live/Zoom_playlist.m3u8",
     "kind": "unknown",
-    "ts": 1795052760.128775,
-    "ttfb_ms": 2118.4,
+    "ts": 1795082212.0217967,
+    "ttfb_ms": 2093.7,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1160,9 +1160,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
     "kind": "media",
-    "ts": 1795052759.405731,
-    "ttfb_ms": 1136.2,
-    "seg_kbps": 41.5,
+    "ts": 1795082211.2297008,
+    "ttfb_ms": 1034.9,
+    "seg_kbps": 45.0,
     "tier": "medium"
   },
   "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8": {
@@ -1171,9 +1171,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8",
     "kind": "media",
-    "ts": 1795052759.4176419,
-    "ttfb_ms": 752.4,
-    "seg_kbps": 51.9,
+    "ts": 1795082211.2634623,
+    "ttfb_ms": 678.6,
+    "seg_kbps": 56.8,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/kolkatatv/index.m3u8": {
@@ -1182,9 +1182,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8",
     "kind": "media",
-    "ts": 1795052759.8550086,
-    "ttfb_ms": 734.7,
-    "seg_kbps": 52.3,
+    "ts": 1795082211.959474,
+    "ttfb_ms": 700.1,
+    "seg_kbps": 56.7,
     "tier": "fast"
   },
   "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8": {
@@ -1193,9 +1193,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
     "kind": "media",
-    "ts": 1795052760.928376,
-    "ttfb_ms": 883.5,
-    "seg_kbps": 65.3,
+    "ts": 1795082212.4389129,
+    "ttfb_ms": 967.3,
+    "seg_kbps": 58.5,
     "tier": "medium"
   },
   "http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8": {
@@ -1204,8 +1204,8 @@
     "reason": "step1_http_err",
     "resolved": "http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052761.293397,
-    "ttfb_ms": 1705.5,
+    "ts": 1795082212.9945927,
+    "ttfb_ms": 1707.8,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1215,9 +1215,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/wpa56Uk3/index.m3u8",
     "kind": "media",
-    "ts": 1795052760.6806571,
-    "ttfb_ms": 757.6,
-    "seg_kbps": 52.3,
+    "ts": 1795082212.2059817,
+    "ttfb_ms": 679.9,
+    "seg_kbps": 56.8,
     "tier": "fast"
   },
   "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8": {
@@ -1226,8 +1226,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052752.3310692,
-    "ttfb_ms": 10819.8,
+    "ts": 1795082204.4589384,
+    "ttfb_ms": 10782.2,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1237,9 +1237,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen3.aynaott.com/z24qLsqV/index.m3u8",
     "kind": "media",
-    "ts": 1795052761.3407848,
-    "ttfb_ms": 741.4,
-    "seg_kbps": 52.3,
+    "ts": 1795082213.1672068,
+    "ttfb_ms": 679.0,
+    "seg_kbps": 57.1,
     "tier": "fast"
   },
   "https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8": {
@@ -1248,8 +1248,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052754.663257,
-    "ttfb_ms": 10756.3,
+    "ts": 1795082206.6574643,
+    "ttfb_ms": 10750.3,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1259,8 +1259,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.0843697,
-    "ttfb_ms": 10906.0,
+    "ts": 1795082207.0668693,
+    "ttfb_ms": 10809.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1270,8 +1270,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.9420617,
-    "ttfb_ms": 10752.3,
+    "ts": 1795082209.6170485,
+    "ttfb_ms": 10696.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1281,8 +1281,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.0870287,
-    "ttfb_ms": 10902.3,
+    "ts": 1795082207.0709996,
+    "ttfb_ms": 10807.4,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1292,8 +1292,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/xjkX3euD/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.1425488,
-    "ttfb_ms": 10847.8,
+    "ts": 1795082207.0728133,
+    "ttfb_ms": 10801.1,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1303,8 +1303,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.4784827,
-    "ttfb_ms": 10752.9,
+    "ts": 1795082207.3597395,
+    "ttfb_ms": 10693.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1314,8 +1314,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052755.8766713,
-    "ttfb_ms": 10781.3,
+    "ts": 1795082207.80364,
+    "ttfb_ms": 10745.2,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1325,8 +1325,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.4753559,
-    "ttfb_ms": 10782.7,
+    "ts": 1795082209.3428502,
+    "ttfb_ms": 10720.4,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1336,8 +1336,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.9438791,
-    "ttfb_ms": 10752.6,
+    "ts": 1795082209.644355,
+    "ttfb_ms": 10700.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1347,8 +1347,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/dhoom/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.947292,
-    "ttfb_ms": 10768.1,
+    "ts": 1795082209.7088592,
+    "ttfb_ms": 10692.2,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1358,8 +1358,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/andpictureshd/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052757.9471765,
-    "ttfb_ms": 10774.2,
+    "ts": 1795082209.6772642,
+    "ttfb_ms": 10716.3,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1369,8 +1369,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052758.5164738,
-    "ttfb_ms": 10760.8,
+    "ts": 1795082209.873966,
+    "ttfb_ms": 10702.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1380,8 +1380,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052758.1588407,
-    "ttfb_ms": 10763.4,
+    "ts": 1795082209.719152,
+    "ttfb_ms": 10727.6,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1391,8 +1391,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052758.5820065,
-    "ttfb_ms": 10775.7,
+    "ts": 1795082210.1355343,
+    "ttfb_ms": 10725.5,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1402,8 +1402,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen5.aynaott.com/qRHda6ax/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052759.3199265,
-    "ttfb_ms": 10775.2,
+    "ts": 1795082211.2244756,
+    "ttfb_ms": 10706.4,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1413,8 +1413,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052759.8020775,
-    "ttfb_ms": 10759.3,
+    "ts": 1795082211.7171378,
+    "ttfb_ms": 10696.0,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1424,8 +1424,8 @@
     "reason": "step1_http_404",
     "resolved": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
     "kind": "unknown",
-    "ts": 1795052759.6660178,
-    "ttfb_ms": 10751.5,
+    "ts": 1795082211.6513264,
+    "ttfb_ms": 10716.1,
     "seg_kbps": 0.0,
     "tier": "very_slow"
   },
@@ -1435,9 +1435,9 @@
     "reason": "all_steps_ok",
     "resolved": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8",
     "kind": "media",
-    "ts": 1795052752.3288784,
-    "ttfb_ms": 807.8,
-    "seg_kbps": 50.1,
-    "tier": "medium"
+    "ts": 1795082204.4560826,
+    "ttfb_ms": 736.9,
+    "seg_kbps": 56.5,
+    "tier": "fast"
   }
 }

@@ -3,55 +3,55 @@
         "Sports Fishing TV",
         "FIFA+",
         "NTV Europe",
-        "NFL Network",
-        "Cricket Gold",
-        "TNT Sport 1",
+        "Talk Sport",
         "PTV Sports",
         "T Sports HD",
+        "TNT Sport 1",
+        "NFL Network",
+        "Cricket Gold",
         "Bahrain Sports 1"
     ],
     "News": [
-        "ABN",
         "Weather SPY",
-        "Wion",
-        "Fox Weather",
+        "ABN",
+        "India Today",
         "Sky News Weather",
-        "Aljazeera News",
-        "BBC News",
         "Accu Weather",
+        "BBC News",
+        "USA TV",
         "Fox 5",
-        "Sky News",
-        "BTV CTG",
         "FX TV",
-        "Republic TV Bharat",
         "Bharat Samachar",
-        "CBS TV",
-        "News 24 BD",
-        "ATN News",
-        "Jamuna TV",
-        "DBC News",
+        "Sky News",
         "Fox News",
         "CP 24",
-        "DW News",
+        "BTV CTG",
+        "ABC News",
         "CNN",
-        "India Today"
+        "DW News",
+        "Wion",
+        "ATN News",
+        "Ekattor TV",
+        "DBC News",
+        "Jamuna TV",
+        "Fox Weather",
+        "Aljazeera News"
     ],
     "Movies": [
-        "Khushboo",
         "HBO 2",
-        "Hindi Movie Classic 24",
-        "Goldmines Movies"
+        "Goldmines Movies",
+        "Hindi Movie Classic 24"
     ],
     "Music": [
-        "MTV"
+        "Sangeet Bangla"
     ],
     "Religious": [
         "MADANI TV"
     ],
     "Documentary": [
-        "Nat Geo TV",
+        "Animal Planet HD",
         "Discovery HD",
-        "Animal Planet HD"
+        "Nat Geo TV"
     ],
     "Entertainment": [
         "Drama 24",
@@ -63,10 +63,11 @@
     ],
     "Local": [
         "DD Bangla",
-        "Enter 10 Bangla",
         "kolkata TV",
+        "Enter 10 Bangla",
         "Bangla TV",
-        "ATN Bangla"
+        "ATN Bangla",
+        "Bangla Vision"
     ],
     "Popular Live Tvs": [
         "Goal TV",
@@ -74,26 +75,22 @@
         "Thikana"
     ],
     "Bangla": [
-        "My TV",
         "Asian TV",
-        "SA TV",
-        "Ananda TV",
-        "Bijoy TV",
-        "Global TV",
-        "NEXUS TV",
-        "Mohona TV",
+        "Boishakhi TV",
         "Channel 9",
-        "Desh TV",
-        "Boishakhi TV"
+        "Ananda TV",
+        "SA TV",
+        "My TV",
+        "Mohona TV",
+        "NEXUS TV"
     ],
     "Channels": [
-        "Ekhon TV",
-        "Channel 24",
-        "Maasranga TV",
-        "Channel I",
         "ETV",
-        "RTV",
         "Deepto TV",
-        "NTV"
+        "NTV",
+        "Channel 24",
+        "Channel I",
+        "Ekhon TV",
+        "Maasranga TV"
     ]
 }
