@@ -1,98 +1,99 @@
 {
     "Sports": [
-        "NTV Europe",
-        "FIFA+",
         "Sports Fishing TV",
-        "Talk Sport",
-        "Cricket Gold",
+        "FIFA+",
+        "NTV Europe",
         "NFL Network",
-        "PTV Sports",
+        "Cricket Gold",
         "TNT Sport 1",
+        "PTV Sports",
         "T Sports HD",
         "Bahrain Sports 1"
     ],
     "News": [
-        "Sky News Weather",
-        "Weather SPY",
         "ABN",
-        "Accu Weather",
+        "Weather SPY",
+        "Wion",
+        "Fox Weather",
+        "Sky News Weather",
         "Aljazeera News",
         "BBC News",
-        "Fox Weather",
+        "Accu Weather",
+        "Fox 5",
+        "Sky News",
+        "BTV CTG",
+        "FX TV",
+        "Republic TV Bharat",
+        "Bharat Samachar",
+        "CBS TV",
+        "News 24 BD",
+        "ATN News",
+        "Jamuna TV",
+        "DBC News",
         "Fox News",
         "CP 24",
-        "FX TV",
-        "CNN",
-        "USA TV",
         "DW News",
-        "BTV CTG",
-        "CBS TV",
-        "ABC News",
-        "News 1 India",
-        "Bharat Samachar",
-        "Jamuna TV",
-        "Independent TV",
-        "ATN News",
-        "DBC News",
-        "News 24 BD",
-        "Fox 5",
-        "Wion",
+        "CNN",
         "India Today"
     ],
     "Movies": [
-        "Hindi Movie Classic 24",
+        "Khushboo",
         "HBO 2",
+        "Hindi Movie Classic 24",
         "Goldmines Movies"
     ],
     "Music": [
-        "Sangeet Bangla"
+        "MTV"
+    ],
+    "Religious": [
+        "MADANI TV"
     ],
     "Documentary": [
-        "Animal Planet HD",
-        "Discovery HD"
+        "Nat Geo TV",
+        "Discovery HD",
+        "Animal Planet HD"
     ],
     "Entertainment": [
-        "Bloomberg TV",
-        "Drama 24"
+        "Drama 24",
+        "Bloomberg TV"
     ],
     "Business": [
-        "CNBC TV",
-        "Fox business"
+        "Fox business",
+        "CNBC TV"
     ],
     "Local": [
         "DD Bangla",
         "Enter 10 Bangla",
         "kolkata TV",
         "Bangla TV",
-        "Bangla Vision",
         "ATN Bangla"
     ],
     "Popular Live Tvs": [
         "Goal TV",
-        "Goldmines",
-        "Goldmines Bollywood",
         "Test Live TV",
         "Thikana"
     ],
     "Bangla": [
-        "SA TV",
         "My TV",
-        "Ananda TV",
-        "NEXUS TV",
-        "Global TV",
-        "Mohona TV",
         "Asian TV",
+        "SA TV",
+        "Ananda TV",
+        "Bijoy TV",
+        "Global TV",
+        "NEXUS TV",
+        "Mohona TV",
+        "Channel 9",
         "Desh TV",
         "Boishakhi TV"
     ],
     "Channels": [
-        "Channel I",
         "Ekhon TV",
-        "Maasranga TV",
-        "Deepto TV",
         "Channel 24",
-        "RTV",
+        "Maasranga TV",
+        "Channel I",
         "ETV",
+        "RTV",
+        "Deepto TV",
         "NTV"
     ]
 }
