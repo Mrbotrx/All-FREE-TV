@@ -1,172 +1,20 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="IPTV LINKS" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="KB PRO TV",IPTV LINKS
-https://github.com/Mrbotrx/Mrbotrx/raw/refs/heads/main/IPTV_LINKS_VIDEO.mp4
-
-#EXTINF:-1 tvg-name="Xtrem Sports" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="1" tvg-speed="fast",Xtrem Sports
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
-
-#EXTINF:-1 tvg-name="Cricket Gold" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="2" tvg-speed="fast",Cricket Gold
-https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8
-
-#EXTINF:-1 tvg-name="T Sports HD" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="3" tvg-speed="fast",T Sports HD
-https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8
-
-#EXTINF:-1 tvg-name="Marquee Sports Network" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="4" tvg-speed="fast",Marquee Sports Network
-https://tvsen6.aynaott.com/MarqueeSportsNetwork/index.m3u8
-
-#EXTINF:-1 tvg-name="Talk Sport" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Sports" tvg-chno="5" tvg-speed="fast",Talk Sport
-https://tvsen6.aynaott.com/talkSPORT/index.m3u8
-
-#EXTINF:-1 tvg-name="Sky News Weather" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="News" tvg-chno="6" tvg-speed="fast",Sky News Weather
-https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
-
-#EXTINF:-1 tvg-name="BBC News" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="News" tvg-chno="7" tvg-speed="fast",BBC News
-https://tvsen1.aynaott.com/shn6jGTk/index.m3u8
-
-#EXTINF:-1 tvg-name="Jamuna TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="News" tvg-chno="8" tvg-speed="fast",Jamuna TV
-https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
-
-#EXTINF:-1 tvg-name="Khushboo" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Movies" tvg-chno="9" tvg-speed="fast",Khushboo
-https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8
-
-#EXTINF:-1 tvg-name="Hindi Movie Classic 24" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Movies" tvg-chno="10" tvg-speed="fast",Hindi Movie Classic 24
-https://vods2.aynaott.com/hindimovies/index.m3u8
-
-#EXTINF:-1 tvg-name="HBO 2" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Movies" tvg-chno="11" tvg-speed="fast",HBO 2
-https://tvsen3.aynaott.com/u3NjUrny/index.m3u8
-
-#EXTINF:-1 tvg-name="Goldmines Movies" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Movies" tvg-chno="12" tvg-speed="fast",Goldmines Movies
-https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
-
-#EXTINF:-1 tvg-name="Moonbug Kids" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Kids" tvg-chno="13" tvg-speed="fast",Moonbug Kids
-https://moonbug-rokuus.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Dios Te Ve Kids" tvg-logo="https://s3.aynaott.com/storage/dc654c62fa2f2cd754894ebc9353da9c" group-title="Kids" tvg-chno="14" tvg-speed="fast",Dios Te Ve Kids
-https://s.emisoras.tv:8081/diostevekids/index.m3u8
-
-#EXTINF:-1 tvg-name="3ABN Kids" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Kids" tvg-chno="15" tvg-speed="fast",3ABN Kids
-https://3abn.bozztv.com/3abn2/Kids_live/smil:Kids_live.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-name="TVC Arabic Kids" tvg-logo="https://s3.aynaott.com/storage/31957d5960d3a36d8f9ca4d5a56eee96" group-title="Kids" tvg-chno="16" tvg-speed="fast",TVC Arabic Kids
-https://tvsen6.aynaott.com/TVCArabicKids/index.m3u8
-
-#EXTINF:-1 tvg-name="Kids TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Kids" tvg-chno="17" tvg-speed="medium",Kids TV
-http://origin5.mediacdn.ru/live/kidstv/index.m3u8
-
-#EXTINF:-1 tvg-name="Islam TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Religious" tvg-chno="18" tvg-speed="fast",Islam TV
-https://tvsen1.aynaott.com/bB3A5dyq/index.m3u8
-
-#EXTINF:-1 tvg-name="Discovery Family" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Documentary" tvg-chno="19" tvg-speed="fast",Discovery Family
-https://tvsen5.aynaott.com/discoveryfamily/index.m3u8
-
-#EXTINF:-1 tvg-name="TV9 Bangla" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Local" tvg-chno="20" tvg-speed="fast",TV9 Bangla
-https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Enter 10 Bangla" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Local" tvg-chno="21" tvg-speed="fast",Enter 10 Bangla
-https://live-bangla.akamaized.net/liveabr/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Iqra Bangla" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Local" tvg-chno="22" tvg-speed="fast",Iqra Bangla
-https://tvsen3.aynaott.com/EuEy5mBW/index.m3u8
-
-#EXTINF:-1 tvg-name="ATN Bangla" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Local" tvg-chno="23" tvg-speed="fast",ATN Bangla
-https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
-
-#EXTINF:-1 tvg-name="DD Bangla" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Local" tvg-chno="24" tvg-speed="fast",DD Bangla
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
-
-#EXTINF:-1 tvg-name="Wion" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="25" tvg-speed="fast",Wion
-https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
-
-#EXTINF:-1 tvg-name="Goal TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="26" tvg-speed="fast",Goal TV
-https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
-
-#EXTINF:-1 tvg-name="Wild TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="27" tvg-speed="fast",Wild TV
-https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
-
-#EXTINF:-1 tvg-name="Weather SPY" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="28" tvg-speed="fast",Weather SPY
-https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-name="OAN" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="29" tvg-speed="fast",OAN
-https://a-cdn.klowdtv.com/live1/oan_720p/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Accu Weather" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="30" tvg-speed="fast",Accu Weather
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Travel XP" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="31" tvg-speed="fast",Travel XP
-https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8
-
-#EXTINF:-1 tvg-name="NTV Europe" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="32" tvg-speed="fast",NTV Europe
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-name="ABN" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="33" tvg-speed="fast",ABN
-https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
-
-#EXTINF:-1 tvg-name="Adventure Earth" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="34" tvg-speed="fast",Adventure Earth
-https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-name="World War TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="35" tvg-speed="fast",World War TV
-https://aenetworks-worldwartv-rakuten.amagi.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-name="Fox Weather" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="36" tvg-speed="fast",Fox Weather
-https://247wlive.foxweather.com/stream/index.m3u8
-
-#EXTINF:-1 tvg-name="Discover Pikstan" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="37" tvg-speed="fast",Discover Pikstan
-https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
-
-#EXTINF:-1 tvg-name="India Today" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="38" tvg-speed="fast",India Today
-https://feeds.intoday.in/hltapps/api/master.m3u8
-
-#EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="39" tvg-speed="fast",9X Tashan
-https://tvsen6.aynaott.com/sMqhLN6n/index.m3u8
-
-#EXTINF:-1 tvg-name="Channel I" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="40" tvg-speed="fast",Channel I
-https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-
-#EXTINF:-1 tvg-name="SA TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="41" tvg-speed="fast",SA TV
-https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
-
-#EXTINF:-1 tvg-name="Global TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="42" tvg-speed="fast",Global TV
-https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
-
-#EXTINF:-1 tvg-name="Goldmines Bollywood" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="43" tvg-speed="fast",Goldmines Bollywood
-https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
-
-#EXTINF:-1 tvg-name="Network 10" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="44" tvg-speed="fast",Network 10
-https://tvsen6.aynaott.com/3Cb2WLFz/index.m3u8
-
-#EXTINF:-1 tvg-name="Travel Channel" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="45" tvg-speed="fast",Travel Channel
-https://tvsen3.aynaott.com/sFwCR6Fu/index.m3u8
-
-#EXTINF:-1 tvg-name="Featured Live Tvs" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="46" tvg-speed="fast",Featured Live Tvs
-https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8
-
-#EXTINF:-1 tvg-name="Maasranga TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="47" tvg-speed="fast",Maasranga TV
-https://tvsen6.aynaott.com/maasrangatv/index.m3u8
-
-#EXTINF:-1 tvg-name="YTV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="48" tvg-speed="fast",YTV
-https://tvsen3.aynaott.com/uYpFg3RV/index.m3u8
-
-#EXTINF:-1 tvg-name="Goldmines" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="49" tvg-speed="fast",Goldmines
-https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
-
-#EXTINF:-1 tvg-name="Deen TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="50" tvg-speed="fast",Deen TV
-https://tvsen3.aynaott.com/TJcnZW3U/index.m3u8
-
-#EXTINF:-1 tvg-name="CP 24" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="51" tvg-speed="fast",CP 24
-https://tvsen6.aynaott.com/cp24/index.m3u8
-
-#EXTINF:-1 tvg-name="G series" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="52" tvg-speed="fast",G series
-https://vods2.aynaott.com/gseriesDrama/index.m3u8
-
-#EXTINF:-1 tvg-name="Amc" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="53" tvg-speed="fast",Amc
-https://tvsen6.aynaott.com/amc/index.m3u8
-
-#EXTINF:-1 tvg-name="Top Live Tvs" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="54" tvg-speed="fast",Top Live Tvs
-https://tvsen6.aynaott.com/kolkatatv/index.m3u8
-
-#EXTINF:-1 tvg-name="Channel 52" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="55" tvg-speed="fast",Channel 52
-https://tvsen6.aynaott.com/channel52/index.m3u8
-
-#EXTINF:-1 tvg-name="Latest Live Tvs" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Other" tvg-chno="56" tvg-speed="fast",Latest Live Tvs
-https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66.sdp/playlist_dvr.m3u8
+#PLAYLIST:BD-KB-IT
+#
+# ╔══════════════════════════════════════════════════╗
+# ║        B D - K B - I T   •   F R E E   T V       ║
+# ║     BANGLADESH  +  INTERNATIONAL  LIVE  TV       ║
+# ╚══════════════════════════════════════════════════╝
+#
+#  NAME      : BD-KB-IT
+#  VERSION   : 1.0.0
+#  UPDATED   : 2026-11-24
+#  CHANNELS  : 0
+#  FORMAT    : M3U8 (HLS)
+#  STATUS    : 24/7 LIVE
+#
+#  MAKE BY   : Kallyan Biswas
+#  FACEBOOK  : Www.Facebook.com/kallyan.biswas.29
+#
+# ──────────────────────────────────────────────────
 
