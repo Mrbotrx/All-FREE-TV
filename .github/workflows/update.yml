@@ -1,215 +1,143 @@
 name: BD KB IT Auto Update
 
 on:
-  workflow_dispatch:
+workflow_dispatch:
 
-  schedule:
-    - cron: "0 */2 * * *"
+schedule:
+- cron: "0 */3 * * *"
 
 permissions:
-  contents: write
+contents: write
 
 concurrency:
-  group: bd-kb-it-update
-  cancel-in-progress: false
+group: bd-kb-it-update
+cancel-in-progress: false
 
 jobs:
-  update:
-    name: Generate and Publish Playlist
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
+update:
+name: Generate and Publish Playlist
+runs-on: ubuntu-latest
+timeout-minutes: 30
 
-    steps:
-      # 1. Checkout Repository
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
+steps:
+  # 1. Checkout Repository
+  - name: Checkout
+    uses: actions/checkout@v4
+    with:
+      fetch-depth: 0
+      persist-credentials: true
 
-      # 2. Setup Python
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+  # 2. Setup Python
+  - name: Setup Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.12"
 
-      # 3. Install Requirements
-      - name: Install Requirements
-        run: |
-          set -e
+  # 3. Install Requirements
+  - name: Install Requirements
+    run: |
+      set -e
 
-          python -m pip install --upgrade pip
+      python -m pip install --upgrade pip
 
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          else
-            echo "requirements.txt not found."
-            echo "Skipping dependency installation."
-          fi
+      if [ -f requirements.txt ]; then
+        pip install -r requirements.txt
+      else
+        echo "requirements.txt not found."
+      fi
 
-      # 4. Check Python Script
-      - name: Check Python Script
-        run: |
-          if [ ! -f "BD-KB-IT.py" ]; then
-            echo "ERROR: BD-KB-IT.py not found!"
-            echo "Repository files:"
-            ls -lah
-            exit 1
-          fi
+  # 4. Check Python Script
+  - name: Check Python Script
+    run: |
+      if [ ! -f "BD-KB-IT.py" ]; then
+        echo "ERROR: BD-KB-IT.py not found!"
+        ls -lah
+        exit 1
+      fi
 
-          echo "Python script found!"
+      echo "Python script found!"
 
-      # 5. Run Python Script
-      - name: Run BD-KB-IT
-        env:
-          BD_KB_IT_API_URL: ${{ secrets.BD_KB_IT_API_URL }}
-        run: |
-          set -e
+  # 5. Run Python Script
+  - name: Run BD-KB-IT
+    env:
+      BD_KB_IT_API_URL: ${{ secrets.BD_KB_IT_API_URL }}
+    run: |
+      set -e
 
-          # Use default API if Secret is empty
-          export BD_KB_IT_API_URL="${BD_KB_IT_API_URL:-https://web.aynaott.com/api/v5/pages/live-tvs/}"
+      export BD_KB_IT_API_URL="${BD_KB_IT_API_URL:-https://web.aynaott.com/api/v5/pages/live-tvs/}"
 
-          echo "Starting BD KB IT..."
-          echo "API URL configured."
+      echo "Starting BD KB IT..."
+      python -u BD-KB-IT.py
 
-          python -u BD-KB-IT.py
+  # 6. Verify Playlist
+  - name: Verify Playlist
+    run: |
+      set -e
 
-      # 6. Verify Playlist
-      - name: Verify Output Files
-        run: |
-          set -e
+      FILE="output/BD-KB-IT.m3u8"
 
-          echo "Checking output directory..."
+      echo "Checking output directory..."
+      ls -lah output/
 
-          if [ ! -d "output" ]; then
-            echo "ERROR: output directory not found!"
-            exit 1
-          fi
+      if [ ! -s "$FILE" ]; then
+        echo "ERROR: Playlist missing or empty!"
+        exit 1
+      fi
 
-          ls -lah output/
+      if ! grep -q "^#EXTM3U" "$FILE"; then
+        echo "ERROR: Invalid M3U8 header!"
+        exit 1
+      fi
 
-          FILE="output/BD-KB-IT.m3u8"
+      echo "Playlist verified!"
 
-          if [ ! -s "$FILE" ]; then
-            echo "ERROR: Playlist missing or empty!"
-            exit 1
-          fi
+      echo "Total entries:"
+      grep -c "^#EXTINF" "$FILE" || true
 
-          if ! grep -q "^#EXTM3U" "$FILE"; then
-            echo "ERROR: Invalid M3U8 header!"
-            exit 1
-          fi
+      echo "Playlist preview:"
+      head -n 15 "$FILE"
 
-          echo "Playlist verified successfully!"
+  # 7. Upload Artifacts
+  - name: Upload Artifacts
+    if: always()
+    uses: actions/upload-artifact@v4
+    with:
+      name: BD-KB-IT-playlist-${{ github.run_number }}
+      path: |
+        output/BD-KB-IT.m3u8
+        output/ALL_CHANNEL_DATA.json
+        output/health_report.json
+        output/dead_channels.json
+      retention-days: 30
+      if-no-files-found: warn
 
-          echo "Channel count:"
-          grep -c "^#EXTINF" "$FILE" || true
+  # 8. Commit and Push
+  - name: Commit Changes
+    run: |
+      set -e
 
-          echo "Playlist preview:"
-          head -n 15 "$FILE"
+      git config user.name "github-actions[bot]"
+      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      # 7. Update GitHub Gist
-      - name: Auto Update GitHub Gist
-        env:
-          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-          GIST_ID: ${{ secrets.GIST_ID }}
-        run: |
-          set -euo pipefail
+      git add -f output/
 
-          FILE="output/BD-KB-IT.m3u8"
+      if git diff --cached --quiet; then
+        echo "No changes to commit."
+        exit 0
+      fi
 
-          if [ -z "${GIST_TOKEN:-}" ]; then
-            echo "ERROR: GIST_TOKEN secret is missing!"
-            exit 1
-          fi
+      git commit -m "Auto update BD-KB-IT playlist"
 
-          if [ -z "${GIST_ID:-}" ]; then
-            echo "ERROR: GIST_ID secret is missing!"
-            exit 1
-          fi
+      git push origin "HEAD:${GITHUB_REF_NAME}"
 
-          if [ ! -s "$FILE" ]; then
-            echo "ERROR: Playlist missing!"
-            exit 1
-          fi
+      echo "Repository updated successfully!"
 
-          echo "Preparing Gist update..."
-
-          jq -n \
-            --rawfile content "$FILE" \
-            '{
-              files: {
-                "BD-KB-IT.m3u8": {
-                  content: $content
-                }
-              }
-            }' > gist.json
-
-          echo "Uploading playlist to GitHub Gist..."
-
-          curl --fail-with-body -sS \
-            -X PATCH \
-            "https://api.github.com/gists/${GIST_ID}" \
-            -H "Authorization: Bearer ${GIST_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            -H "Content-Type: application/json" \
-            --data-binary @gist.json \
-            -o gist_response.json
-
-          # Verify Gist response
-          if ! jq -e '.files["BD-KB-IT.m3u8"].raw_url' gist_response.json > /dev/null; then
-            echo "ERROR: Gist update response is invalid!"
-            cat gist_response.json
-            exit 1
-          fi
-
-          echo "GIST UPDATE SUCCESSFUL!"
-
-          echo "Updated Raw URL:"
-          jq -r '.files["BD-KB-IT.m3u8"].raw_url' gist_response.json
-
-      # 8. Upload Artifacts
-      - name: Upload Artifacts
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: BD-KB-IT-playlist-${{ github.run_number }}
-          path: |
-            output/BD-KB-IT.m3u8
-            output/ALL_CHANNEL_DATA.json
-            output/health_report.json
-            output/dead_channels.json
-          retention-days: 30
-          if-no-files-found: warn
-
-      # 9. Commit and Push Changes
-      - name: Commit Changes
-        run: |
-          set -e
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -f output/
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-
-          git commit -m "Auto update BD-KB-IT playlist"
-
-          git push origin "HEAD:${GITHUB_REF_NAME}"
-
-          echo "Repository updated successfully!"
-
-      # 10. Final Status
-      - name: Update Summary
-        if: always()
-        run: |
-          echo "## BD KB IT Auto Update" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Workflow: Completed" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Playlist: output/BD-KB-IT.m3u8" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Schedule: Every 2 hours (UTC)" >> "$GITHUB_STEP_SUMMARY"
+  # 9. Final Summary
+  - name: Update Summary
+    if: always()
+    run: |
+      echo "## BD KB IT Auto Update" >> "$GITHUB_STEP_SUMMARY"
+      echo "" >> "$GITHUB_STEP_SUMMARY"
+      echo "- Playlist: output/BD-KB-IT.m3u8" >> "$GITHUB_STEP_SUMMARY"
+      echo "- Schedule: Every 2 hours (UTC)" >> "$GITHUB_STEP_SUMMARY"
+      echo "- Gist: Removed" >> "$GITHUB_STEP_SUMMARY"
