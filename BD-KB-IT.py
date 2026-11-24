@@ -9,62 +9,65 @@ import threading
 import requests
 
 from datetime import datetime, timezone
-from urllib.parse import urljoin, urlparse, urlunparse, parse_qs, urlencode
+from urllib.parse import (
+    urljoin,
+    urlparse,
+    parse_qs,
+    urlencode,
+    urlunparse
+)
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+
 # =====================================================
-# BD-KB-IT FREE TV ENGINE
-# VERSION: 1.0.0
+# BD-KB-IT CONFIGURATION
 # =====================================================
 
 VERSION = "1.0.0"
 
 API_URL = os.getenv("BD_KB_IT_API_URL", "").strip()
 
+MAX_PAGES = 10000
+MAX_WORKERS = 32
+
+API_TIMEOUT = 25
+STREAM_TIMEOUT = 20
+
+CACHE_HOURS = 3
+
+CURSOR_PARAM = os.getenv(
+    "BD_KB_IT_CURSOR_PARAM",
+    "cursor"
+)
+
 OUTPUT_DIR = "output"
-DATA_DIR = "data"
 
 PLAYLIST_FILE = f"{OUTPUT_DIR}/BD-KB-IT.m3u8"
 
-CHANNEL_DATA_FILE = f"{DATA_DIR}/ALL_CHANNEL_DATA.json"
-API_BACKUP_FILE = f"{DATA_DIR}/ALL_API_RESPONSES.json"
-HEALTH_FILE = f"{DATA_DIR}/health_report.json"
-CACHE_FILE = f"{DATA_DIR}/validation_cache.json"
-DEAD_FILE = f"{DATA_DIR}/dead_channels.json"
-LOGO_FILE = f"{DATA_DIR}/logo_cache.json"
-GROUP_FILE = f"{DATA_DIR}/groups_index.json"
-SPEED_FILE = f"{DATA_DIR}/speed_report.json"
-
-MAX_PAGES = 10000
-MAX_WORKERS = 32
-REQUEST_TIMEOUT = 20
-CACHE_HOURS = 6
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Linux; Android 13) BD-KB-IT/1.0",
-    "Accept": "application/json, */*"
-}
-
-STREAM_HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Accept": "*/*",
-    "Range": "bytes=0-4095"
-}
+CHANNEL_FILE = f"{OUTPUT_DIR}/ALL_CHANNEL_DATA.json"
+API_FILE = f"{OUTPUT_DIR}/ALL_API_RESPONSES.json"
+HEALTH_FILE = f"{OUTPUT_DIR}/health_report.json"
+DEAD_FILE = f"{OUTPUT_DIR}/dead_channels.json"
+LOGO_FILE = f"{OUTPUT_DIR}/logo_cache.json"
+GROUP_FILE = f"{OUTPUT_DIR}/groups_index.json"
+SPEED_FILE = f"{OUTPUT_DIR}/speed_report.json"
+CACHE_FILE = f"{OUTPUT_DIR}/validation_cache.json"
 
 LOCK = threading.Lock()
 
-API_RESPONSES = []
 ALL_CHANNELS = []
 WORKING_CHANNELS = []
 DEAD_CHANNELS = []
 
-SEEN_STREAMS = set()
+API_RESPONSES = []
+
+SEEN_URLS = set()
 VISITED_PAGES = set()
 
 CACHE = {}
 SPEED_REPORT = []
 
-SESSION_LOCAL = threading.local()
+thread_local = threading.local()
 
 
 # =====================================================
@@ -84,14 +87,50 @@ def log(message):
 
 
 # =====================================================
-# FILE MANAGEMENT
+# HTTP HEADERS - NO TOKEN
 # =====================================================
 
-def setup_directories():
+API_HEADERS = {
+    "User-Agent": "Mozilla/5.0 BD-KB-IT/1.0",
+    "Accept": "application/json, */*"
+}
+
+STREAM_HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "*/*",
+    "Range": "bytes=0-4095"
+}
+
+
+# =====================================================
+# SESSION
+# =====================================================
+
+def get_session():
+
+    if not hasattr(thread_local, "session"):
+
+        session = requests.Session()
+
+        session.headers.update(STREAM_HEADERS)
+
+        thread_local.session = session
+
+    return thread_local.session
+
+
+# =====================================================
+# DIRECTORY
+# =====================================================
+
+def setup():
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    os.makedirs(DATA_DIR, exist_ok=True)
 
+
+# =====================================================
+# JSON FILE MANAGEMENT
+# =====================================================
 
 def load_json(path, default):
 
@@ -99,10 +138,12 @@ def load_json(path, default):
         return default
 
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
 
-    except Exception:
+        with open(path, "r", encoding="utf-8") as file:
+            return json.load(file)
+
+    except (OSError, ValueError):
+
         return default
 
 
@@ -110,33 +151,16 @@ def save_json(path, data):
 
     temporary = path + ".tmp"
 
-    with open(temporary, "w", encoding="utf-8") as f:
+    with open(temporary, "w", encoding="utf-8") as file:
 
         json.dump(
             data,
-            f,
+            file,
             indent=2,
             ensure_ascii=False
         )
 
     os.replace(temporary, path)
-
-
-# =====================================================
-# HTTP SESSION
-# =====================================================
-
-def get_session():
-
-    if not hasattr(SESSION_LOCAL, "session"):
-
-        session = requests.Session()
-
-        session.headers.update(HEADERS)
-
-        SESSION_LOCAL.session = session
-
-    return SESSION_LOCAL.session
 
 
 # =====================================================
@@ -160,41 +184,32 @@ def normalize_url(url, base=""):
     if parsed.scheme not in ("http", "https"):
         return ""
 
+    if not parsed.hostname:
+        return ""
+
     return url
 
 
-def is_m3u8(url):
+def is_m3u8_url(url):
 
-    path = urlparse(url).path.lower()
+    parsed = urlparse(url)
+
+    path = parsed.path.lower()
 
     return (
         path.endswith(".m3u8")
         or ".m3u8/" in path
+        or ".m3u8?" in url.lower()
     )
 
 
-def clean_text(value):
+def clean(value):
 
-    if value is None:
-        return ""
+    if isinstance(value, str):
+        return value.strip()
 
-    if isinstance(value, (dict, list)):
-        return ""
-
-    return str(value).strip()
-
-
-def get_first(data, keys):
-
-    if not isinstance(data, dict):
-        return ""
-
-    for key in keys:
-
-        value = clean_text(data.get(key))
-
-        if value:
-            return value
+    if isinstance(value, (int, float)):
+        return str(value)
 
     return ""
 
@@ -203,59 +218,256 @@ def get_first(data, keys):
 # CHANNEL FIELD DEFINITIONS
 # =====================================================
 
-NAME_KEYS = [
+NAME_KEYS = {
     "name",
     "title",
     "channel_name",
-    "channelName",
+    "channelname",
     "display_name",
-    "displayName",
+    "displayname",
+    "channel_title",
+    "channel",
     "label"
-]
+}
 
-STREAM_KEYS = [
-    "stream_url",
-    "streamUrl",
-    "m3u8_url",
-    "m3u8",
-    "hls_url",
-    "hlsUrl",
-    "playback_url",
-    "playbackUrl",
-    "video_url",
-    "videoUrl",
-    "manifest_url",
-    "manifestUrl",
-    "stream",
-    "url",
-    "link"
-]
-
-LOGO_KEYS = [
+LOGO_KEYS = {
     "logo",
     "logo_url",
-    "logoUrl",
+    "logourl",
     "image",
     "image_url",
+    "imageurl",
     "thumbnail",
     "icon",
-    "poster"
-]
+    "poster",
+    "channel_logo"
+}
 
-CATEGORY_KEYS = [
+CATEGORY_KEYS = {
     "category",
     "category_name",
-    "categoryName",
+    "categoryname",
     "group",
     "group_name",
-    "groupName",
+    "groupname",
     "genre",
-    "type"
-]
+    "channel_category"
+}
+
+STREAM_KEYS = {
+    "url",
+    "link",
+    "stream",
+    "stream_url",
+    "streamurl",
+    "stream_link",
+    "playback_url",
+    "playbackurl",
+    "hls_url",
+    "hlsurl",
+    "m3u8",
+    "m3u8_url",
+    "manifest",
+    "manifest_url",
+    "source",
+    "video_url",
+    "videourl"
+}
 
 
 # =====================================================
-# API PAGINATION DETECTION
+# FIELD DETECTION
+# =====================================================
+
+def find_value(data, keys):
+
+    if not isinstance(data, dict):
+        return ""
+
+    for key, value in data.items():
+
+        normalized = str(key).lower().replace("-", "_")
+
+        if normalized in keys:
+
+            result = clean(value)
+
+            if result:
+                return result
+
+    return ""
+
+
+# =====================================================
+# URL EXTRACTION
+# =====================================================
+
+def extract_urls(value, base_url):
+
+    results = []
+
+    if isinstance(value, str):
+
+        candidate = normalize_url(value, base_url)
+
+        if candidate and is_m3u8_url(candidate):
+            results.append(candidate)
+
+        pattern = r'https?://[^\s"\'<>]+'
+
+        for match in re.findall(pattern, value):
+
+            candidate = normalize_url(
+                match.rstrip("),];"),
+                base_url
+            )
+
+            if candidate and is_m3u8_url(candidate):
+                results.append(candidate)
+
+    elif isinstance(value, dict):
+
+        for child in value.values():
+
+            results.extend(
+                extract_urls(child, base_url)
+            )
+
+    elif isinstance(value, list):
+
+        for child in value:
+
+            results.extend(
+                extract_urls(child, base_url)
+            )
+
+    return list(dict.fromkeys(results))
+
+
+# =====================================================
+# DEEP CHANNEL FINDER
+# =====================================================
+
+def extract_channels(data, base_url):
+
+    results = []
+
+    def walk(node, inherited=None):
+
+        if inherited is None:
+            inherited = {}
+
+        if isinstance(node, dict):
+
+            name = (
+                find_value(node, NAME_KEYS)
+                or inherited.get("name", "")
+            )
+
+            logo = (
+                find_value(node, LOGO_KEYS)
+                or inherited.get("logo", "")
+            )
+
+            category = (
+                find_value(node, CATEGORY_KEYS)
+                or inherited.get("category", "")
+            )
+
+            context = {
+                "name": name,
+                "logo": logo,
+                "category": category
+            }
+
+            urls = []
+
+            # Direct stream fields
+            for key, value in node.items():
+
+                normalized = str(key).lower().replace("-", "_")
+
+                if normalized in STREAM_KEYS:
+
+                    urls.extend(
+                        extract_urls(value, base_url)
+                    )
+
+            # Search nested stream objects
+            for value in node.values():
+
+                if isinstance(value, (dict, list)):
+
+                    urls.extend(
+                        extract_urls(value, base_url)
+                    )
+
+            if name and urls:
+
+                for url in dict.fromkeys(urls):
+
+                    results.append({
+
+                        "name": name,
+
+                        "url": url,
+
+                        "logo": normalize_url(
+                            logo,
+                            base_url
+                        ) if logo else "",
+
+                        "category": category or "Uncategorized"
+
+                    })
+
+            for value in node.values():
+
+                if isinstance(value, (dict, list)):
+
+                    walk(value, context)
+
+        elif isinstance(node, list):
+
+            for item in node:
+                walk(item, inherited)
+
+    walk(data)
+
+    return results
+
+
+# =====================================================
+# API FETCH
+# =====================================================
+
+def fetch_api(url):
+
+    try:
+
+        response = requests.get(
+            url,
+            headers=API_HEADERS,
+            timeout=API_TIMEOUT
+        )
+
+        response.raise_for_status()
+
+        return response.json()
+
+    except requests.RequestException as error:
+
+        log(f"API ERROR: {error}")
+
+    except ValueError:
+
+        log("API returned invalid JSON.")
+
+    return None
+
+
+# =====================================================
+# PAGINATION DETECTION
 # =====================================================
 
 def find_pagination(data):
@@ -269,49 +481,31 @@ def find_pagination(data):
             next_url = (
                 pagination.get("next_url")
                 or pagination.get("nextUrl")
-                or pagination.get("next")
             )
 
             cursor = pagination.get("next_cursor")
 
             has_more = pagination.get("has_more")
 
-            if next_url:
-                return {
-                    "next_url": next_url,
-                    "cursor": cursor,
-                    "has_more": has_more
-                }
+            return next_url, cursor, has_more
 
-            if cursor:
-                return {
-                    "next_url": None,
-                    "cursor": cursor,
-                    "has_more": has_more
-                }
+        next_url = (
+            data.get("next_url")
+            or data.get("nextUrl")
+            or data.get("next_page_url")
+        )
 
-        for key in (
-            "next_url",
-            "nextUrl",
-            "next_page_url"
-        ):
-
-            value = data.get(key)
-
-            if isinstance(value, str) and value.strip():
-
-                return {
-                    "next_url": value,
-                    "cursor": None,
-                    "has_more": True
-                }
+        if next_url:
+            return next_url, None, True
 
         for value in data.values():
 
-            result = find_pagination(value)
+            if isinstance(value, (dict, list)):
 
-            if result:
-                return result
+                result = find_pagination(value)
+
+                if result[0] or result[1]:
+                    return result
 
     elif isinstance(data, list):
 
@@ -319,24 +513,27 @@ def find_pagination(data):
 
             result = find_pagination(item)
 
-            if result:
+            if result[0] or result[1]:
                 return result
 
-    return None
+    return None, None, None
 
 
-def build_cursor_url(current_url, cursor):
+def make_cursor_url(url, cursor):
 
-    parsed = urlparse(current_url)
+    parsed = urlparse(url)
 
     params = parse_qs(
         parsed.query,
         keep_blank_values=True
     )
 
-    params["cursor"] = [str(cursor)]
+    params[CURSOR_PARAM] = [str(cursor)]
 
-    query = urlencode(params, doseq=True)
+    query = urlencode(
+        params,
+        doseq=True
+    )
 
     return urlunparse(
         parsed._replace(query=query)
@@ -344,101 +541,10 @@ def build_cursor_url(current_url, cursor):
 
 
 # =====================================================
-# CHANNEL EXTRACTION ENGINE
+# SCAN ALL API PAGES
 # =====================================================
 
-def extract_channels(data, base_url):
-
-    results = []
-
-    if isinstance(data, dict):
-
-        name = get_first(data, NAME_KEYS)
-
-        stream = get_first(data, STREAM_KEYS)
-
-        logo = get_first(data, LOGO_KEYS)
-
-        category = get_first(data, CATEGORY_KEYS)
-
-        if name and stream:
-
-            stream = normalize_url(
-                stream,
-                base_url
-            )
-
-            logo = normalize_url(
-                logo,
-                base_url
-            ) if logo else ""
-
-            if stream and is_m3u8(stream):
-
-                results.append({
-
-                    "name": name,
-
-                    "url": stream,
-
-                    "logo": logo,
-
-                    "category": category or "Uncategorized"
-
-                })
-
-        for key, value in data.items():
-
-            if isinstance(value, (dict, list)):
-
-                results.extend(
-                    extract_channels(value, base_url)
-                )
-
-    elif isinstance(data, list):
-
-        for item in data:
-
-            results.extend(
-                extract_channels(item, base_url)
-            )
-
-    return results
-
-
-# =====================================================
-# API FETCH
-# =====================================================
-
-def fetch_api(url):
-
-    try:
-
-        response = get_session().get(
-            url,
-            timeout=REQUEST_TIMEOUT
-        )
-
-        response.raise_for_status()
-
-        return response.json()
-
-    except requests.RequestException as error:
-
-        log(f"API REQUEST ERROR: {error}")
-
-    except ValueError as error:
-
-        log(f"INVALID JSON: {error}")
-
-    return None
-
-
-# =====================================================
-# COMPLETE API SCANNER
-# =====================================================
-
-def scan_all_pages():
+def scan_api():
 
     if not API_URL:
 
@@ -453,14 +559,16 @@ def scan_all_pages():
     while current_url and page < MAX_PAGES:
 
         if current_url in VISITED_PAGES:
-            log("Repeated API URL detected. Stopping.")
+
+            log("Repeated API page detected.")
+
             break
 
         VISITED_PAGES.add(current_url)
 
         page += 1
 
-        log(f"Scanning API Page {page}")
+        log(f"SCANNING API PAGE: {page}")
 
         data = fetch_api(current_url)
 
@@ -486,35 +594,26 @@ def scan_all_pages():
 
         for channel in found:
 
-            stream = channel["url"]
+            url = channel["url"]
 
             with LOCK:
 
-                if stream in SEEN_STREAMS:
+                if url in SEEN_URLS:
                     continue
 
-                SEEN_STREAMS.add(stream)
+                SEEN_URLS.add(url)
 
                 ALL_CHANNELS.append(channel)
 
                 added += 1
 
         log(
-            f"Page {page}: "
-            f"{len(found)} records, "
-            f"{added} unique channels"
+            f"PAGE {page}: "
+            f"FOUND {len(found)} | "
+            f"NEW {added}"
         )
 
-        pagination = find_pagination(data)
-
-        if not pagination:
-            break
-
-        next_url = pagination.get("next_url")
-
-        cursor = pagination.get("cursor")
-
-        has_more = pagination.get("has_more")
+        next_url, cursor, has_more = find_pagination(data)
 
         if has_more is False:
             break
@@ -528,7 +627,7 @@ def scan_all_pages():
 
         elif cursor:
 
-            current_url = build_cursor_url(
+            current_url = make_cursor_url(
                 current_url,
                 cursor
             )
@@ -537,13 +636,13 @@ def scan_all_pages():
 
             break
 
-    log(f"Total API Pages: {page}")
+    log(f"API PAGES: {page}")
 
-    log(f"Total Unique Channels: {len(ALL_CHANNELS)}")
+    log(f"TOTAL CHANNELS: {len(ALL_CHANNELS)}")
 
 
 # =====================================================
-# VALIDATION CACHE
+# CACHE SYSTEM
 # =====================================================
 
 def load_cache():
@@ -564,43 +663,37 @@ def save_cache():
     )
 
 
-def get_cache_key(url):
+def cache_key(url):
 
     return hashlib.sha256(
         url.encode()
     ).hexdigest()
 
 
-def get_cached_result(url):
+def get_cached(url):
 
-    key = get_cache_key(url)
+    item = CACHE.get(cache_key(url))
 
-    entry = CACHE.get(key)
-
-    if not entry:
+    if not item:
         return None
 
-    timestamp = entry.get("timestamp", 0)
-
-    age = time.time() - timestamp
+    age = time.time() - item.get("timestamp", 0)
 
     if age > CACHE_HOURS * 3600:
         return None
 
-    return entry
+    return item
 
 
-def update_cache(url, result):
-
-    key = get_cache_key(url)
+def set_cached(url, working, ttfb):
 
     with LOCK:
 
-        CACHE[key] = {
+        CACHE[cache_key(url)] = {
 
-            "working": result["working"],
+            "working": working,
 
-            "ttfb": result["ttfb"],
+            "ttfb": ttfb,
 
             "timestamp": time.time()
 
@@ -608,14 +701,14 @@ def update_cache(url, result):
 
 
 # =====================================================
-# STREAM VALIDATOR
+# M3U8 STREAM VALIDATOR
 # =====================================================
 
 def validate_stream(channel):
 
     url = channel["url"]
 
-    cached = get_cached_result(url)
+    cached = get_cached(url)
 
     if cached:
 
@@ -625,7 +718,7 @@ def validate_stream(channel):
 
             "working": cached["working"],
 
-            "ttfb": cached.get("ttfb", 0),
+            "ttfb": cached["ttfb"],
 
             "cached": True
 
@@ -639,13 +732,11 @@ def validate_stream(channel):
 
     try:
 
-        response = requests.get(
+        response = get_session().get(
 
             url,
 
-            headers=STREAM_HEADERS,
-
-            timeout=REQUEST_TIMEOUT,
+            timeout=STREAM_TIMEOUT,
 
             stream=True,
 
@@ -660,20 +751,19 @@ def validate_stream(channel):
 
         if response.status_code in (200, 206):
 
-            content_type = response.headers.get(
-                "Content-Type",
-                ""
-            ).lower()
-
             content = next(
                 response.iter_content(4096),
                 b""
             )
 
+            content_type = response.headers.get(
+                "Content-Type",
+                ""
+            ).lower()
+
             if (
                 b"#EXTM3U" in content
                 or "mpegurl" in content_type
-                or "vnd.apple.mpegurl" in content_type
             ):
 
                 working = True
@@ -684,15 +774,11 @@ def validate_stream(channel):
 
         working = False
 
-    result = {
-
-        "working": working,
-
-        "ttfb": ttfb
-
-    }
-
-    update_cache(url, result)
+    set_cached(
+        url,
+        working,
+        ttfb
+    )
 
     return {
 
@@ -711,32 +797,31 @@ def validate_stream(channel):
 # MULTI-THREAD VALIDATION
 # =====================================================
 
-def validate_all_channels():
+def validate_all():
 
     total = len(ALL_CHANNELS)
 
-    log(f"Validating {total} channels...")
-
-    completed = 0
+    log(f"VALIDATING {total} CHANNELS")
 
     with ThreadPoolExecutor(
         max_workers=MAX_WORKERS
     ) as executor:
 
-        futures = {
+        futures = [
 
             executor.submit(
                 validate_stream,
                 channel
-            ): channel
+            )
 
             for channel in ALL_CHANNELS
 
-        }
+        ]
 
-        for future in as_completed(futures):
-
-            completed += 1
+        for index, future in enumerate(
+            as_completed(futures),
+            1
+        ):
 
             try:
 
@@ -752,14 +837,14 @@ def validate_all_channels():
 
                         "name": channel["name"],
 
-                        "url": channel["url"],
+                        "ttfb_ms": result["ttfb"],
 
-                        "ttfb_ms": result["ttfb"]
+                        "cached": result["cached"]
 
                     })
 
                     log(
-                        f"[{completed}/{total}] "
+                        f"[{index}/{total}] "
                         f"WORKING: {channel['name']}"
                     )
 
@@ -768,7 +853,7 @@ def validate_all_channels():
                     DEAD_CHANNELS.append(channel)
 
                     log(
-                        f"[{completed}/{total}] "
+                        f"[{index}/{total}] "
                         f"DEAD: {channel['name']}"
                     )
 
@@ -780,7 +865,7 @@ def validate_all_channels():
 
 
 # =====================================================
-# CHANNEL SORTING
+# SORT CHANNELS
 # =====================================================
 
 def sort_channels():
@@ -789,9 +874,9 @@ def sort_channels():
 
         key=lambda channel: (
 
-            channel.get("category", "").lower(),
+            channel["category"].lower(),
 
-            channel.get("name", "").lower()
+            channel["name"].lower()
 
         )
 
@@ -799,7 +884,7 @@ def sort_channels():
 
 
 # =====================================================
-# M3U PLAYLIST GENERATOR
+# PLAYLIST GENERATOR
 # =====================================================
 
 def create_playlist():
@@ -817,7 +902,7 @@ def create_playlist():
 # ╚══════════════════════════════════════════════════╝
 #
 #  NAME      : BD-KB-IT
-#  VERSION   : 1.0.0
+#  VERSION   : {VERSION}
 #  UPDATED   : {updated}
 #  CHANNELS  : {len(WORKING_CHANNELS)}
 #  FORMAT    : M3U8 (HLS)
@@ -840,19 +925,11 @@ def create_playlist():
 
         for channel in WORKING_CHANNELS:
 
-            name = channel["name"]
+            name = channel["name"].replace('"', "'")
 
-            logo = channel["logo"]
+            logo = channel["logo"].replace('"', "'")
 
-            category = channel["category"]
-
-            url = channel["url"]
-
-            name = name.replace('"', "'")
-
-            logo = logo.replace('"', "'")
-
-            category = category.replace('"', "'")
+            category = channel["category"].replace('"', "'")
 
             file.write(
 
@@ -864,10 +941,10 @@ def create_playlist():
 
             )
 
-            # Original stream URL remains unchanged.
-            file.write(url + "\n\n")
+            # Original URL: No key, no token, no modification.
+            file.write(channel["url"] + "\n\n")
 
-    log(f"Playlist generated: {PLAYLIST_FILE}")
+    log("PLAYLIST GENERATED SUCCESSFULLY")
 
 
 # =====================================================
@@ -899,12 +976,21 @@ def generate_reports():
         "dead_channels": dead,
 
         "success_rate": round(
-            (working / total * 100)
-            if total else 0,
+            working / total * 100,
             2
-        )
+        ) if total else 0
 
     }
+
+    save_json(
+        CHANNEL_FILE,
+        ALL_CHANNELS
+    )
+
+    save_json(
+        API_FILE,
+        API_RESPONSES
+    )
 
     save_json(
         HEALTH_FILE,
@@ -919,16 +1005,6 @@ def generate_reports():
     save_json(
         SPEED_FILE,
         SPEED_REPORT
-    )
-
-    save_json(
-        CHANNEL_DATA_FILE,
-        ALL_CHANNELS
-    )
-
-    save_json(
-        API_BACKUP_FILE,
-        API_RESPONSES
     )
 
     logos = {
@@ -950,10 +1026,8 @@ def generate_reports():
 
     for channel in WORKING_CHANNELS:
 
-        category = channel["category"]
-
         groups.setdefault(
-            category,
+            channel["category"],
             []
         ).append(channel["name"])
 
@@ -962,7 +1036,7 @@ def generate_reports():
         groups
     )
 
-    log("All reports generated.")
+    log("ALL REPORTS SAVED")
 
 
 # =====================================================
@@ -973,7 +1047,7 @@ def main():
 
     start = time.time()
 
-    setup_directories()
+    setup()
 
     load_cache()
 
@@ -983,25 +1057,17 @@ def main():
 
     log(f"VERSION: {VERSION}")
 
+    log("API TOKEN: DISABLED")
+
     log("======================================")
 
-    # 1. Scan all API pages
+    scan_api()
 
-    scan_all_pages()
-
-    # 2. Validate streams
-
-    validate_all_channels()
-
-    # 3. Sort working channels
+    validate_all()
 
     sort_channels()
 
-    # 4. Generate M3U playlist
-
     create_playlist()
-
-    # 5. Generate reports and backups
 
     generate_reports()
 
@@ -1014,15 +1080,15 @@ def main():
 
     log("BD-KB-IT UPDATE COMPLETED")
 
-    log(f"API CHANNELS: {len(ALL_CHANNELS)}")
+    log(f"FOUND: {len(ALL_CHANNELS)}")
 
     log(f"WORKING: {len(WORKING_CHANNELS)}")
 
     log(f"DEAD: {len(DEAD_CHANNELS)}")
 
-    log(f"TIME: {elapsed} seconds")
+    log(f"TIME: {elapsed}s")
 
-    log(f"PLAYLIST: {PLAYLIST_FILE}")
+    log(f"OUTPUT: {PLAYLIST_FILE}")
 
     log("======================================")
 
@@ -1035,12 +1101,12 @@ if __name__ == "__main__":
 
     except KeyboardInterrupt:
 
-        log("Process stopped by user.")
+        log("STOPPED BY USER")
 
         sys.exit(130)
 
     except Exception:
 
-        logger.exception("FATAL ENGINE ERROR")
+        logger.exception("FATAL ERROR")
 
         sys.exit(1)
