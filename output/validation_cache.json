@@ -2033,5 +2033,610 @@
     "resolved": "https://tvsen6.aynaott.com/cgtnDocumentary/index.m3u8",
     "ts": 1795553431.991782,
     "v": 3
+  },
+  "cd5277557a99397d906888d1a50642cdaf35dbcc1d34753aec762330f0b2f81c": {
+    "working": false,
+    "ttfb": 0,
+    "timestamp": 1795555099.7412617
+  },
+  "b5fccf72c5459c7123014a772e2aed57986704ffd7146300a14ebbd4004ddbac": {
+    "working": false,
+    "ttfb": 0,
+    "timestamp": 1795555099.8163488
+  },
+  "b7aef1d53241d35fa9e35fd2e13dc6d817de3c0679a4df3c95b5674d4638b8d2": {
+    "working": false,
+    "ttfb": 0,
+    "timestamp": 1795555099.8175075
+  },
+  "bfe223f646afdbb717a38c229a2ca216803885b0607496b9bff687ce218d1ff2": {
+    "working": true,
+    "ttfb": 157.96,
+    "timestamp": 1795555099.8780358
+  },
+  "dd239e1d95f6b03c0e34bf3ae8c39fc9b63a52d977c9253230b03416fe25914a": {
+    "working": true,
+    "ttfb": 204.04,
+    "timestamp": 1795555099.9253337
+  },
+  "d5d727a37578999ee91353cdcf161e14d609736fc96ae7a9191c0755c2f16ef2": {
+    "working": true,
+    "ttfb": 235.21,
+    "timestamp": 1795555099.9537416
+  },
+  "c13ea2c9b6d3e99679c08c7728ad358e4a700629be6682a40fe8cabade490d36": {
+    "working": true,
+    "ttfb": 322.49,
+    "timestamp": 1795555100.0415719
+  },
+  "653f225323c4fff03f3227caf2d079be7ffe4f54a9298531814c35279a00700b": {
+    "working": false,
+    "ttfb": 391.1,
+    "timestamp": 1795555100.107722
+  },
+  "4818d048c4df67109c72f5c3b4ec461b5fe208109806a5735d2b40b880dbd424": {
+    "working": true,
+    "ttfb": 263.6,
+    "timestamp": 1795555100.1424718
+  },
+  "ec65ab3c0602788a68f1a59ee5d834cb4a918158496a7b46d8655b118a3b97c3": {
+    "working": true,
+    "ttfb": 535.53,
+    "timestamp": 1795555100.2537699
+  },
+  "7904aa915b9b924e853a77e1201b809306b7841c27b5585ced82c1662af07e19": {
+    "working": true,
+    "ttfb": 223.67,
+    "timestamp": 1795555100.3793967
+  },
+  "1d7ecd142dfee79242cd07bf0c2bb62afc749c8c1f3cbad65352e2cbc9c2dbb8": {
+    "working": false,
+    "ttfb": 708.41,
+    "timestamp": 1795555100.4286394
+  },
+  "68ffc26d8380a3ca82405c2926c452b94a03f490174b576180d6166292ee6f6c": {
+    "working": true,
+    "ttfb": 717.57,
+    "timestamp": 1795555100.4404423
+  },
+  "b9b44cd72c26483af2aca7bf1711698b2bf5446bbf0beff979b64bc15d722694": {
+    "working": true,
+    "ttfb": 731.84,
+    "timestamp": 1795555100.44146
+  },
+  "7b6aeba98b7e3ef0e7d84b4bae68e4243a793862fbde477faf74d9b373e2976b": {
+    "working": false,
+    "ttfb": 722.15,
+    "timestamp": 1795555100.4435704
+  },
+  "7e1266f30ca5ea4605b44aa76b1c718d7f9e114db2e00a4a88ebcd6e787b6f9a": {
+    "working": false,
+    "ttfb": 736.1,
+    "timestamp": 1795555100.4448843
+  },
+  "923476e0b5da1d6a4f59877517e27b3788179f990725a6cf01b12791f15ab272": {
+    "working": true,
+    "ttfb": 732.0,
+    "timestamp": 1795555100.4456737
+  },
+  "794a20b01e692fbd08d15d61cd5d11035ea77b7a91e00e0bdc03011ced2dc6c0": {
+    "working": true,
+    "ttfb": 733.38,
+    "timestamp": 1795555100.4466965
+  },
+  "44e03ac525c2a2c6e7f3f522291bd589c97798f5939c4585e72dbc96d391d0e3": {
+    "working": true,
+    "ttfb": 732.83,
+    "timestamp": 1795555100.4479554
+  },
+  "bbe37dc583114abd847723ff125822dbddcddd7388e9d441e610b587edaf903e": {
+    "working": false,
+    "ttfb": 739.01,
+    "timestamp": 1795555100.4500787
+  },
+  "730fa19f2a2e4e5b79fee41502ce473e64f050f36e5f4535381ca4814c9449b0": {
+    "working": true,
+    "ttfb": 740.43,
+    "timestamp": 1795555100.4513178
+  },
+  "9b9a0fa947479b9cb8e78c1b898928ba4fa7892057af1a0ebfe95d3ac490ec6b": {
+    "working": false,
+    "ttfb": 743.28,
+    "timestamp": 1795555100.4526896
+  },
+  "660f826a8dbac64c5f03f23485efb9ad881fbbc8ef7a04ee188c3a960f110854": {
+    "working": true,
+    "ttfb": 734.28,
+    "timestamp": 1795555100.4566417
+  },
+  "803530b2c2a76554a4c68e1a7671377b3a7db2b3a6419220ae91bf103b2abc7b": {
+    "working": true,
+    "ttfb": 720.79,
+    "timestamp": 1795555100.462186
+  },
+  "d939d7f8254762fb83e8d5027e6c1ec2c45f4b593ca4a1108ddbcb191af8e050": {
+    "working": false,
+    "ttfb": 760.81,
+    "timestamp": 1795555100.473457
+  },
+  "367128503e41d46025d7820035a19f53bff91cca8c161b136aed13ffcdfafa8c": {
+    "working": true,
+    "ttfb": 755.04,
+    "timestamp": 1795555100.4763045
+  },
+  "8fb54355da0272f5ef04ffdff3f7ca22f8cfb2ebcc217fc8bcfdd1aac017ec7c": {
+    "working": true,
+    "ttfb": 764.58,
+    "timestamp": 1795555100.4770193
+  },
+  "56cfde2513cf6d7bec61e8df3324b05a841b3ceea21dfd6b24b5b42b950f3e5a": {
+    "working": true,
+    "ttfb": 761.75,
+    "timestamp": 1795555100.4789822
+  },
+  "eacbfc3158d5b9bbcb5f7f6045bbd0e87a5342cfb62db4e9a3dba834f5232fd9": {
+    "working": true,
+    "ttfb": 749.37,
+    "timestamp": 1795555100.567009
+  },
+  "400b191755a52fbc5df436166621d6e665316a1632db6084ddda78e2012173fe": {
+    "working": true,
+    "ttfb": 761.63,
+    "timestamp": 1795555100.5781322
+  },
+  "5895f3786e2498bf43e59ffe61c8ed7e284449b7d54f1db1331af71dc58c95e8": {
+    "working": true,
+    "ttfb": 420.61,
+    "timestamp": 1795555100.6752527
+  },
+  "b0425630666591492a53777a550a7b5d6fdbc1479d125b3eb62141916b6dd35e": {
+    "working": true,
+    "ttfb": 724.3,
+    "timestamp": 1795555100.6781797
+  },
+  "994c1a7291eed0d6212419cd57e0891b5ab11834b469ac26f936e4b4dbead968": {
+    "working": true,
+    "ttfb": 229.54,
+    "timestamp": 1795555100.6809492
+  },
+  "78d8b97646f5662c4d213f9b050d1fe1ef4f8d51d8e2d92e160e5d27673209c8": {
+    "working": true,
+    "ttfb": 246.92,
+    "timestamp": 1795555100.6937482
+  },
+  "a98c3a616ad03b92a1a55c3372ea53860272ecc3449ad7b08efed16860951b31": {
+    "working": true,
+    "ttfb": 330.2,
+    "timestamp": 1795555100.7789855
+  },
+  "01942aba82beba1c6d093021aeda922e3768601167182be7ababac6f06121d44": {
+    "working": true,
+    "ttfb": 1085.14,
+    "timestamp": 1795555100.7927823
+  },
+  "3e6d656b299f34b95a7cdb9651b41edcd780fdcd4bc0ed1305d31b3edd738f16": {
+    "working": true,
+    "ttfb": 365.32,
+    "timestamp": 1795555100.8155165
+  },
+  "e4fcbbf77064febdcc5f33a27bea766178abec668110d828d3f902429551748d": {
+    "working": true,
+    "ttfb": 775.4,
+    "timestamp": 1795555100.8171015
+  },
+  "c4a398d7de224e8efd04a3e2736cc1e9f6ba4728f33b49e0f4c0dc40dac50496": {
+    "working": true,
+    "ttfb": 734.82,
+    "timestamp": 1795555100.842703
+  },
+  "ec28177ca271574db4b33dedbfff1de374ba38fa8cbece14986f3639cad45a26": {
+    "working": true,
+    "ttfb": 235.09,
+    "timestamp": 1795555101.014253
+  },
+  "a3dfabcc641625a6382fc51004ef79f3dc73cac6a50ce3c5558aded1e8566178": {
+    "working": false,
+    "ttfb": 222.51,
+    "timestamp": 1795555101.0403616
+  },
+  "f00aefe25f8ff3f75d53c52e405462fa773c78de5a53baa43e2e38580fa5f9be": {
+    "working": true,
+    "ttfb": 233.79,
+    "timestamp": 1795555101.0494556
+  },
+  "0c60202fa0902b5397a0c92c71ffd5c3197d33a3a430bf17c1273060395088f6": {
+    "working": true,
+    "ttfb": 241.05,
+    "timestamp": 1795555101.0839093
+  },
+  "3d8c737d065011dbeaadc49652a2db9f2898cbc689c1bf8585ed3e86142c0d47": {
+    "working": true,
+    "ttfb": 297.34,
+    "timestamp": 1795555101.091173
+  },
+  "7dab14a955688af2cdf293b047d580691b2ba2e076b977f9d0868462f26589d0": {
+    "working": true,
+    "ttfb": 444.78,
+    "timestamp": 1795555101.1386783
+  },
+  "7c4e1a0a6a647bc28188a2546ff11b40f4bc16b4f7643ab5b098d564a6aae1c3": {
+    "working": true,
+    "ttfb": 703.77,
+    "timestamp": 1795555101.1661174
+  },
+  "3c84d1843f89992172c2151b6c903a14e06d817c5e7077d9ab4d9fa5de70b77d": {
+    "working": true,
+    "ttfb": 759.71,
+    "timestamp": 1795555101.204731
+  },
+  "1092c174a828de121f6bd5f517f055da23a9fb33adfba8f76bd05b0196750399": {
+    "working": false,
+    "ttfb": 742.06,
+    "timestamp": 1795555101.2198231
+  },
+  "5b248d899c5f6f998c24ea4ebaeab073c5c9466a7c26ec050a681ea61c0d841c": {
+    "working": false,
+    "ttfb": 781.81,
+    "timestamp": 1795555101.2229316
+  },
+  "7ca079ab1b6e728ac4ea3b0f58651de800446d486aefc92fa4b919ff37db95db": {
+    "working": false,
+    "ttfb": 777.91,
+    "timestamp": 1795555101.2244573
+  },
+  "f675d2ee1ca2575a508f8de1f008e991f2866ca05dcd925b9b779c104be2deff": {
+    "working": false,
+    "ttfb": 784.26,
+    "timestamp": 1795555101.226379
+  },
+  "c931489935761dd05445eeafb421b810a370d5dcae4a6510e803f94f370e3695": {
+    "working": true,
+    "ttfb": 882.68,
+    "timestamp": 1795555101.262271
+  },
+  "85a2347b96b74e67f3364b5ba637b903e505ed2396997e70d259ae22cb310ff2": {
+    "working": true,
+    "ttfb": 716.66,
+    "timestamp": 1795555101.2838237
+  },
+  "9a1836bf4fba9c81282e49157032977e9b4a6389f712fcb707b205cb5afb6db5": {
+    "working": false,
+    "ttfb": 697.82,
+    "timestamp": 1795555101.3738012
+  },
+  "d912daa4232146f5f8be7f38038ea9342e0f6ff5918576fe7f666a1e87293f8a": {
+    "working": true,
+    "ttfb": 339.06,
+    "timestamp": 1795555101.3795784
+  },
+  "aba0681b1488202df5e6430309ec01bf2e6dedbace668b92f4d227717ef4676b": {
+    "working": true,
+    "ttfb": 709.04,
+    "timestamp": 1795555101.3873544
+  },
+  "11e9549a927db68808a217e1d92720750696d55c7c774ed794526e051b70882d": {
+    "working": true,
+    "ttfb": 707.17,
+    "timestamp": 1795555101.3882074
+  },
+  "97fc8d916773b3b51a57e4a44f588f494dda93e26a439bebefb964a933c17a3a": {
+    "working": true,
+    "ttfb": 401.15,
+    "timestamp": 1795555101.4155815
+  },
+  "2500509c880fd518e2b3288b1df019893e4763dbf2f25f46e2d76509a5c91312": {
+    "working": true,
+    "ttfb": 943.83,
+    "timestamp": 1795555101.4174073
+  },
+  "c7f728df9a945e5c25cc4ffe3d405d6c87efbbd5fa33ffa9862023a4587d2827": {
+    "working": false,
+    "ttfb": 303.88,
+    "timestamp": 1795555101.566866
+  },
+  "4814cf9654ccde4e0d192a59f4886f725cd5215b44b5fba4b9ab449232f76e9f": {
+    "working": true,
+    "ttfb": 231.48,
+    "timestamp": 1795555101.618987
+  },
+  "d47223ac8c26f7b453271cbd491654816620184e91a8b7d601248328069db990": {
+    "working": true,
+    "ttfb": 588.38,
+    "timestamp": 1795555101.637994
+  },
+  "eda4755688b3c2bc68569a59d4338c6ee147d309976c7f07739b56e44fc6c7e8": {
+    "working": true,
+    "ttfb": 442.9,
+    "timestamp": 1795555101.7268732
+  },
+  "56055a991499f1836adcc164b735718286daa664c7f72fc8e5ac58cba114c20c": {
+    "working": true,
+    "ttfb": 724.63,
+    "timestamp": 1795555101.808699
+  },
+  "6143593d8400835a2057c2d784cfa2fd2409fac9fab65f282bb394d6e22beb23": {
+    "working": false,
+    "ttfb": 741.6,
+    "timestamp": 1795555101.833628
+  },
+  "53fd74afa6326290d75c68e3a53fac0da4534b746a1bcb292aefeaff8a72926b": {
+    "working": true,
+    "ttfb": 708.14,
+    "timestamp": 1795555101.8469787
+  },
+  "c87af3a707c0ebe221b7ee6a7a4dbf015502f0e7830d8c723b829b24e34b05a2": {
+    "working": true,
+    "ttfb": 473.86,
+    "timestamp": 1795555101.847744
+  },
+  "ffb92ec0e8ad21e067d27f5af7e5c0f3ce775d85f652fb42ae23b4da1767d752": {
+    "working": true,
+    "ttfb": 230.31,
+    "timestamp": 1795555101.8494012
+  },
+  "b1dd0ee3881644a1d3b8e0ce75977d120e7bd838e620b2591424f964770c86e6": {
+    "working": false,
+    "ttfb": 717.8,
+    "timestamp": 1795555101.9232867
+  },
+  "22bc6fcc4b11463493fd44ceb2f806a88e6267fb1d18b06257bdcc60e1f5deee": {
+    "working": true,
+    "ttfb": 740.61,
+    "timestamp": 1795555101.9671276
+  },
+  "7124bfd167fcd68092d8d012f8b91904149899ba534da11223ab79cf96623ecb": {
+    "working": true,
+    "ttfb": 231.06,
+    "timestamp": 1795555102.0781877
+  },
+  "bf9bca6bf77be96a81d23df2bbfad11d8e2f2d2b666425b9ef6439d3f47e77eb": {
+    "working": false,
+    "ttfb": 711.2,
+    "timestamp": 1795555102.100127
+  },
+  "9ec2be59831384493a35cc712c39704d3b22331c4419907ac08e070f24bf5b5f": {
+    "working": true,
+    "ttfb": 712.47,
+    "timestamp": 1795555102.1282084
+  },
+  "b8c752e005753f6fb70346cc9b8f5f9b3bfa2990a09189217c3ded57c6b18a33": {
+    "working": true,
+    "ttfb": 714.13,
+    "timestamp": 1795555102.1316319
+  },
+  "d788bfd6ab2c7b74e9818bbffc0f9bc887ff616973c9a6c9077845cec296659f": {
+    "working": false,
+    "ttfb": 160.14,
+    "timestamp": 1795555102.239041
+  },
+  "751b51fcaf78f140c01eb8c2d4423e5421be6c30df01d63e791e72880e7acf92": {
+    "working": true,
+    "ttfb": 706.37,
+    "timestamp": 1795555102.273397
+  },
+  "4a09d98c22851c3c21a4c29ed110996c7b9cbc2d4a50de7d120e134689d7642a": {
+    "working": false,
+    "ttfb": 0,
+    "timestamp": 1795555102.305738
+  },
+  "1ac30c173646b9826708505ba3a1fb4d37d0524949d30238493415d36305e579": {
+    "working": false,
+    "ttfb": 0,
+    "timestamp": 1795555102.3771448
+  },
+  "8166cc50a27ea8467ed799424ea04046327c778962eae8dd91f5cac9ac7f79fb": {
+    "working": true,
+    "ttfb": 322.33,
+    "timestamp": 1795555102.4506814
+  },
+  "2a397d4d89061cfcaea9a6c5329bc003647f9805cc603029f342c77749afd8e7": {
+    "working": true,
+    "ttfb": 230.93,
+    "timestamp": 1795555102.5044823
+  },
+  "e7771d41703809f161824ead3ed12f8901699936454a3b81c4d0a66fd895fb65": {
+    "working": false,
+    "ttfb": 695.33,
+    "timestamp": 1795555102.5297675
+  },
+  "d8e8310b69aac2d0f91653f5de4b54163766d29dbfd1d1489e31e6ba312bb343": {
+    "working": true,
+    "ttfb": 229.94,
+    "timestamp": 1795555102.6072783
+  },
+  "8ec026afade48d0eeebaa87a0fd7e734aa1d048427f512a4298cbc842bf34fd3": {
+    "working": true,
+    "ttfb": 710.13,
+    "timestamp": 1795555102.633576
+  },
+  "19c826c2b22a9185495e7c052ae4a2a1b66f28810cc262e116e1f147fe7db770": {
+    "working": true,
+    "ttfb": 603.93,
+    "timestamp": 1795555102.735713
+  },
+  "de759258b1ae30a28e494a39cc8136cbf4e5c2acd188008212c566daded5ea1e": {
+    "working": false,
+    "ttfb": 722.66,
+    "timestamp": 1795555102.8235788
+  },
+  "bf4531710785ca2d1d305aed3a78e58a14897c476075a57550885cc21e35e572": {
+    "working": true,
+    "ttfb": 301.75,
+    "timestamp": 1795555102.844027
+  },
+  "1312d0997fcb7cf5a02ddf7aa1c3781b2c8c93d1f66fb1d282799ce76592a50d": {
+    "working": false,
+    "ttfb": 437.71,
+    "timestamp": 1795555103.045777
+  },
+  "6211049a01ddd3e74f64be9b5a15493116633b3eaf1c2b591c9d43a25c1304ec": {
+    "working": false,
+    "ttfb": 395.15,
+    "timestamp": 1795555103.2194993
+  },
+  "d04b818951f1d1c6cc7e8b81f1a92cf4e86afca2f60ea25a317cb5caa000f84d": {
+    "working": false,
+    "ttfb": 717.23,
+    "timestamp": 1795555103.3516598
+  },
+  "57fc871ddbc7fe764be78ab1c3b856809040b4e0076d01a1fa2da67daf3326fa": {
+    "working": true,
+    "ttfb": 717.45,
+    "timestamp": 1795555103.5616512
+  },
+  "3efb2eeb3d45bdb930b79930c43bccab9139b9e6cde2de2e4110b99ea43b2a51": {
+    "working": false,
+    "ttfb": 708.7,
+    "timestamp": 1795555103.7552147
+  },
+  "0ecb5e5d90257138cf1fd73d3bb48a63e39955381b8fa84b4ca93b3e2ff38afb": {
+    "working": true,
+    "ttfb": 1022.82,
+    "timestamp": 1795555103.7586572
+  },
+  "f8411239395c99d318e4cbbe009d601588aac13a550ec31f2fc8a6e1f9db7243": {
+    "working": true,
+    "ttfb": 701.62,
+    "timestamp": 1795555103.9212892
+  },
+  "4c9cf3f709f74281afe49fe377a0e4dd09a429f0736f245535b04800f804a6da": {
+    "working": true,
+    "ttfb": 721.19,
+    "timestamp": 1795555104.073008
+  },
+  "1ef9b505a72ac46f35edad7e445813fc618425be7b89131cb9fff845d838daf0": {
+    "working": false,
+    "ttfb": 10753.18,
+    "timestamp": 1795555110.463744
+  },
+  "6ea856eb21faaae5c77d880826cf6551ea5ad49a19f8c989c65ea8f98a14a15f": {
+    "working": false,
+    "ttfb": 10758.32,
+    "timestamp": 1795555110.4725223
+  },
+  "830022c23599649e62596684b630d7df734fec638c3da4fd31e342a5649ae610": {
+    "working": false,
+    "ttfb": 10758.67,
+    "timestamp": 1795555110.4740922
+  },
+  "0fac42686b32b5cc18e3e6f6af39be238fd27ae5382ccc480e212eded56b6d4b": {
+    "working": false,
+    "ttfb": 10763.04,
+    "timestamp": 1795555110.4752908
+  },
+  "238fe0f6ed88086e8b953437ba77ebb4416d2eb965743992eff09c6b7a83ff85": {
+    "working": false,
+    "ttfb": 10762.33,
+    "timestamp": 1795555110.4771254
+  },
+  "a9eb6830e457e9bcda2808391516853b4c46df683c13f2917996baa720f322eb": {
+    "working": false,
+    "ttfb": 10760.7,
+    "timestamp": 1795555110.4780061
+  },
+  "5e376625beb36faa3b4fcb71d0e8267c1a1fcd991e151695f03b46673b3b3231": {
+    "working": false,
+    "ttfb": 10766.75,
+    "timestamp": 1795555110.6928778
+  },
+  "ba030cd0688146f87157e321f1fb4bfaa93bcdf70a81600033084e62670b19dd": {
+    "working": false,
+    "ttfb": 10250.97,
+    "timestamp": 1795555110.7083461
+  },
+  "d9cfe1f2c4f8c7f07cac2b833f86343b2553857f78c4b51e54026550a991a7ab": {
+    "working": false,
+    "ttfb": 10251.11,
+    "timestamp": 1795555110.7308996
+  },
+  "6caea28908099fcf7595a56dafb99f34a90e992719ec75d11e57dc8e83244adc": {
+    "working": false,
+    "ttfb": 10261.55,
+    "timestamp": 1795555110.738643
+  },
+  "4cc18f134c73c6ac741c6d91132e9fc0925e00733955c596db552ef97b76f290": {
+    "working": false,
+    "ttfb": 10738.46,
+    "timestamp": 1795555111.1678777
+  },
+  "c46bdd58ea6a88e920914e11ef553f310026d1cc3cc6ad3163180e8098d794a6": {
+    "working": false,
+    "ttfb": 10721.21,
+    "timestamp": 1795555111.1745937
+  },
+  "142e099a62422018a70cd4720865f8096f3365c85a9af569070fec98351f1c99": {
+    "working": false,
+    "ttfb": 10788.69,
+    "timestamp": 1795555111.2329707
+  },
+  "c85676e3d3f415fc084e8e95b79b2b3454f372bffbd213c708238d7a3f47617a": {
+    "working": false,
+    "ttfb": 10745.72,
+    "timestamp": 1795555111.324639
+  },
+  "cfa4512b90f24b377118aa7fe249f23d0b573b495bddc9fcf74bb9103ab0c32a": {
+    "working": false,
+    "ttfb": 10266.0,
+    "timestamp": 1795555111.4328427
+  },
+  "780b54dcad6a5670cb951aa219a3d14a565e181eb7286449a31f9ad04b587703": {
+    "working": false,
+    "ttfb": 10252.58,
+    "timestamp": 1795555111.4763536
+  },
+  "8a2be0317c2bbe78a501ed2367e25c2406e97784e5c6ef2741a4789d80918fcc": {
+    "working": false,
+    "ttfb": 10247.91,
+    "timestamp": 1795555111.628206
+  },
+  "0d376b9be4e43ec35ac966a71fc72fca3aaec3f5dda7c2c021b18990641321de": {
+    "working": false,
+    "ttfb": 10750.41,
+    "timestamp": 1795555111.9756682
+  },
+  "0ccdabc6902750c7fb80abc1a22789cff49b5f249b746d19a181358f16da7f9b": {
+    "working": false,
+    "ttfb": 10756.17,
+    "timestamp": 1795555111.9766843
+  },
+  "2483a1248c1ddb07b142f0d27f5e3d5902ee84e32897bdc44cd60a3558dccdc9": {
+    "working": false,
+    "ttfb": 10254.0,
+    "timestamp": 1795555112.1041222
+  },
+  "e7c53c46e040c56dc1c30f49f7e0979b66d993cc2cf0401c490665def774aa8c": {
+    "working": false,
+    "ttfb": 10736.89,
+    "timestamp": 1795555112.3756797
+  },
+  "19e5b9389bd1ecb6044a3cc6cf15e4aeaa0be47faf6b9b45007f4cf0917c8993": {
+    "working": false,
+    "ttfb": 10755.06,
+    "timestamp": 1795555112.4827118
+  },
+  "9d192674fd4500da778b3961a6ac42ff02f0b83dfb67753f349caf39399b3a11": {
+    "working": false,
+    "ttfb": 10738.76,
+    "timestamp": 1795555112.548213
+  },
+  "a446351a2d0084bc4a864f0bdbc3583eaf5bf1cb74bb331de068ad65687ce1f0": {
+    "working": false,
+    "ttfb": 10727.17,
+    "timestamp": 1795555112.5756712
+  },
+  "3672131169ddab5415c3caa67fc5407c36bb42123a25e55d1dfe12966286f908": {
+    "working": false,
+    "ttfb": 10250.86,
+    "timestamp": 1795555112.7561018
+  },
+  "9f0543be3a38901686a3ed8f0eae6b8ffc4a0fb9aabcf53cdf168da496888cc2": {
+    "working": false,
+    "ttfb": 10734.59,
+    "timestamp": 1795555113.1860282
+  },
+  "95b750575f7d10e6aa596daac468230bba9e3ba1fd2e8fa430079801a076305b": {
+    "working": false,
+    "ttfb": 10721.33,
+    "timestamp": 1795555113.2518768
   }
 }
