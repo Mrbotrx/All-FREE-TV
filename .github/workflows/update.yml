@@ -116,7 +116,6 @@ jobs:
           path: |
             output/BD-KB-IT.m3u8
             output/ALL_CHANNEL_DATA.json
-            output/ALL_API_RESPONSES.json
             output/health_report.json
             output/dead_channels.json
             output/logo_cache.json
