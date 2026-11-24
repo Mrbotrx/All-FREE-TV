@@ -81,6 +81,7 @@ jobs:
           set -e
 
           echo "Starting BD KB IT..."
+
           python -u BD-KB-IT.py
 
       - name: Verify Playlist
@@ -115,8 +116,13 @@ jobs:
           path: |
             output/BD-KB-IT.m3u8
             output/ALL_CHANNEL_DATA.json
+            output/ALL_API_RESPONSES.json
             output/health_report.json
             output/dead_channels.json
+            output/logo_cache.json
+            output/groups_index.json
+            output/speed_report.json
+            output/validation_cache.json
           retention-days: 30
           if-no-files-found: warn
 
@@ -136,6 +142,8 @@ jobs:
 
           git commit -m "Auto update BD-KB-IT playlist"
 
+          git pull --rebase origin "$GITHUB_REF_NAME"
+
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
           echo "Repository updated successfully."
@@ -146,6 +154,10 @@ jobs:
           echo "## BD KB IT Auto Update" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "- Playlist: BD-KB-IT.m3u8" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Schedule: Every 2 hours UTC" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Schedule: Every 3 hours UTC" >> "$GITHUB_STEP_SUMMARY"
           echo "- Gist: Disabled" >> "$GITHUB_STEP_SUMMARY"
+          echo "- API Token: Disabled" >> "$GITHUB_STEP_SUMMARY"
           echo "- API URL: Hidden" >> "$GITHUB_STEP_SUMMARY"
+          echo "- M3U8 Finder: Enabled" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Pagination: Enabled" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Duplicate Filter: Enabled" >> "$GITHUB_STEP_SUMMARY"
