@@ -1,263 +1,116 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-BD-KB-IT VIP PLAYLIST ENGINE
-FULL SCAN + NEXT_URL + EXTRACTION + VALIDATION + SPEED SORT
-"""
-
 import os
 import re
+import sys
 import json
 import time
 import hashlib
-import urllib.request
-import urllib.error
+import logging
+import threading
+import requests
 
-from pathlib import Path
-from urllib.parse import urljoin, urlparse
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
-
+from urllib.parse import urljoin, urlparse, urlunparse, parse_qs, urlencode
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # =====================================================
-# CONFIGURATION
+# BD-KB-IT FREE TV ENGINE
+# VERSION: 1.0.0
 # =====================================================
 
-API_URL = os.environ.get(
-    "BD_KB_IT_API_URL",
-    "https://web.aynaott.com/api/v5/pages/live-tvs/"
-)
+VERSION = "1.0.0"
 
-API_HOST = "web.aynaott.com"
+API_URL = os.getenv("BD_KB_IT_API_URL", "").strip()
+
+OUTPUT_DIR = "output"
+DATA_DIR = "data"
+
+PLAYLIST_FILE = f"{OUTPUT_DIR}/BD-KB-IT.m3u8"
+
+CHANNEL_DATA_FILE = f"{DATA_DIR}/ALL_CHANNEL_DATA.json"
+API_BACKUP_FILE = f"{DATA_DIR}/ALL_API_RESPONSES.json"
+HEALTH_FILE = f"{DATA_DIR}/health_report.json"
+CACHE_FILE = f"{DATA_DIR}/validation_cache.json"
+DEAD_FILE = f"{DATA_DIR}/dead_channels.json"
+LOGO_FILE = f"{DATA_DIR}/logo_cache.json"
+GROUP_FILE = f"{DATA_DIR}/groups_index.json"
+SPEED_FILE = f"{DATA_DIR}/speed_report.json"
 
 MAX_PAGES = 10000
-API_TIMEOUT = 30
-STREAM_TIMEOUT = 15
-
-WORKERS = 32
-RETRIES = 2
-RETRY_DELAY = 1.5
-
-CACHE_TTL = 21600
-CACHE_VERSION = 3
-
-SORT_BY = os.environ.get("SORT_BY", "group_speed")
-
-DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
-
-EPG_URL = os.environ.get("EPG_URL", "")
-
-SCRIPT_DIR = Path(__file__).resolve().parent
-OUTPUT_DIR = SCRIPT_DIR / "output"
-
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-PLAYLIST_FILE = OUTPUT_DIR / "BD-KB-IT.m3u8"
-CHANNEL_FILE = OUTPUT_DIR / "ALL_CHANNEL_DATA.json"
-RAW_FILE = OUTPUT_DIR / "ALL_API_RESPONSES.json"
-
-HEALTH_FILE = OUTPUT_DIR / "health_report.json"
-CACHE_FILE = OUTPUT_DIR / "validation_cache.json"
-DEAD_FILE = OUTPUT_DIR / "dead_channels.json"
-LOGO_CACHE = OUTPUT_DIR / "logo_cache.json"
-
-GROUPS_FILE = OUTPUT_DIR / "groups_index.json"
-SPEED_FILE = OUTPUT_DIR / "speed_report.json"
-
-IPTV_LOGO = (
-    "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/"
-    "refs/heads/main/IPTV_LINKS_LOGO.jpg"
-)
-
-IPTV_VIDEO = (
-    "https://github.com/Mrbotrx/Mrbotrx/raw/"
-    "refs/heads/main/IPTV_LINKS_VIDEO.mp4"
-)
-
-
-# =====================================================
-# HEADERS
-# =====================================================
+MAX_WORKERS = 32
+REQUEST_TIMEOUT = 20
+CACHE_HOURS = 6
 
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 Chrome/122.0 Safari/537.36"
-    ),
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://web.aynaott.com/live-tvs",
-    "Origin": "https://web.aynaott.com",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 13) BD-KB-IT/1.0",
+    "Accept": "application/json, */*"
 }
 
 STREAM_HEADERS = {
-    "User-Agent": HEADERS["User-Agent"],
-    "Accept": "application/vnd.apple.mpegurl, "
-              "application/x-mpegURL, */*",
-    "Referer": "https://web.aynaott.com/",
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "*/*",
+    "Range": "bytes=0-4095"
 }
 
-IMAGE_HEADERS = {
-    "User-Agent": HEADERS["User-Agent"],
-    "Accept": "image/*,*/*",
-}
+LOCK = threading.Lock()
+
+API_RESPONSES = []
+ALL_CHANNELS = []
+WORKING_CHANNELS = []
+DEAD_CHANNELS = []
+
+SEEN_STREAMS = set()
+VISITED_PAGES = set()
+
+CACHE = {}
+SPEED_REPORT = []
+
+SESSION_LOCAL = threading.local()
 
 
 # =====================================================
-# FIELD DEFINITIONS
+# LOGGING
 # =====================================================
 
-STREAM_KEYS = {
-    "stream_url",
-    "play_url",
-    "m3u8_url",
-    "playlist_url",
-    "url",
-    "stream",
-    "src",
-    "link",
-    "hls",
-    "hls_url",
-    "playback_url",
-    "content_url",
-    "manifest_url",
-}
-
-TITLE_KEYS = (
-    "title",
-    "name",
-    "channel_name",
-    "channelName",
-    "display_name",
-    "displayName",
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
 )
 
-LOGO_KEYS = (
-    "logo",
-    "logo_url",
-    "image",
-    "image_url",
-    "thumbnail",
-    "thumbnail_url",
-    "icon",
-    "poster",
-    "cover",
-)
+logger = logging.getLogger("BD-KB-IT")
 
-GROUP_KEYS = (
-    "group_title",
-    "category_name",
-    "category",
-    "group",
-)
+
+def log(message):
+    logger.info(message)
 
 
 # =====================================================
-# GROUP RULES
+# FILE MANAGEMENT
 # =====================================================
 
-GROUP_RULES = {
-    "Sports": [
-        "sport", "cricket", "football", "soccer",
-        "tennis", "fifa", "uefa", "espn",
-        "sony ten", "star sports", "bein",
-        "willow", "nba", "f1",
-    ],
+def setup_directories():
 
-    "News": [
-        "news", "cnn", "bbc", "aljazeera",
-        "somoy", "jamuna", "dbc", "ekattor",
-        "ndtv", "aaj tak", "republic",
-    ],
-
-    "Movies": [
-        "movie", "cinema", "hbo", "star gold",
-        "sony pix", "zee cinema", "film",
-    ],
-
-    "Kids": [
-        "kids", "cartoon", "disney", "nick",
-        "pogo", "hungama",
-    ],
-
-    "Music": [
-        "music", "mtv", "vh1", "9xm",
-        "b4u music",
-    ],
-
-    "Religious": [
-        "islam", "quran", "religious",
-        "madani", "aastha", "bhakti",
-    ],
-
-    "Documentary": [
-        "discovery", "national geographic",
-        "history", "animal planet",
-    ],
-
-    "Entertainment": [
-        "entertainment", "serial", "drama",
-        "star plus", "zee tv", "sony",
-        "colors", "star jalsha", "zee bangla",
-    ],
-
-    "Local": [
-        "bangla", "bangladesh", "bengali",
-        "deshi", "kolkata", "west bengal",
-        "btv",
-    ],
-}
-
-GROUP_ORDER = [
-    "Sports",
-    "News",
-    "Movies",
-    "Kids",
-    "Music",
-    "Religious",
-    "Documentary",
-    "Entertainment",
-    "Lifestyle",
-    "Business",
-    "Education",
-    "Local",
-    "Other",
-    "Uncategorized",
-]
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(DATA_DIR, exist_ok=True)
 
 
-# =====================================================
-# HELPERS
-# =====================================================
+def load_json(path, default):
 
-def sha256(value):
+    if not os.path.exists(path):
+        return default
 
-    return hashlib.sha256(
-        value.encode("utf-8")
-    ).hexdigest()[:16]
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
 
-
-def clean_text(value):
-
-    if value is None:
-        return ""
-
-    return re.sub(
-        r'[\r\n"]+',
-        " ",
-        str(value)
-    ).strip()
+    except Exception:
+        return default
 
 
 def save_json(path, data):
 
-    if DRY_RUN:
-        return
+    temporary = path + ".tmp"
 
-    temp = path.with_suffix(path.suffix + ".tmp")
-
-    with open(temp, "w", encoding="utf-8") as f:
+    with open(temporary, "w", encoding="utf-8") as f:
 
         json.dump(
             data,
@@ -266,906 +119,716 @@ def save_json(path, data):
             ensure_ascii=False
         )
 
-    temp.replace(path)
+    os.replace(temporary, path)
 
 
-def load_cache(path):
+# =====================================================
+# HTTP SESSION
+# =====================================================
 
-    if not path.exists():
-        return {}
+def get_session():
 
-    try:
+    if not hasattr(SESSION_LOCAL, "session"):
 
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
+        session = requests.Session()
 
-    except Exception:
+        session.headers.update(HEADERS)
 
-        return {}
+        SESSION_LOCAL.session = session
+
+    return SESSION_LOCAL.session
 
 
-def get_title(obj):
+# =====================================================
+# URL UTILITIES
+# =====================================================
 
-    for key in TITLE_KEYS:
+def normalize_url(url, base=""):
 
-        value = obj.get(key)
+    if not isinstance(url, str):
+        return ""
 
-        if isinstance(value, str) and value.strip():
-            return value.strip()
+    url = url.strip()
+
+    if not url:
+        return ""
+
+    url = urljoin(base, url)
+
+    parsed = urlparse(url)
+
+    if parsed.scheme not in ("http", "https"):
+        return ""
+
+    return url
+
+
+def is_m3u8(url):
+
+    path = urlparse(url).path.lower()
+
+    return (
+        path.endswith(".m3u8")
+        or ".m3u8/" in path
+    )
+
+
+def clean_text(value):
+
+    if value is None:
+        return ""
+
+    if isinstance(value, (dict, list)):
+        return ""
+
+    return str(value).strip()
+
+
+def get_first(data, keys):
+
+    if not isinstance(data, dict):
+        return ""
+
+    for key in keys:
+
+        value = clean_text(data.get(key))
+
+        if value:
+            return value
 
     return ""
 
 
-def get_group(obj, inherited=""):
+# =====================================================
+# CHANNEL FIELD DEFINITIONS
+# =====================================================
 
-    for key in GROUP_KEYS:
+NAME_KEYS = [
+    "name",
+    "title",
+    "channel_name",
+    "channelName",
+    "display_name",
+    "displayName",
+    "label"
+]
 
-        value = obj.get(key)
+STREAM_KEYS = [
+    "stream_url",
+    "streamUrl",
+    "m3u8_url",
+    "m3u8",
+    "hls_url",
+    "hlsUrl",
+    "playback_url",
+    "playbackUrl",
+    "video_url",
+    "videoUrl",
+    "manifest_url",
+    "manifestUrl",
+    "stream",
+    "url",
+    "link"
+]
 
-        if isinstance(value, str) and value.strip():
-            return value.strip()
+LOGO_KEYS = [
+    "logo",
+    "logo_url",
+    "logoUrl",
+    "image",
+    "image_url",
+    "thumbnail",
+    "icon",
+    "poster"
+]
 
-    return inherited
+CATEGORY_KEYS = [
+    "category",
+    "category_name",
+    "categoryName",
+    "group",
+    "group_name",
+    "groupName",
+    "genre",
+    "type"
+]
 
 
 # =====================================================
-# HTTP REQUEST
+# API PAGINATION DETECTION
 # =====================================================
 
-def request_url(
-    url,
-    headers,
-    timeout=STREAM_TIMEOUT,
-    read_bytes=0
-):
+def find_pagination(data):
 
-    for attempt in range(RETRIES):
+    if isinstance(data, dict):
 
-        start = time.perf_counter()
+        pagination = data.get("pagination")
 
-        try:
+        if isinstance(pagination, dict):
 
-            req = urllib.request.Request(
-                url,
-                headers=headers
+            next_url = (
+                pagination.get("next_url")
+                or pagination.get("nextUrl")
+                or pagination.get("next")
             )
 
-            with urllib.request.urlopen(
-                req,
-                timeout=timeout
-            ) as response:
+            cursor = pagination.get("next_cursor")
 
-                body = (
-                    response.read(read_bytes)
-                    if read_bytes > 0
-                    else response.read()
-                )
+            has_more = pagination.get("has_more")
 
-                elapsed = (
-                    time.perf_counter() - start
-                ) * 1000
+            if next_url:
+                return {
+                    "next_url": next_url,
+                    "cursor": cursor,
+                    "has_more": has_more
+                }
 
-                return (
-                    response.status,
-                    response.headers.get(
-                        "Content-Type", ""
-                    ).lower(),
-                    body,
-                    response.geturl(),
-                    elapsed,
-                )
+            if cursor:
+                return {
+                    "next_url": None,
+                    "cursor": cursor,
+                    "has_more": has_more
+                }
 
-        except urllib.error.HTTPError as error:
+        for key in (
+            "next_url",
+            "nextUrl",
+            "next_page_url"
+        ):
 
-            return (
-                error.code,
-                "",
-                b"",
-                url,
-                0,
-            )
+            value = data.get(key)
 
-        except Exception:
+            if isinstance(value, str) and value.strip():
 
-            if attempt + 1 < RETRIES:
+                return {
+                    "next_url": value,
+                    "cursor": None,
+                    "has_more": True
+                }
 
-                time.sleep(
-                    RETRY_DELAY * (attempt + 1)
-                )
+        for value in data.values():
 
-    return 0, "", b"", url, 0
+            result = find_pagination(value)
+
+            if result:
+                return result
+
+    elif isinstance(data, list):
+
+        for item in data:
+
+            result = find_pagination(item)
+
+            if result:
+                return result
+
+    return None
 
 
-# =====================================================
-# API
-# =====================================================
+def build_cursor_url(current_url, cursor):
 
-def get_api(url):
+    parsed = urlparse(current_url)
 
-    status, content_type, body, final, elapsed = request_url(
-        url,
-        HEADERS,
-        API_TIMEOUT
+    params = parse_qs(
+        parsed.query,
+        keep_blank_values=True
     )
 
-    if status != 200:
+    params["cursor"] = [str(cursor)]
 
-        raise RuntimeError(
-            f"API HTTP {status}: {url}"
-        )
+    query = urlencode(params, doseq=True)
 
-    if not body:
-
-        raise RuntimeError("Empty API response")
-
-    try:
-
-        data = json.loads(
-            body.decode("utf-8-sig")
-        )
-
-    except json.JSONDecodeError:
-
-        raise RuntimeError(
-            "API returned invalid JSON"
-        )
-
-    if not isinstance(data, (dict, list)):
-
-        raise RuntimeError(
-            "Unexpected API JSON structure"
-        )
-
-    return data
+    return urlunparse(
+        parsed._replace(query=query)
+    )
 
 
 # =====================================================
-# STREAM EXTRACTION
+# CHANNEL EXTRACTION ENGINE
 # =====================================================
 
-def get_stream_url(channel):
+def extract_channels(data, base_url):
 
-    candidates = []
+    results = []
 
-    def walk(obj, depth=0):
+    if isinstance(data, dict):
 
-        if depth > 8:
-            return
+        name = get_first(data, NAME_KEYS)
 
-        if isinstance(obj, dict):
+        stream = get_first(data, STREAM_KEYS)
 
-            for key, value in obj.items():
+        logo = get_first(data, LOGO_KEYS)
 
-                key_lower = str(key).lower()
+        category = get_first(data, CATEGORY_KEYS)
 
-                if (
-                    key_lower in STREAM_KEYS
-                    and isinstance(value, str)
-                    and value.startswith(
-                        ("http://", "https://")
-                    )
-                ):
+        if name and stream:
 
-                    candidates.append(
-                        (key_lower, value.strip())
-                    )
+            stream = normalize_url(
+                stream,
+                base_url
+            )
 
-            for value in obj.values():
+            logo = normalize_url(
+                logo,
+                base_url
+            ) if logo else ""
 
-                if isinstance(value, (dict, list)):
-                    walk(value, depth + 1)
+            if stream and is_m3u8(stream):
 
-        elif isinstance(obj, list):
+                results.append({
 
-            for item in obj:
-                walk(item, depth + 1)
+                    "name": name,
 
-    walk(channel)
+                    "url": stream,
 
-    if not candidates:
-        return None
+                    "logo": logo,
 
-    priority = [
-        "m3u8_url",
-        "hls_url",
-        "stream_url",
-        "play_url",
-        "playlist_url",
-        "manifest_url",
-        "playback_url",
-        "stream",
-        "src",
-        "url",
-        "link",
-    ]
+                    "category": category or "Uncategorized"
 
-    for key in priority:
+                })
 
-        for candidate_key, value in candidates:
-
-            if candidate_key == key:
-
-                return value
-
-    return candidates[0][1]
-
-
-# =====================================================
-# CHANNEL EXTRACTION
-# =====================================================
-
-def extract_channels(data):
-
-    channels = []
-    seen = set()
-
-    def walk(obj, inherited_group=""):
-
-        if isinstance(obj, list):
-
-            for item in obj:
-                walk(item, inherited_group)
-
-            return
-
-        if not isinstance(obj, dict):
-            return
-
-        group = get_group(
-            obj,
-            inherited_group
-        )
-
-        title = get_title(obj)
-
-        stream = get_stream_url(obj)
-
-        if title and stream:
-
-            key = sha256(stream)
-
-            if key not in seen:
-
-                channel = dict(obj)
-
-                channel["_api_group"] = group
-
-                channels.append(channel)
-
-                seen.add(key)
-
-        for key, value in obj.items():
+        for key, value in data.items():
 
             if isinstance(value, (dict, list)):
 
-                child_group = group
-
-                if key.lower() in (
-                    "blocks",
-                    "items",
-                    "channels",
-                    "live_tvs",
-                    "results",
-                    "contents",
-                    "data",
-                ):
-
-                    walk(value, child_group)
-
-                else:
-
-                    walk(value, child_group)
-
-    walk(data)
-
-    return channels
-
-
-# =====================================================
-# NEXT_URL PAGINATION
-# =====================================================
-
-def get_next_page(data, current_url, ctx):
-
-    def find_next(obj):
-
-        if isinstance(obj, dict):
-
-            for key in (
-                "next_url",
-                "next_page_url",
-            ):
-
-                value = obj.get(key)
-
-                if (
-                    isinstance(value, str)
-                    and value.strip()
-                ):
-
-                    return value.strip()
-
-            for value in obj.values():
-
-                result = find_next(value)
-
-                if result:
-                    return result
-
-        elif isinstance(obj, list):
-
-            for item in obj:
-
-                result = find_next(item)
-
-                if result:
-                    return result
-
-        return None
-
-    next_url = find_next(data)
-
-    if not next_url:
-        return None
-
-    full_url = urljoin(
-        current_url,
-        next_url
-    )
-
-    parsed = urlparse(full_url)
-
-    if parsed.scheme not in ("http", "https"):
-        return None
-
-    if parsed.hostname != API_HOST:
-
-        print(
-            "[WARN] Rejected external next_url"
-        )
-
-        return None
-
-    if parsed.username or parsed.password:
-        return None
-
-    ctx["type"] = "next_url"
-
-    return full_url
-
-
-# =====================================================
-# AUTO GROUP
-# =====================================================
-
-def auto_group(title, api_group=""):
-
-    text = (
-        title + " " + api_group
-    ).lower()
-
-    for group, keywords in GROUP_RULES.items():
-
-        for keyword in keywords:
-
-            if keyword in text:
-                return group
-
-    if api_group:
-
-        return api_group
-
-    return "Other"
-
-
-# =====================================================
-# LOGO
-# =====================================================
-
-def find_logo(channel):
-
-    for key in LOGO_KEYS:
-
-        value = channel.get(key)
-
-        if isinstance(value, str):
-
-            if value.startswith(
-                ("http://", "https://", "//")
-            ):
-
-                if value.startswith("//"):
-                    return "https:" + value
-
-                return value.replace(
-                    "http://",
-                    "https://",
-                    1
+                results.extend(
+                    extract_channels(value, base_url)
                 )
 
-    images = channel.get("images")
+    elif isinstance(data, list):
 
-    if isinstance(images, dict):
+        for item in data:
 
-        for value in images.values():
-
-            if isinstance(value, str):
-
-                if value.startswith("http"):
-                    return value
-
-            if isinstance(value, dict):
-
-                for key in (
-                    "url",
-                    "original",
-                    "src",
-                ):
-
-                    url = value.get(key)
-
-                    if isinstance(url, str):
-                        if url.startswith("http"):
-                            return url
-
-    return ""
-
-
-def validate_logo(url, cache):
-
-    if not url:
-        return False
-
-    old = cache.get(url)
-
-    if old:
-
-        if (
-            old.get("v") == CACHE_VERSION
-            and time.time() - old.get("ts", 0)
-            < 86400
-        ):
-
-            return old.get("ok", False)
-
-    status, content_type, body, _, _ = request_url(
-        url,
-        IMAGE_HEADERS,
-        timeout=8,
-        read_bytes=1024
-    )
-
-    ok = (
-        status in (200, 206)
-        and (
-            "image" in content_type
-            or body.startswith(b"\xff\xd8")
-            or body.startswith(b"\x89PNG")
-            or body.startswith(b"GIF8")
-            or body.startswith(b"RIFF")
-        )
-    )
-
-    cache[url] = {
-        "ok": ok,
-        "ts": time.time(),
-        "v": CACHE_VERSION
-    }
-
-    return ok
-
-
-# =====================================================
-# STREAM VALIDATION
-# =====================================================
-
-def validate_stream(url, cache):
-
-    old = cache.get(url)
-
-    if old:
-
-        if (
-            old.get("v") == CACHE_VERSION
-            and time.time() - old.get("ts", 0)
-            < CACHE_TTL
-        ):
-
-            return old
-
-    result = {
-        "ok": False,
-        "reason": "unknown",
-        "ttfb_ms": 0,
-        "seg_kbps": 0,
-        "tier": "very_slow",
-        "kind": "unknown",
-        "resolved": url,
-        "ts": time.time(),
-        "v": CACHE_VERSION,
-    }
-
-    start = time.perf_counter()
-
-    status, content_type, body, final, elapsed = request_url(
-        url,
-        STREAM_HEADERS,
-        timeout=STREAM_TIMEOUT,
-        read_bytes=8192
-    )
-
-    result["ttfb_ms"] = round(elapsed, 1)
-
-    if status not in (200, 206):
-
-        result["reason"] = f"http_{status}"
-
-        cache[url] = result
-
-        return result
-
-    text = body.decode(
-        "utf-8",
-        errors="ignore"
-    )
-
-    if "#EXTM3U" not in text:
-
-        if any(
-            item in content_type
-            for item in (
-                "video",
-                "mpeg",
-                "octet-stream",
-            )
-        ):
-
-            result.update(
-                ok=True,
-                reason="direct_video",
-                kind="video",
-                tier=speed_tier(elapsed),
-            )
-
-        else:
-
-            result["reason"] = "invalid_m3u8"
-
-        cache[url] = result
-
-        return result
-
-    lines = [
-        line.strip()
-        for line in text.splitlines()
-        if line.strip()
-    ]
-
-    targets = []
-
-    for line in lines:
-
-        if not line.startswith("#"):
-
-            targets.append(
-                urljoin(final, line)
-            )
-
-    if not targets:
-
-        result["reason"] = "no_stream_targets"
-
-        cache[url] = result
-
-        return result
-
-    if "#EXT-X-STREAM-INF" in text:
-
-        variant = targets[0]
-
-        status2, ct2, body2, final2, elapsed2 = request_url(
-            variant,
-            STREAM_HEADERS,
-            timeout=STREAM_TIMEOUT,
-            read_bytes=8192
-        )
-
-        if status2 not in (200, 206):
-
-            result["reason"] = "variant_failed"
-
-            cache[url] = result
-
-            return result
-
-        text2 = body2.decode(
-            "utf-8",
-            errors="ignore"
-        )
-
-        if "#EXTM3U" not in text2:
-
-            result["reason"] = "invalid_variant"
-
-            cache[url] = result
-
-            return result
-
-        targets = [
-            urljoin(final2, line.strip())
-            for line in text2.splitlines()
-            if line.strip()
-            and not line.strip().startswith("#")
-        ]
-
-    if not targets:
-
-        result["reason"] = "no_segments"
-
-        cache[url] = result
-
-        return result
-
-    seg_start = time.perf_counter()
-
-    status3, _, segment, _, seg_elapsed = request_url(
-        targets[0],
-        STREAM_HEADERS,
-        timeout=STREAM_TIMEOUT,
-        read_bytes=65536
-    )
-
-    if status3 not in (200, 206):
-
-        result["reason"] = "segment_failed"
-
-        cache[url] = result
-
-        return result
-
-    if len(segment) < 16:
-
-        result["reason"] = "empty_segment"
-
-        cache[url] = result
-
-        return result
-
-    elapsed = max(seg_elapsed / 1000, 0.001)
-
-    result.update(
-        ok=True,
-        reason="working",
-        kind="hls",
-        tier=speed_tier(result["ttfb_ms"]),
-        seg_kbps=round(
-            len(segment) / 1024 / elapsed,
-            1
-        ),
-    )
-
-    cache[url] = result
-
-    return result
-
-
-def speed_tier(ms):
-
-    if ms <= 0:
-        return "very_slow"
-
-    if ms < 800:
-        return "fast"
-
-    if ms < 2000:
-        return "medium"
-
-    if ms < 4500:
-        return "slow"
-
-    return "very_slow"
-
-
-# =====================================================
-# VALIDATION
-# =====================================================
-
-def validate_all(channels, cache):
-
-    targets = {}
-
-    for channel in channels:
-
-        url = get_stream_url(channel)
-
-        if url:
-            targets[sha256(url)] = url
-
-    results = {}
-
-    total = len(targets)
-
-    print(
-        f"\n[+] Validating {total} streams..."
-    )
-
-    with ThreadPoolExecutor(
-        max_workers=WORKERS
-    ) as executor:
-
-        futures = {
-            executor.submit(
-                validate_stream,
-                url,
-                cache
-            ): key
-
-            for key, url in targets.items()
-        }
-
-        done = 0
-
-        for future in as_completed(futures):
-
-            key = futures[future]
-
-            try:
-
-                result = future.result()
-
-            except Exception as error:
-
-                result = {
-                    "ok": False,
-                    "reason": str(error),
-                    "ttfb_ms": 0,
-                    "seg_kbps": 0,
-                    "tier": "very_slow",
-                }
-
-            results[key] = result
-
-            done += 1
-
-            status = (
-                "OK"
-                if result.get("ok")
-                else "DEAD"
-            )
-
-            print(
-                f"[{done}/{total}] "
-                f"{status} "
-                f"{result.get('reason')}"
+            results.extend(
+                extract_channels(item, base_url)
             )
 
     return results
 
 
 # =====================================================
-# SORT
+# API FETCH
 # =====================================================
 
-def group_rank(group):
+def fetch_api(url):
 
     try:
-        return GROUP_ORDER.index(group)
 
-    except ValueError:
-        return len(GROUP_ORDER)
+        response = get_session().get(
+            url,
+            timeout=REQUEST_TIMEOUT
+        )
 
+        response.raise_for_status()
 
-def tier_rank(tier):
+        return response.json()
 
-    return {
-        "fast": 0,
-        "medium": 1,
-        "slow": 2,
-        "very_slow": 3,
-    }.get(tier, 4)
+    except requests.RequestException as error:
+
+        log(f"API REQUEST ERROR: {error}")
+
+    except ValueError as error:
+
+        log(f"INVALID JSON: {error}")
+
+    return None
 
 
 # =====================================================
-# PLAYLIST BUILDER
+# COMPLETE API SCANNER
 # =====================================================
 
-def build_playlist(
-    channels,
-    validation,
-    logo_cache
-):
+def scan_all_pages():
 
-    enriched = []
+    if not API_URL:
 
-    seen = set()
+        log("ERROR: BD_KB_IT_API_URL missing!")
 
-    for channel in channels:
+        sys.exit(1)
 
-        url = get_stream_url(channel)
+    current_url = API_URL
 
-        if not url:
-            continue
+    page = 0
 
-        key = sha256(url)
+    while current_url and page < MAX_PAGES:
 
-        result = validation.get(key)
+        if current_url in VISITED_PAGES:
+            log("Repeated API URL detected. Stopping.")
+            break
 
-        if not result or not result.get("ok"):
-            continue
+        VISITED_PAGES.add(current_url)
 
-        if key in seen:
-            continue
+        page += 1
 
-        seen.add(key)
+        log(f"Scanning API Page {page}")
 
-        title = clean_text(
-            get_title(channel) or "Unknown Channel"
-        )
+        data = fetch_api(current_url)
 
-        api_group = clean_text(
-            channel.get("_api_group", "")
-        )
+        if data is None:
+            break
 
-        group = auto_group(
-            title,
-            api_group
-        )
+        API_RESPONSES.append({
 
-        logo = find_logo(channel)
+            "page": page,
 
-        if not validate_logo(
-            logo,
-            logo_cache
-        ):
+            "url": current_url,
 
-            logo = IPTV_LOGO
+            "data": data
 
-        enriched.append({
-            "title": title,
-            "group": group,
-            "logo": logo,
-            "stream": url,
-            "tier": result.get(
-                "tier",
-                "very_slow"
-            ),
-            "ttfb_ms": result.get(
-                "ttfb_ms",
-                0
-            ),
-            "seg_kbps": result.get(
-                "seg_kbps",
-                0
-            ),
         })
 
-    if SORT_BY == "speed":
-
-        enriched.sort(
-            key=lambda item: (
-                tier_rank(item["tier"]),
-                item["ttfb_ms"]
-            )
+        found = extract_channels(
+            data,
+            current_url
         )
 
-    elif SORT_BY == "group":
+        added = 0
 
-        enriched.sort(
-            key=lambda item: (
-                group_rank(item["group"]),
-                item["title"].lower()
-            )
+        for channel in found:
+
+            stream = channel["url"]
+
+            with LOCK:
+
+                if stream in SEEN_STREAMS:
+                    continue
+
+                SEEN_STREAMS.add(stream)
+
+                ALL_CHANNELS.append(channel)
+
+                added += 1
+
+        log(
+            f"Page {page}: "
+            f"{len(found)} records, "
+            f"{added} unique channels"
         )
 
-    else:
+        pagination = find_pagination(data)
 
-        enriched.sort(
-            key=lambda item: (
-                group_rank(item["group"]),
-                tier_rank(item["tier"]),
-                item["ttfb_ms"]
+        if not pagination:
+            break
+
+        next_url = pagination.get("next_url")
+
+        cursor = pagination.get("cursor")
+
+        has_more = pagination.get("has_more")
+
+        if has_more is False:
+            break
+
+        if next_url:
+
+            current_url = normalize_url(
+                next_url,
+                current_url
             )
+
+        elif cursor:
+
+            current_url = build_cursor_url(
+                current_url,
+                cursor
+            )
+
+        else:
+
+            break
+
+    log(f"Total API Pages: {page}")
+
+    log(f"Total Unique Channels: {len(ALL_CHANNELS)}")
+
+
+# =====================================================
+# VALIDATION CACHE
+# =====================================================
+
+def load_cache():
+
+    global CACHE
+
+    CACHE = load_json(
+        CACHE_FILE,
+        {}
+    )
+
+
+def save_cache():
+
+    save_json(
+        CACHE_FILE,
+        CACHE
+    )
+
+
+def get_cache_key(url):
+
+    return hashlib.sha256(
+        url.encode()
+    ).hexdigest()
+
+
+def get_cached_result(url):
+
+    key = get_cache_key(url)
+
+    entry = CACHE.get(key)
+
+    if not entry:
+        return None
+
+    timestamp = entry.get("timestamp", 0)
+
+    age = time.time() - timestamp
+
+    if age > CACHE_HOURS * 3600:
+        return None
+
+    return entry
+
+
+def update_cache(url, result):
+
+    key = get_cache_key(url)
+
+    with LOCK:
+
+        CACHE[key] = {
+
+            "working": result["working"],
+
+            "ttfb": result["ttfb"],
+
+            "timestamp": time.time()
+
+        }
+
+
+# =====================================================
+# STREAM VALIDATOR
+# =====================================================
+
+def validate_stream(channel):
+
+    url = channel["url"]
+
+    cached = get_cached_result(url)
+
+    if cached:
+
+        return {
+
+            "channel": channel,
+
+            "working": cached["working"],
+
+            "ttfb": cached.get("ttfb", 0),
+
+            "cached": True
+
+        }
+
+    start = time.perf_counter()
+
+    working = False
+
+    ttfb = 0
+
+    try:
+
+        response = requests.get(
+
+            url,
+
+            headers=STREAM_HEADERS,
+
+            timeout=REQUEST_TIMEOUT,
+
+            stream=True,
+
+            allow_redirects=True
+
         )
+
+        ttfb = round(
+            (time.perf_counter() - start) * 1000,
+            2
+        )
+
+        if response.status_code in (200, 206):
+
+            content_type = response.headers.get(
+                "Content-Type",
+                ""
+            ).lower()
+
+            content = next(
+                response.iter_content(4096),
+                b""
+            )
+
+            if (
+                b"#EXTM3U" in content
+                or "mpegurl" in content_type
+                or "vnd.apple.mpegurl" in content_type
+            ):
+
+                working = True
+
+        response.close()
+
+    except requests.RequestException:
+
+        working = False
+
+    result = {
+
+        "working": working,
+
+        "ttfb": ttfb
+
+    }
+
+    update_cache(url, result)
+
+    return {
+
+        "channel": channel,
+
+        "working": working,
+
+        "ttfb": ttfb,
+
+        "cached": False
+
+    }
+
+
+# =====================================================
+# MULTI-THREAD VALIDATION
+# =====================================================
+
+def validate_all_channels():
+
+    total = len(ALL_CHANNELS)
+
+    log(f"Validating {total} channels...")
+
+    completed = 0
+
+    with ThreadPoolExecutor(
+        max_workers=MAX_WORKERS
+    ) as executor:
+
+        futures = {
+
+            executor.submit(
+                validate_stream,
+                channel
+            ): channel
+
+            for channel in ALL_CHANNELS
+
+        }
+
+        for future in as_completed(futures):
+
+            completed += 1
+
+            try:
+
+                result = future.result()
+
+                channel = result["channel"]
+
+                if result["working"]:
+
+                    WORKING_CHANNELS.append(channel)
+
+                    SPEED_REPORT.append({
+
+                        "name": channel["name"],
+
+                        "url": channel["url"],
+
+                        "ttfb_ms": result["ttfb"]
+
+                    })
+
+                    log(
+                        f"[{completed}/{total}] "
+                        f"WORKING: {channel['name']}"
+                    )
+
+                else:
+
+                    DEAD_CHANNELS.append(channel)
+
+                    log(
+                        f"[{completed}/{total}] "
+                        f"DEAD: {channel['name']}"
+                    )
+
+            except Exception as error:
+
+                log(f"VALIDATION ERROR: {error}")
+
+    save_cache()
+
+
+# =====================================================
+# CHANNEL SORTING
+# =====================================================
+
+def sort_channels():
+
+    WORKING_CHANNELS.sort(
+
+        key=lambda channel: (
+
+            channel.get("category", "").lower(),
+
+            channel.get("name", "").lower()
+
+        )
+
+    )
+
+
+# =====================================================
+# M3U PLAYLIST GENERATOR
+# =====================================================
+
+def create_playlist():
+
+    updated = datetime.now(
+        timezone.utc
+    ).strftime("%Y-%m-%d")
+
+    header = f"""#EXTM3U
+#PLAYLIST:BD-KB-IT
+#
+# ╔══════════════════════════════════════════════════╗
+# ║        B D - K B - I T   •   F R E E   T V       ║
+# ║     BANGLADESH  +  INTERNATIONAL  LIVE  TV       ║
+# ╚══════════════════════════════════════════════════╝
+#
+#  NAME      : BD-KB-IT
+#  VERSION   : 1.0.0
+#  UPDATED   : {updated}
+#  CHANNELS  : {len(WORKING_CHANNELS)}
+#  FORMAT    : M3U8 (HLS)
+#  STATUS    : 24/7 LIVE
+#
+#  MAKE BY   : Kallyan Biswas
+#  FACEBOOK  : Www.Facebook.com/kallyan.biswas.29
+#
+# ──────────────────────────────────────────────────
+
+"""
 
     with open(
         PLAYLIST_FILE,
@@ -1173,482 +836,211 @@ def build_playlist(
         encoding="utf-8"
     ) as file:
 
-        file.write("#EXTM3U\n")
+        file.write(header)
 
-        if EPG_URL:
+        for channel in WORKING_CHANNELS:
 
-            file.write(
-                f'#EXTM3U x-tvg-url="{EPG_URL}"\n'
-            )
+            name = channel["name"]
 
-        file.write(
-            f'#EXTINF:-1 tvg-name="IPTV LINKS" '
-            f'tvg-logo="{IPTV_LOGO}" '
-            f'group-title="KB PRO TV",IPTV LINKS\n'
-        )
+            logo = channel["logo"]
 
-        file.write(
-            IPTV_VIDEO + "\n\n"
-        )
+            category = channel["category"]
 
-        for index, channel in enumerate(
-            enriched,
-            1
-        ):
+            url = channel["url"]
+
+            name = name.replace('"', "'")
+
+            logo = logo.replace('"', "'")
+
+            category = category.replace('"', "'")
 
             file.write(
+
                 f'#EXTINF:-1 '
-                f'tvg-name="{channel["title"]}" '
-                f'tvg-logo="{channel["logo"]}" '
-                f'group-title="{channel["group"]}" '
-                f'tvg-chno="{index}" '
-                f'tvg-speed="{channel["tier"]}",'
-                f'{channel["title"]}\n'
+                f'tvg-name="{name}" '
+                f'tvg-logo="{logo}" '
+                f'group-title="{category}",'
+                f'{name}\n'
+
             )
 
-            file.write(
-                channel["stream"] + "\n\n"
-            )
+            # Original stream URL remains unchanged.
+            file.write(url + "\n\n")
 
-    print(
-        f"\n[OK] Playlist: {PLAYLIST_FILE}"
-    )
-
-    print(
-        f"[OK] Channels: {len(enriched)}"
-    )
-
-    return enriched
+    log(f"Playlist generated: {PLAYLIST_FILE}")
 
 
 # =====================================================
-# REPORTS
+# REPORT GENERATOR
 # =====================================================
 
-def save_reports(
-    channels,
-    validation,
-    enriched,
-    stream_cache,
-    logo_cache
-):
+def generate_reports():
 
-    save_json(
-        CHANNEL_FILE,
-        channels
-    )
+    total = len(ALL_CHANNELS)
 
-    save_json(
-        CACHE_FILE,
-        stream_cache
-    )
+    working = len(WORKING_CHANNELS)
 
-    save_json(
-        LOGO_CACHE,
-        logo_cache
-    )
+    dead = len(DEAD_CHANNELS)
+
+    health = {
+
+        "project": "BD-KB-IT",
+
+        "version": VERSION,
+
+        "updated": datetime.now(
+            timezone.utc
+        ).isoformat(),
+
+        "total_channels": total,
+
+        "working_channels": working,
+
+        "dead_channels": dead,
+
+        "success_rate": round(
+            (working / total * 100)
+            if total else 0,
+            2
+        )
+
+    }
 
     save_json(
         HEALTH_FILE,
-        {
-            "generated_at": datetime.now(
-                timezone.utc
-            ).isoformat(),
-
-            "total": len(channels),
-
-            "working": len(enriched),
-
-            "dead": len(channels) - len(enriched),
-        }
+        health
     )
-
-    dead = [
-        {
-            "stream": url,
-            "reason": result.get(
-                "reason",
-                "unknown"
-            )
-        }
-
-        for url, result in (
-            (
-                item,
-                stream_cache[item]
-            )
-            for item in stream_cache
-        )
-
-        if not result.get("ok")
-    ]
 
     save_json(
         DEAD_FILE,
-        dead
-    )
-
-    groups = {}
-
-    for channel in enriched:
-
-        groups.setdefault(
-            channel["group"],
-            []
-        ).append(
-            channel["title"]
-        )
-
-    save_json(
-        GROUPS_FILE,
-        groups
+        DEAD_CHANNELS
     )
 
     save_json(
         SPEED_FILE,
-        enriched
+        SPEED_REPORT
     )
+
+    save_json(
+        CHANNEL_DATA_FILE,
+        ALL_CHANNELS
+    )
+
+    save_json(
+        API_BACKUP_FILE,
+        API_RESPONSES
+    )
+
+    logos = {
+
+        channel["name"]: channel["logo"]
+
+        for channel in ALL_CHANNELS
+
+        if channel["logo"]
+
+    }
+
+    save_json(
+        LOGO_FILE,
+        logos
+    )
+
+    groups = {}
+
+    for channel in WORKING_CHANNELS:
+
+        category = channel["category"]
+
+        groups.setdefault(
+            category,
+            []
+        ).append(channel["name"])
+
+    save_json(
+        GROUP_FILE,
+        groups
+    )
+
+    log("All reports generated.")
 
 
 # =====================================================
-# MAIN
+# MAIN ENGINE
 # =====================================================
 
 def main():
 
-    print("=" * 64)
+    start = time.time()
 
-    print(
-        "   BD-KB-IT VIP "
-        "FULL SCAN + NEXT_URL ENGINE"
+    setup_directories()
+
+    load_cache()
+
+    log("======================================")
+
+    log("BD-KB-IT ENGINE STARTED")
+
+    log(f"VERSION: {VERSION}")
+
+    log("======================================")
+
+    # 1. Scan all API pages
+
+    scan_all_pages()
+
+    # 2. Validate streams
+
+    validate_all_channels()
+
+    # 3. Sort working channels
+
+    sort_channels()
+
+    # 4. Generate M3U playlist
+
+    create_playlist()
+
+    # 5. Generate reports and backups
+
+    generate_reports()
+
+    elapsed = round(
+        time.time() - start,
+        2
     )
 
-    print("=" * 64)
+    log("======================================")
 
-    print("API       :", API_URL)
-    print("Max Pages :", MAX_PAGES)
-    print("Sort      :", SORT_BY)
-    print("Workers   :", WORKERS)
+    log("BD-KB-IT UPDATE COMPLETED")
 
-    print("=" * 64)
+    log(f"API CHANNELS: {len(ALL_CHANNELS)}")
 
-    stream_cache = load_cache(
-        CACHE_FILE
-    )
+    log(f"WORKING: {len(WORKING_CHANNELS)}")
 
-    logo_cache = load_cache(
-        LOGO_CACHE
-    )
+    log(f"DEAD: {len(DEAD_CHANNELS)}")
 
-    all_pages = []
+    log(f"TIME: {elapsed} seconds")
 
-    all_channels = []
+    log(f"PLAYLIST: {PLAYLIST_FILE}")
 
-    visited_urls = set()
-
-    visited_hashes = set()
-
-    current_url = API_URL
-
-    ctx = {
-        "type": "next_url"
-    }
-
-    page_number = 0
-
-    stop_reason = "unknown"
-
-    while (
-        current_url
-        and page_number < MAX_PAGES
-    ):
-
-        page_number += 1
-
-        if current_url in visited_urls:
-
-            print(
-                "[STOP] Pagination URL loop"
-            )
-
-            stop_reason = "url_loop"
-
-            break
-
-        visited_urls.add(
-            current_url
-        )
-
-        print(
-            f"\n[+] Page {page_number}: "
-            f"{current_url}"
-        )
-
-        try:
-
-            data = get_api(
-                current_url
-            )
-
-        except Exception as error:
-
-            print(
-                f"[ERROR] Page {page_number}: "
-                f"{error}"
-            )
-
-            stop_reason = "api_error"
-
-            break
-
-        page_hash = hashlib.sha256(
-            json.dumps(
-                data,
-                sort_keys=True,
-                ensure_ascii=False
-            ).encode()
-        ).hexdigest()
-
-        if page_hash in visited_hashes:
-
-            print(
-                "[STOP] Duplicate page response"
-            )
-
-            stop_reason = "duplicate_page"
-
-            break
-
-        visited_hashes.add(
-            page_hash
-        )
-
-        all_pages.append(data)
-
-        channels = extract_channels(
-            data
-        )
-
-        all_channels.extend(
-            channels
-        )
-
-        print(
-            f"    → {len(channels)} channels "
-            f"(total: {len(all_channels)})"
-        )
-
-        save_json(
-            OUTPUT_DIR / (
-                f"page_{page_number:05d}.json"
-            ),
-            data
-        )
-
-        # IMPORTANT:
-        # Empty page does NOT stop pagination.
-
-        if not channels:
-
-            print(
-                "[INFO] Empty page - "
-                "checking next_url"
-            )
-
-        # Only API-provided next_url.
-
-        next_url = get_next_page(
-            data,
-            current_url,
-            ctx
-        )
-
-        if not next_url:
-
-            stop_reason = "no_next_url"
-
-            print(
-                "\n[+] API pagination finished"
-            )
-
-            break
-
-        current_url = next_url
-
-        time.sleep(0.35)
-
-    if page_number >= MAX_PAGES and current_url:
-
-        stop_reason = "max_pages_reached"
-
-    # =================================================
-    # PAGINATION SUMMARY
-    # =================================================
-
-    print("\n" + "=" * 64)
-
-    print("PAGINATION SUMMARY")
-
-    print(
-        "Pages scanned:",
-        page_number
-    )
-
-    print(
-        "Channels found:",
-        len(all_channels)
-    )
-
-    print(
-        "Pagination:",
-        ctx["type"]
-    )
-
-    print(
-        "Stopped:",
-        stop_reason
-    )
-
-    print("=" * 64)
-
-    if not all_pages:
-
-        raise SystemExit(
-            "ERROR: No API pages fetched"
-        )
-
-    # =================================================
-    # DEDUPLICATION
-    # =================================================
-
-    unique = []
-
-    seen = set()
-
-    for channel in all_channels:
-
-        stream = get_stream_url(
-            channel
-        )
-
-        if not stream:
-            continue
-
-        key = sha256(stream)
-
-        if key in seen:
-            continue
-
-        seen.add(key)
-
-        unique.append(
-            channel
-        )
-
-    print(
-        "\n[OK] Unique channels:",
-        len(unique)
-    )
-
-    # =================================================
-    # VALIDATION
-    # =================================================
-
-    validation = validate_all(
-        unique,
-        stream_cache
-    )
-
-    # =================================================
-    # PLAYLIST
-    # =================================================
-
-    enriched = build_playlist(
-        unique,
-        validation,
-        logo_cache
-    )
-
-    # =================================================
-    # REPORTS
-    # =================================================
-
-    save_reports(
-        unique,
-        validation,
-        enriched,
-        stream_cache,
-        logo_cache
-    )
-
-    save_json(
-        RAW_FILE,
-        all_pages
-    )
-
-    # =================================================
-    # SUMMARY
-    # =================================================
-
-    print("\n" + "=" * 64)
-
-    print(
-        "       BD-KB-IT UPDATE COMPLETED"
-    )
-
-    print("=" * 64)
-
-    print(
-        "Pages scanned:",
-        page_number
-    )
-
-    print(
-        "Total channels:",
-        len(unique)
-    )
-
-    print(
-        "Working channels:",
-        len(enriched)
-    )
-
-    print(
-        "Playlist:",
-        PLAYLIST_FILE
-    )
-
-    print(
-        "Health:",
-        HEALTH_FILE
-    )
-
-    print(
-        "Dead:",
-        DEAD_FILE
-    )
-
-    print(
-        "Groups:",
-        GROUPS_FILE
-    )
-
-    print(
-        "Speed:",
-        SPEED_FILE
-    )
-
-    print("=" * 64)
-
-    if not enriched:
-
-        print(
-            "[WARNING] No working channels found."
-        )
-
-        raise SystemExit(1)
+    log("======================================")
 
 
 if __name__ == "__main__":
 
-    main()
+    try:
+
+        main()
+
+    except KeyboardInterrupt:
+
+        log("Process stopped by user.")
+
+        sys.exit(130)
+
+    except Exception:
+
+        logger.exception("FATAL ENGINE ERROR")
+
+        sys.exit(1)
