@@ -1,96 +1,74 @@
 {
-    "Sports": [
-        "Sports Fishing TV",
-        "FIFA+",
-        "NTV Europe",
-        "Talk Sport",
-        "PTV Sports",
-        "T Sports HD",
-        "TNT Sport 1",
-        "NFL Network",
-        "Cricket Gold",
-        "Bahrain Sports 1"
-    ],
-    "News": [
-        "Weather SPY",
-        "ABN",
-        "India Today",
-        "Sky News Weather",
-        "Accu Weather",
-        "BBC News",
-        "USA TV",
-        "Fox 5",
-        "FX TV",
-        "Bharat Samachar",
-        "Sky News",
-        "Fox News",
-        "CP 24",
-        "BTV CTG",
-        "ABC News",
-        "CNN",
-        "DW News",
-        "Wion",
-        "ATN News",
-        "Ekattor TV",
-        "DBC News",
-        "Jamuna TV",
-        "Fox Weather",
-        "Aljazeera News"
-    ],
-    "Movies": [
-        "HBO 2",
-        "Goldmines Movies",
-        "Hindi Movie Classic 24"
-    ],
-    "Music": [
-        "Sangeet Bangla"
-    ],
-    "Religious": [
-        "MADANI TV"
-    ],
-    "Documentary": [
-        "Animal Planet HD",
-        "Discovery HD",
-        "Nat Geo TV"
-    ],
-    "Entertainment": [
-        "Drama 24",
-        "Bloomberg TV"
-    ],
-    "Business": [
-        "Fox business",
-        "CNBC TV"
-    ],
-    "Local": [
-        "DD Bangla",
-        "kolkata TV",
-        "Enter 10 Bangla",
-        "Bangla TV",
-        "ATN Bangla",
-        "Bangla Vision"
-    ],
-    "Popular Live Tvs": [
-        "Goal TV",
-        "Test Live TV",
-        "Thikana"
-    ],
-    "Bangla": [
-        "Asian TV",
-        "Boishakhi TV",
-        "Channel 9",
-        "Ananda TV",
-        "SA TV",
-        "My TV",
-        "Mohona TV",
-        "NEXUS TV"
-    ],
-    "Channels": [
-        "ETV",
-        "Deepto TV",
-        "NTV",
-        "Channel 24",
-        "Channel I",
-        "Ekhon TV",
-        "Maasranga TV"
-    ]
+  "Sports": [
+    "Xtrem Sports",
+    "Cricket Gold",
+    "T Sports HD",
+    "Marquee Sports Network",
+    "Talk Sport"
+  ],
+  "News": [
+    "Sky News Weather",
+    "BBC News",
+    "Jamuna TV"
+  ],
+  "Movies": [
+    "Khushboo",
+    "Hindi Movie Classic 24",
+    "HBO 2",
+    "Goldmines Movies"
+  ],
+  "Kids": [
+    "Moonbug Kids",
+    "Dios Te Ve Kids",
+    "3ABN Kids",
+    "TVC Arabic Kids",
+    "Kids TV"
+  ],
+  "Religious": [
+    "Islam TV"
+  ],
+  "Documentary": [
+    "Discovery Family"
+  ],
+  "Local": [
+    "TV9 Bangla",
+    "Enter 10 Bangla",
+    "Iqra Bangla",
+    "ATN Bangla",
+    "DD Bangla"
+  ],
+  "Other": [
+    "Wion",
+    "Goal TV",
+    "Wild TV",
+    "Weather SPY",
+    "OAN",
+    "Accu Weather",
+    "Travel XP",
+    "NTV Europe",
+    "ABN",
+    "Adventure Earth",
+    "World War TV",
+    "Fox Weather",
+    "Discover Pikstan",
+    "India Today",
+    "9X Tashan",
+    "Channel I",
+    "SA TV",
+    "Global TV",
+    "Goldmines Bollywood",
+    "Network 10",
+    "Travel Channel",
+    "Featured Live Tvs",
+    "Maasranga TV",
+    "YTV",
+    "Goldmines",
+    "Deen TV",
+    "CP 24",
+    "G series",
+    "Amc",
+    "Top Live Tvs",
+    "Channel 52",
+    "Latest Live Tvs"
+  ]
 }

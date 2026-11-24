@@ -1,562 +1,506 @@
 [
-    {
-        "title": "Weather SPY",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 180.6,
-        "seg_kbps": 1811.5,
-        "stream": "https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8"
-    },
-    {
-        "title": "Goal TV",
-        "group": "Popular Live Tvs",
-        "tier": "fast",
-        "ttfb_ms": 224.6,
-        "seg_kbps": 1706.9,
-        "stream": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8"
-    },
-    {
-        "title": "ABN",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 226.4,
-        "seg_kbps": 192.0,
-        "stream": "https://mediaserver.abnvideos.com/streams/abnurdu.m3u8"
-    },
-    {
-        "title": "India Today",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 266.9,
-        "seg_kbps": 70.6,
-        "stream": "https://feeds.intoday.in/hltapps/api/master.m3u8"
-    },
-    {
-        "title": "Sports Fishing TV",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 269.8,
-        "seg_kbps": 92.7,
-        "stream": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8"
-    },
-    {
-        "title": "Sky News Weather",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 276.9,
-        "seg_kbps": 589.5,
-        "stream": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8"
-    },
-    {
-        "title": "Accu Weather",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 291.5,
-        "seg_kbps": 183.7,
-        "stream": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8"
-    },
-    {
-        "title": "DD Bangla",
-        "group": "Local",
-        "tier": "fast",
-        "ttfb_ms": 319.7,
-        "seg_kbps": 177.9,
-        "stream": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8"
-    },
-    {
-        "title": "FIFA+",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 424.2,
-        "seg_kbps": 0.2,
-        "stream": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8"
-    },
-    {
-        "title": "NTV Europe",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 429.5,
-        "seg_kbps": 89.0,
-        "stream": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8"
-    },
-    {
-        "title": "BBC News",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 449.0,
-        "seg_kbps": 91.0,
-        "stream": "https://tvsen1.aynaott.com/shn6jGTk/index.m3u8"
-    },
-    {
-        "title": "Fox business",
-        "group": "Business",
-        "tier": "fast",
-        "ttfb_ms": 675.1,
-        "seg_kbps": 57.6,
-        "stream": "https://tvsen6.aynaott.com/foxbusiness/index.m3u8"
-    },
-    {
-        "title": "Asian TV",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 675.7,
-        "seg_kbps": 52.7,
-        "stream": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8"
-    },
-    {
-        "title": "HBO 2",
-        "group": "Movies",
-        "tier": "fast",
-        "ttfb_ms": 678.6,
-        "seg_kbps": 56.8,
-        "stream": "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8"
-    },
-    {
-        "title": "Goldmines Movies",
-        "group": "Movies",
-        "tier": "fast",
-        "ttfb_ms": 678.7,
-        "seg_kbps": 57.0,
-        "stream": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8"
-    },
-    {
-        "title": "MADANI TV",
-        "group": "Religious",
-        "tier": "fast",
-        "ttfb_ms": 679.0,
-        "seg_kbps": 57.1,
-        "stream": "https://tvsen3.aynaott.com/z24qLsqV/index.m3u8"
-    },
-    {
-        "title": "Animal Planet HD",
-        "group": "Documentary",
-        "tier": "fast",
-        "ttfb_ms": 679.9,
-        "seg_kbps": 56.8,
-        "stream": "https://tvsen3.aynaott.com/wpa56Uk3/index.m3u8"
-    },
-    {
-        "title": "Discovery HD",
-        "group": "Documentary",
-        "tier": "fast",
-        "ttfb_ms": 681.3,
-        "seg_kbps": 56.2,
-        "stream": "https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8"
-    },
-    {
-        "title": "USA TV",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 683.9,
-        "seg_kbps": 56.7,
-        "stream": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8"
-    },
-    {
-        "title": "Fox 5",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 686.3,
-        "seg_kbps": 55.1,
-        "stream": "https://tvsen6.aynaott.com/fox5/index.m3u8"
-    },
-    {
-        "title": "FX TV",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 689.1,
-        "seg_kbps": 54.9,
-        "stream": "https://tvsen3.aynaott.com/jTqkTE8W/index.m3u8"
-    },
-    {
-        "title": "Bharat Samachar",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 692.6,
-        "seg_kbps": 56.4,
-        "stream": "https://tvsen3.aynaott.com/m94BZDYb/index.m3u8"
-    },
-    {
-        "title": "Sky News",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 699.6,
-        "seg_kbps": 56.8,
-        "stream": "https://tvsen5.aynaott.com/skynews/index.m3u8"
-    },
-    {
-        "title": "Hindi Movie Classic 24",
-        "group": "Movies",
-        "tier": "fast",
-        "ttfb_ms": 700.1,
-        "seg_kbps": 55.8,
-        "stream": "https://vods2.aynaott.com/hindimovies/index.m3u8"
-    },
-    {
-        "title": "kolkata TV",
-        "group": "Local",
-        "tier": "fast",
-        "ttfb_ms": 700.1,
-        "seg_kbps": 56.7,
-        "stream": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8"
-    },
-    {
-        "title": "Talk Sport",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 701.6,
-        "seg_kbps": 57.7,
-        "stream": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8"
-    },
-    {
-        "title": "Boishakhi TV",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 709.3,
-        "seg_kbps": 56.6,
-        "stream": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8"
-    },
-    {
-        "title": "Nat Geo TV",
-        "group": "Documentary",
-        "tier": "fast",
-        "ttfb_ms": 710.2,
-        "seg_kbps": 55.2,
-        "stream": "https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8"
-    },
-    {
-        "title": "Channel 9",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 710.3,
-        "seg_kbps": 53.8,
-        "stream": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8"
-    },
-    {
-        "title": "Drama 24",
-        "group": "Entertainment",
-        "tier": "fast",
-        "ttfb_ms": 712.1,
-        "seg_kbps": 55.3,
-        "stream": "https://vods2.aynaott.com/gseriesDrama/index.m3u8"
-    },
-    {
-        "title": "Ananda TV",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 713.7,
-        "seg_kbps": 57.1,
-        "stream": "https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8"
-    },
-    {
-        "title": "Fox News",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 716.3,
-        "seg_kbps": 57.7,
-        "stream": "https://tvsen6.aynaott.com/foxnews/index.m3u8"
-    },
-    {
-        "title": "CP 24",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 719.1,
-        "seg_kbps": 57.2,
-        "stream": "https://tvsen6.aynaott.com/cp24/index.m3u8"
-    },
-    {
-        "title": "Enter 10 Bangla",
-        "group": "Local",
-        "tier": "fast",
-        "ttfb_ms": 722.9,
-        "seg_kbps": 119.9,
-        "stream": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8"
-    },
-    {
-        "title": "BTV CTG",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 724.1,
-        "seg_kbps": 57.0,
-        "stream": "https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8"
-    },
-    {
-        "title": "SA TV",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 730.2,
-        "seg_kbps": 52.8,
-        "stream": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8"
-    },
-    {
-        "title": "My TV",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 730.4,
-        "seg_kbps": 57.5,
-        "stream": "https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8"
-    },
-    {
-        "title": "Mohona TV",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 731.3,
-        "seg_kbps": 55.8,
-        "stream": "https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8"
-    },
-    {
-        "title": "NEXUS TV",
-        "group": "Bangla",
-        "tier": "fast",
-        "ttfb_ms": 732.2,
-        "seg_kbps": 55.8,
-        "stream": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8"
-    },
-    {
-        "title": "Bangla TV",
-        "group": "Local",
-        "tier": "fast",
-        "ttfb_ms": 732.9,
-        "seg_kbps": 52.6,
-        "stream": "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8"
-    },
-    {
-        "title": "PTV Sports",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 736.2,
-        "seg_kbps": 55.1,
-        "stream": "https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8"
-    },
-    {
-        "title": "T Sports HD",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 736.9,
-        "seg_kbps": 56.5,
-        "stream": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8"
-    },
-    {
-        "title": "ATN Bangla",
-        "group": "Local",
-        "tier": "fast",
-        "ttfb_ms": 737.8,
-        "seg_kbps": 53.9,
-        "stream": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
-    },
-    {
-        "title": "ETV",
-        "group": "Channels",
-        "tier": "fast",
-        "ttfb_ms": 739.4,
-        "seg_kbps": 53.4,
-        "stream": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8"
-    },
-    {
-        "title": "Bangla Vision",
-        "group": "Local",
-        "tier": "fast",
-        "ttfb_ms": 743.1,
-        "seg_kbps": 56.7,
-        "stream": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
-    },
-    {
-        "title": "ABC News",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 743.2,
-        "seg_kbps": 57.7,
-        "stream": "https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8"
-    },
-    {
-        "title": "CNBC TV",
-        "group": "Business",
-        "tier": "fast",
-        "ttfb_ms": 747.4,
-        "seg_kbps": 57.7,
-        "stream": "https://tvsen6.aynaott.com/cnbc/index.m3u8"
-    },
-    {
-        "title": "CNN",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 751.2,
-        "seg_kbps": 57.5,
-        "stream": "https://tvsen6.aynaott.com/cnn/index.m3u8"
-    },
-    {
-        "title": "DW News",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 751.7,
-        "seg_kbps": 55.4,
-        "stream": "https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8"
-    },
-    {
-        "title": "Wion",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 753.9,
-        "seg_kbps": 54.8,
-        "stream": "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8"
-    },
-    {
-        "title": "Sangeet Bangla",
-        "group": "Music",
-        "tier": "fast",
-        "ttfb_ms": 758.2,
-        "seg_kbps": 57.4,
-        "stream": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8"
-    },
-    {
-        "title": "TNT Sport 1",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 758.7,
-        "seg_kbps": 55.4,
-        "stream": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8"
-    },
-    {
-        "title": "Deepto TV",
-        "group": "Channels",
-        "tier": "fast",
-        "ttfb_ms": 765.0,
-        "seg_kbps": 53.7,
-        "stream": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
-    },
-    {
-        "title": "NTV",
-        "group": "Channels",
-        "tier": "fast",
-        "ttfb_ms": 772.1,
-        "seg_kbps": 53.7,
-        "stream": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
-    },
-    {
-        "title": "Bloomberg TV",
-        "group": "Entertainment",
-        "tier": "fast",
-        "ttfb_ms": 774.3,
-        "seg_kbps": 57.1,
-        "stream": "https://tvsen6.aynaott.com/bloombergtv/index.m3u8"
-    },
-    {
-        "title": "NFL Network",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 776.5,
-        "seg_kbps": 57.2,
-        "stream": "https://tvsen6.aynaott.com/nfl/index.m3u8"
-    },
-    {
-        "title": "ATN News",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 778.2,
-        "seg_kbps": 57.5,
-        "stream": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
-    },
-    {
-        "title": "Cricket Gold",
-        "group": "Sports",
-        "tier": "fast",
-        "ttfb_ms": 779.6,
-        "seg_kbps": 57.1,
-        "stream": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8"
-    },
-    {
-        "title": "Channel 24",
-        "group": "Channels",
-        "tier": "fast",
-        "ttfb_ms": 781.8,
-        "seg_kbps": 57.4,
-        "stream": "https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8"
-    },
-    {
-        "title": "Ekattor TV",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 782.2,
-        "seg_kbps": 58.1,
-        "stream": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8"
-    },
-    {
-        "title": "Channel I",
-        "group": "Channels",
-        "tier": "fast",
-        "ttfb_ms": 786.5,
-        "seg_kbps": 55.4,
-        "stream": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
-    },
-    {
-        "title": "DBC News",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 787.3,
-        "seg_kbps": 57.2,
-        "stream": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8"
-    },
-    {
-        "title": "Jamuna TV",
-        "group": "News",
-        "tier": "fast",
-        "ttfb_ms": 788.7,
-        "seg_kbps": 57.3,
-        "stream": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
-    },
-    {
-        "title": "Ekhon TV",
-        "group": "Channels",
-        "tier": "medium",
-        "ttfb_ms": 807.7,
-        "seg_kbps": 56.7,
-        "stream": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8"
-    },
-    {
-        "title": "Maasranga TV",
-        "group": "Channels",
-        "tier": "medium",
-        "ttfb_ms": 812.6,
-        "seg_kbps": 57.7,
-        "stream": "https://tvsen6.aynaott.com/maasrangatv/index.m3u8"
-    },
-    {
-        "title": "Fox Weather",
-        "group": "News",
-        "tier": "medium",
-        "ttfb_ms": 878.4,
-        "seg_kbps": 159.6,
-        "stream": "https://247wlive.foxweather.com/stream/index.m3u8"
-    },
-    {
-        "title": "Bahrain Sports 1",
-        "group": "Sports",
-        "tier": "medium",
-        "ttfb_ms": 967.3,
-        "seg_kbps": 58.5,
-        "stream": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8"
-    },
-    {
-        "title": "Test Live TV",
-        "group": "Popular Live Tvs",
-        "tier": "medium",
-        "ttfb_ms": 1034.9,
-        "seg_kbps": 45.0,
-        "stream": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8"
-    },
-    {
-        "title": "Thikana",
-        "group": "Popular Live Tvs",
-        "tier": "medium",
-        "ttfb_ms": 1232.3,
-        "seg_kbps": 44.2,
-        "stream": "https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8"
-    },
-    {
-        "title": "Aljazeera News",
-        "group": "News",
-        "tier": "medium",
-        "ttfb_ms": 1438.5,
-        "seg_kbps": 34.6,
-        "stream": "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"
-    }
+  {
+    "title": "Xtrem Sports",
+    "group": "Sports",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 157.5,
+    "seg_kbps": 115.9
+  },
+  {
+    "title": "Cricket Gold",
+    "group": "Sports",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 650.8,
+    "seg_kbps": 58.9
+  },
+  {
+    "title": "T Sports HD",
+    "group": "Sports",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 651.6,
+    "seg_kbps": 59.4
+  },
+  {
+    "title": "Marquee Sports Network",
+    "group": "Sports",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/MarqueeSportsNetwork/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 699.8,
+    "seg_kbps": 59.4
+  },
+  {
+    "title": "Talk Sport",
+    "group": "Sports",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 700.7,
+    "seg_kbps": 58.4
+  },
+  {
+    "title": "Sky News Weather",
+    "group": "News",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 378.9,
+    "seg_kbps": 105.6
+  },
+  {
+    "title": "BBC News",
+    "group": "News",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen1.aynaott.com/shn6jGTk/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 457.8,
+    "seg_kbps": 84.3
+  },
+  {
+    "title": "Jamuna TV",
+    "group": "News",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 692.0,
+    "seg_kbps": 59.7
+  },
+  {
+    "title": "Khushboo",
+    "group": "Movies",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 654.0,
+    "seg_kbps": 59.6
+  },
+  {
+    "title": "Hindi Movie Classic 24",
+    "group": "Movies",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://vods2.aynaott.com/hindimovies/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 655.7,
+    "seg_kbps": 59.5
+  },
+  {
+    "title": "HBO 2",
+    "group": "Movies",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 657.1,
+    "seg_kbps": 59.4
+  },
+  {
+    "title": "Goldmines Movies",
+    "group": "Movies",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 658.0,
+    "seg_kbps": 59.1
+  },
+  {
+    "title": "Moonbug Kids",
+    "group": "Kids",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://moonbug-rokuus.amagi.tv/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 252.9,
+    "seg_kbps": 187.5
+  },
+  {
+    "title": "Dios Te Ve Kids",
+    "group": "Kids",
+    "logo": "https://s3.aynaott.com/storage/dc654c62fa2f2cd754894ebc9353da9c",
+    "stream": "https://s.emisoras.tv:8081/diostevekids/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 277.6,
+    "seg_kbps": 153.2
+  },
+  {
+    "title": "3ABN Kids",
+    "group": "Kids",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://3abn.bozztv.com/3abn2/Kids_live/smil:Kids_live.smil/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 442.3,
+    "seg_kbps": 154.9
+  },
+  {
+    "title": "TVC Arabic Kids",
+    "group": "Kids",
+    "logo": "https://s3.aynaott.com/storage/31957d5960d3a36d8f9ca4d5a56eee96",
+    "stream": "https://tvsen6.aynaott.com/TVCArabicKids/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 659.4,
+    "seg_kbps": 60.0
+  },
+  {
+    "title": "Kids TV",
+    "group": "Kids",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
+    "tier": "medium",
+    "ttfb_ms": 859.0,
+    "seg_kbps": 51.5
+  },
+  {
+    "title": "Islam TV",
+    "group": "Religious",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen1.aynaott.com/bB3A5dyq/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 457.9,
+    "seg_kbps": 81.6
+  },
+  {
+    "title": "Discovery Family",
+    "group": "Documentary",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen5.aynaott.com/discoveryfamily/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 653.2,
+    "seg_kbps": 59.6
+  },
+  {
+    "title": "TV9 Bangla",
+    "group": "Local",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 528.4,
+    "seg_kbps": 5921.8
+  },
+  {
+    "title": "Enter 10 Bangla",
+    "group": "Local",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 547.4,
+    "seg_kbps": 68.4
+  },
+  {
+    "title": "Iqra Bangla",
+    "group": "Local",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/EuEy5mBW/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 658.7,
+    "seg_kbps": 59.1
+  },
+  {
+    "title": "ATN Bangla",
+    "group": "Local",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 672.5,
+    "seg_kbps": 59.2
+  },
+  {
+    "title": "DD Bangla",
+    "group": "Local",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 778.1,
+    "seg_kbps": 50.0
+  },
+  {
+    "title": "Wion",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 23.8,
+    "seg_kbps": 4453.1
+  },
+  {
+    "title": "Goal TV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 50.0,
+    "seg_kbps": 116.9
+  },
+  {
+    "title": "Wild TV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 79.0,
+    "seg_kbps": 4820.2
+  },
+  {
+    "title": "Weather SPY",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 141.3,
+    "seg_kbps": 194.6
+  },
+  {
+    "title": "OAN",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://a-cdn.klowdtv.com/live1/oan_720p/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 150.2,
+    "seg_kbps": 2757.4
+  },
+  {
+    "title": "Accu Weather",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 196.4,
+    "seg_kbps": 960.2
+  },
+  {
+    "title": "Travel XP",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 221.0,
+    "seg_kbps": 1465.0
+  },
+  {
+    "title": "NTV Europe",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 237.9,
+    "seg_kbps": 88.7
+  },
+  {
+    "title": "ABN",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://mediaserver.abnvideos.com/streams/abnurdu.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 258.6,
+    "seg_kbps": 132.1
+  },
+  {
+    "title": "Adventure Earth",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 262.2,
+    "seg_kbps": 222.7
+  },
+  {
+    "title": "World War TV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://aenetworks-worldwartv-rakuten.amagi.tv/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 449.2,
+    "seg_kbps": 98.2
+  },
+  {
+    "title": "Fox Weather",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://247wlive.foxweather.com/stream/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 467.4,
+    "seg_kbps": 536.8
+  },
+  {
+    "title": "Discover Pikstan",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 499.6,
+    "seg_kbps": 80.3
+  },
+  {
+    "title": "India Today",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://feeds.intoday.in/hltapps/api/master.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 627.4,
+    "seg_kbps": 72.6
+  },
+  {
+    "title": "9X Tashan",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/sMqhLN6n/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 648.6,
+    "seg_kbps": 59.6
+  },
+  {
+    "title": "Channel I",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 649.4,
+    "seg_kbps": 59.9
+  },
+  {
+    "title": "SA TV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 652.0,
+    "seg_kbps": 59.7
+  },
+  {
+    "title": "Global TV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 654.1,
+    "seg_kbps": 57.0
+  },
+  {
+    "title": "Goldmines Bollywood",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/55xNrLdf/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 654.1,
+    "seg_kbps": 59.9
+  },
+  {
+    "title": "Network 10",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/3Cb2WLFz/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 654.8,
+    "seg_kbps": 59.5
+  },
+  {
+    "title": "Travel Channel",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/sFwCR6Fu/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 655.2,
+    "seg_kbps": 59.1
+  },
+  {
+    "title": "Featured Live Tvs",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 655.3,
+    "seg_kbps": 59.2
+  },
+  {
+    "title": "Maasranga TV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/maasrangatv/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 657.2,
+    "seg_kbps": 59.7
+  },
+  {
+    "title": "YTV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/uYpFg3RV/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 658.3,
+    "seg_kbps": 59.0
+  },
+  {
+    "title": "Goldmines",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/VamXuQH8/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 662.6,
+    "seg_kbps": 58.9
+  },
+  {
+    "title": "Deen TV",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen3.aynaott.com/TJcnZW3U/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 663.0,
+    "seg_kbps": 59.2
+  },
+  {
+    "title": "CP 24",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/cp24/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 693.7,
+    "seg_kbps": 59.7
+  },
+  {
+    "title": "G series",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 694.5,
+    "seg_kbps": 59.4
+  },
+  {
+    "title": "Amc",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/amc/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 695.6,
+    "seg_kbps": 59.6
+  },
+  {
+    "title": "Top Live Tvs",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 698.3,
+    "seg_kbps": 59.6
+  },
+  {
+    "title": "Channel 52",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://tvsen6.aynaott.com/channel52/index.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 701.3,
+    "seg_kbps": 59.5
+  },
+  {
+    "title": "Latest Live Tvs",
+    "group": "Other",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "stream": "https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66.sdp/playlist_dvr.m3u8",
+    "tier": "fast",
+    "ttfb_ms": 772.3,
+    "seg_kbps": 617.5
+  }
 ]

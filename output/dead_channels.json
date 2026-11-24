@@ -1,242 +1,362 @@
 [
-    {
-        "stream": "6211049a01ddd3e7",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "1312d0997fcb7cf5",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "d04b818951f1d1c6",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "4ede90a2bbabd480",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "7e1266f30ca5ea46",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "9b9a0fa947479b9c",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "0a86058c353f6e86",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "ae69aa287e202d62",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "1d7ecd142dfee792",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "3efb2eeb3d45bdb9",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "78bbf488775a86d9",
-        "reason": "step3_segment_404"
-    },
-    {
-        "stream": "823cbe1377b5890c",
-        "reason": "step3_segment_404"
-    },
-    {
-        "stream": "10371b4d743feaa2",
-        "reason": "step3_segment_404"
-    },
-    {
-        "stream": "69855fd0d4f39b9d",
-        "reason": "step3_segment_404"
-    },
-    {
-        "stream": "6fbd6ec01b13e484",
-        "reason": "step3_segment_404"
-    },
-    {
-        "stream": "e4fcbbf77064febd",
-        "reason": "step3_segment_404"
-    },
-    {
-        "stream": "d939d7f8254762fb",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "e3b93c7973b1d14f",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "aa458335f7b4ae0d",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "5e6178398a771da0",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "9a1836bf4fba9c81",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "1092c174a828de12",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "61e5e960da9aeff8",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "aba0681b1488202d",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "0faa7f6a5301d797",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "542f8bb67ed882d5",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "243b82513996484d",
-        "reason": "step1_http_err"
-    },
-    {
-        "stream": "2a768f7e120a5190",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "f6bbc49cb9210027",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "be194b5bc8624af6",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "7b6aeba98b7e3ef0",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "bf9bca6bf77be96a",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "0bd18d8817c03aa7",
-        "reason": "step3_segment_404"
-    },
-    {
-        "stream": "1ac30c173646b982",
-        "reason": "step1_http_err"
-    },
-    {
-        "stream": "751b51fcaf78f140",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "e7771d41703809f1",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "c63af2650f34fddd",
-        "reason": "step1_http_err"
-    },
-    {
-        "stream": "f675d2ee1ca2575a",
-        "reason": "step1_http_403"
-    },
-    {
-        "stream": "9ec2be5983138449",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "2a397d4d89061cfc",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "653f225323c4fff0",
-        "reason": "step1_http_err"
-    },
-    {
-        "stream": "b5fccf72c5459c71",
-        "reason": "step1_http_err"
-    },
-    {
-        "stream": "04f9e6aaa2983252",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "f49a8ddf45f4097a",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "3672131169ddab54",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "95b750575f7d10e6",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "a9d7d85bad916221",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "830022c23599649e",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "5e376625beb36faa",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "f5ecbe897815fb94",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "c8114a7d22dd1c8d",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "a9eb6830e457e9bc",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "1ef9b505a72ac46f",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "9d192674fd4500da",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "e7c53c46e040c56d",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "0d376b9be4e43ec3",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "c85676e3d3f415fc",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "9f0543be3a389016",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "6ea856eb21faaae5",
-        "reason": "step1_http_404"
-    },
-    {
-        "stream": "8a2be0317c2bbe78",
-        "reason": "step1_http_404"
-    }
+  {
+    "stream": "https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://cdn-6.pishow.tv/live/13/master.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/shagor-backup/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/espn/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/tsn2/index.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/Sports1/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/tsn1/index.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8",
+    "reason": "step3_segment_404"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/tsn3/index.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8",
+    "reason": "step3_segment_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8",
+    "reason": "step3_segment_404"
+  },
+  {
+    "stream": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8",
+    "reason": "segment_failed"
+  },
+  {
+    "stream": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8",
+    "reason": "step3_segment_404"
+  },
+  {
+    "stream": "https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8",
+    "reason": "segment_failed"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
+    "reason": "segment_failed"
+  },
+  {
+    "stream": "https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8",
+    "reason": "step3_segment_404"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/Sports4/index.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/faGd3tuq/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/m94BZDYb/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8",
+    "reason": "segment_failed"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/lifetime/index.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/TRTWorldHD/index.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8",
+    "reason": "step1_http_err"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/timetv/index.m3u8",
+    "reason": "step1_http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/vtvusa/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/TaVfw58T/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/hbo/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/mtv/index.m3u8",
+    "reason": "step3_segment_404"
+  },
+  {
+    "stream": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
+    "reason": "http_0"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/34fJSjZP/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://live.presstv.ir/hls/presstv_5_482/index.m3u8",
+    "reason": "step1_http_err"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/disney/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://live.zoomnews.info/live/Zoom_playlist.m3u8",
+    "reason": "http_523"
+  },
+  {
+    "stream": "http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8",
+    "reason": "http_0"
+  },
+  {
+    "stream": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/z24qLsqV/index.m3u8",
+    "reason": "segment_failed"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/xjkX3euD/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8",
+    "reason": "step1_http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/dhoom/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/andpictureshd/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen5.aynaott.com/qRHda6ax/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/pitaara/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8",
+    "reason": "no_stream_targets"
+  },
+  {
+    "stream": "https://cdn.mycloudstream.io/hls/live/broadcast/nro19k2h/index.m3u8",
+    "reason": "invalid_variant"
+  },
+  {
+    "stream": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
+    "reason": "http_0"
+  },
+  {
+    "stream": "https://muzzik-live.morescreens.com/mts-5/playlist.m3u8",
+    "reason": "http_0"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/teennick/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/skycinemanimation/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-2/live.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/takbeer/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://cdn-4.pishow.tv/live/229/master.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
+    "reason": "segment_failed"
+  },
+  {
+    "stream": "https://protokolldns.xyz/rtvislamweb554/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen7.aynaott.com/RongeenTV/index.m3u8",
+    "reason": "http_403"
+  },
+  {
+    "stream": "https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8",
+    "reason": "http_0"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/6XDrdRHa/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/mtstv/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/25FZdZrX/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen5.aynaott.com/disneyxd/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/KidsPrangTV/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/AndTV/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/jzT482XQ/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/er7jmpVF/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/sunnahtv/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/WHy6ffXz/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/qurantv/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/zmcc2Yy4/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen3.aynaott.com/8m7Vmh3K/index.m3u8",
+    "reason": "http_404"
+  },
+  {
+    "stream": "https://tvsen6.aynaott.com/cgtnDocumentary/index.m3u8",
+    "reason": "http_404"
+  }
 ]

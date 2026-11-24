@@ -1,0 +1,1304 @@
+{
+  "records": [
+    {
+      "id": "019efa5d-2f91-73e3-a584-3104e6c91a42",
+      "title": "Regular",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": null,
+      "has_more": false,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": []
+    },
+    {
+      "id": "019efa5d-2fa0-7760-adaa-b815ffe1c7b8",
+      "title": "Urdhu",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": null,
+      "has_more": false,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019de785-3b73-704a-84f5-817ac948026a",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "geo-ent",
+          "title": "Geo ENT",
+          "description": "Geo ENT brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/geo-ent",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ec64adf4b1ed1539485f005a4eeb4ad5_playmist_geo_ent400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ec64adf4b1ed1539485f005a4eeb4ad5_playmist_geo_ent400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ec64adf4b1ed1539485f005a4eeb4ad5_playmist_geo_ent400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ec64adf4b1ed1539485f005a4eeb4ad5_playmist_geo_ent400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ec64adf4b1ed1539485f005a4eeb4ad5_playmist_geo_ent400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ec64adf4b1ed1539485f005a4eeb4ad5_playmist_geo_ent500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d658-72e1-812e-19b3795c4eec",
+                "slug": "channel-urdhu",
+                "title": "Urdhu",
+                "nav_path": "/t/category/channel-urdhu"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "019efa5d-2fae-7763-8573-c583eb9e0803",
+      "title": "Arabic",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": null,
+      "has_more": false,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019de785-3c29-7f47-bacb-ad12c787ba00",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "oan",
+          "title": "OAN ",
+          "description": "OAN  brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/oan",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://a-cdn.klowdtv.com/live1/oan_720p/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d646-7561-a043-79ac5094e11c",
+                "slug": "channel-arabic",
+                "title": "Arabic",
+                "nav_path": "/t/category/channel-arabic"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "019efa5d-2fbe-7083-99d6-0abf2a3fe826",
+      "title": "Indian Bangla",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": "/live-tvs/blocks/019efa5d-2fbe-7083-99d6-0abf2a3fe826",
+      "has_more": true,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019f2cd2-d14d-7057-9d30-55cfb742995a",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "colors-bangla",
+          "title": "Colors Bangla",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/colors-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-39ad-7bd5-95f1-d0704eb7f985",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "rongeen-tv",
+          "title": "Rongeen TV",
+          "description": "Rongeen TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/rongeen-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7aa9bc44972d65d5a8c822d3927652f7_playmist_rongeen_tv_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7aa9bc44972d65d5a8c822d3927652f7_playmist_rongeen_tv_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7aa9bc44972d65d5a8c822d3927652f7_playmist_rongeen_tv_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7aa9bc44972d65d5a8c822d3927652f7_playmist_rongeen_tv_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7aa9bc44972d65d5a8c822d3927652f7_playmist_rongeen_tv_400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen7.aynaott.com/RongeenTV/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-39af-74c7-ad3c-bb81cae61141",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "dd-bangla",
+          "title": "DD Bangla",
+          "description": "DD Bangla brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/dd-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-39b1-7763-ad62-b9087039241f",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "enter-10-bangla",
+          "title": "Enter 10 Bangla",
+          "description": "Enter 10 Bangla brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/enter-10-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-dee3-7460-a2d9-6add12132b2e",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "zee-bangla-sonar",
+          "title": "Zee Bangla Sonar",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/zee-bangla-sonar",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/1388170186b34ba8e86eb48111d369d8.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/ade6cccdbaf7da77ce6fc8d5a302a2a4.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/1388170186b34ba8e86eb48111d369d8.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/ade6cccdbaf7da77ce6fc8d5a302a2a4.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/ade6cccdbaf7da77ce6fc8d5a302a2a4.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-df9a-7792-8f7c-3ea7e9aae905",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "sony-aath",
+          "title": "Sony AATH",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/sony-aath",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logowine.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logowine.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logowine.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logowine.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logowine.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logo.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-e254-7c10-817c-c86d5beab53f",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "dhoom-music-bangla",
+          "title": "Dhoom Music Bangla",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/dhoom-music-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/dhoom/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              },
+              {
+                "id": "019efa45-d7d4-7312-b9ab-65e6c3d510e3",
+                "slug": "channel-music",
+                "title": "Music",
+                "nav_path": "/t/category/channel-music"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-399b-79d8-9d87-854339381669",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "khushboo",
+          "title": "Khushboo",
+          "description": "Khushboo brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/khushboo",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1544964341f4ed337430057b9634b1ad_playmist_khushboo_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1544964341f4ed337430057b9634b1ad_playmist_khushboo_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1544964341f4ed337430057b9634b1ad_playmist_khushboo_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1544964341f4ed337430057b9634b1ad_playmist_khushboo_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1544964341f4ed337430057b9634b1ad_playmist_khushboo_400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-399f-7d6a-9f41-dc7f834b3300",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "tv9-bangla",
+          "title": "TV9 Bangla",
+          "description": "TV9 Bangla brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/tv9-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a38-7452-8cf2-98336ef120ff",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "network-10",
+          "title": "Network 10",
+          "description": "Network 10 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/network-10",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_35e8912e73d3759eb0f9e21a815d1a80_playmist_network_10_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_35e8912e73d3759eb0f9e21a815d1a80_playmist_network_10_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_35e8912e73d3759eb0f9e21a815d1a80_playmist_network_10_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_35e8912e73d3759eb0f9e21a815d1a80_playmist_network_10_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_35e8912e73d3759eb0f9e21a815d1a80_playmist_network_10_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_35e8912e73d3759eb0f9e21a815d1a80_playmist_network_10_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/3Cb2WLFz/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-39a1-7d4a-a6a4-08e2754485cd",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "zee-24-ghanta",
+          "title": "Zee 24 Ghanta",
+          "description": "Zee 24 Ghanta brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/zee-24-ghanta",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-399d-755c-a297-7bd85e44f4bf",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "republic-bangla",
+          "title": "Republic Bangla",
+          "description": "Republic Bangla brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/republic-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_45a1af747f3728954d1e83ab457d8e53_playmist_republic_bangla_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_45a1af747f3728954d1e83ab457d8e53_playmist_republic_bangla_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_45a1af747f3728954d1e83ab457d8e53_playmist_republic_bangla_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_45a1af747f3728954d1e83ab457d8e53_playmist_republic_bangla_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_45a1af747f3728954d1e83ab457d8e53_playmist_republic_bangla_400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen5.aynaott.com/qRHda6ax/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-39ab-7332-bcd6-ef5ce3093acb",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "news-time-bangla",
+          "title": "News Time Bangla",
+          "description": "News Time Bangla brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/news-time-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_ffb6c3be0674cf2d59f66c78d4da5b9a_playmist_news_time_bangla_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_ffb6c3be0674cf2d59f66c78d4da5b9a_playmist_news_time_bangla_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_ffb6c3be0674cf2d59f66c78d4da5b9a_playmist_news_time_bangla_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_ffb6c3be0674cf2d59f66c78d4da5b9a_playmist_news_time_bangla_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_ffb6c3be0674cf2d59f66c78d4da5b9a_playmist_news_time_bangla_400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/xjkX3euD/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-39a7-750d-a029-c9ac049ccb6a",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "r-plus",
+          "title": "R Plus",
+          "description": "R Plus brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/r-plus",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-393b-7285-8d1f-87bdfc695eb2",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "sangeet-bangla",
+          "title": "Sangeet Bangla",
+          "description": "Test description for the test live tv",
+          "label": null,
+          "nav_path": "/live-tvs/sangeet-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_68b8c3bbc8b629bbc2c00880b4546d74_playmist_sangeet_bangla400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": null,
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_68b8c3bbc8b629bbc2c00880b4546d74_playmist_sangeet_bangla400x400.jpg",
+            "background_poster_url": null,
+            "animated_poster_url": null,
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-06/images_62b24144a9b356f7d57ed2da3c230978_playmist_sangeet_bangla400x400.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d621-7293-b51b-14889c34ed80",
+                "slug": "channel-indian-bangla",
+                "title": "Indian Bangla",
+                "nav_path": "/t/category/channel-indian-bangla"
+              },
+              {
+                "id": "019efa45-d7d4-7312-b9ab-65e6c3d510e3",
+                "slug": "channel-music",
+                "title": "Music",
+                "nav_path": "/t/category/channel-music"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "019efa5d-2fce-78e2-868b-1a5ddaf072bb",
+      "title": "Star Channels",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": null,
+      "has_more": false,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": []
+    }
+  ],
+  "pagination": {
+    "per_page": 5,
+    "has_more": true,
+    "next_cursor": "eyJvZmZzZXQiOjI1LCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9",
+    "prev_cursor": null,
+    "next_url": "https://web.aynaott.com/api/v5/pages/live-tvs/blocks?cursor=eyJvZmZzZXQiOjI1LCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9",
+    "prev_url": null
+  }
+}

@@ -1,0 +1,3978 @@
+{
+  "records": [
+    {
+      "id": "019efa5d-2f01-7481-b507-4f821baf00a5",
+      "title": "Hindi",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": "/live-tvs/blocks/019efa5d-2f01-7481-b507-4f821baf00a5",
+      "has_more": true,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019f4169-db74-7378-a418-b462842662d0",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "and-pictures-hd",
+          "title": "And Pictures HD",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/and-pictures-hd",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/andpictureshd/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019f2cfa-a46a-708d-9eac-b0b6b4a4733d",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "hidost",
+          "title": "HiDost",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/hidost",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_862392731195f9182c5aa9f813bbb712_playmist_hidost_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_862392731195f9182c5aa9f813bbb712_playmist_hidost_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_862392731195f9182c5aa9f813bbb712_playmist_hidost_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_862392731195f9182c5aa9f813bbb712_playmist_hidost_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_862392731195f9182c5aa9f813bbb712_playmist_hidost_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_862392731195f9182c5aa9f813bbb712_playmist_hidost_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/6XDrdRHa/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b77-7e63-b829-6e2f1fa37ae0",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "and-tv",
+          "title": "And tv",
+          "description": "And tv brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/and-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/AndTV/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-da61-7080-b398-c15363d19f4c",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "awaaz-india",
+          "title": "Awaaz India",
+          "description": "",
+          "label": null,
+          "nav_path": "/live-tvs/awaaz-india",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "free",
+            "label": "",
+            "options": [],
+            "summary": {
+              "badge": null,
+              "cta": "play",
+              "price_from": null,
+              "currency": null,
+              "paths": []
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/456de8974d027b7dda3fc423929f5dec.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/5965ddf4ceee32cd8b7a739c02214a38.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/456de8974d027b7dda3fc423929f5dec.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/5965ddf4ceee32cd8b7a739c02214a38.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/5965ddf4ceee32cd8b7a739c02214a38.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": null,
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b6b-7874-988b-5d148182b02d",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "hindi-movie-classic-24",
+          "title": "Hindi Movie Classic 24",
+          "description": "Hindi Movie Classic 24 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/hindi-movie-classic-24",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b65-7872-a707-c2324a037cc9",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "zoom-tv",
+          "title": "Zoom TV",
+          "description": "Zoom TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/zoom-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://live.zoomnews.info/live/Zoom_playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a43-72bb-8d94-e1309e246905",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "india-today",
+          "title": "India Today",
+          "description": "India Today brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/india-today",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c7e1c6e2ec548dee61a1a754955b76e1_playmist_india_today400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c7e1c6e2ec548dee61a1a754955b76e1_playmist_india_today400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c7e1c6e2ec548dee61a1a754955b76e1_playmist_india_today400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c7e1c6e2ec548dee61a1a754955b76e1_playmist_india_today400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c7e1c6e2ec548dee61a1a754955b76e1_playmist_india_today400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c7e1c6e2ec548dee61a1a754955b76e1_playmist_india_today500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://feeds.intoday.in/hltapps/api/master.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b5f-7a60-9c5c-1b8326d70a92",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "pictures",
+          "title": "& Pictures",
+          "description": "& Pictures brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/pictures",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_523e2066fb11ded3d8340292d0082138_playmist_and_pictures_hd_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_523e2066fb11ded3d8340292d0082138_playmist_pictures_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_523e2066fb11ded3d8340292d0082138_playmist_and_pictures_hd_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_523e2066fb11ded3d8340292d0082138_playmist_pictures_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_523e2066fb11ded3d8340292d0082138_playmist_pictures_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_523e2066fb11ded3d8340292d0082138_playmist_pictures_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/jzT482XQ/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a3e-796d-8c43-5dcdfb8361b9",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "hindi-khabar",
+          "title": "Hindi Khabar",
+          "description": "Hindi Khabar brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/hindi-khabar",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f07da3fcbcf0b957c04c18d17bd612b_playmist_hindi_khabar_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f07da3fcbcf0b957c04c18d17bd612b_playmist_hindi_khabar_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f07da3fcbcf0b957c04c18d17bd612b_playmist_hindi_khabar_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f07da3fcbcf0b957c04c18d17bd612b_playmist_hindi_khabar_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f07da3fcbcf0b957c04c18d17bd612b_playmist_hindi_khabar_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f07da3fcbcf0b957c04c18d17bd612b_playmist_hindi_khabar_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a4d-7989-9b30-84e8836d4c7e",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "mastiii-music",
+          "title": "Mastiii Music",
+          "description": "Mastiii Music brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+          "label": null,
+          "nav_path": "/live-tvs/mastiii-music",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_8d3cb234ca19c06362008bee49b854d7_playmist_mastiii_music_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_8d3cb234ca19c06362008bee49b854d7_playmist_mastiii_music_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_8d3cb234ca19c06362008bee49b854d7_playmist_mastiii_music_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_8d3cb234ca19c06362008bee49b854d7_playmist_mastiii_music_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_8d3cb234ca19c06362008bee49b854d7_playmist_mastiii_music_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_8d3cb234ca19c06362008bee49b854d7_playmist_mastiii_music_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/er7jmpVF/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7d4-7312-b9ab-65e6c3d510e3",
+                "slug": "channel-music",
+                "title": "Music",
+                "nav_path": "/t/category/channel-music"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a49-76c5-baa6-12c71aa6e36e",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "9x-jalwa",
+          "title": "9x Jalwa",
+          "description": "9x Jalwa brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/9x-jalwa",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7d4-7312-b9ab-65e6c3d510e3",
+                "slug": "channel-music",
+                "title": "Music",
+                "nav_path": "/t/category/channel-music"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a4f-778c-990c-ff69731d6ec0",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "9xm",
+          "title": "9XM",
+          "description": "9XM brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/9xm",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7d4-7312-b9ab-65e6c3d510e3",
+                "slug": "channel-music",
+                "title": "Music",
+                "nav_path": "/t/category/channel-music"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a45-758e-b95b-c37d65b23bea",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "anb-news",
+          "title": "ANB News",
+          "description": "ANB News brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/anb-news",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_86e9d3e52b45d2bb9c321b8168aa01e9_playmist_anb_news_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_86e9d3e52b45d2bb9c321b8168aa01e9_playmist_anb_news_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_86e9d3e52b45d2bb9c321b8168aa01e9_playmist_anb_news_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_86e9d3e52b45d2bb9c321b8168aa01e9_playmist_anb_news_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_86e9d3e52b45d2bb9c321b8168aa01e9_playmist_anb_news_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_86e9d3e52b45d2bb9c321b8168aa01e9_playmist_anb_news_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b5b-7c37-a953-8eed8e882836",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "sadhna-prime-news",
+          "title": "Sadhna Prime News",
+          "description": "Sadhna Prime News brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/sadhna-prime-news",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ad482966b8ccc41fc9bd98dd9382ff0d_playmist_sadhna_prime_news_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ad482966b8ccc41fc9bd98dd9382ff0d_playmist_sadhna_prime_news_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ad482966b8ccc41fc9bd98dd9382ff0d_playmist_sadhna_prime_news_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ad482966b8ccc41fc9bd98dd9382ff0d_playmist_sadhna_prime_news_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ad482966b8ccc41fc9bd98dd9382ff0d_playmist_sadhna_prime_news_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ad482966b8ccc41fc9bd98dd9382ff0d_playmist_sadhna_prime_news_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a41-744d-9181-46d6365a8432",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "bharat-samachar",
+          "title": "Bharat Samachar",
+          "description": "Bharat Samachar brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/bharat-samachar",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d52623f16135dea6bd76f7bdacd4b886_playmist_bharat_samachar_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d52623f16135dea6bd76f7bdacd4b886_playmist_bharat_samachar_500x296.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d52623f16135dea6bd76f7bdacd4b886_playmist_bharat_samachar_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d52623f16135dea6bd76f7bdacd4b886_playmist_bharat_samachar_500x296.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d52623f16135dea6bd76f7bdacd4b886_playmist_bharat_samachar_500x296.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d52623f16135dea6bd76f7bdacd4b886_playmist_bharat_samachar_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/m94BZDYb/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "019efa5d-2f0e-7ac2-a8c9-082449522f6f",
+      "title": "English",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": "/live-tvs/blocks/019efa5d-2f0e-7ac2-a8c9-082449522f6f",
+      "has_more": true,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019f401f-3897-7291-8783-ed9b4301df6e",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "pitaara-tv",
+          "title": "Pitaara TV",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/pitaara-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_28f8e70cb65b77b00b911acfcbb43568_playmist_pitaara_tv400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_28f8e70cb65b77b00b911acfcbb43568_playmist_pitaara_tv400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_28f8e70cb65b77b00b911acfcbb43568_playmist_pitaara_tv400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_28f8e70cb65b77b00b911acfcbb43568_playmist_pitaara_tv400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_28f8e70cb65b77b00b911acfcbb43568_playmist_pitaara_tv400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_28f8e70cb65b77b00b911acfcbb43568_playmist_pitaara_tv_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/pitaara/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019f400c-f681-70a8-a70f-9858e64716be",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "amc",
+          "title": "Amc",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/amc",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_500x296.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_500x296.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_500x296.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_400x400.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/amc/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b7d-74a7-8be1-7bd2335ecb31",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "bbc-news",
+          "title": "BBC News",
+          "description": "BBC News brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/bbc-news",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_bea6d56aa19a59e2bc272736880a97f3_playmist_bbc_news_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_bea6d56aa19a59e2bc272736880a97f3_playmist_bbc_news_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_bea6d56aa19a59e2bc272736880a97f3_playmist_bbc_news_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_bea6d56aa19a59e2bc272736880a97f3_playmist_bbc_news_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_bea6d56aa19a59e2bc272736880a97f3_playmist_bbc_news_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_bea6d56aa19a59e2bc272736880a97f3_playmist_bbc_news_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen1.aynaott.com/shn6jGTk/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c2b-750a-a77e-06dda24907f2",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "abn",
+          "title": "ABN ",
+          "description": "ABN  brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/abn",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_8610a5f1c975ccf85e23a6077de2f1f2_playmist_abn.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_8610a5f1c975ccf85e23a6077de2f1f2_playmist_abn.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_8610a5f1c975ccf85e23a6077de2f1f2_playmist_abn.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_8610a5f1c975ccf85e23a6077de2f1f2_playmist_abn.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_8610a5f1c975ccf85e23a6077de2f1f2_playmist_abn.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_8610a5f1c975ccf85e23a6077de2f1f2_playmist_abn.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://mediaserver.abnvideos.com/streams/abnurdu.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-dad5-7f52-8e11-651e4bb8dd81",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "court-tv",
+          "title": "Court TV",
+          "description": "",
+          "label": null,
+          "nav_path": "/live-tvs/court-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "free",
+            "label": "",
+            "options": [],
+            "summary": {
+              "badge": null,
+              "cta": "play",
+              "price_from": null,
+              "currency": null,
+              "paths": []
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/c5fd881d11a213c415e1b6b1675ff689.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e9af1dd3430ba412bffc8ee5e9b1334a.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/c5fd881d11a213c415e1b6b1675ff689.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e9af1dd3430ba412bffc8ee5e9b1334a.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e9af1dd3430ba412bffc8ee5e9b1334a.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": null,
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c27-75af-aecc-b972908c76b3",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "adventure-earth",
+          "title": "Adventure Earth",
+          "description": "Adventure Earth brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/adventure-earth",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_535399f1d6f11a7f9e501b4db33e2d0c_playmist_adventure_earth.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_535399f1d6f11a7f9e501b4db33e2d0c_playmist_adventure_earth.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_535399f1d6f11a7f9e501b4db33e2d0c_playmist_adventure_earth.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_535399f1d6f11a7f9e501b4db33e2d0c_playmist_adventure_earth.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_535399f1d6f11a7f9e501b4db33e2d0c_playmist_adventure_earth.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_535399f1d6f11a7f9e501b4db33e2d0c_playmist_adventure_earth.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c29-7f47-bacb-ad12c787ba00",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "oan",
+          "title": "OAN ",
+          "description": "OAN  brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/oan",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://a-cdn.klowdtv.com/live1/oan_720p/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d646-7561-a043-79ac5094e11c",
+                "slug": "channel-arabic",
+                "title": "Arabic",
+                "nav_path": "/t/category/channel-arabic"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c21-7676-9739-791cdaf8bcfc",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "cmac-tv",
+          "title": "CMAC TV",
+          "description": "CMAC TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/cmac-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_790f38211d0c5efaa8f792145e5dc383_playmist_cmac_tv400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_790f38211d0c5efaa8f792145e5dc383_playmist_cmac_tv400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_790f38211d0c5efaa8f792145e5dc383_playmist_cmac_tv400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_790f38211d0c5efaa8f792145e5dc383_playmist_cmac_tv400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_790f38211d0c5efaa8f792145e5dc383_playmist_cmac_tv400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_790f38211d0c5efaa8f792145e5dc383_playmist_cmac_tv500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-2/live.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bf0-7393-9a87-366242140422",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "world-war-tv",
+          "title": "World War TV",
+          "description": "World War TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/world-war-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_ac6813356117e23244894d632de90fe9_playmist_world_war_tv.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_ac6813356117e23244894d632de90fe9_playmist_world_war_tv.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_ac6813356117e23244894d632de90fe9_playmist_world_war_tv.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_ac6813356117e23244894d632de90fe9_playmist_world_war_tv.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_ac6813356117e23244894d632de90fe9_playmist_world_war_tv.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_ac6813356117e23244894d632de90fe9_playmist_world_war_tv.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://aenetworks-worldwartv-rakuten.amagi.tv/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7bd-7301-b05a-c991350f6fb2",
+                "slug": "channel-documentary",
+                "title": "Documentary",
+                "nav_path": "/t/category/channel-documentary"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bee-7f21-b4a5-cf84f86442b7",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "world-muzzik",
+          "title": "World Muzzik",
+          "description": "World Muzzik brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+          "label": null,
+          "nav_path": "/live-tvs/world-muzzik",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b9fc46d9adae5042068be4f4bc63cd04_playmist_world_muzzik400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b9fc46d9adae5042068be4f4bc63cd04_playmist_world_muzzik400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b9fc46d9adae5042068be4f4bc63cd04_playmist_world_muzzik400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b9fc46d9adae5042068be4f4bc63cd04_playmist_world_muzzik400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b9fc46d9adae5042068be4f4bc63cd04_playmist_world_muzzik400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b9fc46d9adae5042068be4f4bc63cd04_playmist_world_muzzik500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://muzzik-live.morescreens.com/mts-5/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7d4-7312-b9ab-65e6c3d510e3",
+                "slug": "channel-music",
+                "title": "Music",
+                "nav_path": "/t/category/channel-music"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b9e-7f03-a443-6f49d828ee88",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "wild-tv",
+          "title": "Wild TV",
+          "description": "Wild TV  brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/wild-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aa21af3895b9d45aab5b8b41517ad1f7_playmist_wild_tv.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aa21af3895b9d45aab5b8b41517ad1f7_playmist_wild_tv.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aa21af3895b9d45aab5b8b41517ad1f7_playmist_wild_tv.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aa21af3895b9d45aab5b8b41517ad1f7_playmist_wild_tv.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aa21af3895b9d45aab5b8b41517ad1f7_playmist_wild_tv.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aa21af3895b9d45aab5b8b41517ad1f7_playmist_wild_tv.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3be2-7139-8c0c-8009bd0b8c74",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "travel-xp",
+          "title": "Travel XP",
+          "description": "Travel XP brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/travel-xp",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5196b31badd89d9bba61ff57c49fb73b_playmist_travel_xp400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5196b31badd89d9bba61ff57c49fb73b_playmist_travel_xp400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5196b31badd89d9bba61ff57c49fb73b_playmist_travel_xp400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5196b31badd89d9bba61ff57c49fb73b_playmist_travel_xp400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5196b31badd89d9bba61ff57c49fb73b_playmist_travel_xp400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5196b31badd89d9bba61ff57c49fb73b_playmist_travel_xp500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7bd-7301-b05a-c991350f6fb2",
+                "slug": "channel-documentary",
+                "title": "Documentary",
+                "nav_path": "/t/category/channel-documentary"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bfc-77c2-821f-120164b37e37",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "fox-weather",
+          "title": "Fox Weather ",
+          "description": "Fox Weather brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+          "label": null,
+          "nav_path": "/live-tvs/fox-weather",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://247wlive.foxweather.com/stream/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bfa-71a7-92c2-a1cad28b99e5",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "accu-weather",
+          "title": "Accu Weather",
+          "description": "AccuWeather brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/accu-weather",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bfe-7a3a-920f-aa4ed99d20ac",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "sky-news-weather",
+          "title": "Sky News Weather",
+          "description": "\nSky News Weather brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+          "label": null,
+          "nav_path": "/live-tvs/sky-news-weather",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "019efa5d-2f1c-7653-9ada-0a577d815fa8",
+      "title": "Religious",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": null,
+      "has_more": false,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019de785-3c17-7ee9-9f97-7bc4e8bd84e7",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "madani-tv",
+          "title": "MADANI TV",
+          "description": "MADANI TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/madani-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b8b896039b6eb685a11aab0b7b4a33d3_playmist_madani_tv_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b8b896039b6eb685a11aab0b7b4a33d3_playmist_madani_tv_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b8b896039b6eb685a11aab0b7b4a33d3_playmist_madani_tv_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b8b896039b6eb685a11aab0b7b4a33d3_playmist_madani_tv_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b8b896039b6eb685a11aab0b7b4a33d3_playmist_madani_tv_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b8b896039b6eb685a11aab0b7b4a33d3_playmist_madani_tv_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/z24qLsqV/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              },
+              {
+                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                "slug": "channel-bangla",
+                "title": "Bangla",
+                "nav_path": "/t/category/channel-bangla"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-e2e4-7850-80df-3f494edb3f78",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "taqbeer",
+          "title": "TAQBEER",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/taqbeer",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/bd701c683948a2e3ab1ca46d9e5e0b76.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/6ca468a40cbbc7dd1a27521c128fde34.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/bd701c683948a2e3ab1ca46d9e5e0b76.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/6ca468a40cbbc7dd1a27521c128fde34.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/6ca468a40cbbc7dd1a27521c128fde34.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen7.aynaott.com/takbeer/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c13-703e-b125-6fe000541d15",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "deen-tv",
+          "title": "Deen TV",
+          "description": "Deen TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/deen-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_61c8b190119b0d1adbfde37c4b521043_playmist_deen_tv_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_61c8b190119b0d1adbfde37c4b521043_playmist_deen_tv_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_61c8b190119b0d1adbfde37c4b521043_playmist_deen_tv_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_61c8b190119b0d1adbfde37c4b521043_playmist_deen_tv_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_61c8b190119b0d1adbfde37c4b521043_playmist_deen_tv_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_61c8b190119b0d1adbfde37c4b521043_playmist_deen_tv500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/TJcnZW3U/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-e2fb-7a71-8c8e-9f2f62ce765b",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "sunnah",
+          "title": "SUNNAH",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/sunnah",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ba5c1233618589587536727ce37199a2_playmist_sunnah_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ba5c1233618589587536727ce37199a2_playmist_sunnah_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ba5c1233618589587536727ce37199a2_playmist_sunnah_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ba5c1233618589587536727ce37199a2_playmist_sunnah_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ba5c1233618589587536727ce37199a2_playmist_sunnah_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ba5c1233618589587536727ce37199a2_playmist_sunnah_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/sunnahtv/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c11-7330-97b6-f67b430b5534",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "channel-win",
+          "title": "Channel Win",
+          "description": "\nChannel Win  brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/channel-win",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8546ba7af9854adaeb7f7b4d9ee36019_playmist_channel_win_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8546ba7af9854adaeb7f7b4d9ee36019_playmist_channel_win_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8546ba7af9854adaeb7f7b4d9ee36019_playmist_channel_win_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8546ba7af9854adaeb7f7b4d9ee36019_playmist_channel_win_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8546ba7af9854adaeb7f7b4d9ee36019_playmist_channel_win_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8546ba7af9854adaeb7f7b4d9ee36019_playmist_channel_win500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://cdn-4.pishow.tv/live/229/master.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c15-72c1-925e-6d94dd1e987b",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "eman-channel",
+          "title": "Eman Channel",
+          "description": "Eman Channel brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/eman-channel",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2b834d3ec5f27714e6bee18647528e0a_playmist_eman_channel_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2b834d3ec5f27714e6bee18647528e0a_playmist_eman_channel_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2b834d3ec5f27714e6bee18647528e0a_playmist_eman_channel_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2b834d3ec5f27714e6bee18647528e0a_playmist_eman_channel_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2b834d3ec5f27714e6bee18647528e0a_playmist_eman_channel_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2b834d3ec5f27714e6bee18647528e0a_playmist_eman_channel_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/WHy6ffXz/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-e30d-7833-8fae-6188b3e7f2d6",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "quran",
+          "title": "Quran",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/quran",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_17ed47c6328295747a22ccdc939f9f0c_playmist_quran_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_17ed47c6328295747a22ccdc939f9f0c_playmist_quran_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_17ed47c6328295747a22ccdc939f9f0c_playmist_quran_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_17ed47c6328295747a22ccdc939f9f0c_playmist_quran_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_17ed47c6328295747a22ccdc939f9f0c_playmist_quran_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_17ed47c6328295747a22ccdc939f9f0c_playmist_quran_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/qurantv/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c0c-70fc-aaf6-d43bf24eb321",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "peace-tv-bangla-hd",
+          "title": "Peace TV Bangla HD",
+          "description": "Peace TV Bangla HD  brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/peace-tv-bangla-hd",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_55fa6cf36df126454996a9e4cf7f8e85_playmist_peace_tv_bangla_hd_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_55fa6cf36df126454996a9e4cf7f8e85_playmist_peace_tv_bangla_hd_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_55fa6cf36df126454996a9e4cf7f8e85_playmist_peace_tv_bangla_hd_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_55fa6cf36df126454996a9e4cf7f8e85_playmist_peace_tv_bangla_hd_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_55fa6cf36df126454996a9e4cf7f8e85_playmist_peace_tv_bangla_hd_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_55fa6cf36df126454996a9e4cf7f8e85_playmist_peace_tv_bangla_hd_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              },
+              {
+                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                "slug": "channel-bangla",
+                "title": "Bangla",
+                "nav_path": "/t/category/channel-bangla"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c08-74f1-942b-3613fd2d61cf",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "iqra-bangla",
+          "title": "Iqra Bangla",
+          "description": "iqra Bangla brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/iqra-bangla",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_1e415d048ff6a503320fe9e8cb703345_playmist_iqra_bangla_tv_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_1e415d048ff6a503320fe9e8cb703345_playmist_iqra_bangla_tv_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_1e415d048ff6a503320fe9e8cb703345_playmist_iqra_bangla_tv_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_1e415d048ff6a503320fe9e8cb703345_playmist_iqra_bangla_tv_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_1e415d048ff6a503320fe9e8cb703345_playmist_iqra_bangla_tv_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_1e415d048ff6a503320fe9e8cb703345_playmist_iqra_bangla_tv_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/EuEy5mBW/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                "slug": "channel-bangla",
+                "title": "Bangla",
+                "nav_path": "/t/category/channel-bangla"
+              },
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c06-787f-8eb0-f9ba2f0ebbc8",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "rtv-islam",
+          "title": "RTV Islam",
+          "description": "RTV Islam brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/rtv-islam",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_04fcc2bbcd3f26e7ce92bafd7edb339c_playmist_rtv_islam.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_04fcc2bbcd3f26e7ce92bafd7edb339c_playmist_rtv_islam.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_04fcc2bbcd3f26e7ce92bafd7edb339c_playmist_rtv_islam.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_04fcc2bbcd3f26e7ce92bafd7edb339c_playmist_rtv_islam.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_04fcc2bbcd3f26e7ce92bafd7edb339c_playmist_rtv_islam.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_04fcc2bbcd3f26e7ce92bafd7edb339c_playmist_rtv_islam.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://protokolldns.xyz/rtvislamweb554/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c04-7852-b09a-dbcacbe4740e",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "islam-tv",
+          "title": "Islam TV",
+          "description": "Islam TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/islam-tv",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bf2a332556cb4c5da9861e7b981aac1d_playmist_islam.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bf2a332556cb4c5da9861e7b981aac1d_playmist_islam.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bf2a332556cb4c5da9861e7b981aac1d_playmist_islam.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bf2a332556cb4c5da9861e7b981aac1d_playmist_islam.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bf2a332556cb4c5da9861e7b981aac1d_playmist_islam.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bf2a332556cb4c5da9861e7b981aac1d_playmist_islam_channel_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen1.aynaott.com/bB3A5dyq/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7fb-7c80-a6bb-95adbb258302",
+                "slug": "channel-religious",
+                "title": "Religious",
+                "nav_path": "/t/category/channel-religious"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "019efa5d-2f2a-76f2-92f2-4abf8003276a",
+      "title": "Weather",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": null,
+      "has_more": false,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019de785-3c00-718e-9487-01b8e71feb2d",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "weather-spy",
+          "title": "Weather SPY",
+          "description": "Weather SPY Weather brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/weather-spy",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_12ff352e97642f2042f8e88a93eca33d_playmist_weather_spy400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_12ff352e97642f2042f8e88a93eca33d_playmist_weather_spy400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_12ff352e97642f2042f8e88a93eca33d_playmist_weather_spy400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_12ff352e97642f2042f8e88a93eca33d_playmist_weather_spy400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_12ff352e97642f2042f8e88a93eca33d_playmist_weather_spy400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_12ff352e97642f2042f8e88a93eca33d_playmist_weather_spy500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bfc-77c2-821f-120164b37e37",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "fox-weather",
+          "title": "Fox Weather ",
+          "description": "Fox Weather brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+          "label": null,
+          "nav_path": "/live-tvs/fox-weather",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://247wlive.foxweather.com/stream/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bfe-7a3a-920f-aa4ed99d20ac",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "sky-news-weather",
+          "title": "Sky News Weather",
+          "description": "\nSky News Weather brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.\n",
+          "label": null,
+          "nav_path": "/live-tvs/sky-news-weather",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3c02-77aa-aa8c-5457eec46ac3",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "discover-pikstan",
+          "title": "Discover Pikstan",
+          "description": "\nDiscover Pikstan brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/discover-pikstan",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_efeb6a966b36ef807b0aa9bfd5229360_playmist_discover_pikstan.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_efeb6a966b36ef807b0aa9bfd5229360_playmist_discover_pikstan.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_efeb6a966b36ef807b0aa9bfd5229360_playmist_discover_pikstan.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_efeb6a966b36ef807b0aa9bfd5229360_playmist_discover_pikstan.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_efeb6a966b36ef807b0aa9bfd5229360_playmist_discover_pikstan.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_efeb6a966b36ef807b0aa9bfd5229360_playmist_discover_pikstan.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7bd-7301-b05a-c991350f6fb2",
+                "slug": "channel-documentary",
+                "title": "Documentary",
+                "nav_path": "/t/category/channel-documentary"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bfa-71a7-92c2-a1cad28b99e5",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "accu-weather",
+          "title": "Accu Weather",
+          "description": "AccuWeather brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/accu-weather",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                "slug": "channel-news",
+                "title": "News",
+                "nav_path": "/t/category/channel-news"
+              },
+              {
+                "id": "019efa45-d51d-7091-a5a2-8d0aa4cb24c6",
+                "slug": "channel-weather",
+                "title": "Weather",
+                "nav_path": "/t/category/channel-weather"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "019efa5d-2f37-7b43-9479-40c64af05adc",
+      "title": "Movie",
+      "eyebrow": null,
+      "layout": "carousel",
+      "variant": null,
+      "items_size": "landscape",
+      "items_per_view": null,
+      "show_rank": false,
+      "show_items_metadata": true,
+      "item_click_action": "detail",
+      "nav_path": null,
+      "has_more": false,
+      "source_url": null,
+      "source_kind": null,
+      "images": null,
+      "access_policy": null,
+      "access_verdict": {
+        "allowed": true,
+        "reason": null
+      },
+      "items": [
+        {
+          "id": "019de785-3b6b-7874-988b-5d148182b02d",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "hindi-movie-classic-24",
+          "title": "Hindi Movie Classic 24",
+          "description": "Hindi Movie Classic 24 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/hindi-movie-classic-24",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3b79-7721-8eb4-041c36303ee0",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "manoranjan-movies",
+          "title": "Manoranjan Movies",
+          "description": "Manoranjan Movies brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/manoranjan-movies",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bb9-7ee4-8c94-b23590436802",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "hbo-2",
+          "title": "HBO 2",
+          "description": "HBO 2 brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/hbo-2",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              },
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3bb7-78ad-b1ab-052ba0529f95",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "hbo",
+          "title": "HBO",
+          "description": "HBO brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/hbo",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen7.aynaott.com/hbo/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d83b-7341-aa77-0ec93e06b9c3",
+                "slug": "channel-english",
+                "title": "English",
+                "nav_path": "/t/category/channel-english"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a55-70ed-9fa1-e0459e2294dc",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "goldmines",
+          "title": "Goldmines",
+          "description": "Goldmines brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/goldmines",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f102735d68ece1e00316c6187b9ad340_playmist_goldmines_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f102735d68ece1e00316c6187b9ad340_playmist_goldmines_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f102735d68ece1e00316c6187b9ad340_playmist_goldmines_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f102735d68ece1e00316c6187b9ad340_playmist_goldmines_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f102735d68ece1e00316c6187b9ad340_playmist_goldmines_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f102735d68ece1e00316c6187b9ad340_playmist_goldmines_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/VamXuQH8/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              },
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019de785-3a57-7892-b06f-caf61a17d1cb",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "goldmines-movies",
+          "title": "Goldmines Movies",
+          "description": "Goldmines Movies brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+          "label": null,
+          "nav_path": "/live-tvs/goldmines-movies",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_400x400.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_400x400.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_400x400.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_400x400.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_400x400.jpg",
+            "mnemonic_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_500x296.jpg",
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        },
+        {
+          "id": "019efa45-e724-7ca0-90fd-8a837b01220c",
+          "type": "live-tvs",
+          "object": "stream",
+          "slug": "goldmines-bollywood",
+          "title": "Goldmines Bollywood",
+          "description": null,
+          "label": null,
+          "nav_path": "/live-tvs/goldmines-bollywood",
+          "starts_at": null,
+          "ends_at": null,
+          "access": {
+            "level": "subscription",
+            "label": "Subscribe",
+            "options": [],
+            "summary": {
+              "badge": "subscription",
+              "cta": "subscribe",
+              "price_from": 50,
+              "currency": "BDT",
+              "paths": [
+                "subscription"
+              ]
+            }
+          },
+          "images": {
+            "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/11e8e13a9149c40a88859cdc0fd5f6c3.jpg",
+            "thumbnail_wide_url": null,
+            "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e0eb8b0468e84add45cf9dcedc27c612.jpg",
+            "poster_wide_url": null,
+            "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/11e8e13a9149c40a88859cdc0fd5f6c3.jpg",
+            "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e0eb8b0468e84add45cf9dcedc27c612.jpg",
+            "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e0eb8b0468e84add45cf9dcedc27c612.jpg",
+            "mnemonic_url": null,
+            "sprite_url": null
+          },
+          "stream": {
+            "url": "https://tvsen6.aynaott.com/55xNrLdf/index.m3u8",
+            "urls": null
+          },
+          "taxonomies": {
+            "category": [
+              {
+                "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                "slug": "channel-hindi",
+                "title": "Hindi",
+                "nav_path": "/t/category/channel-hindi"
+              },
+              {
+                "id": "019efa45-d7e9-70d0-a997-240021c09cee",
+                "slug": "channel-movie",
+                "title": "Movie",
+                "nav_path": "/t/category/channel-movie"
+              },
+              {
+                "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                "slug": "channel-channels",
+                "title": "Channels",
+                "nav_path": "/t/category/channel-channels"
+              }
+            ]
+          },
+          "access_policy": null,
+          "access_verdict": {
+            "allowed": true,
+            "reason": null
+          },
+          "template": "stream",
+          "content_rating": {
+            "name": "G",
+            "description": "No Restriction",
+            "min_age": 0
+          }
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "per_page": 5,
+    "has_more": true,
+    "next_cursor": "eyJvZmZzZXQiOjE1LCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9",
+    "prev_cursor": null,
+    "next_url": "https://web.aynaott.com/api/v5/pages/live-tvs/blocks?cursor=eyJvZmZzZXQiOjE1LCJfcG9pbnRzVG9OZXh0SXRlbXMiOnRydWV9",
+    "prev_url": null
+  }
+}
