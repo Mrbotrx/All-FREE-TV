@@ -65,6 +65,11 @@
   ],
   "Movies": [
     {
+      "name": "Goldmines Movies",
+      "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
+      "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
+    },
+    {
       "name": "HBO 2",
       "url": "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8",
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
@@ -102,11 +107,6 @@
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
     },
     {
-      "name": "Sadhna Prime News",
-      "url": "https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8",
-      "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
-    },
-    {
       "name": "Sky News Weather",
       "url": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8",
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
@@ -116,11 +116,6 @@
     {
       "name": "Cricket Gold",
       "url": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8",
-      "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
-    },
-    {
-      "name": "Marquee Sports Network",
-      "url": "https://tvsen6.aynaott.com/MarqueeSportsNetwork/index.m3u8",
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
     },
     {
@@ -148,11 +143,6 @@
     {
       "name": "9x Jalwa",
       "url": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
-      "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
-    },
-    {
-      "name": "9X Tashan",
-      "url": "https://tvsen6.aynaott.com/sMqhLN6n/index.m3u8",
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
     },
     {
@@ -203,11 +193,6 @@
     {
       "name": "Fox Weather",
       "url": "https://247wlive.foxweather.com/stream/index.m3u8",
-      "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
-    },
-    {
-      "name": "G series",
-      "url": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
     },
     {
@@ -271,13 +256,13 @@
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
     },
     {
-      "name": "OAN",
-      "url": "https://a-cdn.klowdtv.com/live1/oan_720p/playlist.m3u8",
+      "name": "NEXUS TV",
+      "url": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8",
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
     },
     {
-      "name": "SA TV",
-      "url": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8",
+      "name": "OAN",
+      "url": "https://a-cdn.klowdtv.com/live1/oan_720p/playlist.m3u8",
       "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
     },
     {

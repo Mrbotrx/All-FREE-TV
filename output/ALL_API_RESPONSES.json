@@ -2193,6 +2193,142 @@
           },
           "items": [
             {
+              "id": "019efa45-ef0a-7e72-86c1-af820f1f22e7",
+              "type": "live-tvs",
+              "object": "stream",
+              "slug": "atn-bangla",
+              "title": "ATN Bangla",
+              "description": null,
+              "label": null,
+              "nav_path": "/live-tvs/atn-bangla",
+              "starts_at": null,
+              "ends_at": null,
+              "access": {
+                "level": "subscription",
+                "label": "Subscribe",
+                "options": [],
+                "summary": {
+                  "badge": "subscription",
+                  "cta": "subscribe",
+                  "price_from": 50,
+                  "currency": "BDT",
+                  "paths": [
+                    "subscription"
+                  ]
+                }
+              },
+              "images": {
+                "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_4ff2f8e87d71747b70ab273686c9df9a_playmist_atn_bangla_400x400.jpg",
+                "thumbnail_wide_url": null,
+                "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/3a36a406fcc9616cd0b32514bb29eb36.jpg",
+                "poster_wide_url": null,
+                "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_4ff2f8e87d71747b70ab273686c9df9a_playmist_atn_bangla_400x400.jpg",
+                "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/3a36a406fcc9616cd0b32514bb29eb36.jpg",
+                "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/3a36a406fcc9616cd0b32514bb29eb36.jpg",
+                "mnemonic_url": null,
+                "sprite_url": null
+              },
+              "stream": {
+                "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8",
+                "urls": null
+              },
+              "taxonomies": {
+                "category": [
+                  {
+                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                    "slug": "channel-bangla",
+                    "title": "Bangla",
+                    "nav_path": "/t/category/channel-bangla"
+                  },
+                  {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
+                  }
+                ]
+              },
+              "access_policy": null,
+              "access_verdict": {
+                "allowed": true,
+                "reason": null
+              },
+              "template": "stream",
+              "content_rating": {
+                "name": "G",
+                "description": "No Restriction",
+                "min_age": 0
+              }
+            },
+            {
+              "id": "019de785-397c-7793-918c-acbc11004934",
+              "type": "live-tvs",
+              "object": "stream",
+              "slug": "nexus-tv",
+              "title": "NEXUS TV",
+              "description": "NEXUS TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+              "label": null,
+              "nav_path": "/live-tvs/nexus-tv",
+              "starts_at": null,
+              "ends_at": null,
+              "access": {
+                "level": "subscription",
+                "label": "Subscribe",
+                "options": [],
+                "summary": {
+                  "badge": "subscription",
+                  "cta": "subscribe",
+                  "price_from": 50,
+                  "currency": "BDT",
+                  "paths": [
+                    "subscription"
+                  ]
+                }
+              },
+              "images": {
+                "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7e6104384dddd36f39e1a27fe0a61059_playmist_nexus_tv_400x400.jpg",
+                "thumbnail_wide_url": null,
+                "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7e6104384dddd36f39e1a27fe0a61059_playmist_nexus_tv_400x400.jpg",
+                "poster_wide_url": null,
+                "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7e6104384dddd36f39e1a27fe0a61059_playmist_nexus_tv_400x400.jpg",
+                "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7e6104384dddd36f39e1a27fe0a61059_playmist_nexus_tv_400x400.jpg",
+                "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7e6104384dddd36f39e1a27fe0a61059_playmist_nexus_tv_400x400.jpg",
+                "mnemonic_url": null,
+                "sprite_url": null
+              },
+              "stream": {
+                "url": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8",
+                "urls": null
+              },
+              "taxonomies": {
+                "category": [
+                  {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
+                  },
+                  {
+                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                    "slug": "channel-bangla",
+                    "title": "Bangla",
+                    "nav_path": "/t/category/channel-bangla"
+                  }
+                ]
+              },
+              "access_policy": null,
+              "access_verdict": {
+                "allowed": true,
+                "reason": null
+              },
+              "template": "stream",
+              "content_rating": {
+                "name": "G",
+                "description": "No Restriction",
+                "min_age": 0
+              }
+            },
+            {
               "id": "019de785-3bac-72a7-b7ff-9d20d69bb27d",
               "type": "live-tvs",
               "object": "stream",
@@ -2681,6 +2817,63 @@
               }
             },
             {
+              "id": "019efa45-db31-7fd1-a7f9-ea6a2973e8ad",
+              "type": "live-tvs",
+              "object": "stream",
+              "slug": "bangla-radio",
+              "title": "Bangla Radio",
+              "description": "",
+              "label": null,
+              "nav_path": "/live-tvs/bangla-radio",
+              "starts_at": null,
+              "ends_at": null,
+              "access": {
+                "level": "free",
+                "label": "",
+                "options": [],
+                "summary": {
+                  "badge": null,
+                  "cta": "play",
+                  "price_from": null,
+                  "currency": null,
+                  "paths": []
+                }
+              },
+              "images": {
+                "thumbnail_url": "https://s3.aynaott.com/storage/650ac208736099c5a0906204c6fa0b15",
+                "thumbnail_wide_url": null,
+                "poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
+                "poster_wide_url": null,
+                "background_thumbnail_url": "https://s3.aynaott.com/storage/650ac208736099c5a0906204c6fa0b15",
+                "background_poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
+                "animated_poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
+                "mnemonic_url": null,
+                "sprite_url": null
+              },
+              "stream": null,
+              "taxonomies": {
+                "category": [
+                  {
+                    "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
+                    "slug": "channel-radio",
+                    "title": "Radio",
+                    "nav_path": "/t/category/channel-radio"
+                  }
+                ]
+              },
+              "access_policy": null,
+              "access_verdict": {
+                "allowed": true,
+                "reason": null
+              },
+              "template": "stream",
+              "content_rating": {
+                "name": "G",
+                "description": "No Restriction",
+                "min_age": 0
+              }
+            },
+            {
               "id": "019efa45-e6cf-77d1-ab66-0528b71c3826",
               "type": "live-tvs",
               "object": "stream",
@@ -2733,205 +2926,6 @@
                     "slug": "channel-bangla",
                     "title": "Bangla",
                     "nav_path": "/t/category/channel-bangla"
-                  }
-                ]
-              },
-              "access_policy": null,
-              "access_verdict": {
-                "allowed": true,
-                "reason": null
-              },
-              "template": "stream",
-              "content_rating": {
-                "name": "G",
-                "description": "No Restriction",
-                "min_age": 0
-              }
-            },
-            {
-              "id": "019de785-398d-7a57-87df-bc4eea15b0a4",
-              "type": "live-tvs",
-              "object": "stream",
-              "slug": "btv-news",
-              "title": "BTV News",
-              "description": "BTV News brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-              "label": null,
-              "nav_path": "/live-tvs/btv-news",
-              "starts_at": null,
-              "ends_at": null,
-              "access": {
-                "level": "subscription",
-                "label": "Subscribe",
-                "options": [],
-                "summary": {
-                  "badge": "subscription",
-                  "cta": "subscribe",
-                  "price_from": 50,
-                  "currency": "BDT",
-                  "paths": [
-                    "subscription"
-                  ]
-                }
-              },
-              "images": {
-                "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
-                "thumbnail_wide_url": null,
-                "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
-                "poster_wide_url": null,
-                "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
-                "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
-                "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
-                "mnemonic_url": null,
-                "sprite_url": null
-              },
-              "stream": {
-                "url": "https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8",
-                "urls": null
-              },
-              "taxonomies": {
-                "category": [
-                  {
-                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                    "slug": "channel-news",
-                    "title": "News",
-                    "nav_path": "/t/category/channel-news"
-                  },
-                  {
-                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                    "slug": "channel-channels",
-                    "title": "Channels",
-                    "nav_path": "/t/category/channel-channels"
-                  },
-                  {
-                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
-                    "slug": "channel-bangla",
-                    "title": "Bangla",
-                    "nav_path": "/t/category/channel-bangla"
-                  }
-                ]
-              },
-              "access_policy": null,
-              "access_verdict": {
-                "allowed": true,
-                "reason": null
-              },
-              "template": "stream",
-              "content_rating": {
-                "name": "G",
-                "description": "No Restriction",
-                "min_age": 0
-              }
-            },
-            {
-              "id": "019de785-396c-7f21-9261-2bd1e5230130",
-              "type": "live-tvs",
-              "object": "stream",
-              "slug": "sa-tv",
-              "title": "SA TV",
-              "description": "SA TV brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
-              "label": null,
-              "nav_path": "/live-tvs/sa-tv",
-              "starts_at": null,
-              "ends_at": null,
-              "access": {
-                "level": "subscription",
-                "label": "Subscribe",
-                "options": [],
-                "summary": {
-                  "badge": "subscription",
-                  "cta": "subscribe",
-                  "price_from": 50,
-                  "currency": "BDT",
-                  "paths": [
-                    "subscription"
-                  ]
-                }
-              },
-              "images": {
-                "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b6f2363fef23e117f9a13b7c185ce26c_playmist_satv.png",
-                "thumbnail_wide_url": null,
-                "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b6f2363fef23e117f9a13b7c185ce26c_playmist_satv.png",
-                "poster_wide_url": null,
-                "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b6f2363fef23e117f9a13b7c185ce26c_playmist_satv.png",
-                "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b6f2363fef23e117f9a13b7c185ce26c_playmist_satv.png",
-                "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b6f2363fef23e117f9a13b7c185ce26c_playmist_satv.png",
-                "mnemonic_url": null,
-                "sprite_url": null
-              },
-              "stream": {
-                "url": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8",
-                "urls": null
-              },
-              "taxonomies": {
-                "category": [
-                  {
-                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
-                    "slug": "channel-bangla",
-                    "title": "Bangla",
-                    "nav_path": "/t/category/channel-bangla"
-                  },
-                  {
-                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                    "slug": "channel-channels",
-                    "title": "Channels",
-                    "nav_path": "/t/category/channel-channels"
-                  }
-                ]
-              },
-              "access_policy": null,
-              "access_verdict": {
-                "allowed": true,
-                "reason": null
-              },
-              "template": "stream",
-              "content_rating": {
-                "name": "G",
-                "description": "No Restriction",
-                "min_age": 0
-              }
-            },
-            {
-              "id": "019efa45-db31-7fd1-a7f9-ea6a2973e8ad",
-              "type": "live-tvs",
-              "object": "stream",
-              "slug": "bangla-radio",
-              "title": "Bangla Radio",
-              "description": "",
-              "label": null,
-              "nav_path": "/live-tvs/bangla-radio",
-              "starts_at": null,
-              "ends_at": null,
-              "access": {
-                "level": "free",
-                "label": "",
-                "options": [],
-                "summary": {
-                  "badge": null,
-                  "cta": "play",
-                  "price_from": null,
-                  "currency": null,
-                  "paths": []
-                }
-              },
-              "images": {
-                "thumbnail_url": "https://s3.aynaott.com/storage/650ac208736099c5a0906204c6fa0b15",
-                "thumbnail_wide_url": null,
-                "poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
-                "poster_wide_url": null,
-                "background_thumbnail_url": "https://s3.aynaott.com/storage/650ac208736099c5a0906204c6fa0b15",
-                "background_poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
-                "animated_poster_url": "https://s3.aynaott.com/storage/0f6770187f022d16c9444d59ab34d0e4",
-                "mnemonic_url": null,
-                "sprite_url": null
-              },
-              "stream": null,
-              "taxonomies": {
-                "category": [
-                  {
-                    "id": "019efa45-d50a-7661-9c5c-7f5a75abdcf6",
-                    "slug": "channel-radio",
-                    "title": "Radio",
-                    "nav_path": "/t/category/channel-radio"
                   }
                 ]
               },
@@ -3130,44 +3124,67 @@
               }
             },
             {
-              "id": "019de785-3995-7e6d-9338-21fd1417ccee",
+              "id": "019de785-398d-7a57-87df-bc4eea15b0a4",
               "type": "live-tvs",
               "object": "stream",
-              "slug": "g-series",
-              "title": "G series",
-              "description": "G series brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
+              "slug": "btv-news",
+              "title": "BTV News",
+              "description": "BTV News brings you the best in entertainment, news, and informative programs for viewers of all ages, anytime, anywhere.",
               "label": null,
-              "nav_path": "/live-tvs/g-series",
+              "nav_path": "/live-tvs/btv-news",
               "starts_at": null,
               "ends_at": null,
               "access": {
-                "level": "free",
-                "label": "",
+                "level": "subscription",
+                "label": "Subscribe",
                 "options": [],
                 "summary": {
-                  "badge": null,
-                  "cta": "play",
-                  "price_from": null,
-                  "currency": null,
-                  "paths": []
+                  "badge": "subscription",
+                  "cta": "subscribe",
+                  "price_from": 50,
+                  "currency": "BDT",
+                  "paths": [
+                    "subscription"
+                  ]
                 }
               },
               "images": {
-                "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-08/images_167c4819de7e4c8618edd4369a0ebefa_playmist_g_series_drama400x400.jpg",
+                "thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
                 "thumbnail_wide_url": null,
-                "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-08/images_167c4819de7e4c8618edd4369a0ebefa_playmist_g_series_drama400x400.jpg",
+                "poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
                 "poster_wide_url": null,
-                "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-08/images_167c4819de7e4c8618edd4369a0ebefa_playmist_g_series_drama400x400.jpg",
-                "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-08/images_167c4819de7e4c8618edd4369a0ebefa_playmist_g_series_drama400x400.jpg",
-                "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-08/images_167c4819de7e4c8618edd4369a0ebefa_playmist_g_series_drama400x400.jpg",
+                "background_thumbnail_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
+                "background_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
+                "animated_poster_url": "/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg",
                 "mnemonic_url": null,
                 "sprite_url": null
               },
               "stream": {
-                "url": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
+                "url": "https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8",
                 "urls": null
               },
-              "taxonomies": null,
+              "taxonomies": {
+                "category": [
+                  {
+                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                    "slug": "channel-news",
+                    "title": "News",
+                    "nav_path": "/t/category/channel-news"
+                  },
+                  {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
+                  },
+                  {
+                    "id": "019efa45-d634-79d3-a14c-9be603ffdfbe",
+                    "slug": "channel-bangla",
+                    "title": "Bangla",
+                    "nav_path": "/t/category/channel-bangla"
+                  }
+                ]
+              },
               "access_policy": null,
               "access_verdict": {
                 "allowed": true,
