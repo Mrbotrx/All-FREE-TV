@@ -1,9 +1,9 @@
 {
   "project": "BD-KB-IT",
   "version": "2.0.0",
-  "updated": "2026-11-25T16:28:02.345557+00:00",
+  "updated": "2026-11-26T01:19:54.210020+00:00",
   "total_channels": 120,
-  "working_channels": 58,
-  "dead_channels": 62,
-  "success_rate": 48.33
+  "working_channels": 51,
+  "dead_channels": 69,
+  "success_rate": 42.5
 }
