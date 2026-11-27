@@ -1,8 +1,8 @@
 #EXTM3U
 #PLAYLIST:BD-KB-IT
 #VERSION:2.0.0
-#UPDATED:2026-11-26
-#CHANNELS:49
+#UPDATED:2026-11-27
+#CHANNELS:50
 
 #EXTINF:-1 tvg-id="" tvg-name="IPTV LINKS" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="TV MAKE",IPTV LINKS
 https://github.com/Mrbotrx/Mrbotrx/raw/refs/heads/main/IPTV_LINKS_VIDEO.mp4
@@ -85,6 +85,9 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0
 #EXTINF:-1 tvg-name="9x Jalwa" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",9x Jalwa
 https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8
 
+#EXTINF:-1 tvg-name="9X Tashan" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",9X Tashan
+https://tvsen6.aynaott.com/sMqhLN6n/index.m3u8
+
 #EXTINF:-1 tvg-name="ABN" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",ABN
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
 
@@ -100,9 +103,6 @@ https://tvsen3.aynaott.com/m94BZDYb/index.m3u8
 #EXTINF:-1 tvg-name="Channel 52" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",Channel 52
 https://tvsen6.aynaott.com/channel52/index.m3u8
 
-#EXTINF:-1 tvg-name="CMAC TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",CMAC TV
-https://reflect-vod-cmac.cablecast.tv/live-11/live/stream-2/live.m3u8
-
 #EXTINF:-1 tvg-name="Discover Pikstan" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",Discover Pikstan
 https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
 
@@ -115,8 +115,8 @@ https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
 #EXTINF:-1 tvg-name="Goal TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",Goal TV
 https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
 
-#EXTINF:-1 tvg-name="Goldmines Bollywood" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",Goldmines Bollywood
-https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
+#EXTINF:-1 tvg-name="Goldmines" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",Goldmines
+https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
 
 #EXTINF:-1 tvg-name="Hum TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",Hum TV
 https://g4wlkwx8l23a-hls-live.5centscdn.com/HUM/271ddf829afeece44d8732757fba1a66.sdp/playlist_dvr.m3u8
@@ -132,6 +132,9 @@ https://tvsen6.aynaott.com/maasrangatv/index.m3u8
 
 #EXTINF:-1 tvg-name="MADANI TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",MADANI TV
 https://tvsen3.aynaott.com/z24qLsqV/index.m3u8
+
+#EXTINF:-1 tvg-name="Network 10" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",Network 10
+https://tvsen6.aynaott.com/3Cb2WLFz/index.m3u8
 
 #EXTINF:-1 tvg-name="NEXUS TV" tvg-logo="https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg" group-title="Uncategorized",NEXUS TV
 https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
