@@ -6,16 +6,16 @@
     "category": "Uncategorized"
   },
   {
-    "name": "beIN SPORTS",
-    "url": "http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Sports"
-  },
-  {
     "name": "Zee Bangla Sonar",
     "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Entertainment"
+  },
+  {
+    "name": "beIN SPORTS",
+    "url": "http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Sports"
   },
   {
     "name": "Zoom TV",
@@ -30,12 +30,6 @@
     "category": "Uncategorized"
   },
   {
-    "name": "Amc",
-    "url": "https://tvsen6.aynaott.com/amc/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Uncategorized"
-  },
-  {
     "name": "Sportv",
     "url": "https://tvsen7.aynaott.com/shagor-backup/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
@@ -46,6 +40,12 @@
     "url": "https://tvsen7.aynaott.com/Sports1/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Sports"
+  },
+  {
+    "name": "Amc",
+    "url": "https://tvsen6.aynaott.com/amc/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Uncategorized"
   },
   {
     "name": "Colors Bangla",
@@ -70,6 +70,12 @@
     "url": "https://tvsen6.aynaott.com/cp24/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
+  },
+  {
+    "name": "Kids TV",
+    "url": "http://origin5.mediacdn.ru/live/kidstv/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Kids"
   },
   {
     "name": "Teen Nick",
@@ -108,16 +114,16 @@
     "category": "Uncategorized"
   },
   {
-    "name": "Sadhna Prime News",
-    "url": "https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "News"
-  },
-  {
     "name": "ANB News",
     "url": "https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "News"
+  },
+  {
+    "name": "Bharat Samachar",
+    "url": "https://tvsen3.aynaott.com/m94BZDYb/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Uncategorized"
   },
   {
     "name": "TAQBEER",
@@ -144,8 +150,8 @@
     "category": "Uncategorized"
   },
   {
-    "name": "And Pictures HD",
-    "url": "https://tvsen6.aynaott.com/andpictureshd/index.m3u8",
+    "name": "HiDost",
+    "url": "https://tvsen6.aynaott.com/6XDrdRHa/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
@@ -168,14 +174,14 @@
     "category": "Sports"
   },
   {
-    "name": "HiDost",
-    "url": "https://tvsen6.aynaott.com/6XDrdRHa/index.m3u8",
+    "name": "BTV NATIONAL HD",
+    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
   {
-    "name": "BTV NATIONAL HD",
-    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8",
+    "name": "And Pictures HD",
+    "url": "https://tvsen6.aynaott.com/andpictureshd/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
@@ -198,20 +204,14 @@
     "category": "Kids"
   },
   {
-    "name": "And tv",
-    "url": "https://tvsen6.aynaott.com/AndTV/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Uncategorized"
-  },
-  {
     "name": "HBO",
     "url": "https://tvsen7.aynaott.com/hbo/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Movies"
   },
   {
-    "name": "Family JR",
-    "url": "https://tvsen3.aynaott.com/25FZdZrX/index.m3u8",
+    "name": "Goldmines Bollywood",
+    "url": "https://tvsen6.aynaott.com/55xNrLdf/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
@@ -222,8 +222,8 @@
     "category": "News"
   },
   {
-    "name": "Geo ENT",
-    "url": "https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8",
+    "name": "Family JR",
+    "url": "https://tvsen3.aynaott.com/25FZdZrX/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
@@ -240,26 +240,32 @@
     "category": "Uncategorized"
   },
   {
+    "name": "Geo ENT",
+    "url": "https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Uncategorized"
+  },
+  {
+    "name": "And tv",
+    "url": "https://tvsen6.aynaott.com/AndTV/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Uncategorized"
+  },
+  {
     "name": "Sony AATH",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Entertainment"
   },
   {
-    "name": "Khushboo",
-    "url": "https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Movies"
-  },
-  {
-    "name": "& Pictures",
-    "url": "https://tvsen3.aynaott.com/jzT482XQ/index.m3u8",
+    "name": "B4U Hitz",
+    "url": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
   {
-    "name": "B4U Hitz",
-    "url": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
+    "name": "& Pictures",
+    "url": "https://tvsen3.aynaott.com/jzT482XQ/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
@@ -282,6 +288,12 @@
     "category": "Uncategorized"
   },
   {
+    "name": "SUNNAH",
+    "url": "https://tvsen6.aynaott.com/sunnahtv/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Uncategorized"
+  },
+  {
     "name": "Bleav Football",
     "url": "https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
@@ -294,32 +306,26 @@
     "category": "Sports"
   },
   {
-    "name": "DD Sports",
-    "url": "https://cdn-6.pishow.tv/live/13/master.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Sports"
-  },
-  {
-    "name": "ESPN",
-    "url": "https://tvsen7.aynaott.com/espn/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Sports"
-  },
-  {
     "name": "Deen TV",
     "url": "https://tvsen3.aynaott.com/TJcnZW3U/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
   {
-    "name": "Eman Channel",
-    "url": "https://tvsen3.aynaott.com/WHy6ffXz/index.m3u8",
+    "name": "DD Sports",
+    "url": "https://cdn-6.pishow.tv/live/13/master.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Uncategorized"
+    "category": "Sports"
   },
   {
-    "name": "SUNNAH",
-    "url": "https://tvsen6.aynaott.com/sunnahtv/index.m3u8",
+    "name": "PTV Sports",
+    "url": "https://tvsen5.aynaott.com/kP9vX2mZ7qL5wN3t/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Sports"
+  },
+  {
+    "name": "Eman Channel",
+    "url": "https://tvsen3.aynaott.com/WHy6ffXz/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
@@ -334,6 +340,18 @@
     "url": "https://tvsen6.aynaott.com/qurantv/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
+  },
+  {
+    "name": "ESPN",
+    "url": "https://tvsen7.aynaott.com/espn/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Sports"
+  },
+  {
+    "name": "T Sports HD",
+    "url": "https://tvsen5.aynaott.com/TnMn5kZz8/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Sports"
   },
   {
     "name": "Peace TV Bangla HD",
@@ -354,14 +372,26 @@
     "category": "Movies"
   },
   {
+    "name": "9x Jhakaas",
+    "url": "https://tvsen3.aynaott.com/zmcc2Yy4/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Uncategorized"
+  },
+  {
     "name": "Music India",
     "url": "https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Music"
   },
   {
-    "name": "9x Jhakaas",
-    "url": "https://tvsen3.aynaott.com/zmcc2Yy4/index.m3u8",
+    "name": "B4u Music",
+    "url": "https://tvsen3.aynaott.com/8m7Vmh3K/index.m3u8",
+    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
+    "category": "Music"
+  },
+  {
+    "name": "CGTN Documentary",
+    "url": "https://tvsen6.aynaott.com/cgtnDocumentary/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Uncategorized"
   },
@@ -374,18 +404,6 @@
   {
     "name": "Dhoom Music Bangla",
     "url": "https://tvsen6.aynaott.com/dhoom/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Music"
-  },
-  {
-    "name": "CGTN Documentary",
-    "url": "https://tvsen6.aynaott.com/cgtnDocumentary/index.m3u8",
-    "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
-    "category": "Uncategorized"
-  },
-  {
-    "name": "B4u Music",
-    "url": "https://tvsen3.aynaott.com/8m7Vmh3K/index.m3u8",
     "logo": "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg",
     "category": "Music"
   },

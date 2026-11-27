@@ -1,262 +1,247 @@
 [
   {
-    "name": "Wion",
-    "ttfb_ms": 99.1,
-    "cached": false
-  },
-  {
     "name": "Xtrem Sports",
-    "ttfb_ms": 222.45,
+    "ttfb_ms": 126.72,
     "cached": false
   },
   {
-    "name": "Weather SPY",
-    "ttfb_ms": 150.72,
+    "name": "Wion",
+    "ttfb_ms": 117.67,
     "cached": false
   },
   {
     "name": "Wild TV",
-    "ttfb_ms": 282.81,
+    "ttfb_ms": 112.24,
+    "cached": false
+  },
+  {
+    "name": "Weather SPY",
+    "ttfb_ms": 152.85,
     "cached": false
   },
   {
     "name": "World War TV",
-    "ttfb_ms": 518.59,
-    "cached": false
-  },
-  {
-    "name": "Hum TV",
-    "ttfb_ms": 704.85,
+    "ttfb_ms": 421.15,
     "cached": false
   },
   {
     "name": "Marquee Sports Network",
-    "ttfb_ms": 827.17,
+    "ttfb_ms": 809.4,
     "cached": false
   },
   {
-    "name": "kolkata TV",
-    "ttfb_ms": 838.35,
-    "cached": false
-  },
-  {
-    "name": "Channel 52",
-    "ttfb_ms": 849.35,
+    "name": "Hum TV",
+    "ttfb_ms": 823.82,
     "cached": false
   },
   {
     "name": "Talk Sport",
-    "ttfb_ms": 859.13,
+    "ttfb_ms": 827.14,
+    "cached": false
+  },
+  {
+    "name": "kolkata TV",
+    "ttfb_ms": 828.14,
+    "cached": false
+  },
+  {
+    "name": "Channel 52",
+    "ttfb_ms": 838.8,
     "cached": false
   },
   {
     "name": "ATN Bangla",
-    "ttfb_ms": 868.51,
-    "cached": false
-  },
-  {
-    "name": "PBS Kids",
-    "ttfb_ms": 165.37,
-    "cached": false
-  },
-  {
-    "name": "Maasranga TV",
-    "ttfb_ms": 269.37,
-    "cached": false
-  },
-  {
-    "name": "Channel I",
-    "ttfb_ms": 880.14,
-    "cached": false
-  },
-  {
-    "name": "Global TV",
-    "ttfb_ms": 269.24,
-    "cached": false
-  },
-  {
-    "name": "TVCARiB Kids & Teens",
-    "ttfb_ms": 266.27,
-    "cached": false
-  },
-  {
-    "name": "NEXUS TV",
-    "ttfb_ms": 872.51,
-    "cached": false
-  },
-  {
-    "name": "Dios Te Ve Kids",
-    "ttfb_ms": 68.92,
+    "ttfb_ms": 835.95,
     "cached": false
   },
   {
     "name": "NTV Europe",
-    "ttfb_ms": 349.0,
+    "ttfb_ms": 197.62,
     "cached": false
   },
   {
-    "name": "Moonbug Kids",
-    "ttfb_ms": 156.42,
+    "name": "Channel I",
+    "ttfb_ms": 827.53,
     "cached": false
   },
   {
-    "name": "3ABN Kids",
-    "ttfb_ms": 176.37,
+    "name": "PBS Kids",
+    "ttfb_ms": 153.24,
+    "cached": false
+  },
+  {
+    "name": "NEXUS TV",
+    "ttfb_ms": 768.53,
+    "cached": false
+  },
+  {
+    "name": "Global TV",
+    "ttfb_ms": 254.12,
+    "cached": false
+  },
+  {
+    "name": "TVCARiB Kids & Teens",
+    "ttfb_ms": 270.83,
+    "cached": false
+  },
+  {
+    "name": "Dios Te Ve Kids",
+    "ttfb_ms": 112.6,
     "cached": false
   },
   {
     "name": "Jamuna TV",
-    "ttfb_ms": 842.47,
+    "ttfb_ms": 791.6,
+    "cached": false
+  },
+  {
+    "name": "3ABN Kids",
+    "ttfb_ms": 251.76,
     "cached": false
   },
   {
     "name": "TVC Arabic Kids",
-    "ttfb_ms": 272.83,
+    "ttfb_ms": 254.9,
     "cached": false
   },
   {
-    "name": "India Today",
-    "ttfb_ms": 173.86,
+    "name": "Moonbug Kids",
+    "ttfb_ms": 338.95,
+    "cached": false
+  },
+  {
+    "name": "Maasranga TV",
+    "ttfb_ms": 781.31,
     "cached": false
   },
   {
     "name": "NTV",
-    "ttfb_ms": 829.86,
-    "cached": false
-  },
-  {
-    "name": "Hindi Movie Classic 24",
-    "ttfb_ms": 869.23,
-    "cached": false
-  },
-  {
-    "name": "ABN",
-    "ttfb_ms": 85.46,
-    "cached": false
-  },
-  {
-    "name": "BBC News",
-    "ttfb_ms": 327.65,
+    "ttfb_ms": 825.58,
     "cached": false
   },
   {
     "name": "9x Jalwa",
-    "ttfb_ms": 832.52,
+    "ttfb_ms": 251.14,
+    "cached": false
+  },
+  {
+    "name": "ABN",
+    "ttfb_ms": 94.65,
+    "cached": false
+  },
+  {
+    "name": "Hindi Movie Classic 24",
+    "ttfb_ms": 785.95,
     "cached": false
   },
   {
     "name": "Adventure Earth",
-    "ttfb_ms": 130.65,
+    "ttfb_ms": 147.41,
     "cached": false
   },
   {
-    "name": "OAN",
-    "ttfb_ms": 143.77,
+    "name": "India Today",
+    "ttfb_ms": 776.04,
     "cached": false
   },
   {
     "name": "Travel XP",
-    "ttfb_ms": 73.31,
+    "ttfb_ms": 104.45,
+    "cached": false
+  },
+  {
+    "name": "BBC News",
+    "ttfb_ms": 363.08,
     "cached": false
   },
   {
     "name": "Fox Weather",
-    "ttfb_ms": 125.98,
-    "cached": false
-  },
-  {
-    "name": "Kids TV",
-    "ttfb_ms": 1701.29,
+    "ttfb_ms": 108.75,
     "cached": false
   },
   {
     "name": "Sky News Weather",
-    "ttfb_ms": 183.77,
+    "ttfb_ms": 90.51,
     "cached": false
   },
   {
-    "name": "Bharat Samachar",
-    "ttfb_ms": 841.75,
+    "name": "OAN",
+    "ttfb_ms": 325.13,
     "cached": false
   },
   {
     "name": "Accu Weather",
-    "ttfb_ms": 517.84,
+    "ttfb_ms": 260.06,
+    "cached": false
+  },
+  {
+    "name": "Sadhna Prime News",
+    "ttfb_ms": 799.75,
     "cached": false
   },
   {
     "name": "MADANI TV",
-    "ttfb_ms": 825.83,
+    "ttfb_ms": 775.26,
     "cached": false
   },
   {
     "name": "Discover Pikstan",
-    "ttfb_ms": 320.83,
-    "cached": false
-  },
-  {
-    "name": "9X Tashan",
-    "ttfb_ms": 817.8,
+    "ttfb_ms": 332.93,
     "cached": false
   },
   {
     "name": "Goldmines",
-    "ttfb_ms": 829.29,
+    "ttfb_ms": 777.75,
     "cached": false
   },
   {
-    "name": "Goldmines Bollywood",
-    "ttfb_ms": 825.67,
+    "name": "9X Tashan",
+    "ttfb_ms": 767.42,
     "cached": false
   },
   {
     "name": "Goldmines Movies",
-    "ttfb_ms": 843.47,
+    "ttfb_ms": 774.43,
     "cached": false
   },
   {
     "name": "DD Bangla",
-    "ttfb_ms": 303.35,
+    "ttfb_ms": 286.36,
     "cached": false
   },
   {
     "name": "Sangeet Bangla",
-    "ttfb_ms": 844.05,
+    "ttfb_ms": 825.05,
     "cached": false
   },
   {
     "name": "TV9 Bangla",
-    "ttfb_ms": 292.83,
+    "ttfb_ms": 292.55,
     "cached": false
   },
   {
     "name": "Enter 10 Bangla",
-    "ttfb_ms": 700.9,
+    "ttfb_ms": 625.15,
     "cached": false
   },
   {
     "name": "Goal TV",
-    "ttfb_ms": 88.55,
+    "ttfb_ms": 105.73,
+    "cached": false
+  },
+  {
+    "name": "Khushboo",
+    "ttfb_ms": 770.31,
     "cached": false
   },
   {
     "name": "Network 10",
-    "ttfb_ms": 819.35,
-    "cached": false
-  },
-  {
-    "name": "PTV Sports",
-    "ttfb_ms": 859.46,
+    "ttfb_ms": 812.11,
     "cached": false
   },
   {
     "name": "Cricket Gold",
-    "ttfb_ms": 815.6,
-    "cached": false
-  },
-  {
-    "name": "T Sports HD",
-    "ttfb_ms": 837.92,
+    "ttfb_ms": 253.75,
     "cached": false
   }
 ]
