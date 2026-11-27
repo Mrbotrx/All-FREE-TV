@@ -4,15 +4,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8012
+📺 TOTAL CHANNELS : 8014
 🇧🇩 BDXI CHANNELS : 64
 🇧৩ BD CHANNELS   : 58
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 226
+🏆 SPORTS         : 227
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 27-11-2026
-🕒 UPDATE TIME    : 07:08 PM
+📅 UPDATE DATE    : 28-11-2026
+🕒 UPDATE TIME    : 01:53 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -27,15 +27,15 @@
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8012
+📺 TOTAL CHANNELS : 8014
 🇧🇩 BDXI CHANNELS : 64
 🇧৩ BD CHANNELS   : 58
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 226
+🏆 SPORTS         : 227
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 27-11-2026
-🕒 UPDATE TIME    : 07:08 PM
+📅 UPDATE DATE    : 28-11-2026
+🕒 UPDATE TIME    : 01:53 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -178,15 +178,15 @@ http://premimum.online:80/live/jen12345/jen54321/98854.ts
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8012
+📺 TOTAL CHANNELS : 8014
 🇧🇩 BDXI CHANNELS : 64
 🇧৩ BD CHANNELS   : 58
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 226
+🏆 SPORTS         : 227
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 27-11-2026
-🕒 UPDATE TIME    : 07:08 PM
+📅 UPDATE DATE    : 28-11-2026
+🕒 UPDATE TIME    : 01:53 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -229,15 +229,15 @@ http://146.59.253.52:8080/hindihitshd/index.m3u8
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8012
+📺 TOTAL CHANNELS : 8014
 🇧🇩 BDXI CHANNELS : 64
 🇧৩ BD CHANNELS   : 58
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 226
+🏆 SPORTS         : 227
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 27-11-2026
-🕒 UPDATE TIME    : 07:08 PM
+📅 UPDATE DATE    : 28-11-2026
+🕒 UPDATE TIME    : 01:53 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -368,15 +368,15 @@ https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
 
 📊 PLAYLIST STATISTICS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📺 TOTAL CHANNELS : 8012
+📺 TOTAL CHANNELS : 8014
 🇧🇩 BDXI CHANNELS : 64
 🇧৩ BD CHANNELS   : 58
 🇮৩ IND CHANNELS  : 14
-🏆 SPORTS         : 226
+🏆 SPORTS         : 227
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📅 UPDATE DATE    : 27-11-2026
-🕒 UPDATE TIME    : 07:08 PM
+📅 UPDATE DATE    : 28-11-2026
+🕒 UPDATE TIME    : 01:53 AM
 🌍 TIMEZONE       : Asia/Dhaka
 ⚡ STATUS         : ONLINE
 🔄 AUTO UPDATED   : SUCCESS
@@ -833,5 +833,7 @@ https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8
 #EXTINF:-1 group-title="BD" tvg-logo="https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",[BD] Sony Ten Sports 5 HD
 https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8
+#EXTINF:-1 tvg-name="T Sports (720p)" group-title="BD",T Sports (720p)
+https://rangdhonulive.samiulislamabhi.workers.dev/TSportsSD/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-name="Bein Sports Extra 2" group-title="BD",Bein Sports Extra 2
 https://bein-esp-xumo.amagi.tv/playlistR1080p.m3u8
