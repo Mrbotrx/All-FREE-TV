@@ -4478,12 +4478,6 @@
               "taxonomies": {
                 "category": [
                   {
-                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
-                    "slug": "channel-channels",
-                    "title": "Channels",
-                    "nav_path": "/t/category/channel-channels"
-                  },
-                  {
                     "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
                     "slug": "channel-hindi",
                     "title": "Hindi",
@@ -4494,6 +4488,12 @@
                     "slug": "channel-news",
                     "title": "News",
                     "nav_path": "/t/category/channel-news"
+                  },
+                  {
+                    "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
+                    "slug": "channel-channels",
+                    "title": "Channels",
+                    "nav_path": "/t/category/channel-channels"
                   }
                 ]
               },
@@ -4694,6 +4694,12 @@
               "taxonomies": {
                 "category": [
                   {
+                    "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
+                    "slug": "channel-hindi",
+                    "title": "Hindi",
+                    "nav_path": "/t/category/channel-hindi"
+                  },
+                  {
                     "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                     "slug": "channel-channels",
                     "title": "Channels",
@@ -4704,12 +4710,6 @@
                     "slug": "channel-news",
                     "title": "News",
                     "nav_path": "/t/category/channel-news"
-                  },
-                  {
-                    "id": "019efa45-d6bb-7380-9abe-403a4051edbb",
-                    "slug": "channel-hindi",
-                    "title": "Hindi",
-                    "nav_path": "/t/category/channel-hindi"
                   }
                 ]
               },
@@ -4836,12 +4836,6 @@
               "taxonomies": {
                 "category": [
                   {
-                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
-                    "slug": "channel-news",
-                    "title": "News",
-                    "nav_path": "/t/category/channel-news"
-                  },
-                  {
                     "id": "019efa45-d8a7-74a3-9096-899cfe5e065f",
                     "slug": "channel-channels",
                     "title": "Channels",
@@ -4852,6 +4846,12 @@
                     "slug": "channel-hindi",
                     "title": "Hindi",
                     "nav_path": "/t/category/channel-hindi"
+                  },
+                  {
+                    "id": "019efa45-d861-77b3-ba90-892c90ebf870",
+                    "slug": "channel-news",
+                    "title": "News",
+                    "nav_path": "/t/category/channel-news"
                   }
                 ]
               },
